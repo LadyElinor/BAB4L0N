@@ -24,13 +24,30 @@ class ContractPolicy:
                     return envelope(brief, "act", task_id=source["id"], operation=source["objective"])
         return envelope(brief, "wait", reason="No pending task fits the current grant and remaining budget")
 
+def _audit_succeeded(host: Host, audit: dict, task_ids: list[str]) -> bool:
+    if audit["status"] == "AUDITED":
+        return True
+    if audit["status"] != "NO_PENDING_EFFECT" or not task_ids:
+        return False
+    # Another client may have discharged this obligation before our audit acquired
+    # the lock. No pending effect alone is not evidence of a successful audit.
+    # Task completion is monotonic through the trusted Host API; require both the
+    # specific tasks to be done and an independent consistency check before going on.
+    brief = host.observe()
+    done = {task["input"]["id"] for task in brief["tasks"] if task["status"] == "done"}
+    return set(task_ids) <= done and host.verify()["status"] == "CONSISTENT"
+
+
 def run(host: Host, policy: Policy | None = None, max_cycles: int = 32) -> dict:
     integer(max_cycles, 1, 256)
     policy = policy or ContractPolicy()
     receipts = []
-    if host.observe()["pending_audit"] is not None:
+    initial = host.observe()
+    if initial["pending_audit"] is not None:
         audit = host.audit()
-        if audit["status"] != "AUDITED":
+        pending = [task["input"]["id"] for task in initial["tasks"]
+                   if task["status"] == "committed_unaudited"]
+        if not _audit_succeeded(host, audit, pending):
             return {"status": "AUDIT_FAILED", "receipts": receipts, "audit": audit}
     for _ in range(max_cycles):
         brief = host.observe()
@@ -51,7 +68,7 @@ def run(host: Host, policy: Policy | None = None, max_cycles: int = 32) -> dict:
         if receipt["disposition"] != "EFFECT_COMMITTED":
             return {"status": receipt["disposition"], "receipts": receipts}
         audit = host.audit()
-        if audit["status"] != "AUDITED":
+        if not _audit_succeeded(host, audit, [receipt["effect"]["task_id"]]):
             return {"status": "AUDIT_FAILED", "audit": audit, "receipts": receipts}
     brief = host.observe()
     if brief["stopped"] is not None:

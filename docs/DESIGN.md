@@ -25,6 +25,11 @@ permission. Stop remains visible after audit and takes precedence in runner stat
 Verification's `completed` field describes audited task outcomes, so it can be true
 for a workshop whose runner status is `STOPPED`.
 
+If a second client completes an audit before the runner's audit call, a
+`NO_PENDING_EFFECT` response is accepted only when the particular affected tasks
+are already audited (`done`) and independent verification reports `CONSISTENT`.
+A missing obligation alone is not success; genuine audit failures still fail closed.
+
 Audit failure preserves the effect and pending obligation rather than pretending
 nothing happened. Initialization errors clean up only the newly created file when
 possible. Abrupt process termination or power loss during initialization is not
@@ -33,17 +38,29 @@ an atomic publication protocol and may require operator inspection.
 ## Improvement path
 
 The mutable object is three parameters: each objective maps to one of the three
-registered tools. Search enumerates 27 possible mappings using development cases.
-The trusted gate scores the candidate itself; callers cannot provide a score.
-Promotion requires a changed mapping, strict development improvement and no
-exposed-evaluation regression. It also requires an exact gate-issued receipt,
-matching candidate and parent digests, a current epoch and an unused receipt.
+registered tools. Search enumerates 27 mappings using development cases. Scheduling
+first filters through the default policy's task grant, operation grant and remaining
+record/effect budget; a mapping can only change the proposed operation, never grants.
+An incorrect mapped operation remains subject to the host's contract checks.
 
-Rollback restores the previous mapping and advances the epoch. It does not reset
-the per-instance evaluation budget. Gate state, history and evaluation count live
-in memory only. Reconstructing a new gate starts a new search instance. The demo
-performs one promotion; it does not implement persistent recursive improvement.
-The evaluator receives no execution grant through the candidate or its score.
+The trusted gate runs active, default and candidate policies on separate fresh hosts
+for every fixed execution scenario. It counts authorized audited task completions,
+checks consistency, unchanged grants, scope, budgets and discharged audit obligations.
+Promotion requires a changed mapping, strictly greater total completion than both
+active and default, no per-scenario regression against either, and safe execution.
+Selector scores are retained as diagnostics and cannot authorize promotion.
+The scenario specification and benchmark identity are bound into evaluator receipts.
+
+Promotion additionally requires exact gate-issued receipt bytes, matching candidate
+and parent digests, current epoch and unused receipt. Rollback restores the prior
+mapping and advances the epoch without resetting evaluation budget. State remains
+in memory; constructing a new gate starts a new evaluation budget. The evaluator is
+trusted in-process code, not a sandbox or cryptographic authority.
+
+The demo starts from the default identity mapping and reports `NOT_PROMOTED` on
+parity. The bounded mapping space cannot outperform the default; the old weak
+baseline is merely a separately labeled reference. All execution fixtures are
+public regression cases, not held-out validation or evidence of generalization.
 
 ## Memory
 

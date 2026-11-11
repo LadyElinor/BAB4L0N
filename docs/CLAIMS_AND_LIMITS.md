@@ -8,7 +8,7 @@
 - Mandatory post-effect checking before another effect, with restart recovery.
 - A separate result-check implementation, sharing the same specification and data.
 - A closed proposal interface which cannot introduce shell, grant or evaluator fields.
-- A bounded automatic improvement in method selection among 27 maps.
+- Bounded selection among 27 maps, with execution-based rejection of default parity.
 - Gate-issued receipt binding, stale-parent/epoch rejection, rollback and per-instance
   evaluation accounting.
 
@@ -29,16 +29,30 @@
 
 ## Interpretation of the improvement numbers
 
-The weak baseline maps all objectives to `sum_valid`. The best map is the identity
-map. The expected tool name appears directly in the task contract, and all three
-objectives occur in both exposed scoring sets. Exhaustive search finds that map.
-This is a transparent demonstration of a promotion mechanism, not a discovery
-about machine intelligence. There are no confidence intervals, independent
-holdouts or statistical superiority claims.
+The default policy already reads the operation directly from the task contract.
+The identity mapping uses the same grant-aware scheduler and produces identical
+proposals. No map in the current closed candidate space can improve this policy.
+The correct gate outcome is therefore `NOT_PROMOTED`, including when a candidate
+improves on the old all-`sum_valid` demonstration policy. A richer candidate space
+and a justified task domain are needed before real improvement is possible.
 
-The before/after execution uses identical fresh tasks and grants on separate hosts.
-One baseline task completes before the next incorrect operation is refused; the
-candidate completes all three. Refusal is not counted as successful completion.
+The trusted evaluator counts tasks only after audit and consistency verification,
+and only if both task ID and objective are authorized. Fresh hosts and identical
+budgets are used for every policy in each of 30 scenarios. A partial grant can
+complete all its authorized tasks while whole-workshop `completed` remains false;
+runner status and method-selection accuracy are not the completion score.
+
+The suite reports 36 completed out of 75 authorized for both default and candidate.
+Budget and cycle restrictions deliberately make some authorized work unattainable.
+These totals are paired regression measures, not optimality or success-rate claims.
+Aggregate gains cannot offset a per-scenario regression. The execution reducer is
+separate from the candidate but shares specification, inputs and Python process.
+There are no confidence intervals, sealed holdouts or statistical superiority claims.
+Gate construction still resets the in-memory evaluation budget.
+
+Tests for promotion/rollback receipt lifecycle inject hypothetical eligibility to
+exercise otherwise unreachable branches; they are not evidence of an actual winning
+candidate. Real unmodified gate tests require all current candidates to fail parity.
 
 ## Operational limits
 

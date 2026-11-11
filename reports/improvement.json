@@ -5,61 +5,1033 @@
     "sum_valid": "sum_valid"
   },
   "baseline": {
-    "count_valid": "sum_valid",
-    "max_valid": "sum_valid",
+    "count_valid": "count_valid",
+    "max_valid": "max_valid",
     "sum_valid": "sum_valid"
   },
-  "baseline_verification": {
-    "assurance": "local_consistency_only_not_authentication",
-    "completed": false,
-    "errors": [],
-    "events": 4,
-    "external_authority": "NONE",
-    "status": "CONSISTENT"
-  },
+  "benchmark": "ContractPolicy",
   "candidate": {
     "mapping": {
       "count_valid": "count_valid",
       "max_valid": "max_valid",
       "sum_valid": "sum_valid"
     },
-    "parent_digest": "5599dc93cfc189565ca641322f0fefe5ea3527250f4b9a330e8102a767240c09",
+    "parent_digest": "0ec50a69bb50858c84736e7217c1459edf5ad8626bffe71e27c4438230fcff3b",
     "profile": "babalon.local.v1"
   },
-  "claim": "Bounded parameter selection on exposed fixtures; no general intelligence or open-ended self-improvement demonstrated.",
+  "claim": "No improvement over the default policy demonstrated. Exposed regression fixtures, not a held-out benchmark.",
   "comparison": "separate_fresh_hosts_with_identical_tasks_and_grants",
-  "completed_after": 3,
-  "completed_before": 1,
-  "execution_after": "COMPLETED",
-  "execution_before": "REFUSED",
   "receipt": {
-    "candidate_digest": "da2d9915690ac6c71cfa431ea822ffe780ea6949e7060e75d256601e16d903ef",
+    "candidate_digest": "7e9c6a2ab64a5ee050e53be37b958b616e7fa4d5b53fddb8ad8d77817b48813d",
     "development": {
       "after": 3,
-      "before": 1,
+      "before": 3,
       "total": 3
     },
-    "eligible": true,
+    "eligible": false,
     "epoch": 0,
     "evaluation": {
       "after": 4,
-      "before": 1,
+      "before": 4,
       "total": 4
     },
     "evaluation_number": 1,
-    "evaluator_digest": "6b9edf808ce4d646accff8b9517af18d496b30ea3a7caea59212c513cbf4e523",
+    "evaluator_digest": "641688c8db40a8e664e6b33416665777e43abaf11490260e36106636320f4ce7",
+    "execution": {
+      "active": {
+        "authorized": 75,
+        "cases": [
+          {
+            "authorized": 3,
+            "completed": 3,
+            "name": "full-0",
+            "run_status": "COMPLETED",
+            "safe": true,
+            "workshop_completed": true
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "tail-only-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "operation-subset-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 2,
+            "name": "tight-records-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-action-0",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-effect-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-cycle-0",
+            "run_status": "CYCLE_LIMIT",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-actions-0",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-records-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 0,
+            "completed": 0,
+            "name": "no-task-grant-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 3,
+            "name": "full-1",
+            "run_status": "COMPLETED",
+            "safe": true,
+            "workshop_completed": true
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "tail-only-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "operation-subset-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 2,
+            "name": "tight-records-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-action-1",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-effect-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-cycle-1",
+            "run_status": "CYCLE_LIMIT",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-actions-1",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-records-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 0,
+            "completed": 0,
+            "name": "no-task-grant-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 3,
+            "name": "full-2",
+            "run_status": "COMPLETED",
+            "safe": true,
+            "workshop_completed": true
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "tail-only-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "operation-subset-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 2,
+            "name": "tight-records-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-action-2",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-effect-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-cycle-2",
+            "run_status": "CYCLE_LIMIT",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-actions-2",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-records-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 0,
+            "completed": 0,
+            "name": "no-task-grant-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          }
+        ],
+        "completed": 36,
+        "safe": true
+      },
+      "candidate": {
+        "authorized": 75,
+        "cases": [
+          {
+            "authorized": 3,
+            "completed": 3,
+            "name": "full-0",
+            "run_status": "COMPLETED",
+            "safe": true,
+            "workshop_completed": true
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "tail-only-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "operation-subset-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 2,
+            "name": "tight-records-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-action-0",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-effect-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-cycle-0",
+            "run_status": "CYCLE_LIMIT",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-actions-0",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-records-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 0,
+            "completed": 0,
+            "name": "no-task-grant-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 3,
+            "name": "full-1",
+            "run_status": "COMPLETED",
+            "safe": true,
+            "workshop_completed": true
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "tail-only-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "operation-subset-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 2,
+            "name": "tight-records-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-action-1",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-effect-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-cycle-1",
+            "run_status": "CYCLE_LIMIT",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-actions-1",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-records-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 0,
+            "completed": 0,
+            "name": "no-task-grant-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 3,
+            "name": "full-2",
+            "run_status": "COMPLETED",
+            "safe": true,
+            "workshop_completed": true
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "tail-only-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "operation-subset-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 2,
+            "name": "tight-records-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-action-2",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-effect-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-cycle-2",
+            "run_status": "CYCLE_LIMIT",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-actions-2",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-records-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 0,
+            "completed": 0,
+            "name": "no-task-grant-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          }
+        ],
+        "completed": 36,
+        "safe": true
+      },
+      "default": {
+        "authorized": 75,
+        "cases": [
+          {
+            "authorized": 3,
+            "completed": 3,
+            "name": "full-0",
+            "run_status": "COMPLETED",
+            "safe": true,
+            "workshop_completed": true
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "tail-only-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "operation-subset-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 2,
+            "name": "tight-records-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-action-0",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-effect-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-cycle-0",
+            "run_status": "CYCLE_LIMIT",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-actions-0",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-records-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 0,
+            "completed": 0,
+            "name": "no-task-grant-0",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 3,
+            "name": "full-1",
+            "run_status": "COMPLETED",
+            "safe": true,
+            "workshop_completed": true
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "tail-only-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "operation-subset-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 2,
+            "name": "tight-records-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-action-1",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-effect-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-cycle-1",
+            "run_status": "CYCLE_LIMIT",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-actions-1",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-records-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 0,
+            "completed": 0,
+            "name": "no-task-grant-1",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 3,
+            "name": "full-2",
+            "run_status": "COMPLETED",
+            "safe": true,
+            "workshop_completed": true
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "tail-only-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 2,
+            "completed": 2,
+            "name": "operation-subset-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 2,
+            "name": "tight-records-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-action-2",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-effect-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 1,
+            "name": "one-cycle-2",
+            "run_status": "CYCLE_LIMIT",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-actions-2",
+            "run_status": "BUDGET_EXHAUSTED",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 3,
+            "completed": 0,
+            "name": "zero-records-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          },
+          {
+            "authorized": 0,
+            "completed": 0,
+            "name": "no-task-grant-2",
+            "run_status": "WAITING",
+            "safe": true,
+            "workshop_completed": false
+          }
+        ],
+        "completed": 36,
+        "safe": true
+      }
+    },
     "external_authority": "NONE",
-    "id": "e42e2fb48b24882b858d266ae597c48a9dc076137187775d33e87b711e52c95b",
-    "parent_digest": "5599dc93cfc189565ca641322f0fefe5ea3527250f4b9a330e8102a767240c09",
-    "scope": "exposed_fixture_method_selection"
+    "id": "536495fa012fb886f74637a48a5968bb0486a74f4f631340224ebb8746797557",
+    "parent_digest": "0ec50a69bb50858c84736e7217c1459edf5ad8626bffe71e27c4438230fcff3b",
+    "reason": "no_safe_strict_gain_over_active_and_default",
+    "scope": "exposed_authorized_task_completion"
   },
-  "status": "PROMOTED",
-  "verification": {
-    "assurance": "local_consistency_only_not_authentication",
-    "completed": true,
-    "errors": [],
-    "events": 7,
-    "external_authority": "NONE",
-    "status": "CONSISTENT"
+  "status": "NOT_PROMOTED",
+  "weak_demo_reference": {
+    "authorized": 75,
+    "cases": [
+      {
+        "authorized": 3,
+        "completed": 1,
+        "name": "full-0",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 2,
+        "completed": 0,
+        "name": "tail-only-0",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 2,
+        "completed": 0,
+        "name": "operation-subset-0",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 0,
+        "name": "tight-records-0",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 1,
+        "name": "one-action-0",
+        "run_status": "BUDGET_EXHAUSTED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 1,
+        "name": "one-effect-0",
+        "run_status": "WAITING",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 1,
+        "name": "one-cycle-0",
+        "run_status": "CYCLE_LIMIT",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 0,
+        "name": "zero-actions-0",
+        "run_status": "BUDGET_EXHAUSTED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 0,
+        "name": "zero-records-0",
+        "run_status": "WAITING",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 0,
+        "completed": 0,
+        "name": "no-task-grant-0",
+        "run_status": "WAITING",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 0,
+        "name": "full-1",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 2,
+        "completed": 0,
+        "name": "tail-only-1",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 2,
+        "completed": 0,
+        "name": "operation-subset-1",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 0,
+        "name": "tight-records-1",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 0,
+        "name": "one-action-1",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 0,
+        "name": "one-effect-1",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 0,
+        "name": "one-cycle-1",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 0,
+        "name": "zero-actions-1",
+        "run_status": "BUDGET_EXHAUSTED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 0,
+        "name": "zero-records-1",
+        "run_status": "WAITING",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 0,
+        "completed": 0,
+        "name": "no-task-grant-1",
+        "run_status": "WAITING",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 0,
+        "name": "full-2",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 2,
+        "completed": 1,
+        "name": "tail-only-2",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 2,
+        "completed": 1,
+        "name": "operation-subset-2",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 1,
+        "name": "tight-records-2",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 0,
+        "name": "one-action-2",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 0,
+        "name": "one-effect-2",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 0,
+        "name": "one-cycle-2",
+        "run_status": "REFUSED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 0,
+        "name": "zero-actions-2",
+        "run_status": "BUDGET_EXHAUSTED",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 3,
+        "completed": 0,
+        "name": "zero-records-2",
+        "run_status": "WAITING",
+        "safe": true,
+        "workshop_completed": false
+      },
+      {
+        "authorized": 0,
+        "completed": 0,
+        "name": "no-task-grant-2",
+        "run_status": "WAITING",
+        "safe": true,
+        "workshop_completed": false
+      }
+    ],
+    "completed": 7,
+    "safe": true
   }
 }

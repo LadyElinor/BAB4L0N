@@ -1,49 +1,58 @@
 # Validation record
 
-Date: 2026-11-11. Locally executed with CPython 3.12.14 on Linux.
+Date: 2026-11-11. Local CPython 3.12.14 on Linux.
+Source baseline: LadyElinor/BAB4L0N commit
+`46a58e6c97c2b4c4c267f46dd74280e073ae8853`. Retrieved through the GitHub connector;
+the local baseline snapshot matches every entry of its upstream SHA256SUMS.
+No remote commit, push or deployment is included in this revision.
 
 ## Passed
 
-- `python scripts/verify.py`: 46 unit tests plus fresh-process execution demo,
-  consistency check, completed-workshop restart and improvement demo.
-- `python -O scripts/verify.py`: the same checks with Python assertion removal;
-  verification gates use explicit failures rather than `assert`.
+- `python scripts/verify.py`: 57 unit tests plus fresh-process execution demo,
+  consistency check, completed-workshop restart and default-parity evaluation.
+- `python -O scripts/verify.py`: same checks with Python assertion removal.
 - `python -m compileall -q babalon tests scripts`: source compilation.
-- Offline wheel build using already installed setuptools and wheel, with
-  `--no-index --no-deps --no-build-isolation`.
-- Installation of the resulting wheel into a fresh virtual environment without
-  network access or source checkout on the import path. The console entrypoint,
-  execution demo, consistency verification and improvement demo passed.
-- Independent review repeated all 46 tests and the fresh-process checks after
-  fixes, and independently probed connection closure on normal/error paths.
+- Offline wheel build with `--no-index --no-deps --no-build-isolation`.
+- Fresh virtual-environment offline wheel installation: console entrypoint,
+  execution demo, consistency verification and `NOT_PROMOTED` evaluation.
+- Independent review repeated the 56-test suite before the final exhaustive-map
+  regression test was added, plus all subprocess checks. It separately evaluated
+  all 27 mappings: maximum completion was 36/75, with identity the sole tie.
+- The final test suite now includes the exhaustive 27-map non-superiority check.
 
-The supplied GitHub Actions workflow targets Python 3.11, 3.12 and 3.13. Those
-remote matrix jobs have **not** run; only 3.12.14 was tested here. No configured
-linter or static type checker is included, and neither was run.
+The supplied CI matrix targets Python 3.11, 3.12 and 3.13. Remote CI was not run;
+only local Python 3.12.14 was tested. No configured linter or static type checker
+is present, and neither was run.
 
-## Findings fixed during review
+## Review findings resolved
 
-1. A stop after the final effect could be reported as completion. Stop now takes
-   precedence at runner entry and cycle-limit exit, with regression tests.
-2. Initialization failure could leave an unusable file that prevented retry.
-   Exception cleanup now removes only the file this initialization created.
-   Connections also close explicitly on successful and failed operations.
-3. JSON exponent overflow such as `1e999` bypassed `parse_constant` rejection.
-   A finite-float parser now rejects it, including the negative variant.
-4. The improvement candidate previously continued the baseline's partial work.
-   The demo now compares separate fresh hosts with identical inputs and grants.
+1. Weak-baseline improvement did not establish improvement over the default.
+   The default is now the mandatory benchmark. Actual audited authorized task
+   completion replaces selector accuracy as the promotion metric.
+2. First-pending scheduling stalled on unauthorized or unaffordable tasks. The
+   mapping policy now uses default grant/budget filtering. Six tail-only and
+   tight-record cases reproduce old completion 0 versus default completion 12.
+3. A second client could audit before the runner, causing false `AUDIT_FAILED`.
+   Two-client regression tests reproduce the old failure. Recovery now requires
+   the affected tasks to be done and verification to be `CONSISTENT`. Unresolved
+   obligations, corrupted state and genuine audit failures remain failures.
+4. Aggregated improvement cannot hide a regression: every scenario must match
+   or exceed both active and default completion, with strict aggregate gain.
 
-## Evidence
+## Interpretation and evidence
 
-- `reports/verification.txt`: full test names and aggregate check outcome.
-- `reports/improvement.json`: actual candidate, gate receipt, selection scores
-  and before/after execution results.
-- `reports/wheel-build.txt`: local wheel build output.
-- `reports/installation-smoke.txt`: isolated installation check.
+`reports/improvement.json` contains the actual gate receipt and per-scenario
+execution results. Default and candidate complete 36/75 authorized tasks across
+30 scenarios, so no promotion occurs. Budgets deliberately prevent some authorized
+tasks from running: 75 is not a feasible-completion oracle. Fixtures are fully
+exposed and cannot establish generalization or statistical superiority.
 
-The source archive includes a `SHA256SUMS` byte manifest. Packaging is performed
-with `python scripts/package.py OUTPUT.zip`, which reruns the aggregate check.
-Archive extraction and its aggregate check are additionally verified before delivery.
+`reports/verification.txt` lists final tests and subprocess check results.
+`reports/wheel-build.txt` and `reports/installation-smoke.txt` record build and
+isolated installation checks. Receipt lifecycle tests inject hypothetical gate
+eligibility only to exercise promotion/rollback mechanics; these are not real
+winning-candidate evidence.
 
-These checks establish behavior on the tested examples, not production security,
-independent evaluator authority or broad intelligence. See `CLAIMS_AND_LIMITS.md`.
+Packaging reruns checks and generates SHA256SUMS. The delivered source archive is
+also extracted, its manifest checked and the aggregate check rerun before delivery.
+See `CLAIMS_AND_LIMITS.md` for the trusted in-process boundary and remaining limits.

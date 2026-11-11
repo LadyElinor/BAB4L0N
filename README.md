@@ -4,7 +4,7 @@
 
 Version 0.1.0 is a local research prototype, not a general intelligent machine.
 It executes real integer-data tasks, persists their outcomes, checks its work,
-and demonstrates a small automatic improvement to its task-selection policy.
+and evaluates bounded policy candidates against its default policy.
 It does not train a model, rewrite its own code, or learn from repositories at runtime.
 
 ## Run in two minutes
@@ -24,12 +24,22 @@ Use a new database filename each time you run `demo` or `init`. Existing files
 are never overwritten. `run` reopens an existing workshop and resumes unfinished
 work; an unaudited committed result is checked before another effect can occur.
 
-The improvement demo searches all 27 allowed objective-to-tool maps. Starting
-from a deliberately weak policy, it raises development selection accuracy from
-1/3 to 3/3 and exposed evaluation selection accuracy from 1/4 to 4/4. On **two
-fresh hosts with identical tasks and grants**, baseline execution completes 1/3
-tasks before a contract refusal; the promoted mapping completes 3/3. These are
-fully exposed fixtures, not evidence of general intelligence or generalization.
+The improvement demo searches all 27 allowed objective-to-tool maps and compares
+actual audited task completion against **the default `ContractPolicy`**, not a
+weakened demonstration baseline. The fixed execution suite has 30 exposed scenarios:
+full and partial grants, restricted operations, tight records/actions/effects/cycles,
+and exhausted or empty grants, rotated across all three operations. Each policy
+gets fresh hosts with identical tasks, grants and cycle limits.
+
+The default and identity-mapping candidate both complete 36 of 75 authorized tasks
+across the suite. Budgets intentionally prevent some authorized tasks from running;
+75 is a scope count, not a claim that all 75 are feasible. The demo reports
+`NOT_PROMOTED`: **no improvement over the default is demonstrated**. Promotion
+requires strictly more completed authorized tasks than both the current policy
+and default, no per-scenario regression, and all execution safety checks to pass.
+Method-selection accuracy is diagnostic only. All fixtures remain exposed, not
+independent holdouts. The former weak baseline is included only as a labeled
+reference, never the deployment benchmark.
 
 ## Use your own bounded task inputs
 

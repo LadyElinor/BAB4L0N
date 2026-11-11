@@ -5,6 +5,6 @@ Processing ./.
 Building wheels for collected packages: babalon-scaffold
   Building wheel for babalon-scaffold (pyproject.toml): started
   Building wheel for babalon-scaffold (pyproject.toml): finished with status 'done'
-  Created wheel for babalon-scaffold: filename=babalon_scaffold-0.1.0-py3-none-any.whl size=14311 sha256=b116303fc2ac86cc52a0553eb93402a5b49348b2399327a34c48de3244c7d492
-  Stored in directory: /tmp/pip-ephem-wheel-cache-euertba9/wheels/84/83/0f/0c00f3ff77179384fd9ce4dd787a8bef8a85d5ba9446e3fbf7
+  Created wheel for babalon-scaffold: filename=babalon_scaffold-0.1.0-py3-none-any.whl size=15856 sha256=e21e68c75c8df0cce9ff9df7b7ceeefb13a3376707021b7b0d2a0554c564c2e8
+  Stored in directory: /tmp/pip-ephem-wheel-cache-yucgd3z6/wheels/29/c4/96/90acd2de162b0167e8eb70dcfe2a56e442456269eb947b682d
 Successfully built babalon-scaffold

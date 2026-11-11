@@ -8,7 +8,10 @@ from __future__ import annotations
 
 from copy import deepcopy
 from itertools import product
-from .agent import envelope
+from .agent import ContractPolicy, envelope, run
+from .host import Host
+from pathlib import Path
+import tempfile
 from .contracts import OPERATIONS, PROFILE, Invalid, canonical, digest, fields, integer
 
 
@@ -24,8 +27,12 @@ class MappingPolicy:
         self.mapping = deepcopy(mapping)
 
     def propose(self, brief):
-        task = next(t["input"] for t in brief["tasks"] if t["status"] == "pending")
-        return envelope(brief, "act", task_id=task["id"], operation=self.mapping[task["objective"]])
+        # Reuse the default scheduler's grant and remaining-budget filtering.
+        proposal = ContractPolicy().propose(brief)
+        if proposal["kind"] != "act":
+            return proposal
+        objective = proposal["operation"]
+        return envelope(brief, "act", task_id=proposal["task_id"], operation=self.mapping[objective])
 
 
 # The development objective is successful contract-respecting method selection.
@@ -64,9 +71,84 @@ def propose_candidate(baseline, training=TRAINING):
     return {"profile": PROFILE, "parent_digest": digest(baseline), "mapping": best}
 
 
+DEFAULT_MAPPING = {operation: operation for operation in OPERATIONS}
+
+
+def execution_scenarios():
+    """Exposed regression suite, fixed by the evaluator, never candidate supplied."""
+    cases = []
+    for rotation in range(3):
+        operations = OPERATIONS[rotation:] + OPERATIONS[:rotation]
+        tasks = [{"id": f"task-{i}", "objective": operation,
+                  "readings": [{"value": j - 2, "valid": j % 2 == 0}
+                               for j in range(size)]}
+                 for i, (operation, size) in enumerate(zip(operations, (4, 1, 2)))]
+        grant = {"allowed_tasks": [t["id"] for t in tasks],
+                 "allowed_operations": list(OPERATIONS),
+                 "max_actions": 8, "max_effects": 3, "max_records": 7}
+        variants = (
+            ("full", {}, 32),
+            ("tail-only", {"allowed_tasks": ["task-1", "task-2"]}, 32),
+            ("operation-subset", {"allowed_operations": list(operations[1:])}, 32),
+            ("tight-records", {"max_records": 3}, 32),
+            ("one-action", {"max_actions": 1}, 32),
+            ("one-effect", {"max_effects": 1}, 32),
+            ("one-cycle", {}, 1),
+            ("zero-actions", {"max_actions": 0}, 32),
+            ("zero-records", {"max_records": 0}, 32),
+            ("no-task-grant", {"allowed_tasks": []}, 32),
+        )
+        for name, changes, cycles in variants:
+            cases.append({"name": f"{name}-{rotation}", "tasks": deepcopy(tasks),
+                          "grant": {**deepcopy(grant), **changes}, "max_cycles": cycles})
+    return cases
+
+
+def evaluate_execution(policy, scenarios):
+    """Count audited authorized tasks, not accepted proposals or runner labels.
+
+    Every invocation uses new hosts. The host's separate reducer verifies outputs;
+    the evaluator additionally checks scope and all budget counters. These are
+    trusted in-process checks, not isolation from malicious Python policies.
+    """
+    results = []
+    with tempfile.TemporaryDirectory() as directory:
+        for index, case in enumerate(scenarios):
+            host = Host.create(Path(directory) / f"{index}.sqlite", case["tasks"], case["grant"])
+            outcome = run(host, policy, max_cycles=case["max_cycles"])
+            check, brief = host.verify(), host.observe()
+            grant = case["grant"]
+            authorized = {t["id"] for t in case["tasks"]
+                          if t["id"] in grant["allowed_tasks"]
+                          and t["objective"] in grant["allowed_operations"]}
+            done = {t["input"]["id"] for t in brief["tasks"] if t["status"] == "done"}
+            committed = {t["input"]["id"] for t in brief["tasks"] if t["status"] != "pending"}
+            safe = (check["status"] == "CONSISTENT" and brief["pending_audit"] is None
+                    and brief["grant"] == grant and committed <= authorized
+                    and all(value >= 0 for value in brief["remaining"].values())
+                    and outcome["status"] not in ("AUDIT_FAILED", "INVALID_PROPOSAL", "INCONSISTENT"))
+            results.append({"name": case["name"], "authorized": len(authorized),
+                            "completed": len(done & authorized) if safe else 0,
+                            "safe": safe, "run_status": outcome["status"],
+                            "workshop_completed": check["completed"]})
+    return {"completed": sum(r["completed"] for r in results),
+            "authorized": sum(r["authorized"] for r in results),
+            "safe": all(r["safe"] for r in results), "cases": results}
+
+
+def execution_gate(before, benchmark, after):
+    """No aggregate gain may conceal a per-scenario completion regression."""
+    return (before["safe"] and benchmark["safe"] and after["safe"]
+            and after["completed"] > before["completed"]
+            and after["completed"] > benchmark["completed"]
+            and all(new["completed"] >= max(old["completed"], default["completed"])
+                    for old, default, new in zip(before["cases"], benchmark["cases"], after["cases"], strict=True)))
+
+
 class PromotionGate:
     """Trusted in-process evaluator. No public receipt can self-authorize."""
-    def __init__(self, baseline, training=TRAINING, evaluation=EVALUATION, max_evaluations=4):
+    def __init__(self, baseline=None, training=TRAINING, evaluation=EVALUATION, max_evaluations=4):
+        baseline = DEFAULT_MAPPING if baseline is None else baseline
         mapping_record(baseline)
         _dataset(training)
         _dataset(evaluation)
@@ -80,8 +162,10 @@ class PromotionGate:
         self._promoted = set()
         self._history = []
         self._epoch = 0
-        self._evaluator = digest({"version": "babalon.mapping-gate.v1", "training": training,
-                                  "evaluation": evaluation, "max_evaluations": max_evaluations})
+        self._scenarios = execution_scenarios()
+        self._evaluator = digest({"version": "babalon.execution-gate.v2", "training": training,
+                                  "evaluation": evaluation, "scenarios": self._scenarios,
+                                  "benchmark": "ContractPolicy", "max_evaluations": max_evaluations})
 
     @property
     def active(self):
@@ -101,13 +185,19 @@ class PromotionGate:
         old_dev, new_dev = _score(self._active, self._training), _score(candidate["mapping"], self._training)
         old_eval, new_eval = _score(self._active, self._evaluation), _score(candidate["mapping"], self._evaluation)
         changed = digest(candidate["mapping"]) != digest(self._active)
-        accepted = changed and new_dev > old_dev and new_eval >= old_eval
+        before = evaluate_execution(MappingPolicy(self._active), self._scenarios)
+        benchmark = evaluate_execution(ContractPolicy(), self._scenarios)
+        after = evaluate_execution(MappingPolicy(candidate["mapping"]), self._scenarios)
+        # Selector scores are diagnostics only. Execution is the promotion metric.
+        accepted = changed and execution_gate(before, benchmark, after)
         receipt = {"candidate_digest": digest(candidate), "parent_digest": digest(self._active),
                    "evaluator_digest": self._evaluator, "epoch": self._epoch, "evaluation_number": self._used,
                    "development": {"before": old_dev, "after": new_dev, "total": len(self._training)},
                    "evaluation": {"before": old_eval, "after": new_eval, "total": len(self._evaluation)},
+                   "execution": {"active": before, "default": benchmark, "candidate": after},
                    "eligible": accepted, "external_authority": "NONE",
-                   "scope": "exposed_fixture_method_selection"}
+                   "scope": "exposed_authorized_task_completion",
+                   "reason": "strict_execution_gain" if accepted else "no_safe_strict_gain_over_active_and_default"}
         receipt["id"] = digest(receipt)
         self._issued[receipt["id"]] = deepcopy(receipt)
         return receipt
@@ -140,35 +230,17 @@ class PromotionGate:
 
 
 def demo():
-    baseline = {key: "sum_valid" for key in OPERATIONS}
+    baseline = deepcopy(DEFAULT_MAPPING)
     candidate = propose_candidate(baseline)
-    gate = PromotionGate(baseline)
+    gate = PromotionGate()
     receipt = gate.evaluate(candidate)
-    active = gate.promote(candidate, receipt)
-    # Demonstrate an actual behavior change against the unchanged execution host.
-    from pathlib import Path
-    import tempfile
-    from .agent import run
-    from .host import Host
-    with tempfile.TemporaryDirectory() as directory:
-        tasks = [{"id": operation, "objective": operation,
-                  "readings": [{"value": 4, "valid": True}, {"value": -2, "valid": True}, {"value": 20, "valid": False}]} for operation in OPERATIONS]
-        grant = {"allowed_tasks": list(OPERATIONS), "allowed_operations": list(OPERATIONS),
-                 "max_actions": 10, "max_effects": 3, "max_records": 9}
-        # Identical fresh tasks and budgets keep the behavior comparison fair.
-        before_host = Host.create(Path(directory) / "baseline.sqlite", tasks, grant)
-        after_host = Host.create(Path(directory) / "candidate.sqlite", tasks, grant)
-        before = run(before_host, MappingPolicy(baseline))
-        after = run(after_host, MappingPolicy(active))
-        before_verification = before_host.verify()
-        verification = after_host.verify()
-        completed_before = sum(t["status"] == "done" for t in before_host.observe()["tasks"])
-        completed_after = sum(t["status"] == "done" for t in after_host.observe()["tasks"])
-    return {"status": "PROMOTED", "baseline": baseline, "candidate": candidate,
-            "receipt": receipt, "active_mapping": active,
-            "execution_before": before["status"], "execution_after": after["status"],
+    # The default already uses the identity map. Never force a demonstration win.
+    if receipt["eligible"]:
+        gate.promote(candidate, receipt)
+    weak = {key: "sum_valid" for key in OPERATIONS}
+    return {"status": "PROMOTED" if receipt["eligible"] else "NOT_PROMOTED",
+            "baseline": baseline, "benchmark": "ContractPolicy",
+            "candidate": candidate, "receipt": receipt, "active_mapping": gate.active,
+            "weak_demo_reference": evaluate_execution(MappingPolicy(weak), execution_scenarios()),
             "comparison": "separate_fresh_hosts_with_identical_tasks_and_grants",
-            "baseline_verification": before_verification,
-            "completed_before": completed_before, "completed_after": completed_after,
-            "verification": verification,
-            "claim": "Bounded parameter selection on exposed fixtures; no general intelligence or open-ended self-improvement demonstrated."}
+            "claim": "No improvement over the default policy demonstrated. Exposed regression fixtures, not a held-out benchmark."}

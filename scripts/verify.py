@@ -14,11 +14,13 @@ with tempfile.TemporaryDirectory() as directory:
     for arguments in (("demo", db), ("verify", db), ("run", db), ("improve-demo",)):
         result = subprocess.run([sys.executable, "-m", "babalon", *arguments], cwd=ROOT, env=env, check=True, capture_output=True, text=True)
         report = json.loads(result.stdout)
-        expected = {"demo": "COMPLETED", "verify": "CONSISTENT", "run": "COMPLETED", "improve-demo": "PROMOTED"}[arguments[0]]
+        expected = {"demo": "COMPLETED", "verify": "CONSISTENT", "run": "COMPLETED", "improve-demo": "NOT_PROMOTED"}[arguments[0]]
         if report["status"] != expected:
             raise RuntimeError(report)
         if arguments[0] == "verify" and not report["completed"]:
             raise RuntimeError("demo did not finish")
-        if arguments[0] == "improve-demo" and (report["completed_before"], report["completed_after"]) != (1, 3):
-            raise RuntimeError("unexpected improvement comparison")
+        if arguments[0] == "improve-demo":
+            scores = report["receipt"]["execution"]
+            if report["receipt"]["eligible"] or scores["default"] != scores["candidate"]:
+                raise RuntimeError("default parity must not be reported as improvement")
 print("PASS: tests and fresh-process demo, verify, restart, improvement")

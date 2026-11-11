@@ -103,6 +103,77 @@ class HostTests(unittest.TestCase):
         self.assertEqual(run(Host(self.path))['status'], 'COMPLETED')
         self.assertEqual(host.observe()['remaining']['effects'], 0)
 
+    def test_other_client_audits_before_runner(self):
+        host = self.host()
+        other = Host(self.path)
+        audit = host.audit
+        raced = []
+        def other_client_first():
+            raced.append(other.audit())
+            result = audit()
+            self.assertEqual(result['status'], 'NO_PENDING_EFFECT')
+            return result
+        # Exercise both intermediate and final effects, with exactly two cycles.
+        with patch.object(host, 'audit', side_effect=other_client_first):
+            report = run(host, max_cycles=2)
+        self.assertEqual(report['status'], 'COMPLETED')
+        self.assertEqual([r['status'] for r in raced], ['AUDITED', 'AUDITED'])
+        self.assertEqual(host.observe()['remaining']['effects'], 0)
+        self.assertTrue(host.verify()['completed'])
+
+    def test_other_client_audits_during_restart_recovery(self):
+        host = self.host()
+        host.submit(self.proposal(host))
+        other = Host(self.path)
+        audit = host.audit
+        def other_client_first():
+            self.assertEqual(other.audit()['status'], 'AUDITED')
+            return audit()
+        with patch.object(host, 'audit', side_effect=other_client_first):
+            report = run(host)
+        self.assertEqual(report['status'], 'COMPLETED')
+        self.assertTrue(host.verify()['completed'])
+
+    def test_no_pending_response_does_not_hide_unresolved_effect(self):
+        host = self.host()
+        with patch.object(host, 'audit', return_value={'status': 'NO_PENDING_EFFECT'}):
+            report = run(host)
+        self.assertEqual(report['status'], 'AUDIT_FAILED')
+        self.assertIsNotNone(host.observe()['pending_audit'])
+        self.assertEqual(host.observe()['tasks'][1]['status'], 'pending')
+
+    def test_concurrent_audit_does_not_hide_inconsistency(self):
+        host = self.host()
+        other = Host(self.path)
+        audit = host.audit
+        def audit_then_corrupt():
+            self.assertEqual(other.audit()['status'], 'AUDITED')
+            with sqlite3.connect(self.path) as db:
+                state = json.loads(db.execute('SELECT body FROM state').fetchone()[0])
+                state['tasks'][0]['output'] = 999
+                db.execute('UPDATE state SET body=?', (canonical(state),))
+            return audit()
+        with patch.object(host, 'audit', side_effect=audit_then_corrupt):
+            report = run(host)
+        self.assertEqual(report['status'], 'AUDIT_FAILED')
+        self.assertEqual(host.verify()['status'], 'INCONSISTENT')
+        self.assertEqual(host.observe()['tasks'][1]['status'], 'pending')
+
+    def test_runner_preserves_real_concurrent_audit_failure(self):
+        host = self.host()
+        other = Host(self.path)
+        audit = host.audit
+        def other_client_first():
+            self.assertEqual(other.audit()['status'], 'AUDIT_FAILED')
+            return audit()
+        with patch('babalon.host._tool', return_value=123), \
+             patch.object(host, 'audit', side_effect=other_client_first):
+            report = run(host)
+        self.assertEqual(report['status'], 'AUDIT_FAILED')
+        self.assertEqual(report['audit']['status'], 'AUDIT_FAILED')
+        self.assertIsNotNone(host.observe()['pending_audit'])
+        self.assertEqual(host.observe()['tasks'][1]['status'], 'pending')
+
     def test_audit_disagreement_preserves_effect(self):
         host = self.host()
         with patch('babalon.host._tool', return_value=123):
