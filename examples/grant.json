@@ -1,0 +1,1 @@
+{"allowed_tasks": ["daily-total", "sample-count"], "allowed_operations": ["sum_valid", "count_valid"], "max_actions": 8, "max_effects": 2, "max_records": 5}

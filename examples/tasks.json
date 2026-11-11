@@ -1,0 +1,8 @@
+[
+  {"id": "daily-total", "objective": "sum_valid", "readings": [
+    {"value": 10, "valid": true}, {"value": -3, "valid": true}, {"value": 99, "valid": false}
+  ]},
+  {"id": "sample-count", "objective": "count_valid", "readings": [
+    {"value": 0, "valid": true}, {"value": 4, "valid": false}
+  ]}
+]

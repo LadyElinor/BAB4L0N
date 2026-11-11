@@ -1,0 +1,52 @@
+test_action_budget_persists (test_host.HostTests.test_action_budget_persists) ... ok
+test_atomic_rollback (test_host.HostTests.test_atomic_rollback) ... ok
+test_audit_disagreement_preserves_effect (test_host.HostTests.test_audit_disagreement_preserves_effect) ... ok
+test_caller_mutation_does_not_change_host (test_host.HostTests.test_caller_mutation_does_not_change_host) ... ok
+test_closed_schema (test_host.HostTests.test_closed_schema) ... ok
+test_concurrent_same_intent (test_host.HostTests.test_concurrent_same_intent) ... ok
+test_conflicting_fresh_views_serialize (test_host.HostTests.test_conflicting_fresh_views_serialize) ... ok
+test_consistency_detects_tamper (test_host.HostTests.test_consistency_detects_tamper) ... ok
+test_cycle_limit (test_host.HostTests.test_cycle_limit) ... ok
+test_effect_budget (test_host.HostTests.test_effect_budget) ... ok
+test_end_to_end (test_host.HostTests.test_end_to_end) ... ok
+test_exact_replay_and_conflict (test_host.HostTests.test_exact_replay_and_conflict) ... ok
+test_grant_aware_policy (test_host.HostTests.test_grant_aware_policy) ... ok
+test_host_conflict_becomes_invalid_proposal (test_host.HostTests.test_host_conflict_becomes_invalid_proposal) ... ok
+test_initialization_failure_can_retry (test_host.HostTests.test_initialization_failure_can_retry) ... ok
+test_invalid_policy_response_stops (test_host.HostTests.test_invalid_policy_response_stops) ... ok
+test_memory_is_non_authorizing (test_host.HostTests.test_memory_is_non_authorizing) ... ok
+test_no_grant (test_host.HostTests.test_no_grant) ... ok
+test_no_overwrite (test_host.HostTests.test_no_overwrite) ... ok
+test_operation_scope (test_host.HostTests.test_operation_scope) ... ok
+test_parser_duplicates_nan_and_size (test_host.HostTests.test_parser_duplicates_nan_and_size) ... ok
+test_pending_audit (test_host.HostTests.test_pending_audit) ... ok
+test_record_budget (test_host.HostTests.test_record_budget) ... ok
+test_reject_boolean_integer (test_host.HostTests.test_reject_boolean_integer) ... ok
+test_reopen_recovers_unaudited_effect (test_host.HostTests.test_reopen_recovers_unaudited_effect) ... ok
+test_stale_and_wrong_instance (test_host.HostTests.test_stale_and_wrong_instance) ... ok
+test_stop_after_final_effect_precedes_completion (test_host.HostTests.test_stop_after_final_effect_precedes_completion) ... ok
+test_stop_during_final_cycle_precedes_completion (test_host.HostTests.test_stop_during_final_cycle_precedes_completion) ... ok
+test_stop_precedes_effect (test_host.HostTests.test_stop_precedes_effect) ... ok
+test_stop_survives_restart_and_audit (test_host.HostTests.test_stop_survives_restart_and_audit) ... ok
+test_task_contract (test_host.HostTests.test_task_contract) ... ok
+test_wait_and_decline (test_host.HostTests.test_wait_and_decline) ... ok
+test_behavior_comparison_uses_fresh_hosts (test_improvement.ImprovementTests.test_behavior_comparison_uses_fresh_hosts) ... ok
+test_better_dev_worse_evaluation_rejected (test_improvement.ImprovementTests.test_better_dev_worse_evaluation_rejected) ... ok
+test_budget (test_improvement.ImprovementTests.test_budget) ... ok
+test_caller_cannot_mutate_active (test_improvement.ImprovementTests.test_caller_cannot_mutate_active) ... ok
+test_changed_candidate_rejected (test_improvement.ImprovementTests.test_changed_candidate_rejected) ... ok
+test_fabricated_and_tampered_receipts (test_improvement.ImprovementTests.test_fabricated_and_tampered_receipts) ... ok
+test_improves_real_host_behavior (test_improvement.ImprovementTests.test_improves_real_host_behavior) ... ok
+test_nonfinite_not_an_input_score (test_improvement.ImprovementTests.test_nonfinite_not_an_input_score) ... ok
+test_protected_fields (test_improvement.ImprovementTests.test_protected_fields) ... ok
+test_replay_rejected (test_improvement.ImprovementTests.test_replay_rejected) ... ok
+test_rollback_and_epoch (test_improvement.ImprovementTests.test_rollback_and_epoch) ... ok
+test_stale_candidate_and_receipt (test_improvement.ImprovementTests.test_stale_candidate_and_receipt) ... ok
+test_unchanged_rejected (test_improvement.ImprovementTests.test_unchanged_rejected) ... ok
+test_unsupported_map (test_improvement.ImprovementTests.test_unsupported_map) ... ok
+
+----------------------------------------------------------------------
+Ran 46 tests in 0.083s
+
+OK
+PASS: tests and fresh-process demo, verify, restart, improvement

@@ -1,0 +1,65 @@
+{
+  "active_mapping": {
+    "count_valid": "count_valid",
+    "max_valid": "max_valid",
+    "sum_valid": "sum_valid"
+  },
+  "baseline": {
+    "count_valid": "sum_valid",
+    "max_valid": "sum_valid",
+    "sum_valid": "sum_valid"
+  },
+  "baseline_verification": {
+    "assurance": "local_consistency_only_not_authentication",
+    "completed": false,
+    "errors": [],
+    "events": 4,
+    "external_authority": "NONE",
+    "status": "CONSISTENT"
+  },
+  "candidate": {
+    "mapping": {
+      "count_valid": "count_valid",
+      "max_valid": "max_valid",
+      "sum_valid": "sum_valid"
+    },
+    "parent_digest": "5599dc93cfc189565ca641322f0fefe5ea3527250f4b9a330e8102a767240c09",
+    "profile": "babalon.local.v1"
+  },
+  "claim": "Bounded parameter selection on exposed fixtures; no general intelligence or open-ended self-improvement demonstrated.",
+  "comparison": "separate_fresh_hosts_with_identical_tasks_and_grants",
+  "completed_after": 3,
+  "completed_before": 1,
+  "execution_after": "COMPLETED",
+  "execution_before": "REFUSED",
+  "receipt": {
+    "candidate_digest": "da2d9915690ac6c71cfa431ea822ffe780ea6949e7060e75d256601e16d903ef",
+    "development": {
+      "after": 3,
+      "before": 1,
+      "total": 3
+    },
+    "eligible": true,
+    "epoch": 0,
+    "evaluation": {
+      "after": 4,
+      "before": 1,
+      "total": 4
+    },
+    "evaluation_number": 1,
+    "evaluator_digest": "6b9edf808ce4d646accff8b9517af18d496b30ea3a7caea59212c513cbf4e523",
+    "external_authority": "NONE",
+    "id": "e42e2fb48b24882b858d266ae597c48a9dc076137187775d33e87b711e52c95b",
+    "parent_digest": "5599dc93cfc189565ca641322f0fefe5ea3527250f4b9a330e8102a767240c09",
+    "scope": "exposed_fixture_method_selection"
+  },
+  "status": "PROMOTED",
+  "verification": {
+    "assurance": "local_consistency_only_not_authentication",
+    "completed": true,
+    "errors": [],
+    "events": 7,
+    "external_authority": "NONE",
+    "status": "CONSISTENT"
+  }
+}
