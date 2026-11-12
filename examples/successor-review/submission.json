@@ -1,0 +1,16 @@
+{
+  "source": "https://github.com/elder-plinius/V3R1T4S/tree/fb5164403fc71afeadc3d6d0dd0db44131665a8f/known-knowns/bigger-codes/2026-10-14-freelsgood-9e824e9f",
+  "parameters": [
+    27,
+    6,
+    10
+  ],
+  "contributor": "Ryan Freel",
+  "handle": "Freelsgood",
+  "witness_sha256": "9e824e9f8a92e74226231152fc8e8a972be5ba79549e2a10e512fe63a3934f49",
+  "claimed_size": 13026,
+  "historical_note": {
+    "date": "2026-10-15",
+    "table_lower_bound_reported_by_maintainer": 13026
+  }
+}

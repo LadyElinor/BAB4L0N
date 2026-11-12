@@ -31,6 +31,9 @@ def main(argv=None):
     checker.add_argument("summary")
     checker.add_argument("--events", help="local protocol-2 export")
     checker.add_argument("--allow", nargs="*", choices=VIEWS, required=True)
+    successor = sub.add_parser("successor-review", help="verify a construction and update its dated standing")
+    successor.add_argument("directory", help="directory containing the frozen evidence files")
+    successor.add_argument("--candidate", help="JSON answer to grade on three independent fields")
     evidence = sub.add_parser("evidence", help="operate a durable local evidence session")
     actions = evidence.add_subparsers(dest="action", required=True)
     for action in ("init", "observe", "inspect", "revoke", "operator-receipt"):
@@ -61,6 +64,9 @@ def main(argv=None):
     try:
         if args.command == "init":
             result = Host.create(args.database, read(args.tasks), read(args.grant)).observe()
+        elif args.command == "successor-review":
+            from .successor import review
+            result = review(args.directory, read(args.candidate)) if args.candidate else review(args.directory)
         elif args.command == "recount":
             from .recount import recount
             result = recount(args.summary, args.events, args.allow)

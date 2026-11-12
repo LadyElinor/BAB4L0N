@@ -16,3 +16,12 @@ notice is reproduced in `tests/fixtures/commonwealth/LICENSE`.
 The neighbouring `demo-events.json` fixture was reproduced with that same
 upstream revision's `scripts/reproduce.py` and is distributed with the same
 MIT notice. Its terminal envelope hash matches the published replay receipt.
+
+The compressed constant-weight word list in `examples/successor-review` reproduces
+Ryan Freel's (Freelsgood's) submitted witness as published by V3R1T4S. The
+decompressed bytes are unchanged. The submission credits the user-supplied Gemini
+candidate archive and documents the Brouwer table comparison. The dated submission
+metadata is a new factual extract. See the [original submission and credits](https://github.com/elder-plinius/V3R1T4S/tree/fb5164403fc71afeadc3d6d0dd0db44131665a8f/known-knowns/bigger-codes/2026-10-14-freelsgood-9e824e9f),
+[V3R1T4S data licensing and upstream attributions](https://github.com/elder-plinius/V3R1T4S/blob/fb5164403fc71afeadc3d6d0dd0db44131665a8f/LICENSING.md)
+and [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The table
+observation transcribes a single dated cell from [A. E. Brouwer's table](https://aeb.win.tue.nl/codes/Andw.html).
