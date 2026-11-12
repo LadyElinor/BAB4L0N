@@ -159,3 +159,34 @@ Freeze new cases and assign independent custody and grading before comparing a m
 defines the checkpoints for evidence access, evaluation and durable promotion.
 
 No repository push, remote publication or deployment is part of this bundle.
+
+## Review a superseded coding-theory result
+
+From the checkout, run the frozen case offline:
+
+```sh
+python -m babalon successor-review examples/successor-review
+python -m babalon successor-review examples/successor-review --candidate examples/successor-review/stale-answer.json
+```
+
+The first command generates a reference answer from three pinned evidence files.
+The second grades an answer with the same three sections as `reference_answer`.
+The included stale answer passes construction and credit and fails standing.
+Each section receives its own grade. The construction grade compares the claimed
+bound and witness identity with a host-computed verification; it does not measure
+what work the submitter performed. The standing grade checks the reported
+table lower bound, observation digest and retrieval date. The credit grade binds
+the submitted name and handle to the original witness. Missing answer sections
+fail individually. Missing or changed evidence makes the affected grade
+unavailable. Exit 0 means complete, 2 indicates a disagreement or invalid
+candidate, and 3 means the evidence is incomplete without an observed disagreement.
+
+The October 15 submission note records 13,026. The November 12 table extract
+records 13,338 for the same parameters with table credit Dz. Its metadata includes
+the original HTML cell and the SHA-256 of the retrieved page. The checker verifies
+the original 13,026-word construction offline: two distinct weight-ten words
+closer than distance six would share at least eight one-positions. Checking
+that no two words share an eight-position subset proves the distance bound in
+586,170 subset visits. The later figure is attributed to the dated table.
+The exposed case measures structured answers on a single historical revision.
+[Source attribution](NOTICE.md)

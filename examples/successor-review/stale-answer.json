@@ -1,0 +1,18 @@
+{
+  "construction": {
+    "lower_bound": 13026,
+    "minimum_distance_at_least": 6,
+    "witness_sha256": "9e824e9f8a92e74226231152fc8e8a972be5ba79549e2a10e512fe63a3934f49"
+  },
+  "credit": {
+    "contributor": "Ryan Freel",
+    "handle": "Freelsgood",
+    "witness_sha256": "9e824e9f8a92e74226231152fc8e8a972be5ba79549e2a10e512fe63a3934f49"
+  },
+  "standing": {
+    "as_of": "2026-11-12",
+    "basis": "reported_table_entry",
+    "observation_sha256": "1c61ca1352319cfa282dd0dc870f23e547075b03b523e5998d10b7814510ea3c",
+    "table_lower_bound": 13026
+  }
+}
