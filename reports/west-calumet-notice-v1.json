@@ -1,0 +1,105 @@
+{
+  "profile": "west-calumet-notice-v1",
+  "question": "By July 6, 2016, what evidence showed that West Calumet residents had received the soil-test results for their own homes?",
+  "budget_per_arm_per_pass": 4,
+  "case_freeze": "67a6894e5c7fe23101c39cb7922b290a21030d2c",
+  "passes": {
+    "contemporaneous": {
+      "files": 2,
+      "candidate_passages": 5,
+      "collection_digest": "ee6eae8c5e7a1ceb15c3a3e22ab430e435cbec012bc70f49f8b7419f14ad64d8",
+      "arms": {
+        "babalon": {
+          "inspections": [
+            "release.txt#L1",
+            "release.txt#L2"
+          ],
+          "credits": 2,
+          "hits": [
+            "general door-to-door outreach"
+          ],
+          "misses": [
+            "planned owner communication"
+          ]
+        },
+        "keyword": {
+          "inspections": [
+            "release.txt#L1",
+            "release.txt#L2",
+            "planning.txt#L1",
+            "release.txt#L3"
+          ],
+          "credits": 4,
+          "hits": [
+            "general door-to-door outreach"
+          ],
+          "misses": [
+            "planned owner communication"
+          ]
+        }
+      },
+      "worker_sources": {
+        "source": [
+          "release.txt#L1",
+          "release.txt#L2"
+        ],
+        "challenge": [],
+        "assumptions": [],
+        "affected": []
+      }
+    },
+    "expanded": {
+      "files": 10,
+      "candidate_passages": 18,
+      "collection_digest": "24fe05ec673e77a906e0beb5114d7ec73398dbc1456cc3efb18938ea7d91d569",
+      "arms": {
+        "babalon": {
+          "inspections": [
+            "order.txt#L1",
+            "city.txt#L1",
+            "city.txt#L1",
+            "comment.txt#L1"
+          ],
+          "credits": 4,
+          "hits": [
+            "reported early-June dispatch",
+            "firsthand receipt of a different letter"
+          ],
+          "misses": [
+            "July 5 preventive flyer",
+            "dated individual results letter"
+          ]
+        },
+        "keyword": {
+          "inspections": [
+            "order.txt#L1",
+            "city.txt#L1",
+            "city.txt#L3",
+            "order169.txt#L1"
+          ],
+          "credits": 4,
+          "hits": [
+            "reported early-June dispatch"
+          ],
+          "misses": [
+            "July 5 preventive flyer",
+            "dated individual results letter",
+            "firsthand receipt of a different letter"
+          ]
+        }
+      },
+      "worker_sources": {
+        "source": [
+          "order.txt#L1",
+          "city.txt#L1"
+        ],
+        "challenge": [],
+        "assumptions": [],
+        "affected": [
+          "city.txt#L1",
+          "comment.txt#L1"
+        ]
+      }
+    }
+  }
+}
