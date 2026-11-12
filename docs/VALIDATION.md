@@ -123,3 +123,13 @@ passed on Python 3.12.14 with the optional last-credit dependency installed.
 Across four exposed packets, per-bearer burden counts matched the pinned
 Commonwealth reducer at `00870ca`, including optional, zero and unknown costs.
 The cases exercise record keeping. Affected people have yet to evaluate it.
+
+## 2026-11-12 — Questions in an owed-remedy review
+
+All 117 tests and fresh-process demos passed locally on Python 3.12.14 with
+the optional last-credit dependency installed. Five new tests cover how the
+question changes with evidence, the handling of unclassified accounts, invited
+conversation, office responsibility and malformed source files. On the pinned
+case, adding the 100-unit receiving register removed the delivery question and
+retained the open finding. No prompt was addressed to the person who declined
+further contact. This tests question selection on exposed scenarios.

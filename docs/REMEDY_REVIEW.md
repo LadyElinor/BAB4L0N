@@ -65,6 +65,60 @@ optional visit can take five units of someone's time. A required visit costing
 zero recorded units can still be an imposed condition. An empty work list
 supports only a count of recorded entries. Unrecorded burdens may remain.
 
+## Asking the next question
+
+Use `--questions records` to draft questions for the responsible offices.
+Each question identifies its owner, the record IDs that prompted it and the
+decision its answer could inform.
+
+```sh
+d=tests/fixtures/commonwealth
+python -m babalon remedy-review "$d/owed-assistance.json" --as-of 6 --questions records
+python -m babalon remedy-review "$d/owed-assistance.json" --as-of 6 --questions records --register "$d/receiving-register.json"
+```
+
+Without the register, the paying office is asked what the receiving records
+show. A register supporting exactly 100 units resolves that question. The
+review office still has a question about the file marked for correction. An
+empty register establishes a zero recorded balance and changes the question
+to reconciling the difference. A volunteered narrative adds a question for
+the reviewer of the existing account. The guide never reads the narrative.
+
+`--questions invited` means the operator reports that the person has invited
+questions in the current conversation. When the packet also records accepted
+further contact and contains no mandatory work assigned to the person, the
+guide drafts one optional invitation for the person to name a question of
+their own. Declined or unanswered contact suppresses that prompt. Merely
+volunteering an account does not invite further questions. Neither mode sends
+a message, records an answer, changes the award or changes the review status.
+The operator's report of an invitation is unverified.
+
+### Where the question design comes from
+
+- J. G. Fitch's teaching lecture warns that a questioner can reject a valid
+  answer simply because it differs from the one they expected. He also invites
+  learners to put their own questions to the teacher. These observations on
+  wording and participation apply to a review even when the answer is unknown
+  to everyone. See printed pp. 102, 112–113 and 138. [The Art of Questioning, ninth edition](https://archive.org/details/artofquestioning00fitcrich)
+- Joseph Buckley's 2022 article and the supplied October 2025 Reid publication
+  recommend an open account and checking it against case evidence. The latter
+  discusses contamination when an interviewer supplies the very detail later
+  taken as corroboration (pp. 8–10). In a remedy review a second file repeating
+  the first file's account still has the same source. [Reid principles of practice](https://reid.com/resources/investigator-tips/principles-of-practice-how-to-conduct-proper-investigative-interviews-and-interrogations)
+- Michael Bret Hood and Lawrence J. Hoffman describe the information-gathering
+  aim of PEACE and the risks of bias and pressure in accusatory questioning.
+  Our design uses neutral drafts about evidence. It assigns no credibility
+  scores from demeanor, silence or wording. [FBI Law Enforcement Bulletin, 2019](https://leb.fbi.gov/articles/featured-articles/current-state-of-interview-and-interrogation)
+
+In an invited conversation, a human might first ask what the person wants the
+office to understand, listen, and offer the person a chance to correct the
+reviewer's reading. A reviewer weighing a disputed factual claim can ask
+which observation would change their own view. The operator should also ask
+what can proceed if that question remains unanswered. These are practices to
+evaluate with willing participants. Running a template checks which prompts
+are drafted and who bears the work. Their usefulness to a particular person
+remains an open question.
+
 ## Evidence and scope
 
 The trusted, read-only operator supplies local bounded JSON snapshots. The command

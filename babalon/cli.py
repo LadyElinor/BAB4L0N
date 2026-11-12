@@ -49,6 +49,8 @@ def main(argv=None):
     remedy.add_argument("case", help="local Commonwealth owed-assistance-1 packet")
     remedy.add_argument("--register", help="separate receiving-side snapshot")
     remedy.add_argument("--account", help="optional local record of what the person chose to share")
+    remedy.add_argument("--questions", choices=("records", "invited"),
+                        help="draft office questions; invited means the person has invited questions in this conversation")
     remedy.add_argument("--as-of", type=int, required=True, help="inclusive review tick")
     study = sub.add_parser("last-credit", help="draw or run the paired evidence inspection trial")
     phases = study.add_subparsers(dest="phase", required=True)
@@ -104,6 +106,9 @@ def main(argv=None):
                     result[section]["source_error"] = problem
                 if problem == "malformed":
                     result["status"] = "DISAGREEMENT"
+            if args.questions:
+                from .remedy_questions import question_guide
+                result["question_guide"] = question_guide(result, args.questions)
         elif args.command == "recount":
             from .recount import recount
             result = recount(args.summary, args.events, args.allow)
