@@ -100,3 +100,52 @@ altered final envelope and broken link failed the journal check. Six new
 regression tests brought the full suite to 79. All tests and subprocess demos
 passed locally on Python 3.12.14 and 3.13.5. The checker imports no Commonwealth
 runtime and makes no model calls. All cases are exposed.
+
+## 2026-11-12 — Owed remedy and a continuing objection
+
+All 107 tests and the fresh-process demos passed on Python 3.12.14 with the
+optional last-credit dependency installed. Ten tests cover the remedy profile.
+The upstream case supplied alone left all 100 units unverified. A separate
+synthetic receiving register supported 100 units of net credit. An optional
+report of unusability produced a disagreement while preserving the credit,
+the person's choices, the rule inquiry and the correction reported for other-8.
+Changing the participation choices affected neither the award nor the warning.
+These exposed test records share custody. No real recipient was contacted.
+
+## 2026-11-12 — Voluntary accounts outside the original vocabulary
+
+The three CLI cases used identical inputs except for the voluntary account.
+The no-account case kept the personal outcome unknown. The late-credit and
+freedom-to-leave accounts each produced a distinct resolvable reference and
+the same unclassified status. All three reported a 100-unit credit, an open
+rule inquiry and no external actions. All 112 tests and the fresh-process demos
+passed on Python 3.12.14 with the optional last-credit dependency installed.
+Across four exposed packets, per-bearer burden counts matched the pinned
+Commonwealth reducer at `00870ca`, including optional, zero and unknown costs.
+The cases exercise record keeping. Affected people have yet to evaluate it.
+
+## 2026-11-12 — Questions in an owed-remedy review
+
+All 117 tests and fresh-process demos passed locally on Python 3.12.14 with
+the optional last-credit dependency installed. Five new tests cover how the
+question changes with evidence, the handling of unclassified accounts, invited
+conversation, office responsibility and malformed source files. On the pinned
+case, adding the 100-unit receiving register removed the delivery question and
+retained the open finding. No prompt was addressed to the person who declined
+further contact. This tests question selection on exposed scenarios.
+
+## 2026-11-12 — Uncertainty in remedy evidence
+
+The v3 reviewer exposes the two-office case from the assessment. At the same
+tick it retains both findings, returns DISAGREEMENT and cites both records in
+its reconciliation question. With the original report moved one tick earlier,
+it returns PARTIAL and asks what changed. The awarded credit, objection and
+contact preference survive both runs.
+
+Seven new regression tests include 36 combinations of findings, dates and
+controller labels, each presented in both orders. They also check missing and
+unmatched inventories, inconclusive findings, repeated claims, bounded costs
+and the archived v2 question interface. These synthetic combinations check
+classification and handoff behavior. They do not estimate how often a source
+is right. All 124 tests and fresh-process demos passed on Python 3.12.14 with
+the optional last-credit dependency installed.

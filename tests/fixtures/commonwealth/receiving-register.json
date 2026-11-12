@@ -1,0 +1,11 @@
+{
+  "profile": "babalon.receiving-register.v1",
+  "controller": "settlement-register",
+  "case": "case-17",
+  "award": "award-17",
+  "recipient": "person-17",
+  "as_of": 6,
+  "postings": [
+    {"record": "account-credit-17", "at": 5, "kind": "credit", "transfer": "transfer-17", "units": 100}
+  ]
+}
