@@ -27,6 +27,19 @@ def main(argv=None):
     reader.add_argument("summary")
     reader.add_argument("--allow", nargs="*", choices=VIEWS, required=True)
     reader.add_argument("--max-inspections", type=int, required=True)
+    evidence = sub.add_parser("evidence", help="operate a durable local evidence session")
+    actions = evidence.add_subparsers(dest="action", required=True)
+    for action in ("init", "observe", "inspect", "revoke", "operator-receipt"):
+        command = actions.add_parser(action)
+        command.add_argument("database")
+        if action == "init":
+            command.add_argument("summary")
+            command.add_argument("--allow", nargs="*", choices=VIEWS, required=True)
+            command.add_argument("--max-inspections", type=int, required=True)
+        if action in ("inspect", "operator-receipt"):
+            command.add_argument("request_id")
+        if action == "inspect":
+            command.add_argument("view")
     for name in ("observe", "audit", "verify", "run", "submit", "stop", "note"):
         command = sub.add_parser(name)
         command.add_argument("database")
@@ -44,6 +57,20 @@ def main(argv=None):
     try:
         if args.command == "init":
             result = Host.create(args.database, read(args.tasks), read(args.grant)).observe()
+        elif args.command == "evidence":
+            from .evidence_session import EvidenceSession
+            session = EvidenceSession(args.database)
+            if args.action == "init":
+                session = EvidenceSession.create(args.database, args.summary, args.allow, args.max_inspections)
+                result = session.observe()
+            elif args.action == "observe":
+                result = session.observe()
+            elif args.action == "inspect":
+                result = session.inspect(args.request_id, args.view)
+            elif args.action == "revoke":
+                result = session.revoke()
+            else:
+                result = session.operator_receipt(args.request_id)
         elif args.command == "handoff":
             result = handoff(args.summary, args.allow, args.max_inspections)
         elif args.command == "improve-demo":
@@ -69,7 +96,7 @@ def main(argv=None):
         print(json.dumps(result, indent=2, sort_keys=True, allow_nan=False))
         status = result.get("status", result.get("disposition"))
         if status in ("INCONSISTENT", "AUDIT_FAILED", "INVALID_PROPOSAL"): return 2
-        if status in ("PARTIAL", "REFUSED", "STOPPED", "WAITING", "DECLINED", "CYCLE_LIMIT", "BUDGET_EXHAUSTED"): return 3
+        if status in ("PARTIAL", "UNAVAILABLE", "REFUSED", "STOPPED", "WAITING", "DECLINED", "CYCLE_LIMIT", "BUDGET_EXHAUSTED"): return 3
         return 0
     except (Invalid, OSError, sqlite3.Error, ValueError, KeyError, TypeError) as exc:
         print(json.dumps({"status": "ERROR", "reason": str(exc)}), file=sys.stderr)

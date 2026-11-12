@@ -19,14 +19,32 @@ python -m babalon handoff examples/handoff-summary.json --allow timing --max-ins
 
 The first command returns 0 for a complete handoff. The second returns 3 with a partial handoff. Exit 2 indicates invalid input or an unreadable file. The summary JSON must be at most one MiB. A valid JSON object with missing or incompatible evidence fields yields a partial report. The operator can give an empty grant with `--allow --max-inspections 0`.
 
-For the historical case, use a local copy of [the pinned upstream summary](https://github.com/LadyElinor/unfinished-commonwealth/blob/ae5037b0dcf1e51a6f30614996ffcd0bbb01f584/examples/demo-summary.json) as the positional argument. Babalon recognizes its exact SHA-256 as `2481fcd7c0ae84784c97d9e02d49c2992549c79747347a86d833ec27090ba8c1`. Other bytes are labeled operator supplied. The pinned acceptance values are five completions, four on-time arrivals, one deadline miss, disputed lesson-14, open counterstory-16 and fresh observation required. Both datasets are exposed.
+For the historical case, use the bundled byte-for-byte copy at `tests/fixtures/commonwealth/demo-summary.json` of [the pinned upstream summary](https://github.com/LadyElinor/unfinished-commonwealth/blob/ae5037b0dcf1e51a6f30614996ffcd0bbb01f584/examples/demo-summary.json) as the positional argument. Babalon recognizes its exact SHA-256 as `2481fcd7c0ae84784c97d9e02d49c2992549c79747347a86d833ec27090ba8c1`. Other bytes are labeled operator supplied. The pinned acceptance values are five completions, four on-time arrivals, one deadline miss, disputed lesson-14, open counterstory-16 and fresh observation required. Both datasets are exposed.
+
+## Durable evidence session
+
+`babalon evidence init` freezes the source bytes, their SHA-256, the projection version, a random session identity, the allowed views and the credit cap in one operator-owned SQLite file. Deleting or replacing the input file has no effect on that snapshot. Each database serves one logical policy audience. Start a different session for a different audience.
+
+| Operation | Result |
+| --- | --- |
+| First permitted inspection of a view | Costs one credit, including an unavailable result. The database transaction records the view result and request receipt before any evidence is returned. |
+| Exact retry while active | Returns the original receipt and content. The historical charge shown on that receipt is incurred once. |
+| Same view under a new request ID | Returns a separately bound receipt with zero new charge while the grant is active. |
+| Same request ID with a changed view | Returns a conflict and preserves the original decision. |
+| Out-of-grant or exhausted request | Records a refusal with zero charge. |
+| Revocation | Terminal. New policy reads and replays return a refusal with the receipt ID and original decision status. The response omits the evidence, source reference and view. |
+| Operator historical lookup | A trusted database owner can retrieve the original receipt and its contents by request ID, including after revocation. |
+
+Reads that decide disclosure and revocation both use SQLite write transactions. Their commit order governs access. A read admitted first can finish delivery after revocation, and revocation cannot recall an earlier copy. If revocation commits first, the reader withholds the payload. The revocation record retains the number of original request decisions committed at that boundary. Exact retries are idempotent and do not add request rows.
+
+Each receipt binds the session, request, view, projection version, charge and disposition. For an inspection it also binds the result, which identifies the source byte hash and JSON section. Receipts are local unsigned digests. The CLI and Python process are trusted operator interfaces. Authentication of separate users, OS isolation, durable storage under power loss, and a transport delivery acknowledgement are outside this profile. The inspection cap bounds first view inspections; distinct request IDs can grow the local decision log.
 
 ## Milestones and decision points
 
 | Milestone | Deliverable | How to decide whether to proceed |
 | --- | --- | --- |
 | 1. Scoped baseline (implemented) | Offline handoff CLI, two field projections, bounded reads, distinct partial outcomes, per-run receipts and regression cases. | Verify the pinned handoff and the synthetic example. With timing alone, advice is withheld. With one credit and both grants, the first view consumes the budget. Legacy verification still passes. |
-| 2. Durable evidence session | Introduce a separately versioned evidence-session profile in SQLite. Persist the grant, source identity, view, request identity, denial or disclosure, charges and stop state. Keep policy briefs separate from full operator observations. | The last permitted read retried after restart returns its original receipt without a second charge. Concurrent reads cannot overspend. Changed requests with the same identity conflict. Revocation blocks new reads. Legacy arithmetic databases still pass their verifier. |
+| 2. Durable evidence session (implemented) | Use a separately versioned evidence-session profile in SQLite. Persist the grant, source identity, view, request identity, denial or disclosure, charges and stop state. Keep policy briefs separate from full operator observations. | The last permitted read retried after restart returns its original receipt without a second charge. Concurrent reads cannot overspend. Changed requests with the same identity conflict. Revocation blocks new reads. Legacy arithmetic databases still pass their verifier. |
 | 3. Independent evidence check | Add an event-export adapter and a separately implemented checker for the handoff's claims. Freeze paired full, restricted, missing and contradictory cases with equivalent budgets. Assign custody of new held-out material before comparing policies. | A summary-only answer is accepted at summary-level assurance. A claim of independent recount requires the relevant events. Contradictory records remain visible. A replay receipt alone cannot settle a missing event claim. |
 | 4. Isolated proposal worker | Put one local model or other interchangeable proposer behind a bounded JSON interface. Keep the database and source files outside its accessible environment. Charge attempts, inspections, time and model cost separately. | On the same tasks and budgets, compare accurate evidence-supported handoffs, requested excess access, actual disclosure, valid abstentions and costs. Include a skip-all control. Report per-case outcomes alongside totals. |
 | 5. Durable promotion | Persist the policy lineage, benchmark revision, evaluator, trial count, receipts and rollback transaction. Preserve a frozen baseline and declared acceptance criteria before opening a held-out evaluation. | Restart preserves the active policy and spent trials. A fabricated or replayed promotion fails. Promotion requires better useful outcomes than both current and baseline under the declared regression and cost limits. Parity keeps the current policy. |
@@ -41,4 +59,4 @@ Use a Lunar Weevil or Marscraft simulation report as a second domain once the fi
 
 ## Current limits
 
-Receipts are unsigned content digests. Each CLI invocation starts a new budget. The implementation uses trusted in-process code, reads operator-supplied files and accepts no model plugins. It demonstrates field selection and accounting for this profile. Process isolation, persistent read budgets, independent event verification, held-out comparison and durable promotion are subsequent milestones.
+The one-shot handoff command starts a new budget per invocation. The evidence-session commands retain their budget and source snapshot across invocations. Both profiles attribute claims to a summary. Independent event verification, isolated model execution, held-out comparison and durable policy promotion remain subsequent milestones.

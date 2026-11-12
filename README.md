@@ -55,6 +55,22 @@ code 3 and identifies the missing evidence or access limit. The inspection budge
 lasts for one invocation. The [integration plan](docs/INTEGRATION_PLAN.md) includes
 the pinned upstream case, expected results and acceptance tests for the next stages.
 
+For restart-safe inspection, initialize a durable session once and reuse its
+database and request IDs:
+
+```sh
+python -m babalon evidence init session.sqlite tests/fixtures/commonwealth/demo-summary.json --allow timing advice --max-inspections 1
+python -m babalon evidence inspect session.sqlite read-1 timing
+python -m babalon evidence revoke session.sqlite
+python -m babalon evidence inspect session.sqlite read-1 timing
+python -m babalon evidence operator-receipt session.sqlite read-1
+```
+
+The post-revocation inspection returns exit 3 and receipt metadata. The final
+operator command retrieves the original evidence. The local operator controls the
+database and CLI. Give a future isolated policy access only to the observation
+and inspection interfaces. See the [session contract](docs/INTEGRATION_PLAN.md#durable-evidence-session).
+
 ## Use your own bounded task inputs
 
 ```sh
@@ -121,15 +137,14 @@ Python policy in this process. To connect a model later, pass it only the bounde
 observation and accept only proposal JSON; host checks must remain outside the
 model. Notes and evaluation scores cannot enlarge grants.
 
-The only effects are local SQLite task results. There is no shell, network,
+The host writes task results and evidence-session records to local SQLite databases. There is no shell, network,
 browser, messaging, credentials, deployment or real-world execution adapter.
 Hash chains detect certain inconsistent edits, not an owner rewriting the whole
 database. Runtime budgets do not cap arbitrary policy computation.
 
 ## Next useful milestone
 
-Persist the Commonwealth reader's grants, inspection charges and receipts across
-restart. Then compare attributed summaries with independently checked event
+Compare attributed summaries with independently checked event
 exports before adding a model. The [integration plan](docs/INTEGRATION_PLAN.md)
 defines the checkpoints for evidence access, evaluation and durable promotion.
 

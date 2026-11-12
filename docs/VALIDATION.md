@@ -56,3 +56,29 @@ winning-candidate evidence.
 Packaging reruns checks and generates SHA256SUMS. The delivered source archive is
 also extracted, its manifest checked and the aggregate check rerun before delivery.
 See `CLAIMS_AND_LIMITS.md` for the trusted in-process boundary and remaining limits.
+
+## 2026-11-12 — Stage one review
+
+The scoped Commonwealth reader at `3f2b9953261e4d17e17383dd76eaad3f08c86470`
+passed 64 local tests and fresh-process checks. [PR #1 CI](https://github.com/LadyElinor/BAB4L0N/actions/runs/43225942436)
+passed on Python 3.11, 3.12 and 3.13. The review reproduced five completions,
+four on-time arrivals, one deadline miss, the open objection and the requirement
+for a fresh observation. This is evidence of faithful summary extraction.
+
+## 2026-11-12 — Durable sessions
+
+The nine added tests cover the pinned offline fixture, snapshot retention after
+source replacement and deletion, request binding, scoped and revoked responses,
+cached views, conflicts, durable refusals, competing last-credit inspections,
+concurrent exact retries and revocation racing a read. Fresh CLI processes
+exercise the policy replay and the separate operator history command.
+
+Process-death tests exit a real subprocess inside the transaction after the
+charge and before the receipt, and separately after commit before delivering a
+reply. The first run restores the credit and leaves no receipt. The second
+retains one charge and returns the original result on retry.
+
+The full 73-test suite and fresh-process checks passed locally on CPython
+3.12.14 and 3.13.5. The three concurrency cases also passed in 20 repetitions
+each. These checks cover the tested SQLite process boundaries and summary
+fixture. Independent verification of workshop events remains a later stage.
