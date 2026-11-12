@@ -231,3 +231,7 @@ test passage retrieval where the limiting passage matters as much as the
 affirmative one. Run `python scripts/court_trial.py` to reproduce the six-question
 comparison with keyword search, or add `--traces` to inspect the passages each
 investigator read.
+
+The [West Calumet notice study](examples/inquiry/west-calumet/README.md)
+replays two dated evidence sets from East Chicago, Indiana, and compares
+Babalon's retrieval with keyword search under the same inspection allowance.
