@@ -27,6 +27,10 @@ def main(argv=None):
     reader.add_argument("summary")
     reader.add_argument("--allow", nargs="*", choices=VIEWS, required=True)
     reader.add_argument("--max-inspections", type=int, required=True)
+    checker = sub.add_parser("recount", help="compare summary claims with the pinned demo event export")
+    checker.add_argument("summary")
+    checker.add_argument("--events", help="local protocol-2 export")
+    checker.add_argument("--allow", nargs="*", choices=VIEWS, required=True)
     evidence = sub.add_parser("evidence", help="operate a durable local evidence session")
     actions = evidence.add_subparsers(dest="action", required=True)
     for action in ("init", "observe", "inspect", "revoke", "operator-receipt"):
@@ -57,6 +61,9 @@ def main(argv=None):
     try:
         if args.command == "init":
             result = Host.create(args.database, read(args.tasks), read(args.grant)).observe()
+        elif args.command == "recount":
+            from .recount import recount
+            result = recount(args.summary, args.events, args.allow)
         elif args.command == "evidence":
             from .evidence_session import EvidenceSession
             session = EvidenceSession(args.database)
@@ -95,7 +102,7 @@ def main(argv=None):
             else: result = host.verify()
         print(json.dumps(result, indent=2, sort_keys=True, allow_nan=False))
         status = result.get("status", result.get("disposition"))
-        if status in ("INCONSISTENT", "AUDIT_FAILED", "INVALID_PROPOSAL"): return 2
+        if status in ("DISAGREEMENT", "INVALID_EXPORT", "INCONSISTENT", "AUDIT_FAILED", "INVALID_PROPOSAL"): return 2
         if status in ("PARTIAL", "UNAVAILABLE", "REFUSED", "STOPPED", "WAITING", "DECLINED", "CYCLE_LIMIT", "BUDGET_EXHAUSTED"): return 3
         return 0
     except (Invalid, OSError, sqlite3.Error, ValueError, KeyError, TypeError) as exc:

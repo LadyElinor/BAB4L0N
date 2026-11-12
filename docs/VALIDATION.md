@@ -82,3 +82,21 @@ The full 73-test suite and fresh-process checks passed locally on CPython
 3.12.14 and 3.13.5. The three concurrency cases also passed in 20 repetitions
 each. These checks cover the tested SQLite process boundaries and summary
 fixture. Independent verification of workshop events remains a later stage.
+
+## 2026-11-12 — Independent event recount
+
+Using upstream revision `ae5037b0dcf1e51a6f30614996ffcd0bbb01f584`, ran
+`python scripts/reproduce.py NEW_DIRECTORY`. The generated summary matched the
+existing fixture byte for byte. The 18,129-byte event export has SHA-256
+`2c37600b7d200f768c5a0c7afe45182388ba48929779dff307fca3b63b6c328a`.
+The checker matched the published 24-event head and reproduced five completions,
+four same-tick completions and one historical miss. Event 5 records the missed
+tick-2 deadline. Event 13 records the tick-2 job completing at tick 3.
+Events 14, 15 and 16 record the lesson, acceptance and counterstory.
+
+Changing only the summary's miss count to zero and clearing its list of open
+objections yielded two explicit differences. A receipt alone, truncated prefix,
+altered final envelope and broken link failed the journal check. Six new
+regression tests brought the full suite to 79. All tests and subprocess demos
+passed locally on Python 3.12.14 and 3.13.5. The checker imports no Commonwealth
+runtime and makes no model calls. All cases are exposed.
