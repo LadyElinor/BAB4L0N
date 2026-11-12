@@ -33,6 +33,15 @@ class RecountTests(unittest.TestCase):
         self.assertEqual(advice["summary_only_fields"], ["requires_new_observation", "status"])
         self.assertFalse(r["full_state_replay"])
 
+    def test_protocol_reversal_visible_even_when_events_agree(self):
+        data = json.loads(SUMMARY.read_bytes())
+        data["inherited_advice"]["requires_new_observation"] = False
+        self.path.write_text(json.dumps(data))
+        result = recount(self.path, EVENTS, ["advice"])
+        self.assertEqual(result["views"]["advice"]["status"], "AGREEMENT")
+        self.assertEqual(result["protocol_check"]["status"], "DISAGREEMENT")
+        self.assertEqual(result["status"], "DISAGREEMENT")
+
     def test_disagreement_preserves_both_accounts(self):
         data = json.loads(SUMMARY.read_bytes())
         data["measures"]["peer_missed_deadlines"] = 0

@@ -85,6 +85,14 @@ def review(directory, candidate=NO_CANDIDATE):
     for axis in axes:
         if axis in errors:
             grades[axis] = "UNGRADABLE"
+        elif axis == "credit":
+            supplied = candidate.get("credit")
+            reference = expected["credit"]
+            valid = (type(supplied) is dict and supplied.keys() <= reference.keys()
+                     and supplied.get("witness_sha256") == reference["witness_sha256"]
+                     and bool({"handle", "contributor"} & supplied.keys())
+                     and all(value == reference[key] for key, value in supplied.items()))
+            grades[axis] = "PASS" if valid else "FAIL"
         elif axis in candidate and canonical(candidate[axis]) == canonical(expected[axis]):
             grades[axis] = "PASS"
         else:

@@ -34,6 +34,13 @@ def main(argv=None):
     successor = sub.add_parser("successor-review", help="verify a construction and update its dated standing")
     successor.add_argument("directory", help="directory containing the frozen evidence files")
     successor.add_argument("--candidate", help="JSON answer to grade on three independent fields")
+    study = sub.add_parser("last-credit", help="draw or run the paired evidence inspection trial")
+    phases = study.add_subparsers(dest="phase", required=True)
+    draw = phases.add_parser("draw", help="write an operator-only case pack to stdout")
+    draw.add_argument("--seed", help="reproducible draw; defaults to fresh system randomness")
+    trial = phases.add_parser("run", help="run frozen arms against a committed pack")
+    trial.add_argument("pack")
+    trial.add_argument("--commitment", required=True)
     evidence = sub.add_parser("evidence", help="operate a durable local evidence session")
     actions = evidence.add_subparsers(dest="action", required=True)
     for action in ("init", "observe", "inspect", "revoke", "operator-receipt"):
@@ -64,6 +71,9 @@ def main(argv=None):
     try:
         if args.command == "init":
             result = Host.create(args.database, read(args.tasks), read(args.grant)).observe()
+        elif args.command == "last-credit":
+            from .last_credit.study import draw, run_study
+            result = draw(args.seed) if args.phase == "draw" else run_study(read(args.pack), args.commitment)
         elif args.command == "successor-review":
             from .successor import review
             result = review(args.directory, read(args.candidate)) if args.candidate else review(args.directory)

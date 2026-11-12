@@ -176,7 +176,7 @@ Each section receives its own grade. The construction grade compares the claimed
 bound and witness identity with a host-computed verification; it does not measure
 what work the submitter performed. The standing grade checks the reported
 table lower bound, observation digest and retrieval date. The credit grade binds
-the submitted name and handle to the original witness. Missing answer sections
+the submitted name or handle to the original witness. Missing answer sections
 fail individually. Missing or changed evidence makes the affected grade
 unavailable. Exit 0 means complete, 2 indicates a disagreement or invalid
 candidate, and 3 means the evidence is incomplete without an observed disagreement.
@@ -190,3 +190,11 @@ that no two words share an eight-position subset proves the distance bound in
 586,170 subset visits. The later figure is attributed to the dated table.
 The exposed case measures structured answers on a single historical revision.
 [Source attribution](NOTICE.md)
+
+
+## Deciding whether to spend the last credit
+
+The [paired last-credit trial](docs/INTEGRATION_PLAN.md#frozen-last-credit-trial-development-study)
+runs an isolated statistical proposer and three comparison policies. A trusted
+host charges actual event inspections and scores evidence, abstention and the
+successor's outstanding obligation separately. The extra dependency is optional.

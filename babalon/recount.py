@@ -112,6 +112,23 @@ def recount(summary, events_path, allowed):
         else:
             entry["status"] = "MISSING_CLAIMS"
         statuses.append(entry["status"])
+        if view == "advice":
+            # The pinned coach specifies these obligations independently of the event recount.
+            required = {"requires_new_observation": True, "status": "ADVICE_ONLY"}
+            claims = entry["summary"].get("facts", {})
+            conflicts = {key: {"reported": claims[key], "required": value}
+                         for key, value in required.items() if key in claims and claims[key] != value}
+            if conflicts:
+                rule_status = "DISAGREEMENT"
+            elif not required.keys() <= claims.keys():
+                rule_status = "MISSING_CLAIMS"
+            else:
+                rule_status = "AGREEMENT"
+            report["protocol_check"] = {
+                "status": rule_status, "required": required, "differences": conflicts,
+                "source": "LadyElinor/unfinished-commonwealth@ae5037b0dcf1e51a6f30614996ffcd0bbb01f584:commonwealth/coach.py",
+            }
+            statuses.append(rule_status)
     if "DISAGREEMENT" in statuses:
         report["status"] = "DISAGREEMENT"
     elif all(status == "AGREEMENT" for status in statuses):

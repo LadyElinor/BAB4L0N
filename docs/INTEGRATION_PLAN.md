@@ -68,3 +68,24 @@ Use a Lunar Weevil or Marscraft simulation report as a second domain once the fi
 ## Current limits
 
 The one-shot handoff command starts a new budget per invocation. The evidence-session commands retain their budget and source snapshot across invocations. Both profiles attribute claims to a summary. The separate operator recount checks selected claims against the pinned journal. Broader event histories, isolated model execution, held-out comparison and durable policy promotion remain open.
+
+## Frozen last-credit trial (development study)
+
+One decision per handoff is whether to spend the final credit to retrieve a tally from recorded job timestamps. The candidate is a small bag-of-words classifier (multinomial naive Bayes, six labelled development questions per intent) and a fixed source-selection rule. The guest sees a question, batch, attributed summary, objection, optional protocol card and permission flag. It can propose an inspection or submit a cited answer or abstention. The host owns the durable source, reads it only through the granted projection on disclosure, and returns its session-bound receipt. Each proposal runs in a fresh QuickJS context in a separate process, with no filesystem, network, host callbacks or case key exposed to guest code. Limits are two proposals per handoff, one inspection credit, 0.1 seconds guest CPU time, 4 MiB guest heap and a three-second parent timeout per worker. This runner accepts a bundled guest, makes zero language-model calls and does no online learning.
+
+Four arms use the same answerer. Always-inspect attempts even when permission is withheld; never-inspect always skips; the keyword rule inspects on a short literal vocabulary when permitted; the conditional classifier inspects for an event tally or for a best-supported handoff with a stale or unverified summary. Current, previously checked summary extracts can answer a handoff directly. A fresh-observation requirement needs a protocol card; missing cards leave that duty undetermined even if the author claims otherwise. Every arm must retain the unresolved objection.
+
+**Freeze and interpretation.** The primary draw is the first PR CI run on the experiment commit. A separate GitHub job draws 32 instances in 16 matched pairs using the run ID assigned after the commit, publishes a case-pack commitment, and hands it to the evaluator. All arms receive the same cases, and the proposer sees neither hidden event rows nor grading labels. The author controls the question templates, generator and grading rules. Numbers, batch IDs, objection IDs and event histories vary by seed. The language templates are exposed. Independent human custody and grading remain open. The operator may instead supply a separately authored conforming pack and a commitment received before evaluation.
+
+Primary outcome: number of handoffs with a supported answer or justified abstention **and** preserved obligation and objection. Report supported answers, justified and avoidable abstentions, unsupported answers, out-of-scope requests/disclosures, charged inspections, proposal counts and wall time separately. Inspecting an unavailable permitted record still costs one. Direct event claims require an actual receipt. The grader derives the numeric answer separately from the job rows. A claim about what the summary said requires citing the summary. Correct attribution can coexist with an inaccurate summary. Compare with both simple controls and the keyword rule. No promotion follows this trial. Wall time includes process startup and is descriptive. Repeated seeds share task templates.
+
+To run from a checkout (the arithmetic runtime has no extra dependency):
+
+```sh
+python -m pip install '.[last-credit]'
+python -m babalon last-credit draw --seed demonstration > pack.json
+commitment=$(python -c 'from babalon.contracts import digest,parse_json; print(digest(parse_json(open("pack.json").read())))')
+python -m babalon last-credit run pack.json --commitment "$commitment" > report.json
+```
+
+The ordinary handoff recount now exposes its pinned protocol check separately from its event check; either can raise a top-level disagreement. The successor grader accepts the documented contributor name or handle bound to the original witness; contradictory extra identity fields still fail.

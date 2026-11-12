@@ -9,6 +9,7 @@ import tempfile
 import uuid
 
 from .contracts import Invalid, canonical, digest, label
+from .peer_events import EVENT_PROJECTION, project_jobs
 from .handoff import load_snapshot, project_view, validate_grant
 
 
@@ -24,6 +25,18 @@ class EvidenceSession:
     def create(cls, database, source, allowed, max_inspections):
         allowed = validate_grant(allowed, max_inspections)
         raw, _ = load_snapshot(source)
+        return cls._create(database, raw, allowed, max_inspections, PROJECTION)
+
+    @classmethod
+    def create_last_credit(cls, database, event_file, permitted):
+        """Freeze the event packet and give this session one inspection credit."""
+        if type(permitted) is not bool:
+            raise Invalid("expected boolean event access")
+        raw, _ = load_snapshot(event_file)
+        return cls._create(database, raw, ("timing",) if permitted else (), 1, EVENT_PROJECTION)
+
+    @classmethod
+    def _create(cls, database, raw, allowed, max_inspections, projection):
         path = Path(database)
         # Publish only a fully committed database; never replace an existing path.
         fd, temporary = tempfile.mkstemp(dir=path.parent, prefix=".babalon-evidence-")
@@ -42,7 +55,7 @@ class EvidenceSession:
                                            view TEXT NOT NULL, receipt TEXT NOT NULL);
                 """)
                 db.execute("INSERT INTO session VALUES (1,?,?,?,?,?,?,NULL)",
-                           (PROFILE, uuid.uuid4().hex, PROJECTION, hashlib.sha256(raw).hexdigest(),
+                           (PROFILE, uuid.uuid4().hex, projection, hashlib.sha256(raw).hexdigest(),
                             canonical(allowed), max_inspections))
                 db.execute("INSERT INTO snapshot VALUES (1,?)", (raw,))
             os.link(temporary, path)
@@ -59,7 +72,7 @@ class EvidenceSession:
             with db:
                 db.execute("BEGIN IMMEDIATE" if write else "BEGIN")
                 state = db.execute("SELECT * FROM session WHERE singleton=1").fetchone()
-                if not state or (state["profile"], state["projection"]) != (PROFILE, PROJECTION):
+                if not state or state["profile"] != PROFILE or state["projection"] not in (PROJECTION, EVENT_PROJECTION):
                     raise Invalid("unsupported evidence session or projection")
                 yield db, state
 
@@ -127,7 +140,8 @@ class EvidenceSession:
         raw = db.execute("SELECT raw FROM snapshot WHERE singleton=1").fetchone()[0]
         if hashlib.sha256(raw).hexdigest() != state["source_sha256"]:
             raise Invalid("snapshot digest mismatch")
-        result = project_view(json.loads(raw), state["source_sha256"], view)
+        projection = project_jobs if state["projection"] == EVENT_PROJECTION else project_view
+        result = projection(json.loads(raw), state["source_sha256"], view)
         db.execute("INSERT INTO inspections VALUES (?,?)", (view, canonical(result)))
         return {"status": result["status"], "result_digest": digest(result), "charged": 1}
 
@@ -138,7 +152,7 @@ class EvidenceSession:
             decision = {"status": "REFUSED", "reason": "outside_grant", "charged": 0}
         else:
             decision = self._inspect_granted(db, state, view)
-        receipt = {"profile": PROFILE, "projection": PROJECTION, "session_id": state["session_id"],
+        receipt = {"profile": PROFILE, "projection": state["projection"], "session_id": state["session_id"],
                    "request_id": request_id, "view": view, **decision}
         receipt["receipt_id"] = digest(receipt)
         db.execute("INSERT INTO requests (request_id, view, receipt) VALUES (?,?,?)",

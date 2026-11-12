@@ -9,8 +9,14 @@ description = "A bounded, evidence-aware local agent scaffold"
 requires-python = ">=3.11"
 dependencies = []
 
+[project.optional-dependencies]
+last-credit = ["quickjs==1.19.4"]
+
 [project.scripts]
 babalon = "babalon.cli:main"
 
 [tool.setuptools]
-packages = ["babalon"]
+packages = ["babalon", "babalon.last_credit"]
+
+[tool.setuptools.package-data]
+"babalon.last_credit" = ["policy.js"]

@@ -33,6 +33,12 @@ class SuccessorTests(unittest.TestCase):
         self.assertEqual(evidence["credit"]["historical_note"]["table_lower_bound_reported_by_maintainer"], 13026)
         self.assertEqual(evidence["standing"]["table_credit"], "Dz")
 
+    def test_credit_accepts_either_attributed_identity(self):
+        for id_field in ("contributor", "handle"):
+            answer = deepcopy(ANSWER)
+            del answer["credit"][id_field]
+            self.assertEqual(review(CASE, answer)["grades"]["credit"], "PASS")
+
     def test_each_wrong_decision_fails_independently(self):
         for axis, change in (("standing", {"table_lower_bound": 13026}),
                              ("standing", {"basis": "independently_verified_optimum"}),
