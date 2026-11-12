@@ -1,0 +1,222 @@
+{
+  "profile": "atlas-court-retrieval-v1",
+  "budget": 4,
+  "trials": [
+    {
+      "case": "theatre-paramount",
+      "question": "What weight could a jury give parallel business behavior as evidence of agreement?",
+      "targets": [
+        "court.txt#L3",
+        "court.txt#L4"
+      ],
+      "returns": {
+        "plain": [
+          "court.txt#L4",
+          "court.txt#L3",
+          "court.txt#L4",
+          "court.txt#L2"
+        ],
+        "keyword": [
+          "court.txt#L4",
+          "court.txt#L3",
+          "court.txt#L6",
+          "separate.txt#L1"
+        ],
+        "guided": [
+          "court.txt#L4",
+          "court.txt#L3",
+          "court.txt#L4",
+          "editor.md#L1"
+        ]
+      },
+      "scores": {
+        "plain": 2,
+        "keyword": 2,
+        "guided": 2
+      },
+      "collection_digest": "9901eda9dde90475c2dd876698ee4e204937b20b95bb1579ce50a2a33d030915",
+      "guided_digest": "bf5d8095316440d642db2c1259ff8adf5fcd8484e9879f3fc04269e095f39e85"
+    },
+    {
+      "case": "theatre-paramount",
+      "question": "Why did the Paramount decrees require additional evidence for the Baltimore claim?",
+      "targets": [
+        "court.txt#L5",
+        "court.txt#L6"
+      ],
+      "returns": {
+        "plain": [
+          "court.txt#L6",
+          "court.txt#L5",
+          "court.txt#L4",
+          "court.txt#L7"
+        ],
+        "keyword": [
+          "court.txt#L6",
+          "court.txt#L5",
+          "court.txt#L1",
+          "court.txt#L3"
+        ],
+        "guided": [
+          "court.txt#L6",
+          "court.txt#L5",
+          "court.txt#L4",
+          "editor.md#L1"
+        ]
+      },
+      "scores": {
+        "plain": 2,
+        "keyword": 2,
+        "guided": 2
+      },
+      "collection_digest": "9901eda9dde90475c2dd876698ee4e204937b20b95bb1579ce50a2a33d030915",
+      "guided_digest": "bf5d8095316440d642db2c1259ff8adf5fcd8484e9879f3fc04269e095f39e85"
+    },
+    {
+      "case": "tolan-cotton",
+      "question": "What did Cotton and Tolan report about the porch lighting and driveway lights?",
+      "targets": [
+        "court.txt#L2",
+        "court.txt#L4"
+      ],
+      "returns": {
+        "plain": [
+          "court.txt#L4",
+          "court.txt#L2",
+          "court.txt#L1",
+          "court.txt#L7"
+        ],
+        "keyword": [
+          "court.txt#L4",
+          "court.txt#L2",
+          "court.txt#L9",
+          "court.txt#L1"
+        ],
+        "guided": [
+          "court.txt#L4",
+          "court.txt#L2",
+          "court.txt#L1",
+          "editor.md#L1"
+        ]
+      },
+      "scores": {
+        "plain": 2,
+        "keyword": 2,
+        "guided": 2
+      },
+      "collection_digest": "266d509913a6d2d24032cdcc5677f6afe5b5bf9f6c716ea64d9a7be6f1886d83",
+      "guided_digest": "de9f11adda57d5eca738a072815c959c450a7708f940ba4d21763526c77c9f52"
+    },
+    {
+      "case": "tolan-cotton",
+      "question": "What was the judgment on review and what question about clearly established law did the Court leave open?",
+      "targets": [
+        "court.txt#L9",
+        "court.txt#L10"
+      ],
+      "returns": {
+        "plain": [
+          "court.txt#L1",
+          "court.txt#L9",
+          "court.txt#L1",
+          "court.txt#L8"
+        ],
+        "keyword": [
+          "court.txt#L1",
+          "court.txt#L9",
+          "court.txt#L10",
+          "court.txt#L6"
+        ],
+        "guided": [
+          "court.txt#L1",
+          "court.txt#L9",
+          "court.txt#L1",
+          "editor.md#L1"
+        ]
+      },
+      "scores": {
+        "plain": 1,
+        "keyword": 2,
+        "guided": 1
+      },
+      "collection_digest": "266d509913a6d2d24032cdcc5677f6afe5b5bf9f6c716ea64d9a7be6f1886d83",
+      "guided_digest": "de9f11adda57d5eca738a072815c959c450a7708f940ba4d21763526c77c9f52"
+    },
+    {
+      "case": "commerce-new-york",
+      "question": "How did Ross describe the DOJ request in March and the earlier citizenship discussions in June?",
+      "targets": [
+        "march.txt#L2",
+        "june.txt#L2"
+      ],
+      "returns": {
+        "plain": [
+          "june.txt#L2",
+          "court.txt#L2",
+          "court.txt#L5",
+          "june.txt#L3"
+        ],
+        "keyword": [
+          "june.txt#L2",
+          "court.txt#L2",
+          "court.txt#L4",
+          "court.txt#L5"
+        ],
+        "guided": [
+          "june.txt#L2",
+          "court.txt#L2",
+          "court.txt#L5",
+          "editor.md#L1"
+        ]
+      },
+      "scores": {
+        "plain": 1,
+        "keyword": 1,
+        "guided": 1
+      },
+      "collection_digest": "25eedbb7e41106531cae94440bb91262f062ac75e432783c2d7de67d26cfc62f",
+      "guided_digest": "e13fccaaade6deacdf0137d698f8953f74797eae94672d979713a835e7b0147d"
+    },
+    {
+      "case": "commerce-new-york",
+      "question": "Why did the Court reject the stated rationale but decline to hold the decision substantively invalid?",
+      "targets": [
+        "court.txt#L7",
+        "court.txt#L9"
+      ],
+      "returns": {
+        "plain": [
+          "court.txt#L9",
+          "court.txt#L1",
+          "court.txt#L5",
+          "court.txt#L3"
+        ],
+        "keyword": [
+          "court.txt#L9",
+          "court.txt#L1",
+          "court.txt#L4",
+          "court.txt#L7"
+        ],
+        "guided": [
+          "court.txt#L9",
+          "court.txt#L1",
+          "court.txt#L5",
+          "court.txt#L3"
+        ]
+      },
+      "scores": {
+        "plain": 1,
+        "keyword": 2,
+        "guided": 1
+      },
+      "collection_digest": "25eedbb7e41106531cae94440bb91262f062ac75e432783c2d7de67d26cfc62f",
+      "guided_digest": "e13fccaaade6deacdf0137d698f8953f74797eae94672d979713a835e7b0147d"
+    }
+  ],
+  "targets": 12,
+  "totals": {
+    "plain": 9,
+    "keyword": 11,
+    "guided": 9
+  }
+}

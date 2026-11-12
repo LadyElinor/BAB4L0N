@@ -39,3 +39,11 @@ The byte-identical `tests/fixtures/commonwealth/owed-assistance.json` is the
 fictional case in [Unfinished Commonwealth at 00870ca](https://github.com/LadyElinor/unfinished-commonwealth/blob/00870cacd872f28fa7ffb054097d026b088026f2/examples/owed-assistance.json).
 The upstream MIT notice is in the same fixture directory. The separate receiving
 register and voluntary accounts are Babalon-authored synthetic alternatives.
+
+The Relay Atlas court-trial fixture contains excerpts of U.S. Supreme Court
+opinions in *Theatre Enterprises v. Paramount*, 346 U.S. 537 (1954),
+*Tolan v. Cotton*, 572 U.S. 650 (2014), and *Department of Commerce v. New
+York*, 588 U.S. 752 (2019), plus Secretary Ross's March and June 2018
+memoranda (18-966 petition appendix H–I). The case manifest identifies the
+source of each extract, including the separate position of Justice Black.
+Question design, selection and annotations are from Relay Atlas edition 39.

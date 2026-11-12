@@ -225,3 +225,9 @@ The coordinator can commission a second round to trace a citation or examine
 a check that could distinguish competing accounts. The [community inquiry
 example and input format](docs/COMMUNITY_INQUIRY.md) describe how to run it
 and inspect the resulting evidence map.
+
+[Three court cases from Relay Atlas](examples/inquiry/court-trials/README.md)
+test passage retrieval where the limiting passage matters as much as the
+affirmative one. Run `python scripts/court_trial.py` to reproduce the six-question
+comparison with keyword search, or add `--traces` to inspect the passages each
+investigator read.
