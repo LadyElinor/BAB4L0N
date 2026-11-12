@@ -78,7 +78,9 @@ def recount(summary, events_path, allowed):
     report = {"profile": "babalon.commonwealth-recount.v1", "status": "PARTIAL",
               "assurance": "scoped_comparison_with_recorded_events", "full_state_replay": False,
               "external_authority": "NONE", "summary_source": reported["source"],
-              "journal": {"status": "NOT_INSPECTED"}, "views": {}}
+              "journal": {"status": "NOT_INSPECTED"}, "views": {},
+              "event_status": "UNCHECKED" if allowed else "NOT_REQUESTED",
+              "protocol_status": "UNCHECKED" if "advice" in allowed else "NOT_REQUESTED"}
     for view in allowed:
         report["views"][view] = {"summary": reported["results"][view], "status": "UNCHECKED"}
     if not allowed:
@@ -94,7 +96,7 @@ def recount(summary, events_path, allowed):
     except (Invalid, UnicodeDecodeError, RecursionError):
         # The diagnostic must not copy arbitrary source text into a scoped report.
         report["journal"]["status"] = "INVALID"
-        report["status"] = "INVALID_EXPORT"
+        report["event_status"] = report["status"] = "INVALID_EXPORT"
         return report
     report["journal"] = {"status": "MATCHES_PIN", "head": EVENT_HEAD, "events": len(events),
                          "sha256": raw_hash}
@@ -128,7 +130,15 @@ def recount(summary, events_path, allowed):
                 "status": rule_status, "required": required, "differences": conflicts,
                 "source": "LadyElinor/unfinished-commonwealth@ae5037b0dcf1e51a6f30614996ffcd0bbb01f584:commonwealth/coach.py",
             }
-            statuses.append(rule_status)
+            report["protocol_status"] = rule_status
+    if "DISAGREEMENT" in statuses:
+        report["event_status"] = "DISAGREEMENT"
+    elif "MISSING_CLAIMS" in statuses:
+        report["event_status"] = "MISSING_CLAIMS"
+    else:
+        report["event_status"] = "AGREEMENT"
+    if "advice" in allowed:
+        statuses.append(report["protocol_status"])
     if "DISAGREEMENT" in statuses:
         report["status"] = "DISAGREEMENT"
     elif all(status == "AGREEMENT" for status in statuses):

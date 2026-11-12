@@ -137,6 +137,7 @@ def handoff(path, allowed, max_inspections):
     complete = all(item["status"] == "REPORTED" for item in results.values())
     return {"profile": "babalon.commonwealth-handoff.v1", "status": "COMPLETE" if complete else "PARTIAL",
             "assurance": "source_summary_only", "event_replay_performed": False,
+            "event_status": "UNCHECKED", "protocol_status": "UNCHECKED",
             "external_authority": "NONE", "source": reader.provenance(), "grant": brief,
             "inspections_used": max_inspections - reader.observe()["remaining_inspections"],
             "results": results}

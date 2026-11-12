@@ -199,3 +199,10 @@ The [paired last-credit trial](docs/INTEGRATION_PLAN.md#frozen-last-credit-trial
 runs an isolated statistical proposer and three comparison policies. A trusted
 host charges actual event inspections and scores evidence, abstention and the
 successor's outstanding obligation separately. The extra dependency is optional. [Primary results and failures](reports/LAST_CREDIT.md).
+
+The [source-attribution follow-up](examples/attribution-study/README.md)
+holds purchased evidence fixed while comparing the original and source-bound
+answerers. The [original guest and its complete development set](babalon/last_credit/policy.js)
+are available together. For operator reports, `handoff` labels event and
+protocol checks as unchecked; `recount` returns separate top-level
+`event_status` and `protocol_status` fields alongside the overall decision.

@@ -25,3 +25,12 @@ metadata is a new factual extract. See the [original submission and credits](htt
 [V3R1T4S data licensing and upstream attributions](https://github.com/elder-plinius/V3R1T4S/blob/fb5164403fc71afeadc3d6d0dd0db44131665a8f/LICENSING.md)
 and [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The table
 observation transcribes a single dated cell from [A. E. Brouwer's table](https://aeb.win.tue.nl/codes/Andw.html).
+
+The 32 question strings, identifiers and evidence-source annotations in
+`examples/attribution-study/external-questions.json` are excerpts from TAT-QA
+by Fengbin Zhu, Wenqiang Lei, Youcheng Huang, Chao Wang, Shuo Zhang, Jiancheng
+Lv, Fuli Feng and Tat-Seng Chua (ACL 2021). The original questions are verbatim.
+The extractor selects and reorders rows, retains three fields, and renames
+`answer_from` to `source`. See the [paper](https://aclanthology.org/2021.acl-long.254/),
+[pinned dataset and licensing statement](https://github.com/NExTplusplus/TAT-QA/tree/870accc41953dcde885aabeb963d94aabdc0fbc3),
+and [CC BY 4.0 terms](https://creativecommons.org/licenses/by/4.0/).
