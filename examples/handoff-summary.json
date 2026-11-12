@@ -1,0 +1,19 @@
+{
+  "fixture": "Babalon synthetic handoff example",
+  "measures": {
+    "peer_completions": 7,
+    "peer_on_time_arrivals": 5,
+    "peer_missed_deadlines": 2
+  },
+  "inherited_advice": {
+    "lesson": "lesson-a",
+    "status": "ADVICE_ONLY",
+    "review_status": "DISPUTED",
+    "requires_new_observation": true,
+    "requires_review": true,
+    "counterstories": [
+      {"id": "reply-a", "reference": "lesson-a", "actor": "observer", "account": "Two handoffs missed their deadlines."}
+    ],
+    "unaddressed_counterstories": ["reply-a"]
+  }
+}

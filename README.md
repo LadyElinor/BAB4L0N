@@ -41,6 +41,20 @@ Method-selection accuracy is diagnostic only. All fixtures remain exposed, not
 independent holdouts. The former weak baseline is included only as a labeled
 reference, never the deployment benchmark.
 
+## Read a Commonwealth handoff
+
+From the checkout, run the deterministic reader on the bundled synthetic summary:
+
+```sh
+python -m babalon handoff examples/handoff-summary.json --allow timing advice --max-inspections 2
+```
+
+The operator grants access to named sections of a local summary. The reader reports
+timing and disputed advice with source references. A partial handoff exits with
+code 3 and identifies the missing evidence or access limit. The inspection budget
+lasts for one invocation. The [integration plan](docs/INTEGRATION_PLAN.md) includes
+the pinned upstream case, expected results and acceptance tests for the next stages.
+
 ## Use your own bounded task inputs
 
 ```sh
@@ -114,11 +128,9 @@ database. Runtime budgets do not cap arbitrary policy computation.
 
 ## Next useful milestone
 
-Choose one useful domain, implement a read-only or reversible tool adapter, and
-freeze its task contract and evaluation plan. Add an isolated proposal-producing
-model with explicit runtime/cost limits, then compare frozen and improving policies
-on fresh independently held-out tasks. Persist candidate lineage, promotion and
-rollback before making any claim about durable self-improvement. See the staged
-plan in `docs/DESIGN.md`.
+Persist the Commonwealth reader's grants, inspection charges and receipts across
+restart. Then compare attributed summaries with independently checked event
+exports before adding a model. The [integration plan](docs/INTEGRATION_PLAN.md)
+defines the checkpoints for evidence access, evaluation and durable promotion.
 
 No repository push, remote publication or deployment is part of this bundle.

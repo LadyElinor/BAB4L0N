@@ -70,9 +70,16 @@ optional references to existing receipts. Notes are labeled
 semantic support for the prose is not. Policies can read notes, but the included
 policies do not learn from them. Retaining an objection is not adjudicating it.
 
-## Roadmap, not implemented capability
+## Commonwealth handoff
 
-1. **Useful task:** choose a concrete domain and success metric before adding
+The read-only handoff command uses a separate evidence profile with two projected
+views. Its per-invocation budget and source-level assurance are described in the
+[integration plan](INTEGRATION_PLAN.md). Arithmetic workshops retain their v1
+schema and operator view.
+
+## Runtime roadmap
+
+1. **Useful task:** use the Commonwealth handoff to test evidence-supported completion before adding
    unrestricted tools. Keep tools read-only or reversible initially.
 2. **Model policy:** run a model or other untrusted policy outside the trusted
    host, accept only closed proposal JSON, and enforce time/token/cost ceilings.

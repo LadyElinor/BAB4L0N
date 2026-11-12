@@ -22,6 +22,11 @@ def main(argv=None):
     demo = sub.add_parser("demo", help="run an explicitly granted local fixture")
     demo.add_argument("database")
     sub.add_parser("improve-demo", help="run bounded fixture-policy improvement")
+    from .handoff import VIEWS, handoff
+    reader = sub.add_parser("handoff", help="inspect permitted views of a local Commonwealth summary")
+    reader.add_argument("summary")
+    reader.add_argument("--allow", nargs="*", choices=VIEWS, required=True)
+    reader.add_argument("--max-inspections", type=int, required=True)
     for name in ("observe", "audit", "verify", "run", "submit", "stop", "note"):
         command = sub.add_parser(name)
         command.add_argument("database")
@@ -39,6 +44,8 @@ def main(argv=None):
     try:
         if args.command == "init":
             result = Host.create(args.database, read(args.tasks), read(args.grant)).observe()
+        elif args.command == "handoff":
+            result = handoff(args.summary, args.allow, args.max_inspections)
         elif args.command == "improve-demo":
             from .improvement import demo
             result = demo()
@@ -62,7 +69,7 @@ def main(argv=None):
         print(json.dumps(result, indent=2, sort_keys=True, allow_nan=False))
         status = result.get("status", result.get("disposition"))
         if status in ("INCONSISTENT", "AUDIT_FAILED", "INVALID_PROPOSAL"): return 2
-        if status in ("REFUSED", "STOPPED", "WAITING", "DECLINED", "CYCLE_LIMIT", "BUDGET_EXHAUSTED"): return 3
+        if status in ("PARTIAL", "REFUSED", "STOPPED", "WAITING", "DECLINED", "CYCLE_LIMIT", "BUDGET_EXHAUSTED"): return 3
         return 0
     except (Invalid, OSError, sqlite3.Error, ValueError, KeyError, TypeError) as exc:
         print(json.dumps({"status": "ERROR", "reason": str(exc)}), file=sys.stderr)
