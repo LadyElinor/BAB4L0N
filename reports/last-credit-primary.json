@@ -1,0 +1,3848 @@
+{
+  "case_count": 32,
+  "cases_digest": "aa16667788773623e1c9842c4b8a786c8b7f1376802182beec753ba761a9b038",
+  "custody": "same_author_generated_instances_guest_blinded",
+  "frozen_files": {
+    "cases.py": "98c7eca121254c4702c64c24576cfa06a65d96b68a3712559c6d82416223b7b7",
+    "evidence_session.py": "627cd3253074346976f4cc000174c29a142e439e2b5f29c657d1d4374cd1d4dc",
+    "grade.py": "fc73950b2a28b64c58f972588d36e115d063a811211984106459f27bb46bb9d0",
+    "peer_events.py": "193979cab3d7697b516f4cb677a234393fe0cd03c202770a01aaf76e03fc51b1",
+    "policy.js": "d31c0e7da9f0c4c7e636695d4639dd49305a951c9a9385a9c02239135126072d",
+    "study.py": "5b0c044c1f6ceb66903f99f7f847d1607e163262e5ffc3971bfff17bed5683b1",
+    "worker.py": "67a0738bd555ba78564fb5a888cda4054480ed13ed0a7e755850ce15464d6d31"
+  },
+  "language_model_calls": 0,
+  "pack_digest": "8f8735b413f29ce8bf4bde97c1062e2d19ff29854d6af8f9acd884317db24f70",
+  "profile": "babalon.last-credit.v1",
+  "quickjs": "1.19.4",
+  "rows": [
+    {
+      "arm": "always",
+      "case": 0,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "protocol",
+        "citation": "rule-v1",
+        "fresh_observation": "required",
+        "objection": "objection-5361",
+        "value": "required"
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "protocol-0",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 1
+          },
+          "pointer": "/jobs",
+          "source_sha256": "c77e18a0bb041a0039dd8108ded4cc31db9f3a3350f3152dadc8dbb2247ddf11",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "c7319059fa129aff4ab905a5198a7635d5eddd7725f30cbbc65500a1f95dd0e3",
+        "request_id": "last-read",
+        "result_digest": "8bb38287203f33635b4beb7b58e25d3636b60052152f26ca76a4eb712573718c",
+        "session_id": "58ae4e703f3f40479f0b94160eafaded",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 84
+    },
+    {
+      "arm": "never",
+      "case": 0,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "protocol",
+        "citation": "rule-v1",
+        "fresh_observation": "required",
+        "objection": "objection-5361",
+        "value": "required"
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "protocol-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 46
+    },
+    {
+      "arm": "keyword",
+      "case": 0,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "protocol",
+        "citation": "rule-v1",
+        "fresh_observation": "required",
+        "objection": "objection-5361",
+        "value": "required"
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "protocol-0",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 1
+          },
+          "pointer": "/jobs",
+          "source_sha256": "c77e18a0bb041a0039dd8108ded4cc31db9f3a3350f3152dadc8dbb2247ddf11",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "5c2ad80530fd3b7c070d3639c9063c3705beb49a1e80e57cd75d48ef7a49f86f",
+        "request_id": "last-read",
+        "result_digest": "8bb38287203f33635b4beb7b58e25d3636b60052152f26ca76a4eb712573718c",
+        "session_id": "65caefbb7dcf437ab61a416ed08db2d9",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 87
+    },
+    {
+      "arm": "learned",
+      "case": 0,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "protocol",
+        "citation": "rule-v1",
+        "fresh_observation": "required",
+        "objection": "objection-5361",
+        "value": "required"
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "protocol-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "always",
+      "case": 1,
+      "credits_used": 1,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-6795",
+        "value": null
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "handoff-3",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "pointer": "/jobs",
+          "reason": "incomplete_or_invalid_events",
+          "source_sha256": "cc85808789366e982f44e552fe5a8bd226b1558025766afec54e7aef29d28bb3",
+          "status": "UNAVAILABLE",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "07ff64e5757a2593b4e2d8df3fa61ea07fe61840f457c3f99285d1c2fc856619",
+        "request_id": "last-read",
+        "result_digest": "20ac83079c6dc0773521dbdec73282e303d6b5a6f7e87e2e6cc0a401addca2bc",
+        "session_id": "c363ce5b3b9642359215b21ecd4224ec",
+        "status": "UNAVAILABLE",
+        "view": "timing"
+      },
+      "wall_ms": 84
+    },
+    {
+      "arm": "never",
+      "case": 1,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-6795",
+        "value": null
+      },
+      "goal": "handoff",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "unjustified_abstention",
+      "pair": "handoff-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "keyword",
+      "case": 1,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-6795",
+        "value": null
+      },
+      "goal": "handoff",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "unjustified_abstention",
+      "pair": "handoff-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "learned",
+      "case": 1,
+      "credits_used": 1,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-6795",
+        "value": null
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "handoff-3",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "pointer": "/jobs",
+          "reason": "incomplete_or_invalid_events",
+          "source_sha256": "cc85808789366e982f44e552fe5a8bd226b1558025766afec54e7aef29d28bb3",
+          "status": "UNAVAILABLE",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "e4164c5696624f7d8b9c489964f1c575eefb9ab849cefc5ba24c62c8fa62599f",
+        "request_id": "last-read",
+        "result_digest": "20ac83079c6dc0773521dbdec73282e303d6b5a6f7e87e2e6cc0a401addca2bc",
+        "session_id": "868651b6bad84c17b5006df616bc8a7f",
+        "status": "UNAVAILABLE",
+        "view": "timing"
+      },
+      "wall_ms": 84
+    },
+    {
+      "arm": "always",
+      "case": 2,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "737bd5e67bc7309a38de8b63446d8fdb5c5c728253528a21da645e9171f33fbb",
+        "fresh_observation": "undetermined",
+        "objection": "objection-8200",
+        "value": 1
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "journal-1",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 1
+          },
+          "pointer": "/jobs",
+          "source_sha256": "8a635388b2bec3ff55c3b8352739b66babe273b982045e1c46447bbce6940280",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "737bd5e67bc7309a38de8b63446d8fdb5c5c728253528a21da645e9171f33fbb",
+        "request_id": "last-read",
+        "result_digest": "6a2b97820d105feb2cc459e52e68767c78edaef763e7d733c59083592b5e075e",
+        "session_id": "e2850ad2cbd64f5e8e1b2e4f7df16f6c",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 83
+    },
+    {
+      "arm": "never",
+      "case": 2,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-8200",
+        "value": null
+      },
+      "goal": "journal",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "avoidable_abstention",
+      "pair": "journal-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "keyword",
+      "case": 2,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "520863596ea186b41aa3e3914abf3ea12e19ecf1fd3cc7eec6e62da8f7f6e667",
+        "fresh_observation": "undetermined",
+        "objection": "objection-8200",
+        "value": 1
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "journal-1",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 1
+          },
+          "pointer": "/jobs",
+          "source_sha256": "8a635388b2bec3ff55c3b8352739b66babe273b982045e1c46447bbce6940280",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "520863596ea186b41aa3e3914abf3ea12e19ecf1fd3cc7eec6e62da8f7f6e667",
+        "request_id": "last-read",
+        "result_digest": "6a2b97820d105feb2cc459e52e68767c78edaef763e7d733c59083592b5e075e",
+        "session_id": "558c93ae327f4b57be071f59d52a1d62",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 85
+    },
+    {
+      "arm": "learned",
+      "case": 2,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "a471c9fe196d5d81374e8de2fe47c32cabbebc2b887b5c11212647f20760a468",
+        "fresh_observation": "undetermined",
+        "objection": "objection-8200",
+        "value": 1
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "journal-1",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 1
+          },
+          "pointer": "/jobs",
+          "source_sha256": "8a635388b2bec3ff55c3b8352739b66babe273b982045e1c46447bbce6940280",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "a471c9fe196d5d81374e8de2fe47c32cabbebc2b887b5c11212647f20760a468",
+        "request_id": "last-read",
+        "result_digest": "6a2b97820d105feb2cc459e52e68767c78edaef763e7d733c59083592b5e075e",
+        "session_id": "d7f4d753f7b94698993a5e6057a28112",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 84
+    },
+    {
+      "arm": "always",
+      "case": 3,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "de42f0a341ef2704bfa049cf579adb463cf3d47184d6727341edc0fce111349a",
+        "fresh_observation": "required",
+        "objection": "objection-2091",
+        "value": 3
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-2",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 3
+          },
+          "pointer": "/jobs",
+          "source_sha256": "49868043dc9142baa635148d19d4897759a84c3228384d026f371e6c27689241",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "de42f0a341ef2704bfa049cf579adb463cf3d47184d6727341edc0fce111349a",
+        "request_id": "last-read",
+        "result_digest": "a21cea18e4c6492346464e03ae13d05178bef9c8cb713866bb2d91820cae4de0",
+        "session_id": "0d613ddd77af469c96d928345309c16a",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 85
+    },
+    {
+      "arm": "never",
+      "case": 3,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "required",
+        "objection": "objection-2091",
+        "value": null
+      },
+      "goal": "handoff",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "avoidable_abstention",
+      "pair": "handoff-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "keyword",
+      "case": 3,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "required",
+        "objection": "objection-2091",
+        "value": null
+      },
+      "goal": "handoff",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "avoidable_abstention",
+      "pair": "handoff-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "learned",
+      "case": 3,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "3419124c3b57dd84270e4051e6faa5d73052dfecf4a75ada7c313d61ce407375",
+        "fresh_observation": "required",
+        "objection": "objection-2091",
+        "value": 3
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-2",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 3
+          },
+          "pointer": "/jobs",
+          "source_sha256": "49868043dc9142baa635148d19d4897759a84c3228384d026f371e6c27689241",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "3419124c3b57dd84270e4051e6faa5d73052dfecf4a75ada7c313d61ce407375",
+        "request_id": "last-read",
+        "result_digest": "a21cea18e4c6492346464e03ae13d05178bef9c8cb713866bb2d91820cae4de0",
+        "session_id": "5f53ea7ee2b042d9947c2ee1086ac665",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 85
+    },
+    {
+      "arm": "always",
+      "case": 4,
+      "credits_used": 1,
+      "final": {
+        "action": "abstain",
+        "basis": "protocol",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-8230",
+        "value": null
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "protocol-1",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 1
+          },
+          "pointer": "/jobs",
+          "source_sha256": "be6557e596094c51312c12d6bee9b9227ec3340dbb448b9e8e748eb3fa6f13a8",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "844afe9257eabc3d36e60352505a4b03f6231a6e83161f404b9dde0e4260d3b4",
+        "request_id": "last-read",
+        "result_digest": "a483e99005e4c8d1d95dbec110493d86234490a378631b1030b08a21aabb1e73",
+        "session_id": "2a773388d2e84a2b96abe6ffb218925e",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 86
+    },
+    {
+      "arm": "never",
+      "case": 4,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "protocol",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-8230",
+        "value": null
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "protocol-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "keyword",
+      "case": 4,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "protocol",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-8230",
+        "value": null
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "protocol-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "learned",
+      "case": 4,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "protocol",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-8230",
+        "value": null
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "protocol-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "always",
+      "case": 5,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "protocol",
+        "citation": "rule-v1",
+        "fresh_observation": "required",
+        "objection": "objection-5361",
+        "value": "required"
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "protocol-0",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 1
+          },
+          "pointer": "/jobs",
+          "source_sha256": "de8eccf2a038b7f0dcd10a5aecfabe9540f3ee7729fb6a3d167264e58130c171",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "5d226d53cd624e38e01715eb8d92dd48dfb073fed6533611035169b53589fe09",
+        "request_id": "last-read",
+        "result_digest": "98ff5e7024c7431f1502573b484269d23cfb15492765181c14ff719fda872eeb",
+        "session_id": "5c35b8658ded47609db14b5435b38167",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 84
+    },
+    {
+      "arm": "never",
+      "case": 5,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "protocol",
+        "citation": "rule-v1",
+        "fresh_observation": "required",
+        "objection": "objection-5361",
+        "value": "required"
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "protocol-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 45
+    },
+    {
+      "arm": "keyword",
+      "case": 5,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "protocol",
+        "citation": "rule-v1",
+        "fresh_observation": "required",
+        "objection": "objection-5361",
+        "value": "required"
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "protocol-0",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 1
+          },
+          "pointer": "/jobs",
+          "source_sha256": "de8eccf2a038b7f0dcd10a5aecfabe9540f3ee7729fb6a3d167264e58130c171",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "189a5e186f0e3ec7dbcd3379e612b610365b8e95b9fbcb2e7efe1ebbe0b16551",
+        "request_id": "last-read",
+        "result_digest": "98ff5e7024c7431f1502573b484269d23cfb15492765181c14ff719fda872eeb",
+        "session_id": "c32aa14584f54ba095dbc0f9bd853400",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 83
+    },
+    {
+      "arm": "learned",
+      "case": 5,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "protocol",
+        "citation": "rule-v1",
+        "fresh_observation": "required",
+        "objection": "objection-5361",
+        "value": "required"
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "protocol-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "always",
+      "case": 6,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "5f802dc23cd4b59cbef45b079a9eacff13a779149134508ff57a26315aa533b0",
+        "fresh_observation": "undetermined",
+        "objection": "objection-8200",
+        "value": 2
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "journal-1",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 2
+          },
+          "pointer": "/jobs",
+          "source_sha256": "78cabb76d1fdbea45588c25c9838390f4d1c9598c9a1181b21e4e6e339f17950",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "5f802dc23cd4b59cbef45b079a9eacff13a779149134508ff57a26315aa533b0",
+        "request_id": "last-read",
+        "result_digest": "0fffc3d2bb89dacc3259f9b04f2f63283d0ef4ef395a17417352069a9dfc1a62",
+        "session_id": "cea7561432504339b87053c059374ac7",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 84
+    },
+    {
+      "arm": "never",
+      "case": 6,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-8200",
+        "value": null
+      },
+      "goal": "journal",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "avoidable_abstention",
+      "pair": "journal-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "keyword",
+      "case": 6,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "fc41978221095ace321783856c4453a2691d866ec8e6dff26871fb3823ecef2f",
+        "fresh_observation": "undetermined",
+        "objection": "objection-8200",
+        "value": 2
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "journal-1",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 2
+          },
+          "pointer": "/jobs",
+          "source_sha256": "78cabb76d1fdbea45588c25c9838390f4d1c9598c9a1181b21e4e6e339f17950",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "fc41978221095ace321783856c4453a2691d866ec8e6dff26871fb3823ecef2f",
+        "request_id": "last-read",
+        "result_digest": "0fffc3d2bb89dacc3259f9b04f2f63283d0ef4ef395a17417352069a9dfc1a62",
+        "session_id": "bbb1e9aedc4d4051bf7a155b490774c2",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 84
+    },
+    {
+      "arm": "learned",
+      "case": 6,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "d3fd06d8919f57e0f7706e852a4d90adb40cce6c3ac3d92f712dcf8238040a04",
+        "fresh_observation": "undetermined",
+        "objection": "objection-8200",
+        "value": 2
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "journal-1",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 2
+          },
+          "pointer": "/jobs",
+          "source_sha256": "78cabb76d1fdbea45588c25c9838390f4d1c9598c9a1181b21e4e6e339f17950",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "d3fd06d8919f57e0f7706e852a4d90adb40cce6c3ac3d92f712dcf8238040a04",
+        "request_id": "last-read",
+        "result_digest": "0fffc3d2bb89dacc3259f9b04f2f63283d0ef4ef395a17417352069a9dfc1a62",
+        "session_id": "672f61161bb646c68927764d8fa1d006",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 86
+    },
+    {
+      "arm": "always",
+      "case": 7,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-20934",
+        "fresh_observation": "required",
+        "objection": "objection-1830",
+        "value": 4
+      },
+      "goal": "journal",
+      "handoff_correct": false,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "unsupported_answer",
+      "pair": "journal-0",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 4
+          },
+          "pointer": "/jobs",
+          "source_sha256": "8fb74d922a769ce592a9e1560e0a5e5a3312c439ad75ce7431a513c6eab5be52",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "f1cfdd099e2c93b1dcc2976e099347dfbe9565e9841c4626516127302e7312a3",
+        "request_id": "last-read",
+        "result_digest": "f65a28490b4dc54676ec6157299061fe491aabe458b29440e01d400b97241497",
+        "session_id": "f5ab623047f14e67a9a2506462946add",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 83
+    },
+    {
+      "arm": "never",
+      "case": 7,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-20934",
+        "fresh_observation": "required",
+        "objection": "objection-1830",
+        "value": 4
+      },
+      "goal": "journal",
+      "handoff_correct": false,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "unsupported_answer",
+      "pair": "journal-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 40
+    },
+    {
+      "arm": "keyword",
+      "case": 7,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-20934",
+        "fresh_observation": "required",
+        "objection": "objection-1830",
+        "value": 4
+      },
+      "goal": "journal",
+      "handoff_correct": false,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "unsupported_answer",
+      "pair": "journal-0",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 4
+          },
+          "pointer": "/jobs",
+          "source_sha256": "8fb74d922a769ce592a9e1560e0a5e5a3312c439ad75ce7431a513c6eab5be52",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "b37446fcc463cdbb3844247c15b0bc1f2665f95e80ab5b8ce40e8db6bb88427d",
+        "request_id": "last-read",
+        "result_digest": "f65a28490b4dc54676ec6157299061fe491aabe458b29440e01d400b97241497",
+        "session_id": "10b399f336a542378be1319e75dc7319",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 83
+    },
+    {
+      "arm": "learned",
+      "case": 7,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-20934",
+        "fresh_observation": "required",
+        "objection": "objection-1830",
+        "value": 4
+      },
+      "goal": "journal",
+      "handoff_correct": false,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "unsupported_answer",
+      "pair": "journal-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 40
+    },
+    {
+      "arm": "always",
+      "case": 8,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "ed5bee53031b0cf7418d9f41734e75537cd004cfc768c948f808724d9ffce1b7",
+        "fresh_observation": "required",
+        "objection": "objection-9843",
+        "value": 3
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "journal-2",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 3
+          },
+          "pointer": "/jobs",
+          "source_sha256": "dafd91c39084c0bb969d6b77d17cd7de49ab35ff6c32ea664bec72a031055bfd",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "ed5bee53031b0cf7418d9f41734e75537cd004cfc768c948f808724d9ffce1b7",
+        "request_id": "last-read",
+        "result_digest": "aecca2885c92eec862196f61ab40cfe34944b3a70ccd8429c9a4d4847a8c4efd",
+        "session_id": "e127ed4c460646899e80b88a02848f7b",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 84
+    },
+    {
+      "arm": "never",
+      "case": 8,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "required",
+        "objection": "objection-9843",
+        "value": null
+      },
+      "goal": "journal",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "avoidable_abstention",
+      "pair": "journal-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "keyword",
+      "case": 8,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "required",
+        "objection": "objection-9843",
+        "value": null
+      },
+      "goal": "journal",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "avoidable_abstention",
+      "pair": "journal-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "learned",
+      "case": 8,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "12dbff0f9fb9fc8d95deb5d0745fef0e2c1298c0aaea9080056966e58b2886ba",
+        "fresh_observation": "required",
+        "objection": "objection-9843",
+        "value": 3
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "journal-2",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 3
+          },
+          "pointer": "/jobs",
+          "source_sha256": "dafd91c39084c0bb969d6b77d17cd7de49ab35ff6c32ea664bec72a031055bfd",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "12dbff0f9fb9fc8d95deb5d0745fef0e2c1298c0aaea9080056966e58b2886ba",
+        "request_id": "last-read",
+        "result_digest": "aecca2885c92eec862196f61ab40cfe34944b3a70ccd8429c9a4d4847a8c4efd",
+        "session_id": "6fcf6f9478b34ac2ad4b62c2c9d3eb85",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 85
+    },
+    {
+      "arm": "always",
+      "case": 9,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "2775ca53867e38aa4091abab439e5ab2ab62e76e813d4217d36c3e62e21fc450",
+        "fresh_observation": "undetermined",
+        "objection": "objection-6795",
+        "value": 2
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-3",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 2
+          },
+          "pointer": "/jobs",
+          "source_sha256": "1df1dca739a5bc95cc03f0efbec89ff9a9abff67ee52cd6dfc873211cc87a24a",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "2775ca53867e38aa4091abab439e5ab2ab62e76e813d4217d36c3e62e21fc450",
+        "request_id": "last-read",
+        "result_digest": "805dabeadb4e885bc518d5c42a539675f75449283e9e1c563c7ac95d02204647",
+        "session_id": "64c26fd71ce14e79ad22522bb029fc98",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 83
+    },
+    {
+      "arm": "never",
+      "case": 9,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-6795",
+        "value": null
+      },
+      "goal": "handoff",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "avoidable_abstention",
+      "pair": "handoff-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "keyword",
+      "case": 9,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-6795",
+        "value": null
+      },
+      "goal": "handoff",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "avoidable_abstention",
+      "pair": "handoff-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "learned",
+      "case": 9,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "64d3d962a9ad7a6ed858ce47ffc981f6e67de7fd0316144fa2dfc099c814894c",
+        "fresh_observation": "undetermined",
+        "objection": "objection-6795",
+        "value": 2
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-3",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 2
+          },
+          "pointer": "/jobs",
+          "source_sha256": "1df1dca739a5bc95cc03f0efbec89ff9a9abff67ee52cd6dfc873211cc87a24a",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "64d3d962a9ad7a6ed858ce47ffc981f6e67de7fd0316144fa2dfc099c814894c",
+        "request_id": "last-read",
+        "result_digest": "805dabeadb4e885bc518d5c42a539675f75449283e9e1c563c7ac95d02204647",
+        "session_id": "2e017c3d4f534cd28447bb5859b017f6",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 83
+    },
+    {
+      "arm": "always",
+      "case": 10,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-13762",
+        "fresh_observation": "required",
+        "objection": "objection-7925",
+        "value": 3
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-0",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 3
+          },
+          "pointer": "/jobs",
+          "source_sha256": "a6775d68e575eb134e8f5d08e330578c8abff18c31dcf873aa34a391625c61d1",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "a906f099ace578cc041300e7d1e74bee78c165a690519c043be6053905570791",
+        "request_id": "last-read",
+        "result_digest": "08938198465a59196add4683e04aff3f041111eacb05e1a8ee116803e65a5e9d",
+        "session_id": "1801d48da88842e0a1bd0b8c71791207",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 84
+    },
+    {
+      "arm": "never",
+      "case": 10,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-13762",
+        "fresh_observation": "required",
+        "objection": "objection-7925",
+        "value": 3
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "keyword",
+      "case": 10,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-13762",
+        "fresh_observation": "required",
+        "objection": "objection-7925",
+        "value": 3
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-0",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 3
+          },
+          "pointer": "/jobs",
+          "source_sha256": "a6775d68e575eb134e8f5d08e330578c8abff18c31dcf873aa34a391625c61d1",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "44b62716d4ea9cd86884f6f3f138de070e4b00858cd44b535c6e34c202809086",
+        "request_id": "last-read",
+        "result_digest": "08938198465a59196add4683e04aff3f041111eacb05e1a8ee116803e65a5e9d",
+        "session_id": "aa36a3a41ce34b9096213c703e8c428e",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 86
+    },
+    {
+      "arm": "learned",
+      "case": 10,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-13762",
+        "fresh_observation": "required",
+        "objection": "objection-7925",
+        "value": 3
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "always",
+      "case": 11,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "summary",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-6443",
+        "value": null
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "summary-3",
+      "proposals": 2,
+      "receipt": {
+        "charged": 0,
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "reason": "outside_grant",
+        "receipt_id": "31b8cd373faa357c0420d8cdd8da88ceec123ae25761946c92f985705216511f",
+        "request_id": "last-read",
+        "session_id": "3ba0eba59e7d46f09d665dbf44919eff",
+        "status": "REFUSED",
+        "view": "timing"
+      },
+      "wall_ms": 85
+    },
+    {
+      "arm": "never",
+      "case": 11,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "summary",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-6443",
+        "value": null
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "summary-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "keyword",
+      "case": 11,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "summary",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-6443",
+        "value": null
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "summary-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "learned",
+      "case": 11,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "summary",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-6443",
+        "value": null
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "summary-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "always",
+      "case": 12,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-61837",
+        "fresh_observation": "required",
+        "objection": "objection-3070",
+        "value": 4
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-0",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 4
+          },
+          "pointer": "/jobs",
+          "source_sha256": "50da5a730ffc6ad20c09cad8964fe1b251546578340648ddc4525a1c71e753ff",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "4b16c6820a638d1388ea069e41812bd3b745a69753224502d70f3e3962c2f668",
+        "request_id": "last-read",
+        "result_digest": "fa6b3b70542597ad66dca8933c7e66d2af0c52fbb4b7cc1a9ab02982ff1c35e2",
+        "session_id": "90448831c00e46afa6c8098bd362d37f",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 84
+    },
+    {
+      "arm": "never",
+      "case": 12,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-61837",
+        "fresh_observation": "required",
+        "objection": "objection-3070",
+        "value": 4
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "keyword",
+      "case": 12,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-61837",
+        "fresh_observation": "required",
+        "objection": "objection-3070",
+        "value": 4
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "learned",
+      "case": 12,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-61837",
+        "fresh_observation": "required",
+        "objection": "objection-3070",
+        "value": 4
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "always",
+      "case": 13,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "6381354ced2cc4b210be33ef05af791d41f04a6e0b7ffb6cf915352a21a71fc6",
+        "fresh_observation": "required",
+        "objection": "objection-2091",
+        "value": 2
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-2",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 2
+          },
+          "pointer": "/jobs",
+          "source_sha256": "fcd4a81572e55f3cfe929de54bfaea62e33c491c79a648ed1ae662a58dcc03f5",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "6381354ced2cc4b210be33ef05af791d41f04a6e0b7ffb6cf915352a21a71fc6",
+        "request_id": "last-read",
+        "result_digest": "6f1f1fbf6ba545abab7e9af05adb0aee93f4ae6b88bd95d1041edd5c52b89903",
+        "session_id": "aaeb218e4158460b9d59af1b556d081d",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 84
+    },
+    {
+      "arm": "never",
+      "case": 13,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "required",
+        "objection": "objection-2091",
+        "value": null
+      },
+      "goal": "handoff",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "avoidable_abstention",
+      "pair": "handoff-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 44
+    },
+    {
+      "arm": "keyword",
+      "case": 13,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "required",
+        "objection": "objection-2091",
+        "value": null
+      },
+      "goal": "handoff",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "avoidable_abstention",
+      "pair": "handoff-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "learned",
+      "case": 13,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "199457839a46064a437c20a4cd1952746d66ea33c47a1f75c4bd03fa15243a5d",
+        "fresh_observation": "required",
+        "objection": "objection-2091",
+        "value": 2
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-2",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 2
+          },
+          "pointer": "/jobs",
+          "source_sha256": "fcd4a81572e55f3cfe929de54bfaea62e33c491c79a648ed1ae662a58dcc03f5",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "199457839a46064a437c20a4cd1952746d66ea33c47a1f75c4bd03fa15243a5d",
+        "request_id": "last-read",
+        "result_digest": "6f1f1fbf6ba545abab7e9af05adb0aee93f4ae6b88bd95d1041edd5c52b89903",
+        "session_id": "c0712b684c4f47a3a21445bf8114d2b5",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 89
+    },
+    {
+      "arm": "always",
+      "case": 14,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-4948",
+        "value": null
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "journal-3",
+      "proposals": 2,
+      "receipt": {
+        "charged": 0,
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "reason": "outside_grant",
+        "receipt_id": "b47df8955dbdda8d696a41b7816a1b746dccb874344885141dad6cd29eb9b3e4",
+        "request_id": "last-read",
+        "session_id": "99f9d55a98404e7492e0072b79fa526a",
+        "status": "REFUSED",
+        "view": "timing"
+      },
+      "wall_ms": 90
+    },
+    {
+      "arm": "never",
+      "case": 14,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-4948",
+        "value": null
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "journal-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "keyword",
+      "case": 14,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-4948",
+        "value": null
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "journal-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "learned",
+      "case": 14,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-4948",
+        "value": null
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "journal-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "always",
+      "case": 15,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-61837",
+        "fresh_observation": "required",
+        "objection": "objection-3070",
+        "value": 4
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-0",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 4
+          },
+          "pointer": "/jobs",
+          "source_sha256": "63a20cdb67f175cdef2d812409de264cb400ad9c707e51e0ad7e8602081f4640",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "75b024ad2bfe67932e78c5cf26c89e10ff72f9f67a65173e048ce8e6f247d380",
+        "request_id": "last-read",
+        "result_digest": "c372f1ec06dc49dbf64dd1adc891f3bb7dfa765072ad000f54b3be234c2581d5",
+        "session_id": "66dee86969244f2d9d47758d1dec721f",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 88
+    },
+    {
+      "arm": "never",
+      "case": 15,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-61837",
+        "fresh_observation": "required",
+        "objection": "objection-3070",
+        "value": 4
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 43
+    },
+    {
+      "arm": "keyword",
+      "case": 15,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-61837",
+        "fresh_observation": "required",
+        "objection": "objection-3070",
+        "value": 4
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "learned",
+      "case": 15,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-61837",
+        "fresh_observation": "required",
+        "objection": "objection-3070",
+        "value": 4
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 43
+    },
+    {
+      "arm": "always",
+      "case": 16,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-83177",
+        "fresh_observation": "required",
+        "objection": "objection-8726",
+        "value": 4
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-2",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 4
+          },
+          "pointer": "/jobs",
+          "source_sha256": "b969a55be8bea2dc57dfb7c01e351599679a7321f86159192346f515fc72de85",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "374da14d070eaa8594aa62bd9fd37e8d1f058e712d35565a2bbc261dcc3b45b4",
+        "request_id": "last-read",
+        "result_digest": "390a907f949a323493f5d6f227fd70c5f92a08e294eed58dc4eae001fcec1c46",
+        "session_id": "0e4d89f7b92f4b37ac1c70e8ad2e1cde",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 88
+    },
+    {
+      "arm": "never",
+      "case": 16,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-83177",
+        "fresh_observation": "required",
+        "objection": "objection-8726",
+        "value": 4
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 43
+    },
+    {
+      "arm": "keyword",
+      "case": 16,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-83177",
+        "fresh_observation": "required",
+        "objection": "objection-8726",
+        "value": 4
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "learned",
+      "case": 16,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-83177",
+        "fresh_observation": "required",
+        "objection": "objection-8726",
+        "value": 4
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "always",
+      "case": 17,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-93015",
+        "fresh_observation": "undetermined",
+        "objection": "objection-7901",
+        "value": 1
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-1",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 2
+          },
+          "pointer": "/jobs",
+          "source_sha256": "53053fabaa04c0444490cf4236473760d686a8e2a1084a0c3d0f72b024986947",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "484cd82264202acf903f46f075d15c810b4a67a73f2cdde7f31484c7f91351c4",
+        "request_id": "last-read",
+        "result_digest": "593adf02ed0bd050df888308f30827996f1863a69e7ec7ccb7ad09e48228f253",
+        "session_id": "3895ea2b6e754c6f9d7a615881ec32cc",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 86
+    },
+    {
+      "arm": "never",
+      "case": 17,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-93015",
+        "fresh_observation": "undetermined",
+        "objection": "objection-7901",
+        "value": 1
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 43
+    },
+    {
+      "arm": "keyword",
+      "case": 17,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-93015",
+        "fresh_observation": "undetermined",
+        "objection": "objection-7901",
+        "value": 1
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "learned",
+      "case": 17,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-93015",
+        "fresh_observation": "undetermined",
+        "objection": "objection-7901",
+        "value": 1
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 44
+    },
+    {
+      "arm": "always",
+      "case": 18,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-4948",
+        "value": null
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "journal-3",
+      "proposals": 2,
+      "receipt": {
+        "charged": 0,
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "reason": "outside_grant",
+        "receipt_id": "fe34df6d4ad5821b8e9dd5be4a239e73efa32644fd77c56c6db1c232cac1333f",
+        "request_id": "last-read",
+        "session_id": "962051800e224a7393aa7c0ea95c00ee",
+        "status": "REFUSED",
+        "view": "timing"
+      },
+      "wall_ms": 92
+    },
+    {
+      "arm": "never",
+      "case": 18,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-4948",
+        "value": null
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "journal-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 44
+    },
+    {
+      "arm": "keyword",
+      "case": 18,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-4948",
+        "value": null
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "journal-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 45
+    },
+    {
+      "arm": "learned",
+      "case": 18,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-4948",
+        "value": null
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "journal-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 43
+    },
+    {
+      "arm": "always",
+      "case": 19,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "0948a4e912423d4777b8fcd8f961656a6ebb613f3c82b7c679ba516e783da68d",
+        "fresh_observation": "undetermined",
+        "objection": "objection-5167",
+        "value": 4
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-1",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 4
+          },
+          "pointer": "/jobs",
+          "source_sha256": "73590dbfda818f7db33d62c0370ab8ef35f08bf91c21e7f45042cb607efbce6d",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "0948a4e912423d4777b8fcd8f961656a6ebb613f3c82b7c679ba516e783da68d",
+        "request_id": "last-read",
+        "result_digest": "d31b746e01af01c693ba1132b81b346246cff7b750beee2760545b7a8185142d",
+        "session_id": "ebf099a752bc4e6e92dfe7dc1e6c3f90",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 88
+    },
+    {
+      "arm": "never",
+      "case": 19,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-5167",
+        "value": null
+      },
+      "goal": "handoff",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "avoidable_abstention",
+      "pair": "handoff-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 43
+    },
+    {
+      "arm": "keyword",
+      "case": 19,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-5167",
+        "value": null
+      },
+      "goal": "handoff",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "avoidable_abstention",
+      "pair": "handoff-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "learned",
+      "case": 19,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "a2f3c020bde4276ec8a666824cfdaaf8554732b66c148d5d67dcc4991dfca2f9",
+        "fresh_observation": "undetermined",
+        "objection": "objection-5167",
+        "value": 4
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-1",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 4
+          },
+          "pointer": "/jobs",
+          "source_sha256": "73590dbfda818f7db33d62c0370ab8ef35f08bf91c21e7f45042cb607efbce6d",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "a2f3c020bde4276ec8a666824cfdaaf8554732b66c148d5d67dcc4991dfca2f9",
+        "request_id": "last-read",
+        "result_digest": "d31b746e01af01c693ba1132b81b346246cff7b750beee2760545b7a8185142d",
+        "session_id": "9f537764c2bc4f9eb30e188088de3ccc",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 84
+    },
+    {
+      "arm": "always",
+      "case": 20,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "c64a34e828e63781e1219e7c3e9995c107fdbcb8af96f7ba8c20e392ff9268d6",
+        "fresh_observation": "undetermined",
+        "objection": "objection-5167",
+        "value": 3
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-1",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 3
+          },
+          "pointer": "/jobs",
+          "source_sha256": "72a8578bb32a3e7b910a83bd4a566df0eec4e0e29571ba9ca1779fa67743486c",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "c64a34e828e63781e1219e7c3e9995c107fdbcb8af96f7ba8c20e392ff9268d6",
+        "request_id": "last-read",
+        "result_digest": "c79ddb786da922c4ed1d8582634e98f533317bbe10c72e8a7574220b26985758",
+        "session_id": "90d86907b0584ed388d74561644e2ad2",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 85
+    },
+    {
+      "arm": "never",
+      "case": 20,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-5167",
+        "value": null
+      },
+      "goal": "handoff",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "avoidable_abstention",
+      "pair": "handoff-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "keyword",
+      "case": 20,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-5167",
+        "value": null
+      },
+      "goal": "handoff",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "avoidable_abstention",
+      "pair": "handoff-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "learned",
+      "case": 20,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "7caf32471c9d20104eafa98d9e4c6650a8fd9cc13a23f5bab98bdee105b76b48",
+        "fresh_observation": "undetermined",
+        "objection": "objection-5167",
+        "value": 3
+      },
+      "goal": "handoff",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "handoff-1",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 3
+          },
+          "pointer": "/jobs",
+          "source_sha256": "72a8578bb32a3e7b910a83bd4a566df0eec4e0e29571ba9ca1779fa67743486c",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "7caf32471c9d20104eafa98d9e4c6650a8fd9cc13a23f5bab98bdee105b76b48",
+        "request_id": "last-read",
+        "result_digest": "c79ddb786da922c4ed1d8582634e98f533317bbe10c72e8a7574220b26985758",
+        "session_id": "abc02c2227c7411a852d8a0ff2824f6c",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 87
+    },
+    {
+      "arm": "always",
+      "case": 21,
+      "credits_used": 1,
+      "final": {
+        "action": "abstain",
+        "basis": "protocol",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-9871",
+        "value": null
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "protocol-3",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "pointer": "/jobs",
+          "reason": "incomplete_or_invalid_events",
+          "source_sha256": "cc85808789366e982f44e552fe5a8bd226b1558025766afec54e7aef29d28bb3",
+          "status": "UNAVAILABLE",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "b5c6d6a985f95a17a95a5d8efac6623e81074067c2b543584ed645e64351e94e",
+        "request_id": "last-read",
+        "result_digest": "20ac83079c6dc0773521dbdec73282e303d6b5a6f7e87e2e6cc0a401addca2bc",
+        "session_id": "70d816914762453881b3da1eb5ef13e3",
+        "status": "UNAVAILABLE",
+        "view": "timing"
+      },
+      "wall_ms": 87
+    },
+    {
+      "arm": "never",
+      "case": 21,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "protocol",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-9871",
+        "value": null
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "protocol-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "keyword",
+      "case": 21,
+      "credits_used": 1,
+      "final": {
+        "action": "abstain",
+        "basis": "protocol",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-9871",
+        "value": null
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "protocol-3",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "pointer": "/jobs",
+          "reason": "incomplete_or_invalid_events",
+          "source_sha256": "cc85808789366e982f44e552fe5a8bd226b1558025766afec54e7aef29d28bb3",
+          "status": "UNAVAILABLE",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "929291709e6f83a7a82f147fb65510baac883e1a1c72996bf7714dab33985f4f",
+        "request_id": "last-read",
+        "result_digest": "20ac83079c6dc0773521dbdec73282e303d6b5a6f7e87e2e6cc0a401addca2bc",
+        "session_id": "0941584846c047ff8d4941978a921959",
+        "status": "UNAVAILABLE",
+        "view": "timing"
+      },
+      "wall_ms": 87
+    },
+    {
+      "arm": "learned",
+      "case": 21,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "protocol",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-9871",
+        "value": null
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "protocol-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 44
+    },
+    {
+      "arm": "always",
+      "case": 22,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-13762",
+        "fresh_observation": "required",
+        "objection": "objection-7925",
+        "value": 3
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-0",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 3
+          },
+          "pointer": "/jobs",
+          "source_sha256": "60466a70b382f8a3012199faf47738ba6ba0623bbb48234b4cab4e67225cf146",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "f46c4faa7619a51ee546195553060b9230fb39a813d8d51e40f8c0ed18e5fbf9",
+        "request_id": "last-read",
+        "result_digest": "9e079545299c869c35dafc6503bf80e686c9a3e7894b3028ef7dc24efbd2523c",
+        "session_id": "13abdfe6a5ea4f4495a120e47fd77c8d",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 86
+    },
+    {
+      "arm": "never",
+      "case": 22,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-13762",
+        "fresh_observation": "required",
+        "objection": "objection-7925",
+        "value": 3
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "keyword",
+      "case": 22,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-13762",
+        "fresh_observation": "required",
+        "objection": "objection-7925",
+        "value": 3
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-0",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 3
+          },
+          "pointer": "/jobs",
+          "source_sha256": "60466a70b382f8a3012199faf47738ba6ba0623bbb48234b4cab4e67225cf146",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "f4c7fe260b841cc79150f58a6048e4504a13d5fe35faa20ee0eb00419fd9df5b",
+        "request_id": "last-read",
+        "result_digest": "9e079545299c869c35dafc6503bf80e686c9a3e7894b3028ef7dc24efbd2523c",
+        "session_id": "a42c6c7d68894399ae6858178ab7f4bb",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 85
+    },
+    {
+      "arm": "learned",
+      "case": 22,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-13762",
+        "fresh_observation": "required",
+        "objection": "objection-7925",
+        "value": 3
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "always",
+      "case": 23,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-93015",
+        "fresh_observation": "undetermined",
+        "objection": "objection-7901",
+        "value": 1
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-1",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 1
+          },
+          "pointer": "/jobs",
+          "source_sha256": "be64cf07c4f2f200b25aa1c9695e20f8b3d7c6a4a47615cefd11b689db94ce13",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "318aeba4fa5d11a0d80343c5372b7adbdfbb807e856ba37b9583cb4d284d6620",
+        "request_id": "last-read",
+        "result_digest": "266bc209e8275f38cd1253f9333e70a03ce06d4690579c94bba9a837b561d583",
+        "session_id": "2bdf9d63eaf44096a575498b28e98eed",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 83
+    },
+    {
+      "arm": "never",
+      "case": 23,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-93015",
+        "fresh_observation": "undetermined",
+        "objection": "objection-7901",
+        "value": 1
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "keyword",
+      "case": 23,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-93015",
+        "fresh_observation": "undetermined",
+        "objection": "objection-7901",
+        "value": 1
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "learned",
+      "case": 23,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-93015",
+        "fresh_observation": "undetermined",
+        "objection": "objection-7901",
+        "value": 1
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "always",
+      "case": 24,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "3b95b5dca7021f3dcff28f2194960b055ef4ef5d16ab171cc52c0653ca6cfa90",
+        "fresh_observation": "required",
+        "objection": "objection-9843",
+        "value": 4
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "journal-2",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 4
+          },
+          "pointer": "/jobs",
+          "source_sha256": "ab55a0f561992d4cd9d3cef60dce9ed9d7c19aef3b51c815e7c0f025d0a803e6",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "3b95b5dca7021f3dcff28f2194960b055ef4ef5d16ab171cc52c0653ca6cfa90",
+        "request_id": "last-read",
+        "result_digest": "ec8f45b7abd7e7bf13332acbc4c117c7e3520615fb3585eb13b485be36415223",
+        "session_id": "ef4346f02bc74cb49bd12fb4a139596d",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 85
+    },
+    {
+      "arm": "never",
+      "case": 24,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "required",
+        "objection": "objection-9843",
+        "value": null
+      },
+      "goal": "journal",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "avoidable_abstention",
+      "pair": "journal-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "keyword",
+      "case": 24,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "journal",
+        "citation": null,
+        "fresh_observation": "required",
+        "objection": "objection-9843",
+        "value": null
+      },
+      "goal": "journal",
+      "handoff_correct": false,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "avoidable_abstention",
+      "pair": "journal-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "learned",
+      "case": 24,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "journal",
+        "citation": "3c4d367c12cf8c16b67e6e26630f3d2cdb5d9c3e96225d96c145bef280cc9368",
+        "fresh_observation": "required",
+        "objection": "objection-9843",
+        "value": 4
+      },
+      "goal": "journal",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "journal-2",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 4
+          },
+          "pointer": "/jobs",
+          "source_sha256": "ab55a0f561992d4cd9d3cef60dce9ed9d7c19aef3b51c815e7c0f025d0a803e6",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "3c4d367c12cf8c16b67e6e26630f3d2cdb5d9c3e96225d96c145bef280cc9368",
+        "request_id": "last-read",
+        "result_digest": "ec8f45b7abd7e7bf13332acbc4c117c7e3520615fb3585eb13b485be36415223",
+        "session_id": "c5291c698e5b4a5996942b982bdf076f",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 86
+    },
+    {
+      "arm": "always",
+      "case": 25,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "protocol",
+        "citation": "rule-v1",
+        "fresh_observation": "required",
+        "objection": "objection-5220",
+        "value": "required"
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "protocol-2",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 3
+          },
+          "pointer": "/jobs",
+          "source_sha256": "21b8b98b044ff94c27107d707c612c073e191d6e6d38d060e53d85ae93d9d9ed",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "bb112cfdfbd2312862f2f2cf21a29b38a2979397f5d3aa14cd42a2e26ea1f541",
+        "request_id": "last-read",
+        "result_digest": "4b822a49ad4591999960a88569517488e36124a58f5380623137426fc7acc119",
+        "session_id": "9fe4b8f6e5774c63b90fb8ac87639258",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 85
+    },
+    {
+      "arm": "never",
+      "case": 25,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "protocol",
+        "citation": "rule-v1",
+        "fresh_observation": "required",
+        "objection": "objection-5220",
+        "value": "required"
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "protocol-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 43
+    },
+    {
+      "arm": "keyword",
+      "case": 25,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "protocol",
+        "citation": "rule-v1",
+        "fresh_observation": "required",
+        "objection": "objection-5220",
+        "value": "required"
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "protocol-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "learned",
+      "case": 25,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "protocol",
+        "citation": "rule-v1",
+        "fresh_observation": "required",
+        "objection": "objection-5220",
+        "value": "required"
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "protocol-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "always",
+      "case": 26,
+      "credits_used": 1,
+      "final": {
+        "action": "abstain",
+        "basis": "protocol",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-9871",
+        "value": null
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "protocol-3",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 2
+          },
+          "pointer": "/jobs",
+          "source_sha256": "8a7a47b5cd4d417f469f04bfd0a345b8428114a342c31a8a335a28c4b816c971",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "54cf9a91921806e33ad4e445c80914813dc0e49941e426c88de595e669604204",
+        "request_id": "last-read",
+        "result_digest": "0473eab079439e4b3107a695e04e1669b34eb42ace0a5f3a839f6b9b5cb255c1",
+        "session_id": "22c88d46e74d4d3b9ea5b9ada9e2701c",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 88
+    },
+    {
+      "arm": "never",
+      "case": 26,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "protocol",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-9871",
+        "value": null
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "protocol-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 43
+    },
+    {
+      "arm": "keyword",
+      "case": 26,
+      "credits_used": 1,
+      "final": {
+        "action": "abstain",
+        "basis": "protocol",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-9871",
+        "value": null
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "protocol-3",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 2
+          },
+          "pointer": "/jobs",
+          "source_sha256": "8a7a47b5cd4d417f469f04bfd0a345b8428114a342c31a8a335a28c4b816c971",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "42ce95f6512acb6a74727ae09a0505637962bd2d50180ede0d0f48c498469547",
+        "request_id": "last-read",
+        "result_digest": "0473eab079439e4b3107a695e04e1669b34eb42ace0a5f3a839f6b9b5cb255c1",
+        "session_id": "eba4c9ddf1a74f05af41db1637d06c4e",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 86
+    },
+    {
+      "arm": "learned",
+      "case": 26,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "protocol",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-9871",
+        "value": null
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "protocol-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 43
+    },
+    {
+      "arm": "always",
+      "case": 27,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-20934",
+        "fresh_observation": "required",
+        "objection": "objection-1830",
+        "value": 4
+      },
+      "goal": "journal",
+      "handoff_correct": false,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "unsupported_answer",
+      "pair": "journal-0",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 4
+          },
+          "pointer": "/jobs",
+          "source_sha256": "a7b3addec331782fc538fe17d091a1210bb4a81ab7d4ec0ff9c8ca2d33da1ea0",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "6f9ef313fe63b03b8acb5fc40b24194ddd7d0102c5aed8e45bb10ecdf7c3e2c8",
+        "request_id": "last-read",
+        "result_digest": "f0b98c00351b010ef7e887fc94742b8930eb9ead8fa2e962bebccca905cd4c74",
+        "session_id": "59f6fcbd924f48ce98a0de7262461b06",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 86
+    },
+    {
+      "arm": "never",
+      "case": 27,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-20934",
+        "fresh_observation": "required",
+        "objection": "objection-1830",
+        "value": 4
+      },
+      "goal": "journal",
+      "handoff_correct": false,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "unsupported_answer",
+      "pair": "journal-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "keyword",
+      "case": 27,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-20934",
+        "fresh_observation": "required",
+        "objection": "objection-1830",
+        "value": 4
+      },
+      "goal": "journal",
+      "handoff_correct": false,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "unsupported_answer",
+      "pair": "journal-0",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 4
+          },
+          "pointer": "/jobs",
+          "source_sha256": "a7b3addec331782fc538fe17d091a1210bb4a81ab7d4ec0ff9c8ca2d33da1ea0",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "d8e704001c799bd104095b6b0f37071f1f4ce03947663fcf65a71fbc6b720dfa",
+        "request_id": "last-read",
+        "result_digest": "f0b98c00351b010ef7e887fc94742b8930eb9ead8fa2e962bebccca905cd4c74",
+        "session_id": "6708bf89836f4183b9a030de25899423",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 103
+    },
+    {
+      "arm": "learned",
+      "case": 27,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-20934",
+        "fresh_observation": "required",
+        "objection": "objection-1830",
+        "value": 4
+      },
+      "goal": "journal",
+      "handoff_correct": false,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "unsupported_answer",
+      "pair": "journal-0",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 45
+    },
+    {
+      "arm": "always",
+      "case": 28,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "summary",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-6443",
+        "value": null
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "summary-3",
+      "proposals": 2,
+      "receipt": {
+        "charged": 0,
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "reason": "outside_grant",
+        "receipt_id": "030bf01510b22ef79baedafbc347454721c95c82c420106785328a0b4c54ddb7",
+        "request_id": "last-read",
+        "session_id": "42ce42ddff334febb360cc756776a946",
+        "status": "REFUSED",
+        "view": "timing"
+      },
+      "wall_ms": 88
+    },
+    {
+      "arm": "never",
+      "case": 28,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "summary",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-6443",
+        "value": null
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "summary-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 44
+    },
+    {
+      "arm": "keyword",
+      "case": 28,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "summary",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-6443",
+        "value": null
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "summary-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 45
+    },
+    {
+      "arm": "learned",
+      "case": 28,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "summary",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-6443",
+        "value": null
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "summary-3",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 45
+    },
+    {
+      "arm": "always",
+      "case": 29,
+      "credits_used": 1,
+      "final": {
+        "action": "abstain",
+        "basis": "protocol",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-8230",
+        "value": null
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "protocol-1",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 2
+          },
+          "pointer": "/jobs",
+          "source_sha256": "eab0da67b6266478d4b748b28934e3da195ba9ae1e6e7d4a2e5c3d05bf660770",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "589c8d6f7401e8d16c0980e33cc3ce6dc63239e7675d52c889e579d165492e89",
+        "request_id": "last-read",
+        "result_digest": "3509af87617262de1692d847a5f749aef3385629d463e4fd83f7f7071c9257f7",
+        "session_id": "3b4162f21c014617ae9bdd0f0da28406",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 89
+    },
+    {
+      "arm": "never",
+      "case": 29,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "protocol",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-8230",
+        "value": null
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "protocol-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "keyword",
+      "case": 29,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "protocol",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-8230",
+        "value": null
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "protocol-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "learned",
+      "case": 29,
+      "credits_used": 0,
+      "final": {
+        "action": "abstain",
+        "basis": "protocol",
+        "citation": null,
+        "fresh_observation": "undetermined",
+        "objection": "objection-8230",
+        "value": null
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "abstain",
+      "obligation_preserved": true,
+      "outcome": "justified_abstention",
+      "pair": "protocol-1",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "always",
+      "case": 30,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-83177",
+        "fresh_observation": "required",
+        "objection": "objection-8726",
+        "value": 4
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-2",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 5
+          },
+          "pointer": "/jobs",
+          "source_sha256": "e8e84aeb17e1aab327109605ec2270b1a78bd166271ea71a736b83048aeb3e77",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "c33a62abc7ee805be3169687d821679f4c8f09eafc5dd880a0c403f59ccd9ffc",
+        "request_id": "last-read",
+        "result_digest": "c5f0c85c9f1c344b6def85e901717a83730628592ef927051eaa366ed7b67d95",
+        "session_id": "8ee41d5234b449c69ee442aeeb242f01",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 85
+    },
+    {
+      "arm": "never",
+      "case": 30,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-83177",
+        "fresh_observation": "required",
+        "objection": "objection-8726",
+        "value": 4
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "keyword",
+      "case": 30,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-83177",
+        "fresh_observation": "required",
+        "objection": "objection-8726",
+        "value": 4
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 43
+    },
+    {
+      "arm": "learned",
+      "case": 30,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "summary",
+        "citation": "summary-83177",
+        "fresh_observation": "required",
+        "objection": "objection-8726",
+        "value": 4
+      },
+      "goal": "summary",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "summary-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 42
+    },
+    {
+      "arm": "always",
+      "case": 31,
+      "credits_used": 1,
+      "final": {
+        "action": "answer",
+        "basis": "protocol",
+        "citation": "rule-v1",
+        "fresh_observation": "required",
+        "objection": "objection-5220",
+        "value": "required"
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "inspect",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "protocol-2",
+      "proposals": 2,
+      "receipt": {
+        "charged": 1,
+        "evidence": {
+          "facts": {
+            "missed_deadlines": 4
+          },
+          "pointer": "/jobs",
+          "source_sha256": "da0ec89db63a251d7e98c195482daba8e0040141d5dcb23eb3855e71bff12b96",
+          "status": "REPORTED",
+          "view": "timing"
+        },
+        "profile": "babalon.evidence-session.v1",
+        "projection": "babalon.peer-job-events.v1",
+        "receipt_id": "0d1146830c717467052571eb6b410633f146cdf9f1e076dc329165804312d6ce",
+        "request_id": "last-read",
+        "result_digest": "5fcf2f4291f1009d23ef1759ed966233ce6b21c4e5dd2c5bb0077332c12451d3",
+        "session_id": "deb02da271994552b9377c252d9b8a5e",
+        "status": "REPORTED",
+        "view": "timing"
+      },
+      "wall_ms": 84
+    },
+    {
+      "arm": "never",
+      "case": 31,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "protocol",
+        "citation": "rule-v1",
+        "fresh_observation": "required",
+        "objection": "objection-5220",
+        "value": "required"
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "protocol-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "keyword",
+      "case": 31,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "protocol",
+        "citation": "rule-v1",
+        "fresh_observation": "required",
+        "objection": "objection-5220",
+        "value": "required"
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "protocol-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    },
+    {
+      "arm": "learned",
+      "case": 31,
+      "credits_used": 0,
+      "final": {
+        "action": "answer",
+        "basis": "protocol",
+        "citation": "rule-v1",
+        "fresh_observation": "required",
+        "objection": "objection-5220",
+        "value": "required"
+      },
+      "goal": "protocol",
+      "handoff_correct": true,
+      "initial": "answer",
+      "obligation_preserved": true,
+      "outcome": "supported_answer",
+      "pair": "protocol-2",
+      "proposals": 1,
+      "receipt": null,
+      "wall_ms": 41
+    }
+  ],
+  "score_rule": "supported answer or justified abstention, with both obligations preserved",
+  "seed": "github-run-43250525790",
+  "totals": {
+    "always": {
+      "avoidable_abstention": 0,
+      "credits_used": 28,
+      "denied_requests": 4,
+      "disclosures": 26,
+      "handoff_correct": 30,
+      "justified_abstention": 9,
+      "obligation_preserved": 32,
+      "outside_grant_disclosures": 0,
+      "proposals": 64,
+      "supported_answer": 21,
+      "unjustified_abstention": 0,
+      "unsupported_answer": 2,
+      "wall_ms": 2740,
+      "worker_failure": 0
+    },
+    "keyword": {
+      "avoidable_abstention": 7,
+      "credits_used": 10,
+      "denied_requests": 0,
+      "disclosures": 9,
+      "handoff_correct": 22,
+      "justified_abstention": 8,
+      "obligation_preserved": 32,
+      "outside_grant_disclosures": 0,
+      "proposals": 42,
+      "supported_answer": 14,
+      "unjustified_abstention": 1,
+      "unsupported_answer": 2,
+      "wall_ms": 1795,
+      "worker_failure": 0
+    },
+    "learned": {
+      "avoidable_abstention": 0,
+      "credits_used": 10,
+      "denied_requests": 0,
+      "disclosures": 9,
+      "handoff_correct": 30,
+      "justified_abstention": 9,
+      "obligation_preserved": 32,
+      "outside_grant_disclosures": 0,
+      "proposals": 42,
+      "supported_answer": 21,
+      "unjustified_abstention": 0,
+      "unsupported_answer": 2,
+      "wall_ms": 1778,
+      "worker_failure": 0
+    },
+    "never": {
+      "avoidable_abstention": 9,
+      "credits_used": 0,
+      "denied_requests": 0,
+      "disclosures": 0,
+      "handoff_correct": 20,
+      "justified_abstention": 8,
+      "obligation_preserved": 32,
+      "outside_grant_disclosures": 0,
+      "proposals": 32,
+      "supported_answer": 12,
+      "unjustified_abstention": 1,
+      "unsupported_answer": 2,
+      "wall_ms": 1347,
+      "worker_failure": 0
+    }
+  }
+}

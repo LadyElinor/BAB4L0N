@@ -5,11 +5,12 @@
 Version 0.1.0 is a local research prototype, not a general intelligent machine.
 It executes real integer-data tasks, persists their outcomes, checks its work,
 and evaluates bounded policy candidates against its default policy.
-It does not train a model, rewrite its own code, or learn from repositories at runtime.
+The optional last-credit study fits a small classifier to fixed development questions.
+The scaffold does not rewrite its own code or learn from repositories at runtime.
 
 ## Run in two minutes
 
-Python 3.11 or later. The runtime, tests and demos need only the standard library.
+Python 3.11 or later. The arithmetic runtime and demos below need only the standard library.
 No API key, network connection or package installation is needed. From this directory:
 
 ```sh
@@ -40,6 +41,47 @@ and default, no per-scenario regression, and all execution safety checks to pass
 Method-selection accuracy is diagnostic only. All fixtures remain exposed, not
 independent holdouts. The former weak baseline is included only as a labeled
 reference, never the deployment benchmark.
+
+## Read a Commonwealth handoff
+
+From the checkout, run the deterministic reader on the bundled synthetic summary:
+
+```sh
+python -m babalon handoff examples/handoff-summary.json --allow timing advice --max-inspections 2
+```
+
+The operator grants access to named sections of a local summary. The reader reports
+timing and disputed advice with source references. A partial handoff exits with
+code 3 and identifies the missing evidence or access limit. The inspection budget
+lasts for one invocation. The [integration plan](docs/INTEGRATION_PLAN.md) includes
+the pinned upstream case, expected results and acceptance tests for the next stages.
+
+For restart-safe inspection, initialize a durable session once and reuse its
+database and request IDs:
+
+```sh
+python -m babalon evidence init session.sqlite tests/fixtures/commonwealth/demo-summary.json --allow timing advice --max-inspections 1
+python -m babalon evidence inspect session.sqlite read-1 timing
+python -m babalon evidence revoke session.sqlite
+python -m babalon evidence inspect session.sqlite read-1 timing
+python -m babalon evidence operator-receipt session.sqlite read-1
+```
+
+The post-revocation inspection returns exit 3 and receipt metadata. The final
+operator command retrieves the original evidence. The local operator controls the
+database and CLI. Give a future isolated policy access only to the observation
+and inspection interfaces. See the [session contract](docs/INTEGRATION_PLAN.md#durable-evidence-session).
+
+An operator can check the pinned summary against its complete protocol-2 event export offline:
+
+```sh
+python -m babalon recount tests/fixtures/commonwealth/demo-summary.json --events tests/fixtures/commonwealth/demo-events.json --allow timing advice
+```
+
+The report gives event sequences and both values for every disagreement in the selected fields.
+Agreement exits 0, a discrepancy or invalid export exits 2, and missing evidence exits 3.
+The [recount scope](docs/INTEGRATION_PLAN.md#independent-recount-of-the-pinned-workshop)
+lists the claims that the event record can support.
 
 ## Use your own bounded task inputs
 
@@ -107,18 +149,53 @@ Python policy in this process. To connect a model later, pass it only the bounde
 observation and accept only proposal JSON; host checks must remain outside the
 model. Notes and evaluation scores cannot enlarge grants.
 
-The only effects are local SQLite task results. There is no shell, network,
+The host writes task results and evidence-session records to local SQLite databases. There is no shell, network,
 browser, messaging, credentials, deployment or real-world execution adapter.
 Hash chains detect certain inconsistent edits, not an owner rewriting the whole
 database. Runtime budgets do not cap arbitrary policy computation.
 
 ## Next useful milestone
 
-Choose one useful domain, implement a read-only or reversible tool adapter, and
-freeze its task contract and evaluation plan. Add an isolated proposal-producing
-model with explicit runtime/cost limits, then compare frozen and improving policies
-on fresh independently held-out tasks. Persist candidate lineage, promotion and
-rollback before making any claim about durable self-improvement. See the staged
-plan in `docs/DESIGN.md`.
+Freeze new cases and assign independent custody and grading before comparing a model with the deterministic reader. The [integration plan](docs/INTEGRATION_PLAN.md)
+defines the checkpoints for evidence access, evaluation and durable promotion.
 
 No repository push, remote publication or deployment is part of this bundle.
+
+## Review a superseded coding-theory result
+
+From the checkout, run the frozen case offline:
+
+```sh
+python -m babalon successor-review examples/successor-review
+python -m babalon successor-review examples/successor-review --candidate examples/successor-review/stale-answer.json
+```
+
+The first command generates a reference answer from three pinned evidence files.
+The second grades an answer with the same three sections as `reference_answer`.
+The included stale answer passes construction and credit and fails standing.
+Each section receives its own grade. The construction grade compares the claimed
+bound and witness identity with a host-computed verification; it does not measure
+what work the submitter performed. The standing grade checks the reported
+table lower bound, observation digest and retrieval date. The credit grade binds
+the submitted name or handle to the original witness. Missing answer sections
+fail individually. Missing or changed evidence makes the affected grade
+unavailable. Exit 0 means complete, 2 indicates a disagreement or invalid
+candidate, and 3 means the evidence is incomplete without an observed disagreement.
+
+The October 15 submission note records 13,026. The November 12 table extract
+records 13,338 for the same parameters with table credit Dz. Its metadata includes
+the original HTML cell and the SHA-256 of the retrieved page. The checker verifies
+the original 13,026-word construction offline: two distinct weight-ten words
+closer than distance six would share at least eight one-positions. Checking
+that no two words share an eight-position subset proves the distance bound in
+586,170 subset visits. The later figure is attributed to the dated table.
+The exposed case measures structured answers on a single historical revision.
+[Source attribution](NOTICE.md)
+
+
+## Deciding whether to spend the last credit
+
+The [paired last-credit trial](docs/INTEGRATION_PLAN.md#frozen-last-credit-trial-development-study)
+runs an isolated statistical proposer and three comparison policies. A trusted
+host charges actual event inspections and scores evidence, abstention and the
+successor's outstanding obligation separately. The extra dependency is optional. [Primary results and failures](reports/LAST_CREDIT.md).

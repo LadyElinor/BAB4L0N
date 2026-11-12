@@ -22,6 +22,38 @@ def main(argv=None):
     demo = sub.add_parser("demo", help="run an explicitly granted local fixture")
     demo.add_argument("database")
     sub.add_parser("improve-demo", help="run bounded fixture-policy improvement")
+    from .handoff import VIEWS, handoff
+    reader = sub.add_parser("handoff", help="inspect permitted views of a local Commonwealth summary")
+    reader.add_argument("summary")
+    reader.add_argument("--allow", nargs="*", choices=VIEWS, required=True)
+    reader.add_argument("--max-inspections", type=int, required=True)
+    checker = sub.add_parser("recount", help="compare summary claims with the pinned demo event export")
+    checker.add_argument("summary")
+    checker.add_argument("--events", help="local protocol-2 export")
+    checker.add_argument("--allow", nargs="*", choices=VIEWS, required=True)
+    successor = sub.add_parser("successor-review", help="verify a construction and update its dated standing")
+    successor.add_argument("directory", help="directory containing the frozen evidence files")
+    successor.add_argument("--candidate", help="JSON answer to grade on three independent fields")
+    study = sub.add_parser("last-credit", help="draw or run the paired evidence inspection trial")
+    phases = study.add_subparsers(dest="phase", required=True)
+    draw = phases.add_parser("draw", help="write an operator-only case pack to stdout")
+    draw.add_argument("--seed", help="reproducible draw; defaults to fresh system randomness")
+    trial = phases.add_parser("run", help="run frozen arms against a committed pack")
+    trial.add_argument("pack")
+    trial.add_argument("--commitment", required=True)
+    evidence = sub.add_parser("evidence", help="operate a durable local evidence session")
+    actions = evidence.add_subparsers(dest="action", required=True)
+    for action in ("init", "observe", "inspect", "revoke", "operator-receipt"):
+        command = actions.add_parser(action)
+        command.add_argument("database")
+        if action == "init":
+            command.add_argument("summary")
+            command.add_argument("--allow", nargs="*", choices=VIEWS, required=True)
+            command.add_argument("--max-inspections", type=int, required=True)
+        if action in ("inspect", "operator-receipt"):
+            command.add_argument("request_id")
+        if action == "inspect":
+            command.add_argument("view")
     for name in ("observe", "audit", "verify", "run", "submit", "stop", "note"):
         command = sub.add_parser(name)
         command.add_argument("database")
@@ -39,6 +71,31 @@ def main(argv=None):
     try:
         if args.command == "init":
             result = Host.create(args.database, read(args.tasks), read(args.grant)).observe()
+        elif args.command == "last-credit":
+            from .last_credit.study import draw, run_study
+            result = draw(args.seed) if args.phase == "draw" else run_study(read(args.pack), args.commitment)
+        elif args.command == "successor-review":
+            from .successor import review
+            result = review(args.directory, read(args.candidate)) if args.candidate else review(args.directory)
+        elif args.command == "recount":
+            from .recount import recount
+            result = recount(args.summary, args.events, args.allow)
+        elif args.command == "evidence":
+            from .evidence_session import EvidenceSession
+            session = EvidenceSession(args.database)
+            if args.action == "init":
+                session = EvidenceSession.create(args.database, args.summary, args.allow, args.max_inspections)
+                result = session.observe()
+            elif args.action == "observe":
+                result = session.observe()
+            elif args.action == "inspect":
+                result = session.inspect(args.request_id, args.view)
+            elif args.action == "revoke":
+                result = session.revoke()
+            else:
+                result = session.operator_receipt(args.request_id)
+        elif args.command == "handoff":
+            result = handoff(args.summary, args.allow, args.max_inspections)
         elif args.command == "improve-demo":
             from .improvement import demo
             result = demo()
@@ -61,8 +118,8 @@ def main(argv=None):
             else: result = host.verify()
         print(json.dumps(result, indent=2, sort_keys=True, allow_nan=False))
         status = result.get("status", result.get("disposition"))
-        if status in ("INCONSISTENT", "AUDIT_FAILED", "INVALID_PROPOSAL"): return 2
-        if status in ("REFUSED", "STOPPED", "WAITING", "DECLINED", "CYCLE_LIMIT", "BUDGET_EXHAUSTED"): return 3
+        if status in ("DISAGREEMENT", "INVALID_EXPORT", "INCONSISTENT", "AUDIT_FAILED", "INVALID_PROPOSAL"): return 2
+        if status in ("PARTIAL", "UNAVAILABLE", "REFUSED", "STOPPED", "WAITING", "DECLINED", "CYCLE_LIMIT", "BUDGET_EXHAUSTED"): return 3
         return 0
     except (Invalid, OSError, sqlite3.Error, ValueError, KeyError, TypeError) as exc:
         print(json.dumps({"status": "ERROR", "reason": str(exc)}), file=sys.stderr)
