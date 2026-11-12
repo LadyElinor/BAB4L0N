@@ -65,3 +65,5 @@ The first hosted run on the frozen follow-up commit is the recorded run.
 Install `.[last-credit]` and run `python scripts/attribution_trial.py > result.json`
 from the checkout. The command runs offline. Both policies execute in
 capability-limited QuickJS guests, and no language model is called or promoted.
+
+[Observed results, including the external diagnostic](../../reports/CITATION_DISCIPLINE.md).
