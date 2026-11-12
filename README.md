@@ -217,3 +217,11 @@ outcome unknown. Per-case [uncertainty assessments](docs/REMEDY_REVIEW.md#uncert
 retain conflicting accounts and identify missing findings. Add `--questions records` to see which questions the responsible
 offices can address using existing evidence. The [remedy study and completion criteria](docs/REMEDY_REVIEW.md)
 include runnable examples and the remaining independent and human review gates.
+
+## Coordinating a local inquiry
+
+Give four investigator roles a question and a directory of text documents.
+The coordinator can commission a second round to trace a citation or examine
+a check that could distinguish competing accounts. The [community inquiry
+example and input format](docs/COMMUNITY_INQUIRY.md) describe how to run it
+and inspect the resulting evidence map.
