@@ -133,3 +133,19 @@ conversation, office responsibility and malformed source files. On the pinned
 case, adding the 100-unit receiving register removed the delivery question and
 retained the open finding. No prompt was addressed to the person who declined
 further contact. This tests question selection on exposed scenarios.
+
+## 2026-11-12 — Uncertainty in remedy evidence
+
+The v3 reviewer exposes the two-office case from the assessment. At the same
+tick it retains both findings, returns DISAGREEMENT and cites both records in
+its reconciliation question. With the original report moved one tick earlier,
+it returns PARTIAL and asks what changed. The awarded credit, objection and
+contact preference survive both runs.
+
+Seven new regression tests include 36 combinations of findings, dates and
+controller labels, each presented in both orders. They also check missing and
+unmatched inventories, inconclusive findings, repeated claims, bounded costs
+and the archived v2 question interface. These synthetic combinations check
+classification and handoff behavior. They do not estimate how often a source
+is right. All 124 tests and fresh-process demos passed on Python 3.12.14 with
+the optional last-credit dependency installed.

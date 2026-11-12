@@ -46,7 +46,7 @@ retained account by its opaque record ID and check its canonical digest against
 `personal_outcome.account_digest`. The operator must retain and control access
 to the original file. A digest alone cannot recover the words.
 
-The report now identifies itself as `babalon.remedy-review.v2`. The optional
+The report identifies itself as `babalon.remedy-review.v3`. The optional
 `babalon.voluntary-remedy-account.v2` input binds a nonblank `account` of up to
 2,000 characters to the case, award, speaker, record and observation time. The
 reviewer preserves a reference regardless of the vocabulary. It assigns human
@@ -119,15 +119,67 @@ evaluate with willing participants. Running a template checks which prompts
 are drafted and who bears the work. Their usefulness to a particular person
 remains an open question.
 
+## Uncertainty about a specific claim
+
+The receiving register can establish the recorded balance while the person's
+experience remains unknown and two offices disagree about another case.
+The report keeps these three statements separate. It assigns no numerical
+confidence to testimony, institutional records or personal value.
+
+The inquiry's `finding_assessments` groups all supplied findings by case, with
+record ID, reporting controller, tick, result and whether the finding fits
+the declared assignment and inventory. Read this section for the evidence
+behind a question. The older `reported_open_findings` field is a filtered
+index. Only the v3 report carries the full projection. The guide can still
+read archived v2 reports with their original, more limited question logic.
+
+| Evidence supplied for a case | Interpretation and next question |
+| --- | --- |
+| Listed file with no finding | Missing. Look for an existing file-level finding. |
+| An explicitly inconclusive finding | An office examined the question and reported uncertainty. Ask what observation is missing. A substantive report alongside that entry remains visible. |
+| Only one substantive conclusion appears | Attribute it to the listed reporters. A review outside the declared assignment needs a scope check. Repetition adds references and carries no voting weight. |
+| One review reports a correction owed and another reports none found at the same tick | The reports disagree. Preserve both and ask what evidence each used. Exit 2, even if one position has more records. |
+| The opposing findings have different ticks | Ask what changed, if anything. A later filing could reflect a correction, new evidence or a difference in scope. Both records survive. Differing dates alone leave the report partial (exit 3). |
+
+Ticks date reports. A disagreement flag identifies a difference worth
+reconciling. It establishes neither fault nor which account is true. The
+institution retains responsibility if the sources cannot be reconciled.
+Different cases are assessed separately. The inventory distinguishes missing
+or unusable coverage from a matched reviewer's claim of complete or incomplete
+coverage. Only a matched inventory can identify cases as listed but lacking
+a finding. The underlying files and source independence remain unverified.
+
+The Commonwealth E1 study includes identical observations paired with opposite
+simulated truths, and apparently distinct sources copying one origin. An
+honest system can give the same uncertain answer in both worlds. More copies
+cannot resolve the ambiguity. The remedy packet supplies controller labels
+and report times. It contains no authenticated lineage of the observations
+behind each report. [Commonwealth E1 design](https://github.com/LadyElinor/unfinished-commonwealth/blob/3688dcdfa70b27531c8f0d3bd315a88736c87655/docs/UNCERTAINTY_V1_DESIGN.md)
+
+Where the data warrant numbers, v3 supplies `recorded_work_unit_bounds`.
+If entries sum to five known units and one cost is missing, the range for
+those entries is 5 through 1,000,000,005. The upper end uses the schema cap
+of one billion per entry. It may be too loose to guide a decision. An
+observed zero narrows the range to exactly five. No finite upper bound on
+unrecorded work or lived burden follows from this arithmetic.
+
+For a future forecast such as whether a correction will be verified by an
+agreed deadline, define the event, horizon and observation process before
+issuing probabilities. Compare prospective forecasts against a base-rate
+forecast on independently held cases. Examine calibration and Brier score,
+and report abstentions, unresolved outcomes and coverage separately. A missed
+observation leaves an outcome unverified. This study contains no such
+calibrated forecast. [IPCC guidance on evidence, agreement and likelihood](https://www.ipcc.ch/site/assets/uploads/2018/12/ar5_uncertainty-guidance-note.pdf) · [Forecast calibration and proper scores](https://doi.org/10.1073/pnas.2016191118)
+
 ## Evidence and scope
 
 The trusted, read-only operator supplies local bounded JSON snapshots. The command
 cannot contact anyone, make a transfer, approve a case or change a policy. It
 accepts a projection of the upstream `owed-assistance-1` format. It reads the
-award, warning, participation, work, assignment and reported findings. Its
+award, warning, participation, work, assignment, inventory and reported findings. Its
 digest covers the canonical case. The original words stay in the source packet.
-The report carries the record reference and digest. The upstream inventory and
-sender transfer rows are outside the projection. Findings are attributed to that
+The report carries the record reference and digest. Sender transfer rows are
+outside the projection. Findings are attributed to the supplied
 packet. The reviewer does not certify inventory coverage or adjudicate the rule.
 
 This synthetic receiving register is scoped to one award, case, recipient and

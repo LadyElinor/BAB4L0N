@@ -3,6 +3,7 @@ from .contracts import Invalid, digest, fields, integer, label, prose
 
 CHOICES = ("public-reconciliation", "publicity", "repeat-testimony", "further-contact")
 MAX_TICK = 10**12
+MAX_WORK_UNITS = 10**9
 REGISTER = "settlement-register"
 
 
@@ -62,15 +63,56 @@ def _work(case, seen, as_of):
         if row["units"] is None:
             costs["unknown_cost_entries"] += 1
         else:
-            integer(row["units"], 0, 10**9)
+            integer(row["units"], 0, MAX_WORK_UNITS)
             costs["recorded_units"] += row["units"]
         if row["bearer"] == "affected-person" and row["required"]:
             conditions.append(row["record"])
     return conditions, burden
 
 
+def _inventory(case, reviewer, seen, as_of):
+    row = case["inquiry"]["inventory"]
+    if row is None:
+        return {"coverage": "unknown", "record": None, "cases": []}
+    warning = case["warning"]
+    _record(row, "controller rule cases complete", seen, warning["at"], as_of)
+    label(row["controller"])
+    label(row["rule"])
+    if type(row["complete"]) is not bool:
+        raise Invalid("expected a boolean inventory coverage claim")
+    cases = _rows(row["cases"])
+    for case_id in cases:
+        label(case_id)
+    if len(set(cases)) != len(cases) or case["award"]["case"] in cases:
+        raise Invalid("expected distinct other cases in inventory")
+    assignment = case["inquiry"]["assignment"]
+    matches = (reviewer == row["controller"] and row["rule"] == warning["rule"]
+               and assignment is not None and row["at"] >= assignment["at"])
+    coverage = "reported_complete" if row["complete"] else "reported_incomplete"
+    return {"coverage": coverage if matches else "unmatched", "record": row["record"],
+            "controller": row["controller"], "at": row["at"], "rule": row["rule"],
+            "cases": sorted(cases)}
+
+
+def _finding_state(records):
+    if not records:
+        return "missing"
+    by_tick = {}
+    for row in records:
+        by_tick.setdefault(row["at"], set()).add(row["reported"])
+    opposite = {"correction-owed", "no-correction-found"}
+    if any(opposite <= outcomes for outcomes in by_tick.values()):
+        return "same_tick_disagreement"
+    outcomes = {row["reported"] for row in records}
+    if opposite <= outcomes:
+        return "differing_dated_reports"
+    if len(outcomes) > 1:
+        return "partly_inconclusive"
+    return records[0]["reported"]
+
+
 def _inquiry(case, seen, as_of):
-    # This projection identifies owners and reported open findings. It cannot close an inquiry.
+    # Inventory, assignment and findings are source claims. None can close an inquiry.
     inquiry, award, warning = case["inquiry"], case["award"], case["warning"]
     fields(inquiry, {"assignment", "inventory", "findings"})
     reviewer = None
@@ -82,21 +124,45 @@ def _inquiry(case, seen, as_of):
             award["recipient"], award["decision_office"], award["paying_office"], case["institution"], REGISTER
         ):
             reviewer = assignment["controller"]
-    findings = []
-    for row in _rows(inquiry["findings"]):
+    rows = _rows(inquiry["findings"])
+    for row in rows:
         _record(row, "controller case result", seen, warning["at"], as_of)
         label(row["case"])
         label(row["controller"])
         if row["result"] not in ("correction-owed", "inconclusive", "no-correction-found"):
             raise Invalid("invalid file finding")
+    try:
+        inventory = _inventory(case, reviewer, seen, as_of)
+    except Invalid as exc:
+        inventory = {"coverage": "invalid", "record": None, "cases": [], "source_error": str(exc)}
+    scoped_inventory = inventory["coverage"] in ("reported_complete", "reported_incomplete")
+    by_case = {case_id: [] for case_id in inventory["cases"]} if scoped_inventory else {}
+    findings = []
+    for row in rows:
+        in_scope = (scoped_inventory and row["case"] in inventory["cases"] and
+                    row["controller"] == reviewer and row["at"] >= inventory["at"])
+        by_case.setdefault(row["case"], []).append({
+            "record": row["record"], "controller": row["controller"], "at": row["at"],
+            "reported": row["result"], "within_declared_assignment": in_scope,
+        })
         if row["result"] != "no-correction-found":
             findings.append({"record": row["record"], "case": row["case"], "reported": row["result"]})
+    assessments = {}
+    for case_id, records in sorted(by_case.items()):
+        records.sort(key=lambda record: (record["at"], record["record"]))
+        assessments[case_id] = {"state": _finding_state(records), "records": records}
+    next_action = "review_rule_and_follow_up_findings"
+    if reviewer is None:
+        next_action = "assign_separate_reviewer"
+    elif any(item["state"] in ("same_tick_disagreement", "differing_dated_reports")
+             for item in assessments.values()):
+        next_action = "reconcile_findings"
     return {
         "objection_record": warning["record"], "objection_digest": digest(warning),
         "rule": warning["rule"], "status": "open", "reviewer": reviewer,
         "next_owner": reviewer or case["institution"],
-        "next_action": "review_rule_and_follow_up_findings" if reviewer else "assign_separate_reviewer",
-        "reported_open_findings": findings,
+        "next_action": next_action, "reported_open_findings": findings,
+        "inventory": inventory, "finding_assessments": assessments, "source_independence": "unverified",
     }
 
 
@@ -195,13 +261,20 @@ def review(case, register, as_of, *, account=None):
     except Invalid as exc:
         delivery = _delivery(case["award"], None, as_of)
         delivery.update(status="invalid_register", reason=str(exc))
-    disagreement = (conditions or outcome["status"] in ("could-not-use", "record-disputed") or "source_error" in outcome
+    conflict = any(item["state"] == "same_tick_disagreement" for item in inquiry["finding_assessments"].values())
+    disagreement = (conflict or conditions or outcome["status"] in ("could-not-use", "record-disputed")
+                    or "source_error" in outcome
                     or delivery["status"] in ("excess_needs_review", "invalid_register"))
     return {
-        "profile": "babalon.remedy-review.v2", "as_of": as_of, "case": case["award"]["case"],
+        "profile": "babalon.remedy-review.v3", "as_of": as_of, "case": case["award"]["case"],
         "award": case["award"]["record"], "case_digest": digest(case),
         "delivery": delivery, "inquiry": inquiry, "participation": choices,
         "required_person_work_records": conditions, "recorded_burden": burden,
+        "recorded_work_unit_bounds": {
+            role: {"min": costs["recorded_units"],
+                   "max": costs["recorded_units"] + MAX_WORK_UNITS * costs["unknown_cost_entries"]}
+            for role, costs in burden.items()
+        },
         "burden_correction_owner": case["institution"] if conditions else None,
         "personal_outcome": outcome, "authority_granted": False, "external_actions": 0,
         "status": "DISAGREEMENT" if disagreement else "PARTIAL",

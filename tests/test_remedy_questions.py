@@ -83,7 +83,7 @@ class RemedyQuestionTests(unittest.TestCase):
     def test_missing_reviewer_and_missing_findings_call_for_different_institutional_questions(self):
         self.case["inquiry"]["findings"] = []
         q = self.guide(self.register)["office_questions"][0]
-        self.assertEqual((q["topic"], q["owner"], q["basis"]), ("rule_inquiry", "review-office", ["original-account"]))
+        self.assertEqual((q["topic"], q["owner"], q["basis"]), ("missing_finding", "review-office", ["denial-register-search"]))
         self.case["inquiry"]["assignment"] = None
         q = self.guide(self.register)["office_questions"][0]
         self.assertEqual((q["topic"], q["owner"]), ("review_assignment", "assistance-service"))

@@ -146,7 +146,7 @@ class RemedyReviewTests(unittest.TestCase):
         p = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
         self.assertEqual(p.returncode, 3)
         silent = json.loads(p.stdout)
-        self.assertEqual(silent["profile"], "babalon.remedy-review.v2")
+        self.assertEqual(silent["profile"], "babalon.remedy-review.v3")
         self.assertEqual(silent["personal_outcome"],
                          {"status": "unknown", "record": None, "account_digest": None, "next_owner": None})
         self.assertEqual(silent["delivery"]["net_credit_units"], 100)
