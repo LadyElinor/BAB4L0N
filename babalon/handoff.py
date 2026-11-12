@@ -55,23 +55,47 @@ def _advice(summary):
     return answer
 
 
+def validate_grant(allowed, max_inspections):
+    if type(allowed) not in (list, tuple) or any(v not in VIEWS for v in allowed):
+        raise Invalid("unknown evidence view")
+    if len(set(allowed)) != len(allowed):
+        raise Invalid("duplicate evidence view")
+    integer(max_inspections, 0, len(VIEWS))
+    return tuple(v for v in VIEWS if v in allowed)
+
+
+def load_snapshot(path):
+    with Path(path).open("rb") as stream:
+        raw = stream.read(MAX_JSON_BYTES + 1)
+    if len(raw) > MAX_JSON_BYTES:
+        raise Invalid("summary exceeds one MiB")
+    summary = parse_json(raw.decode("utf-8"))
+    if type(summary) is not dict:
+        raise Invalid("expected a workshop summary object")
+    return raw, summary
+
+
+def project_view(summary, source_hash, view):
+    projections = {"timing": ("/measures", _timing), "advice": ("/inherited_advice", _advice)}
+    pointer, project = projections[view]
+    result = {"view": view, "source_sha256": source_hash, "pointer": pointer}
+    try:
+        result["facts"] = project(summary)
+    except (Invalid, KeyError, TypeError):
+        result["status"] = "UNAVAILABLE"
+        result["reason"] = "missing_or_invalid_evidence"
+    else:
+        result["status"] = "REPORTED"
+    result["receipt_id"] = digest(result)
+    return result
+
+
 class EvidenceReader:
     """Trusted one-shot reader. Only the brief and inspect responses go to a policy."""
     def __init__(self, path, allowed, max_inspections):
-        if type(allowed) not in (list, tuple) or any(v not in VIEWS for v in allowed):
-            raise Invalid("unknown evidence view")
-        if len(set(allowed)) != len(allowed):
-            raise Invalid("duplicate evidence view")
-        integer(max_inspections, 0, len(VIEWS))
-        with Path(path).open("rb") as stream:
-            raw = stream.read(MAX_JSON_BYTES + 1)
-        if len(raw) > MAX_JSON_BYTES:
-            raise Invalid("summary exceeds one MiB")
-        self._summary = parse_json(raw.decode("utf-8"))
-        if type(self._summary) is not dict:
-            raise Invalid("expected a workshop summary object")
+        self._allowed = validate_grant(allowed, max_inspections)
+        raw, self._summary = load_snapshot(path)
         self._source = hashlib.sha256(raw).hexdigest()
-        self._allowed = tuple(v for v in VIEWS if v in allowed)
         self._remaining = max_inspections
         self._reads = {}
 
@@ -87,17 +111,7 @@ class EvidenceReader:
             return {"status": "REFUSED", "reason": "inspection_budget_exhausted"}
         # An inspection costs one even when the source cannot answer the question.
         self._remaining -= 1
-        pointer, project = (("/measures", _timing) if view == "timing"
-                            else ("/inherited_advice", _advice))
-        result = {"view": view, "source_sha256": self._source, "pointer": pointer}
-        try:
-            result["facts"] = project(self._summary)
-        except (Invalid, KeyError, TypeError):
-            result["status"] = "UNAVAILABLE"
-            result["reason"] = "missing_or_invalid_evidence"
-        else:
-            result["status"] = "REPORTED"
-        result["receipt_id"] = digest(result)
+        result = project_view(self._summary, self._source, view)
         self._reads[view] = result
         return deepcopy(result)
 
