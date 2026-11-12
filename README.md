@@ -206,3 +206,11 @@ answerers. The [original guest and its complete development set](babalon/last_cr
 are available together. For operator reports, `handoff` labels event and
 protocol checks as unchecked; `recount` returns separate top-level
 `event_status` and `protocol_status` fields alongside the overall decision.
+
+## Reviewing an owed remedy
+
+The offline operator command `remedy-review` accepts a Commonwealth assistance
+case and an optional receiving register. It identifies who still owes work,
+retains the original objection by reference and can record a volunteered report
+that a credited remedy was unusable. The [remedy study and completion criteria](docs/REMEDY_REVIEW.md)
+include runnable examples and the remaining independent and human review gates.

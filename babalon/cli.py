@@ -12,6 +12,17 @@ def read(path):
     with open(path, encoding="utf-8") as stream:
         return parse_json(stream.read(MAX_JSON_BYTES + 1))
 
+def _optional_remedy_input(path):
+    if path is None:
+        return None, None
+    try:
+        record = read(path)
+    except OSError:
+        return None, "unreadable"
+    except ValueError:
+        return None, "malformed"
+    return (record, None) if record is not None else (None, "malformed")
+
 def main(argv=None):
     parser = argparse.ArgumentParser(description="Babalon bounded local agent scaffold")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -34,6 +45,11 @@ def main(argv=None):
     successor = sub.add_parser("successor-review", help="verify a construction and update its dated standing")
     successor.add_argument("directory", help="directory containing the frozen evidence files")
     successor.add_argument("--candidate", help="JSON answer to grade on three independent fields")
+    remedy = sub.add_parser("remedy-review", help="review an owed award and the institution's continuing duty")
+    remedy.add_argument("case", help="local Commonwealth owed-assistance-1 packet")
+    remedy.add_argument("--register", help="separate receiving-side snapshot")
+    remedy.add_argument("--account", help="optional, already volunteered account of whether the person could use the remedy")
+    remedy.add_argument("--as-of", type=int, required=True, help="inclusive review tick")
     study = sub.add_parser("last-credit", help="draw or run the paired evidence inspection trial")
     phases = study.add_subparsers(dest="phase", required=True)
     draw = phases.add_parser("draw", help="write an operator-only case pack to stdout")
@@ -77,6 +93,17 @@ def main(argv=None):
         elif args.command == "successor-review":
             from .successor import review
             result = review(args.directory, read(args.candidate)) if args.candidate else review(args.directory)
+        elif args.command == "remedy-review":
+            from .remedy import review
+            case = read(args.case)
+            register, register_error = _optional_remedy_input(args.register)
+            account, account_error = _optional_remedy_input(args.account)
+            result = review(case, register, args.as_of, account=account)
+            for section, problem in (("delivery", register_error), ("personal_outcome", account_error)):
+                if problem:
+                    result[section]["source_error"] = problem
+                if problem == "malformed":
+                    result["status"] = "DISAGREEMENT"
         elif args.command == "recount":
             from .recount import recount
             result = recount(args.summary, args.events, args.allow)

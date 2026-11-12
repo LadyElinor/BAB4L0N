@@ -34,3 +34,8 @@ The extractor selects and reorders rows, retains three fields, and renames
 `answer_from` to `source`. See the [paper](https://aclanthology.org/2021.acl-long.254/),
 [pinned dataset and licensing statement](https://github.com/NExTplusplus/TAT-QA/tree/870accc41953dcde885aabeb963d94aabdc0fbc3),
 and [CC BY 4.0 terms](https://creativecommons.org/licenses/by/4.0/).
+
+The byte-identical `tests/fixtures/commonwealth/owed-assistance.json` is the
+fictional case in [Unfinished Commonwealth at 00870ca](https://github.com/LadyElinor/unfinished-commonwealth/blob/00870cacd872f28fa7ffb054097d026b088026f2/examples/owed-assistance.json).
+The upstream MIT notice is in the same fixture directory. The separate receiving
+register and voluntary account are Babalon-authored synthetic alternatives.

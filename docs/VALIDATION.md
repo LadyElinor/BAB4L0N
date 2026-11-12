@@ -100,3 +100,14 @@ altered final envelope and broken link failed the journal check. Six new
 regression tests brought the full suite to 79. All tests and subprocess demos
 passed locally on Python 3.12.14 and 3.13.5. The checker imports no Commonwealth
 runtime and makes no model calls. All cases are exposed.
+
+## 2026-11-12 — Owed remedy and a continuing objection
+
+All 107 tests and the fresh-process demos passed on Python 3.12.14 with the
+optional last-credit dependency installed. Ten tests cover the remedy profile.
+The upstream case supplied alone left all 100 units unverified. A separate
+synthetic receiving register supported 100 units of net credit. An optional
+report of unusability produced a disagreement while preserving the credit,
+the person's choices, the rule inquiry and the correction reported for other-8.
+Changing the participation choices affected neither the award nor the warning.
+These exposed test records share custody. No real recipient was contacted.
