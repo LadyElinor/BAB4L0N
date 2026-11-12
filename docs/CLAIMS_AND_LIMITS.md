@@ -16,12 +16,12 @@
 
 - General intelligence, agency comparable to a person, open-ended learning,
   generalization, learned planning or recursive source-code improvement.
-- Model-backed behavior: the included policies are deterministic fixtures.
+- Language-model performance or independently held-out evidence of a learned policy advantage.
 - Learning from repository code or prose at runtime. Existing work informed
   architectural choices; there are no repository integrations in this runtime.
 - Persistent learned policy or evaluation limits across gate reconstruction.
 - Independent evaluator cognition, authenticated receipts, secure clocks,
-  process isolation, production security or real-world safety.
+  general-purpose process isolation, production security or real-world safety.
 - Full historical transition replay or resistance to a trusted database owner's
   coherent rewrite. Local digest consistency is not authentication.
 - General crash/power-loss recovery. Tests cover injected transactional exceptions
@@ -65,3 +65,12 @@ boundary. Do not expose the raw CLI as a multi-user authorization service.
 No upstream license is inferred from visibility, and no external permission follows
 from a passing test, a note, a receipt or a promoted policy. The archive includes no
 upstream code or dependencies and does not choose a distribution license for the owner.
+
+## Evidence acquisition
+
+The [last-credit comparison](../reports/LAST_CREDIT.md) runs a statistical
+classifier in a resource-limited QuickJS guest, with a fresh child process for
+each proposal. The trusted Python host owns the grants and evidence files. The
+classifier's success on this one task family does not establish open-ended
+planning. The historical arithmetic runner continues to trust Python policies.
+The optional study uses a third-party runtime and synthetic records.

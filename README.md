@@ -5,11 +5,12 @@
 Version 0.1.0 is a local research prototype, not a general intelligent machine.
 It executes real integer-data tasks, persists their outcomes, checks its work,
 and evaluates bounded policy candidates against its default policy.
-It does not train a model, rewrite its own code, or learn from repositories at runtime.
+The optional last-credit study fits a small classifier to fixed development questions.
+The scaffold does not rewrite its own code or learn from repositories at runtime.
 
 ## Run in two minutes
 
-Python 3.11 or later. The runtime, tests and demos need only the standard library.
+Python 3.11 or later. The arithmetic runtime and demos below need only the standard library.
 No API key, network connection or package installation is needed. From this directory:
 
 ```sh
@@ -197,4 +198,4 @@ The exposed case measures structured answers on a single historical revision.
 The [paired last-credit trial](docs/INTEGRATION_PLAN.md#frozen-last-credit-trial-development-study)
 runs an isolated statistical proposer and three comparison policies. A trusted
 host charges actual event inspections and scores evidence, abstention and the
-successor's outstanding obligation separately. The extra dependency is optional.
+successor's outstanding obligation separately. The extra dependency is optional. [Primary results and failures](reports/LAST_CREDIT.md).
