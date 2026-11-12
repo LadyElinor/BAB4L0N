@@ -28,6 +28,43 @@ The third command explores an alternative history in which the person initiates
 a report. It grants no permission to solicit another response. The first two
 commands require no subsequent input from the person.
 
+## Three accounts of the same credit
+
+Run the receiving-register command above with no account, then repeat it with
+`--account "$d/late-remedy-account.json"` and `--account "$d/leaving-remedy-account.json"`.
+All three use the same award, register, review tick and participation choices.
+
+| What the operator supplies | What the reviewer records |
+| --- | --- |
+| No subsequent account | Personal outcome `unknown`. The existing rule inquiry stays with the review office. |
+| The person reports the money arrived after they lost the room | An unclassified account reference for the reviewer. The words stay in the source file. |
+| The person says that being free to leave mattered most | A distinct unclassified reference for the reviewer, under the same rule. |
+
+All three runs show 100 units of net credit, the same open objection and a
+partial review (exit 3). The person owes no response. A reviewer can locate a
+retained account by its opaque record ID and check its canonical digest against
+`personal_outcome.account_digest`. The operator must retain and control access
+to the original file. A digest alone cannot recover the words.
+
+The report now identifies itself as `babalon.remedy-review.v2`. The optional
+`babalon.voluntary-remedy-account.v2` input binds a nonblank `account` of up to
+2,000 characters to the case, award, speaker, record and observation time. The
+reviewer preserves a reference regardless of the vocabulary. It assigns human
+review of the supplied record to the existing inquiry owner. The words confer
+no grant, trigger no contact and receive no score. A mismatched case, speaker
+or award, invalid time or malformed envelope remains a source error.
+
+The three recognized v1 `outcome` labels retain their prior meanings. When a
+v1 account contains another bounded, nonblank string, the v2 reviewer keeps its
+reference as `recorded_unclassified`. Narrative prose in the v2 `account` field
+receives this treatment even if its entire text matches a recognized v1 label.
+
+The `recorded_burden` section reports entries, known units and the number of
+unknown costs separately for the affected person and the institution. An
+optional visit can take five units of someone's time. A required visit costing
+zero recorded units can still be an imposed condition. An empty work list
+supports only a count of recorded entries. Unrecorded burdens may remain.
+
 ## Evidence and scope
 
 The trusted, read-only operator supplies local bounded JSON snapshots. The command
@@ -59,7 +96,7 @@ reported. The operator is trusted to supply the correct account, role identities
 and complete receiving snapshot. Files may share an author or be replaced. Their
 digests establish identity of the supplied content only. The profile has no
 ingestion authentication, persistent case history or evidence of actual delivery.
-The two Babalon fixtures are invented for this study.
+The receiving register and voluntary accounts are fictional Babalon fixtures.
 
 ## What would finish this research milestone?
 

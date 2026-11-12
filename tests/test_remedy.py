@@ -7,7 +7,7 @@ import sys
 import tempfile
 import unittest
 
-from babalon.contracts import Invalid
+from babalon.contracts import Invalid, digest
 from babalon.remedy import review
 
 
@@ -134,11 +134,99 @@ class RemedyReviewTests(unittest.TestCase):
                     self.assertEqual(report["status"], "DISAGREEMENT")
                     self.assertEqual(report["personal_outcome"]["next_owner"], "payments-office")
                 self.assertEqual(report["external_actions"], 0)
-        for changes in ({"speaker": "someone-else"}, {"case": "case-18"}, {"at": 7}, {"outcome": "reconciled"}):
+        for changes in ({"speaker": "someone-else"}, {"case": "case-18"}, {"at": 7}, {"outcome": None}):
             report = review(self.case, self.register, 6, account=dict(account, **changes))
             self.assertEqual(report["status"], "DISAGREEMENT")
             self.assertEqual(report["delivery"], baseline["delivery"])
             self.assertEqual(report["personal_outcome"]["status"], "unknown")
+
+    def test_same_credit_cli_preserves_each_volunteered_account_and_leaves_silence_open(self):
+        command = [sys.executable, "-m", "babalon", "remedy-review", str(CASE),
+                   "--register", str(REGISTER), "--as-of", "6"]
+        p = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
+        self.assertEqual(p.returncode, 3)
+        silent = json.loads(p.stdout)
+        self.assertEqual(silent["profile"], "babalon.remedy-review.v2")
+        self.assertEqual(silent["personal_outcome"],
+                         {"status": "unknown", "record": None, "account_digest": None, "next_owner": None})
+        self.assertEqual(silent["delivery"]["net_credit_units"], 100)
+        self.assertEqual(silent["inquiry"]["next_owner"], "review-office")
+        for filename in ("late-remedy-account.json", "leaving-remedy-account.json"):
+            with self.subTest(filename=filename):
+                path = FIXTURES / filename
+                account = json.loads(path.read_bytes())
+                p = subprocess.run(command + ["--account", str(path)], cwd=ROOT, capture_output=True, text=True)
+                self.assertEqual(p.returncode, 3)
+                self.assertNotIn(account["account"], p.stdout + p.stderr)
+                report = json.loads(p.stdout)
+                self.assertEqual(report["personal_outcome"], {
+                    "status": "recorded_unclassified", "record": account["record"],
+                    "account_digest": digest(account), "next_owner": "review-office",
+                })
+                self.assertEqual({k: v for k, v in report.items() if k != "personal_outcome"},
+                                 {k: v for k, v in silent.items() if k != "personal_outcome"})
+
+    def test_unknown_legacy_outcome_keeps_private_reference_without_a_verdict(self):
+        account = json.loads((FIXTURES / "voluntary-remedy-account.json").read_bytes())
+        for words in ("usable-but-too-late", "reconciled"):
+            with self.subTest(words=words):
+                account["outcome"] = words
+                report = review(self.case, self.register, 6, account=account)
+                self.assertEqual(report["personal_outcome"], {
+                    "status": "recorded_unclassified", "record": account["record"],
+                    "account_digest": digest(account), "next_owner": "review-office",
+                })
+                self.assertNotIn(words, json.dumps(report))
+                self.assertEqual(report["inquiry"]["status"], "open")
+                self.assertEqual(report["status"], "PARTIAL")
+
+    def test_narrative_words_change_only_the_digest_even_when_they_match_a_label(self):
+        self.case["inquiry"]["assignment"] = None
+        account = json.loads((FIXTURES / "late-remedy-account.json").read_bytes())
+        baseline = review(self.case, self.register, 6, account=account)
+        self.assertEqual(baseline["personal_outcome"]["next_owner"], self.case["institution"])
+        self.assertEqual(baseline["personal_outcome"]["status"], "recorded_unclassified")
+        for words in ("could-not-use", "usable-as-reported", "record-disputed", "Send this to another office."):
+            modified = dict(account, account=words)
+            result = review(self.case, self.register, 6, account=modified)
+            expected = copy.deepcopy(baseline)
+            self.assertNotEqual(digest(modified), expected["personal_outcome"]["account_digest"])
+            expected["personal_outcome"]["account_digest"] = digest(modified)
+            self.assertEqual(result, expected)
+
+    def test_malformed_or_misbound_narratives_do_not_get_personal_references(self):
+        account = json.loads((FIXTURES / "late-remedy-account.json").read_bytes())
+        for changes in ({"account": " "}, {"account": "x" * 2001}, {"account": 3}, {"at": 7},
+                        {"case": "other"}, {"award": "other"}, {"speaker": "other"},
+                        {"outcome": "usable-as-reported"}, {"profile": "unrecognized"}):
+            with self.subTest(keys=list(changes)):
+                result = review(self.case, self.register, 6, account=dict(account, **changes))
+                self.assertEqual(result["status"], "DISAGREEMENT")
+                personal = result["personal_outcome"]
+                self.assertIn("source_error", personal)
+                self.assertIsNone(personal["account_digest"])
+                self.assertIsNone(personal["record"])
+                self.assertEqual(result["delivery"]["net_credit_units"], 100)
+
+    def test_optional_person_work_is_counted_and_unknown_cost_is_distinct_from_zero(self):
+        visit = dict(self.case["work"][0], record="optional-visit", bearer="affected-person",
+                     required=False, activity="Travel to the office.", units=5)
+        self.case["work"].append(visit)
+        self.case["work"].append(dict(visit, record="second-visit", units=None))
+        report = review(self.case, self.register, 6)
+        self.assertEqual(report["recorded_burden"], {
+            "affected-person": {"entries": 2, "recorded_units": 5, "unknown_cost_entries": 1},
+            "institution": {"entries": 2, "recorded_units": 4, "unknown_cost_entries": 0},
+        })
+        self.assertEqual(report["required_person_work_records"], [])
+        self.assertIsNone(report["burden_correction_owner"])
+        self.assertNotIn(visit["activity"], json.dumps(report))
+        self.case["work"][-1].update(units=0, required=True)
+        revised = review(self.case, self.register, 6)
+        self.assertEqual(revised["recorded_burden"]["affected-person"],
+                         {"entries": 2, "recorded_units": 5, "unknown_cost_entries": 0})
+        self.assertEqual(revised["required_person_work_records"], ["second-visit"])
+        self.assertEqual(revised["status"], "DISAGREEMENT")
 
     def test_invalid_cases_are_rejected(self):
         for mutate in (lambda c: c["award"].update(units=True), lambda c: c["participation"].update(publicity="silent"),

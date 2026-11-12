@@ -111,3 +111,15 @@ report of unusability produced a disagreement while preserving the credit,
 the person's choices, the rule inquiry and the correction reported for other-8.
 Changing the participation choices affected neither the award nor the warning.
 These exposed test records share custody. No real recipient was contacted.
+
+## 2026-11-12 — Voluntary accounts outside the original vocabulary
+
+The three CLI cases used identical inputs except for the voluntary account.
+The no-account case kept the personal outcome unknown. The late-credit and
+freedom-to-leave accounts each produced a distinct resolvable reference and
+the same unclassified status. All three reported a 100-unit credit, an open
+rule inquiry and no external actions. All 112 tests and the fresh-process demos
+passed on Python 3.12.14 with the optional last-credit dependency installed.
+Across four exposed packets, per-bearer burden counts matched the pinned
+Commonwealth reducer at `00870ca`, including optional, zero and unknown costs.
+The cases exercise record keeping. Affected people have yet to evaluate it.

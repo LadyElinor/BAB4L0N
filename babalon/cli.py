@@ -48,7 +48,7 @@ def main(argv=None):
     remedy = sub.add_parser("remedy-review", help="review an owed award and the institution's continuing duty")
     remedy.add_argument("case", help="local Commonwealth owed-assistance-1 packet")
     remedy.add_argument("--register", help="separate receiving-side snapshot")
-    remedy.add_argument("--account", help="optional, already volunteered account of whether the person could use the remedy")
+    remedy.add_argument("--account", help="optional local record of what the person chose to share")
     remedy.add_argument("--as-of", type=int, required=True, help="inclusive review tick")
     study = sub.add_parser("last-credit", help="draw or run the paired evidence inspection trial")
     phases = study.add_subparsers(dest="phase", required=True)
