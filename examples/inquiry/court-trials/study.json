@@ -1,0 +1,98 @@
+[
+  {
+    "id": "theatre-paramount",
+    "title": "Theatre Enterprises v. Paramount (1954)",
+    "boundary": "Was there a private agreement at the Crest? A defense verdict and the treatment of circumstantial evidence do not reconstruct unrecorded communications.",
+    "note": "Distinguish what a jury may infer from what it must infer. Check which market and years the earlier decrees covered.",
+    "records": {
+      "court.txt": {
+        "label": "Justice Clark for the Court · 346 U.S. 539–544",
+        "url": "https://supreme.justia.com/cases/federal/us/346/537/"
+      },
+      "separate.txt": {
+        "label": "Justice Black · separate position at 544",
+        "url": "https://supreme.justia.com/cases/federal/us/346/537/"
+      }
+    },
+    "tasks": [
+      {
+        "question": "What weight could a jury give parallel business behavior as evidence of agreement?",
+        "targets": [
+          "court.txt#L3",
+          "court.txt#L4"
+        ]
+      },
+      {
+        "question": "Why did the Paramount decrees require additional evidence for the Baltimore claim?",
+        "targets": [
+          "court.txt#L5",
+          "court.txt#L6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tolan-cotton",
+    "title": "Tolan v. Cotton (2014)",
+    "boundary": "How bright was the porch in fact, and was Cotton ultimately liable? The Supreme Court reviewed the treatment of disputed evidence at summary judgment; it did not decide either question.",
+    "note": "Identify the speaker for each account. A court recounting several depositions remains one intermediary; remand is not a liability verdict.",
+    "records": {
+      "court.txt": {
+        "label": "Per curiam · 572 U.S. 657–660 · testimony as recounted by the Court",
+        "url": "https://www.law.cornell.edu/supremecourt/text/13-551"
+      }
+    },
+    "tasks": [
+      {
+        "question": "What did Cotton and Tolan report about the porch lighting and driveway lights?",
+        "targets": [
+          "court.txt#L2",
+          "court.txt#L4"
+        ]
+      },
+      {
+        "question": "What was the judgment on review and what question about clearly established law did the Court leave open?",
+        "targets": [
+          "court.txt#L9",
+          "court.txt#L10"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "commerce-new-york",
+    "title": "Department of Commerce v. New York (2019)",
+    "boundary": "What was the Secretary’s complete private motive? The Court assessed the stated rationale against the record. Its holding does not identify every actual motive.",
+    "note": "Compare the Secretary’s descriptions of the formal request and earlier deliberations. Separate a defective explanation from a substantive prohibition.",
+    "records": {
+      "march.txt": {
+        "label": "Secretary Ross · March 26, 2018 · appendix I, 548a",
+        "url": "https://www.justice.gov/d9/briefs/2019/01/28/18-966_dept_of_commerce_pet_app.pdf#page=551"
+      },
+      "june.txt": {
+        "label": "Secretary Ross · June 21, 2018 · appendix H, 546a",
+        "url": "https://www.justice.gov/d9/briefs/2019/01/28/18-966_dept_of_commerce_pet_app.pdf#page=549"
+      },
+      "court.txt": {
+        "label": "Chief Justice Roberts · Part V, slip opinion pp. 24–29",
+        "url": "https://www.law.cornell.edu/supremecourt/text/18-966"
+      }
+    },
+    "tasks": [
+      {
+        "question": "How did Ross describe the DOJ request in March and the earlier citizenship discussions in June?",
+        "targets": [
+          "march.txt#L2",
+          "june.txt#L2"
+        ]
+      },
+      {
+        "question": "Why did the Court reject the stated rationale but decline to hold the decision substantively invalid?",
+        "targets": [
+          "court.txt#L7",
+          "court.txt#L9"
+        ]
+      }
+    ]
+  }
+]

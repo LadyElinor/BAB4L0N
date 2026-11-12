@@ -33,6 +33,11 @@ def main(argv=None):
     demo = sub.add_parser("demo", help="run an explicitly granted local fixture")
     demo.add_argument("database")
     sub.add_parser("improve-demo", help="run bounded fixture-policy improvement")
+    inquiry = sub.add_parser("inquire", help="commission complementary inquiries over a local text collection")
+    inquiry.add_argument("question")
+    inquiry.add_argument("directory")
+    inquiry.add_argument("--budget", type=int, default=12, help="total passage inspections across investigators")
+    inquiry.add_argument("--rounds", type=int, choices=(1, 2), default=2)
     from .handoff import VIEWS, handoff
     reader = sub.add_parser("handoff", help="inspect permitted views of a local Commonwealth summary")
     reader.add_argument("summary")
@@ -87,7 +92,10 @@ def main(argv=None):
             command.add_argument("--evidence", action="append", default=[])
     args = parser.parse_args(argv)
     try:
-        if args.command == "init":
+        if args.command == "inquire":
+            from .inquiry import investigate
+            result = investigate(args.question, args.directory, args.budget, args.rounds)
+        elif args.command == "init":
             result = Host.create(args.database, read(args.tasks), read(args.grant)).observe()
         elif args.command == "last-credit":
             from .last_credit.study import draw, run_study
