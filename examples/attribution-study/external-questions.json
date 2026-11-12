@@ -1,0 +1,162 @@
+[
+  {
+    "question": "What was the amount of unrecognized stock-based compensation expense related to RSUs as of December 31, 2019?",
+    "source": "text",
+    "uid": "03f232b9-a78e-42d0-b555-c801eaac577d"
+  },
+  {
+    "question": "How IMFT\u2019s capital requirements were generally determined?",
+    "source": "text",
+    "uid": "0fe2da7e-22b8-40b2-9536-d006969da29b"
+  },
+  {
+    "question": "What was the reason for decrease in effective income tax rate?",
+    "source": "text",
+    "uid": "1f980345-bb16-4e30-93d1-f14b2b7298b8"
+  },
+  {
+    "question": "What was the percentage change in Additions in 2019 from 2018?",
+    "source": "table",
+    "uid": "20092aeb-d39f-4b50-b927-0602b8a95c08"
+  },
+  {
+    "question": "What is the percentage of other foreign borrowings and other domestic borrowings as a percentage of Total debt as of December 31, 2019 in fair values?",
+    "source": "table",
+    "uid": "20b9f972-d7e9-4a47-a9ab-8c789db18f9d"
+  },
+  {
+    "question": "What does the distribution of trade receivables and contract assets follow?",
+    "source": "text",
+    "uid": "27da724b-0334-4292-a9ef-cb978175055b"
+  },
+  {
+    "question": "What are the respective values of finished goods in 2018 and 2019?",
+    "source": "table",
+    "uid": "29ee700b-7a2f-45f3-97d9-e7a49726abef"
+  },
+  {
+    "question": "What is the increase/ (decrease) in Audit-Related Fees from the period 2018 to 2019?",
+    "source": "table",
+    "uid": "2af4c7cf-79a2-4bdf-81b8-dbaff5081bc3"
+  },
+  {
+    "question": "What are the respective sales and purchases for 2019?",
+    "source": "table",
+    "uid": "2e2a27a7-82af-46da-99f3-ae2681900cb4"
+  },
+  {
+    "question": "What is the number of freehold investment properties on which the Group has obtained external valuations?",
+    "source": "text",
+    "uid": "32185930-8543-45f6-b6f8-28fa25c27a17"
+  },
+  {
+    "question": "What is the average depreciation and amortization expense?",
+    "source": "table",
+    "uid": "3bc9ea91-f346-4cc1-9ca7-10c481be3ac9"
+  },
+  {
+    "question": "What entitlements do holders of ordinary shares have?",
+    "source": "text",
+    "uid": "432f9f32-6f98-4eaf-830a-8204ea05a68f"
+  },
+  {
+    "question": "Why did the valuation allowance increase in fiscal 2019?",
+    "source": "text",
+    "uid": "4ce49426-cfc3-45bc-90d0-629877881b82"
+  },
+  {
+    "question": "What is considered to be a cash equivalent?",
+    "source": "text",
+    "uid": "542e287e-0671-4eed-a367-98add13b8448"
+  },
+  {
+    "question": "What was the research and development expenses in 2019, 2018 and 2017 respectively?",
+    "source": "table",
+    "uid": "5d7824c0-58e4-4065-ae53-2c10391ae966"
+  },
+  {
+    "question": "What is the company's ongoing involvement limited to?",
+    "source": "text",
+    "uid": "5d9a807a-9bd1-46f2-8d31-39c28f556810"
+  },
+  {
+    "question": "What was the increase / (decrease) in the cost from 2018 to 2019?",
+    "source": "table",
+    "uid": "6100c476-160a-4f1e-bfc1-a16f4cc18b52"
+  },
+  {
+    "question": "What does the table show us?",
+    "source": "text",
+    "uid": "74e153b5-d6b2-4914-9d45-180f6a719c26"
+  },
+  {
+    "question": "What led to decrease in other income, net of expenses in 2018?",
+    "source": "text",
+    "uid": "75623d36-47ae-4801-9727-ee17b04cd8e5"
+  },
+  {
+    "question": "What does the Fiscal 2017 Restructuring Plan charges relate to?",
+    "source": "text",
+    "uid": "785fc2be-fc6d-456e-af36-8c5f1c7fd1c9"
+  },
+  {
+    "question": "What is the total value of computer equipment and software at the end of 2018 and 2019 altogether?",
+    "source": "table",
+    "uid": "7e058249-0f63-4002-912b-598bb9c62352"
+  },
+  {
+    "question": "What was the average Issued from 2018 to 2019?",
+    "source": "table",
+    "uid": "90f9af10-77ac-441c-a53d-3167c15ad61b"
+  },
+  {
+    "question": "What are the items under deferred tax liabilities?",
+    "source": "table",
+    "uid": "a9b94d83-2155-43d0-899e-b987f4f8fe63"
+  },
+  {
+    "question": "What was the percentage change in the net Total other (expense) income between 2017 and 2018?",
+    "source": "table",
+    "uid": "a9fa838a-1b85-47f0-a6f7-716f8bb333a1"
+  },
+  {
+    "question": "How much has been recorded within \"Special charges (recoveries)\" since the inception of the plan?",
+    "source": "text",
+    "uid": "ad0a2d3d-d032-4e88-a016-38b57542ba62"
+  },
+  {
+    "question": "What is the fair value of total debt as of December 31, 2019",
+    "source": "table",
+    "uid": "c4920a1b-4aee-4797-a904-fdbe20885db4"
+  },
+  {
+    "question": "How many million of trade accounts receivable were sold without recourse in 2019?",
+    "source": "text",
+    "uid": "c8600876-476c-4d6c-ab0e-d14bc6d76dff"
+  },
+  {
+    "question": "What is the increase/ (decrease) in Research and development funding from 2017 to 2019?",
+    "source": "table",
+    "uid": "cd3367c7-d3bd-440c-8c51-90a6ee95cc77"
+  },
+  {
+    "question": "What do the additions in the year and prior year relate to?",
+    "source": "text",
+    "uid": "d441a136-0168-4457-8fc8-05eb974388d1"
+  },
+  {
+    "question": "What is the proportion of products as a percentage of the total cost of revenue in 2019?",
+    "source": "table",
+    "uid": "dd31fc40-d055-4356-bcfc-c7348842bf3c"
+  },
+  {
+    "question": "What is excluded in the calculation of expenses for the business?",
+    "source": "text",
+    "uid": "f643ad35-bc11-41f6-9318-1189afdab332"
+  },
+  {
+    "question": "What were the total expenses in 2019?",
+    "source": "table",
+    "uid": "f6ccfc15-3970-467d-b83e-e2ce0ff365e3"
+  }
+]
