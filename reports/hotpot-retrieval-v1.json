@@ -1,0 +1,67 @@
+{
+  "profile": "babalon.hotpot-retrieval.v1",
+  "dataset_sha256": "4e9ecb5c8d3b719f624d66b60f8d56bf227f03914f5f0753d6fa1b359d7104ea",
+  "total": 7405,
+  "evaluated": 7403,
+  "exclusions": {
+    "gold sentence absent from context": 1,
+    "document line exceeds 2000 characters": 1
+  },
+  "cap": 4,
+  "summary": {
+    "legacy": {
+      "spent_each": 20954,
+      "visits": 20954,
+      "gold": 17999,
+      "hits": 6688,
+      "keyword_hits": 7357,
+      "complete": 568,
+      "keyword_complete": 801,
+      "wins": 46,
+      "losses": 279,
+      "ties": 7078,
+      "full_set_delta": -0.03147372686748615,
+      "bootstrap_95": [
+        -0.03620153991625017,
+        -0.02688099419154397
+      ],
+      "paired_p": 7.894614719780912e-42
+    },
+    "shared": {
+      "spent_each": 20900,
+      "visits": 21155,
+      "gold": 17999,
+      "hits": 6705,
+      "keyword_hits": 7353,
+      "complete": 573,
+      "keyword_complete": 799,
+      "wins": 51,
+      "losses": 277,
+      "ties": 7075,
+      "full_set_delta": -0.030528164257733352,
+      "bootstrap_95": [
+        -0.03525597730649736,
+        -0.025935431581791166
+      ],
+      "paired_p": 9.715130652513464e-39
+    },
+    "shared-gap": {
+      "spent_each": 29607,
+      "visits": 29911,
+      "gold": 17999,
+      "hits": 9117,
+      "keyword_hits": 8614,
+      "complete": 1596,
+      "keyword_complete": 1243,
+      "wins": 670,
+      "losses": 317,
+      "ties": 6416,
+      "full_set_delta": 0.04768337160610563,
+      "bootstrap_95": [
+        0.03984870998243955,
+        0.05565311360259354
+      ],
+      "paired_p": 9.551151772762026e-30
+    }
+  }
+}
