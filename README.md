@@ -71,6 +71,17 @@ operator command retrieves the original evidence. The local operator controls th
 database and CLI. Give a future isolated policy access only to the observation
 and inspection interfaces. See the [session contract](docs/INTEGRATION_PLAN.md#durable-evidence-session).
 
+An operator can check the pinned summary against its complete protocol-2 event export offline:
+
+```sh
+python -m babalon recount tests/fixtures/commonwealth/demo-summary.json --events tests/fixtures/commonwealth/demo-events.json --allow timing advice
+```
+
+The report gives event sequences and both values for every disagreement in the selected fields.
+Agreement exits 0, a discrepancy or invalid export exits 2, and missing evidence exits 3.
+The [recount scope](docs/INTEGRATION_PLAN.md#independent-recount-of-the-pinned-workshop)
+lists the claims that the event record can support.
+
 ## Use your own bounded task inputs
 
 ```sh
@@ -144,8 +155,7 @@ database. Runtime budgets do not cap arbitrary policy computation.
 
 ## Next useful milestone
 
-Compare attributed summaries with independently checked event
-exports before adding a model. The [integration plan](docs/INTEGRATION_PLAN.md)
+Freeze new cases and assign independent custody and grading before comparing a model with the deterministic reader. The [integration plan](docs/INTEGRATION_PLAN.md)
 defines the checkpoints for evidence access, evaluation and durable promotion.
 
 No repository push, remote publication or deployment is part of this bundle.

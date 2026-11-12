@@ -12,3 +12,7 @@ The offline data fixture `tests/fixtures/commonwealth/demo-summary.json` comes
 from `examples/demo-summary.json` in LadyElinor/unfinished-commonwealth at
 `ae5037b0dcf1e51a6f30614996ffcd0bbb01f584`. Its accompanying upstream MIT
 notice is reproduced in `tests/fixtures/commonwealth/LICENSE`.
+
+The neighbouring `demo-events.json` fixture was reproduced with that same
+upstream revision's `scripts/reproduce.py` and is distributed with the same
+MIT notice. Its terminal envelope hash matches the published replay receipt.
