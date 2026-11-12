@@ -38,6 +38,7 @@ def main(argv=None):
     inquiry.add_argument("directory")
     inquiry.add_argument("--budget", type=int, default=12, help="total passage inspections across investigators")
     inquiry.add_argument("--rounds", type=int, choices=(1, 2), default=2)
+    inquiry.add_argument("--strategy", choices=("legacy", "shared", "shared-gap"), default="legacy")
     from .handoff import VIEWS, handoff
     reader = sub.add_parser("handoff", help="inspect permitted views of a local Commonwealth summary")
     reader.add_argument("summary")
@@ -94,7 +95,7 @@ def main(argv=None):
     try:
         if args.command == "inquire":
             from .inquiry import investigate
-            result = investigate(args.question, args.directory, args.budget, args.rounds)
+            result = investigate(args.question, args.directory, args.budget, args.rounds, args.strategy)
         elif args.command == "init":
             result = Host.create(args.database, read(args.tasks), read(args.grant)).observe()
         elif args.command == "last-credit":

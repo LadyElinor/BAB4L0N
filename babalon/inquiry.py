@@ -1,5 +1,5 @@
 """Bounded, offline inquiry over a trusted operator's directory of public text."""
-from collections import defaultdict
+from collections import Counter, defaultdict
 from hashlib import sha256
 from pathlib import Path
 import re
@@ -109,17 +109,26 @@ def _interpret(worker, lines):
         return f"{refs} raise a question about who experiences the outcome of {claims}. Representation remains uncertain."
     if role == "compare":
         return f"Compare {refs} against {', '.join(worker['basis'])} for matching time, place and criterion."
+    if role == "gap":
+        return f"{refs} are additional leads for the open question. Their relevance still needs review."
     return f"{refs} are reachable from the citations at {', '.join(worker['basis'])}. The linkage alone cannot corroborate them."
 
 
-def _run_round(plan, queues, lines, remaining):
+def _run_round(plan, queues, lines, remaining, shared=None):
     workers = [_worker(task) for task in plan]
     # One inspection per assignment per pass; one worker cannot take the whole first pass.
     for turn in range(max((t["inspection_limit"] for t in plan), default=0)):
         for w, refs in zip(workers, queues):
-            if remaining and turn < min(w["inspection_limit"], len(refs)):
-                _inspect(w, refs[turn], lines)
-                remaining -= 1
+            if turn >= min(w["inspection_limit"], len(refs)):
+                continue
+            ref = refs[turn]
+            reused = shared is not None and ref in shared
+            if remaining or reused:
+                _inspect(w, ref, lines)
+                if shared is not None:
+                    w["observations"][-1]["charge"] = int(not reused)
+                    shared.add(ref)
+                remaining -= int(not reused)
     for w, refs in zip(workers, queues):
         if len(refs) > len(w["sources"]):
             w["uncertainty"].append("Some candidate passages remain uninspected under the limits.")
@@ -136,6 +145,7 @@ def _run_round(plan, queues, lines, remaining):
                 "affected": "Whose circumstances are absent from the inspected accounts?",
                 "compare": "Does the proposed check actually measure the disputed condition?",
                 "trace": "Does the original passage substantiate the claim made from it?",
+                "gap": "Which part of the question still lacks a source after this follow-up?",
             }[w["role"]])
     return workers, remaining
 
@@ -155,8 +165,28 @@ def _nearby(ref, lines):
     return [target for target in candidates if target in lines]
 
 
-def _audit(history, lines, budget, remaining):
+def _gap_refs(lines, query, observed):
+    covered = set().union(*(lines[ref]["words"] for ref in observed))
+    missing = query - covered
+    overlap = Counter(word for ref in observed for word in lines[ref]["words"] - query)
+    frequency = Counter(word for row in lines.values() for word in row["words"])
+    # Prefer distinctive terms introduced by inspected evidence as possible bridges.
+    bridges = set(sorted(overlap, key=lambda w: (frequency[w], -overlap[w], w))[:8])
+    ranked = []
+    for ref, row in lines.items():
+        terms = row["words"]
+        relevance = len(query & terms)
+        bridge = len(bridges & terms)
+        if ref not in observed and relevance + bridge:
+            score = 2 * len(missing & terms) + relevance + min(bridge, 2)
+            ranked.append((-score, -relevance, ref))
+    return [ref for _, _, ref in sorted(ranked)]
+
+
+def _audit(history, lines, budget, remaining, sharing=False):
     count = 0
+    charged = 0
+    charges = Counter()
     for rnd in history:
         if len(rnd["plan"]) != len(rnd["returns"]):
             raise RuntimeError("missing investigator return")
@@ -168,22 +198,32 @@ def _audit(history, lines, budget, remaining):
             for obs in observations:
                 if obs["quotation"] != lines[obs["source"]]["text"]:
                     raise RuntimeError("inquiry quotation audit failed")
+                charge = obs.get("charge", 1)
+                if type(charge) is not int or charge not in (0, 1) or (not sharing and charge != 1):
+                    raise RuntimeError("invalid inquiry charge")
+                charges[obs["source"]] += charge
+                charged += charge
             count += len(observations)
-    if count != budget - remaining or count > budget:
+    if sharing and any(total != 1 for total in charges.values()):
+        raise RuntimeError("inquiry shared charge audit failed")
+    if charged != budget - remaining or charged > budget:
         raise RuntimeError("inquiry budget audit failed")
-    return {"budget": budget, "inspections": count, "matched_quotations": count}
+    return {"budget": budget, "inspections": charged, "matched_quotations": count}
 
 
-def investigate(question, directory, budget=12, rounds=2):
+def investigate(question, directory, budget=12, rounds=2, strategy="legacy"):
     prose(question)
     integer(budget, 0, 24)
     integer(rounds, 1, 2)
+    if strategy not in ("legacy", "shared", "shared-gap"):
+        raise Invalid("unknown inquiry strategy")
+    shared = None if strategy == "legacy" else set()
     lines, manifest = _index(directory)
     query = _words(question)
     keys = {row["key"] for row in lines.values() if row["key"] and query & row["words"]}
     plan = [_assignment(role, f"{question} — {prompt}", 2) for role, (_, prompt, _) in ROLES.items()]
     queues = [_candidates(role, lines, query, keys) for role in ROLES]
-    first, remaining = _run_round(plan, queues, lines, budget)
+    first, remaining = _run_round(plan, queues, lines, budget, shared)
     history = [{"plan": plan, "returns": first}]
     observed = {ref for w in first for ref in w["sources"]}
     followups = []
@@ -216,8 +256,14 @@ def investigate(question, directory, budget=12, rounds=2):
         followups.append({**_assignment("trace", "What do the cited passages themselves record?", 3),
                           "basis": sorted({e["from"] for e in edges if e["to"] in trace_targets})})
         next_queues.append(trace_targets)
-    if rounds == 2 and followups and remaining:
-        workers, remaining = _run_round(followups, next_queues, lines, remaining)
+    if strategy == "shared-gap" and remaining:
+        candidates = _gap_refs(lines, query, observed)
+        if candidates:
+            followups.append({**_assignment("gap", f"Which other passage bears on: {question}", remaining),
+                              "basis": sorted(observed)})
+            next_queues.append(candidates)
+    if rounds == 2 and followups and (remaining or shared is not None):
+        workers, remaining = _run_round(followups, next_queues, lines, remaining, shared)
         history.append({"plan": followups, "returns": workers})
         observed.update(ref for w in workers for ref in w["sources"])
 
@@ -251,5 +297,6 @@ def investigate(question, directory, budget=12, rounds=2):
             "collection_digest": digest(manifest), "rounds": history, "revised_plan": followups,
             "evidence_map": {"explanations": explanations, "unclassified_comparison_leads": plain_leads, "citations": edges},
             "proposed_next_steps": list(dict.fromkeys(next_steps)),
-            "audit": _audit(history, lines, budget, remaining),
+            **({"strategy": strategy} if shared is not None else {}),
+            "audit": _audit(history, lines, budget, remaining, shared is not None),
             "stop_reason": stop_reason, "authority_granted": False, "external_actions": 0}

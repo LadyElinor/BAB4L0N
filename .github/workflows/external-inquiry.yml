@@ -1,0 +1,38 @@
+name: Frozen external inquiry comparison
+on:
+  pull_request:
+    paths:
+      - 'babalon/inquiry.py'
+      - 'scripts/external_inquiry_trial.py'
+      - '.github/workflows/external-inquiry.yml'
+permissions:
+  contents: read
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch pinned public development split
+        run: |
+          file="$RUNNER_TEMP/hotpot.json"
+          for url in \
+            https://huggingface.co/datasets/RAGLAB/data/resolve/main/eval_datasets/HotPotQA/hotpot_dev_distractor_v1.json \
+            https://curtis.ml.cmu.edu/datasets/hotpot/hotpot_dev_distractor_v1.json; do
+            if curl --fail --location --max-time 90 --retry 1 -o "$file" "$url" && \
+              echo "4e9ecb5c8d3b719f624d66b60f8d56bf227f03914f5f0753d6fa1b359d7104ea  $file" | sha256sum --check --quiet; then
+              exit 0
+            fi
+          done
+          exit 1
+      - name: Evaluate the frozen strategies
+        run: python scripts/external_inquiry_trial.py "$RUNNER_TEMP/hotpot.json" "$RUNNER_TEMP/trial"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: external-inquiry-results
+          path: ${{ runner.temp }}/trial/
