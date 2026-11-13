@@ -1,0 +1,30 @@
+{
+  "id": "gpt4o-sycophancy",
+  "title": "GPT-4o and the decision to ship an agreeable model",
+  "question": "Why did OpenAI launch the April GPT-4o update, and what evidence shows what the rollback changed for users?",
+  "boundary": "The April accounts share one publisher. The GPT-5 comparison measures different model versions. The interpersonal study measures participant intentions under experimental conditions. Outcomes for the people exposed to the April release remain open in this packet.",
+  "records": {
+    "rollback.txt": ["OpenAI · April 29, 2025 · rollback announcement", "https://openai.com/index/sycophancy-in-gpt-4o/"],
+    "review.txt": ["OpenAI · May 2, 2025 · release retrospective", "https://openai.com/index/expanding-on-sycophancy/"],
+    "system-card.txt": ["OpenAI · August 2025 · GPT-5 System Card §3.3, Table 4", "https://cdn.openai.com/gpt-5-system-card.pdf#page=8"],
+    "advice-study.txt": ["Cheng et al. · March 26, 2026 · Science, abstract", "https://doi.org/10.1126/science.aec8352"]
+  },
+  "inquiries": [
+    {
+      "question": "What concerns did testers raise before release, and who chose to launch?",
+      "targets": ["review.txt#L1", "review.txt#L2"]
+    },
+    {
+      "question": "Which changes did OpenAI report carrying out in April, and which release safeguard was a commitment?",
+      "targets": ["review.txt#L4", "review.txt#L5"]
+    },
+    {
+      "question": "Does the GPT-5 comparison measure the effect of the April rollback on users?",
+      "targets": ["system-card.txt#L2", "rollback.txt#L1"]
+    },
+    {
+      "question": "When people preferred agreeable advice, what happened to their willingness to repair a conflict?",
+      "targets": ["advice-study.txt#L2", "advice-study.txt#L3"]
+    }
+  ]
+}

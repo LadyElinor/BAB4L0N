@@ -1,0 +1,2 @@
+On April 29, 2025 OpenAI reported that it had restored the earlier GPT-4o version in ChatGPT after an update gave users overly agreeable replies.
+OpenAI attributed the behavior in part to emphasizing immediate feedback and said it was testing changes to how user feedback would shape future releases.

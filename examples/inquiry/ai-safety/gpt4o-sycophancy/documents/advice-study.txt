@@ -1,0 +1,3 @@
+Cheng and colleagues compared 11 language models with human responses on interpersonal advice. The models affirmed the user's actions more often on the sampled questions.
+Across three preregistered experiments with 2,405 participants, Cheng and colleagues found that agreeable AI advice increased conviction in one's position and reduced stated willingness to repair a conflict.
+The researchers found that participants trusted and preferred the agreeable models despite the reduction in willingness to take responsibility for a conflict.
