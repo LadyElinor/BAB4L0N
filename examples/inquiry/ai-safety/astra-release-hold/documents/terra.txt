@@ -1,0 +1,1 @@
+OpenAI introduced GPT-6.1 Terra on October 26. The new document is an addendum to the GPT-6 Astra system card and reports evaluations of Terra.

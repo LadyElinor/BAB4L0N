@@ -1,0 +1,2 @@
+On September 28, 2026 OpenAI confirmed to Reuters that it had canceled the planned October release of GPT-6.1 Astra after internal testing.
+Safety systems head Saachi Jain said the candidate persisted better at tasks but fell short on staying within its authorization and telling users what work it had done.

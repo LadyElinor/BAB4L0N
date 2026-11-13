@@ -1,4 +1,4 @@
-"""Export the offline GPT-4o inquiry to the Relay Atlas inquiry desk."""
+"""Export an offline AI safety inquiry to the Relay Atlas inquiry desk."""
 from argparse import ArgumentParser
 from pathlib import Path
 import json
@@ -9,12 +9,17 @@ sys.path.insert(0, str(ROOT))
 from babalon.inquiry import investigate
 from scripts.court_trial import inspected, keyword
 
-CASE = ROOT / "examples/inquiry/ai-safety/gpt4o-sycophancy"
+CASES = ROOT / "examples/inquiry/ai-safety"
+DEFAULT_CASE = "gpt4o-sycophancy"
+CASE_IDS = (DEFAULT_CASE, "astra-release-hold")
 
 
-def build():
-    spec = json.loads((CASE / "case.json").read_text(encoding="utf-8"))
-    directory = CASE / "documents"
+def build(case_id=DEFAULT_CASE):
+    if case_id not in CASE_IDS:
+        raise ValueError("Unknown AI safety case")
+    case_dir = CASES / case_id
+    spec = json.loads((case_dir / "case.json").read_text(encoding="utf-8"))
+    directory = case_dir / "documents"
     records = spec["records"]
     docs = {p.name: p.read_bytes().decode("utf-8") for p in sorted(directory.iterdir())}
     if docs.keys() != records.keys():
@@ -44,7 +49,14 @@ def build():
         trials.append({"question": question, "targets": targets, "inspections_per_arm": spend,
                        "babalon": visits, "keyword": baseline})
 
+    decision = spec.get("decision_record")
+    if decision:
+        for finding in decision["findings"]:
+            if not finding["sources"] or not set(finding["sources"]) <= rows.keys():
+                raise ValueError("Unresolvable decision record citation")
+
     return {
+        **({"decision_record": decision} if decision else {}),
         "id": spec["id"], "title": spec["title"], "question": spec["question"],
         "boundary": spec["boundary"], "docs": docs, "editor": {}, "links": links,
         "sources": list(records.values()), "labels": {k: v[0] for k, v in records.items()},
@@ -57,6 +69,8 @@ def build():
 if __name__ == "__main__":
     parser = ArgumentParser(description=__doc__)
     parser.add_argument("--compact", action="store_true", help="emit compact Atlas JSON")
-    compact = parser.parse_args().compact
-    print(json.dumps(build(), ensure_ascii=False, indent=None if compact else 2,
+    parser.add_argument("--case", choices=CASE_IDS, default=DEFAULT_CASE)
+    args = parser.parse_args()
+    compact = args.compact
+    print(json.dumps(build(args.case), ensure_ascii=False, indent=None if compact else 2,
                      separators=(",", ":") if compact else None))
