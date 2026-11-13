@@ -235,3 +235,8 @@ investigator read.
 the April 2025 GPT-4o launch and rollback. Run `python scripts/ai_safety_case.py`
 to inspect the decision record, compare four questions with keyword search at
 equal actual spend, and export the case to the Relay Atlas inquiry desk.
+
+The [GPT-6.1 Astra release hold](examples/inquiry/ai-safety/astra-release-hold/README.md)
+traces a later decision to withhold a launch. Run
+`python scripts/ai_safety_case.py --case astra-release-hold` to inspect the
+recommendation, reported disposition, and uncertainty about who signed it.

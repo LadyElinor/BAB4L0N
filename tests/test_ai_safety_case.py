@@ -24,3 +24,28 @@ class AISafetyCaseTests(unittest.TestCase):
             self.assertEqual(len(set(t["keyword"])), t["inspections_per_arm"])
             scores.append([len(targets.intersection(t[k])) for k in ("babalon", "keyword")])
         self.assertEqual(scores, [[2, 2], [0, 1], [2, 2], [2, 2]])
+
+    def test_astra_preserves_editorial_boundary_and_missed_recommendation(self):
+        case = build("astra-release-hold")
+        report = case["plain"]
+        self.assertEqual(report["collection_digest"],
+                         "a6bcc9d69c96291fcc77aa34353e8491b1e70ae6e9c1b3b8222a301b207c9cae")
+        self.assertEqual(set(report["documents"]), set(case["docs"]))
+        self.assertFalse(report["authority_granted"])
+        self.assertEqual(report["external_actions"], 0)
+        self.assertEqual(report["audit"]["inspections"], 5)
+        for finding in case["decision_record"]["findings"]:
+            for ref in finding["sources"]:
+                name, line = ref.rsplit("#L", 1)
+                self.assertTrue(case["docs"][name].splitlines()[int(line) - 1])
+                self.assertIn(ref, case["links"])
+        scores = []
+        for trial in case["trials"]:
+            spend = trial["inspections_per_arm"]
+            self.assertEqual(len(trial["babalon"]), spend)
+            self.assertEqual(len(set(trial["keyword"])), spend)
+            scores.append((spend, *(len(set(trial["targets"]) & set(trial[k]))
+                                    for k in ("babalon", "keyword"))))
+        self.assertEqual(scores, [(2, 1, 1), (2, 1, 1), (4, 1, 1), (4, 2, 2)])
+        for method in ("babalon", "keyword"):
+            self.assertNotIn("recommendation.txt#L1", case["trials"][1][method])

@@ -1,0 +1,2 @@
+OpenAI told WIRED that research and safety leaders decided against shipping the GPT-6.1 Astra candidate.
+OpenAI said it still intended to release other Astra models in the future.

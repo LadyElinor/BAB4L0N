@@ -1,0 +1,1 @@
+After the GPT-4o rollback, OpenAI said behavioral problems could block a launch even when user preference tests looked favorable.
