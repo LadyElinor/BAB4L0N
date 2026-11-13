@@ -38,3 +38,30 @@ Within one operator-owned SQLite file commits bind selection, trial counts
 and an evaluation receipt linked to the proposal digest. Reopening replays
 the committed phase. A new database starts a new experiment. The fixed caps
 bound completed trials; rolled-back work can be recomputed following a crash.
+
+## First run
+
+Ten of twelve candidates tied at 116 source paragraphs recovered on 119
+eligible training questions. The declared tie-break selected the first
+configuration, standard BM25, with no phrase bonus. Nine questions exceeded
+the host's passage limit. The [proposal was committed](https://github.com/LadyElinor/BAB4L0N/commit/977c3edcc6aed0ed363de7dd35dc4bb8e8b42658)
+before evaluating the development split.
+
+On 233 eligible evaluation questions the selected policy recovered 229 parent
+paragraphs, shared-gap recovered 220, the separate BM25 control recovered 229,
+and keyword recovered 221. Every arm used 851 paid paragraph inspections with
+per-question spend matched. Twenty-three of the 256 drawn questions exceeded
+the passage-length limit. The candidate gained ten cases and lost one against
+shared-gap, gained nine and lost one against keyword, and tied BM25 on every
+case. The decision was **NOT_PROMOTED**. The trusted runner exercised automatic
+selection and rejection. This run supplies no evidence of a new policy beyond
+the fixed BM25 configuration. The twelve-policy search was almost flat on the
+training metric. The independent split is public and the paragraph-retrieval
+adapter is project-authored. Custody and grading by a separate evaluator remain
+open. The local ledger replays the same evaluation across process restart.
+
+The [result receipt](../reports/retrieval-selection-result.json) contains
+the digest of all paired rows and the IDs of losses. The evaluate command
+emits every paired row. The [proposal receipt](../reports/retrieval-selection-proposal.json)
+retains all twelve training scores. The source archive is available from
+[the upstream project](https://github.com/rajpurkar/SQuAD-explorer/tree/eee5fdbf62f8613a7812b03419e6b29617b74fd1/dataset).

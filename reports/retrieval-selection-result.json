@@ -1,0 +1,51 @@
+{
+  "candidate": [
+    1.2,
+    0.75,
+    0
+  ],
+  "comparisons": {
+    "active": {
+      "loss_ids": [
+        "57107d73b654c5140001f91e"
+      ],
+      "losses": 1,
+      "ties": 222,
+      "wins": 10
+    },
+    "bm25": {
+      "loss_ids": [],
+      "losses": 0,
+      "ties": 233,
+      "wins": 0
+    },
+    "keyword": {
+      "loss_ids": [
+        "57107d73b654c5140001f91e"
+      ],
+      "losses": 1,
+      "ties": 223,
+      "wins": 9
+    }
+  },
+  "dataset_sha256": "95aa6a52d5d6a735563366753ca50492a658031da74f301ac5238b03966972c9",
+  "evaluated": 233,
+  "excluded": {
+    "document line exceeds 2000 characters": 23
+  },
+  "freeze": "5ed2adede33169ad05eafbb1361d0423f90aadeb",
+  "hits": {
+    "active": 220,
+    "bm25": 229,
+    "candidate": 229,
+    "keyword": 221
+  },
+  "parent_policy": "shared-gap",
+  "phase": "evaluate",
+  "proposal_commit": "977c3edcc6aed0ed363de7dd35dc4bb8e8b42658",
+  "proposal_digest": "3ae2171c05f9b8c1eadb848507d9073588b40b1ef5276e9b413f728864cfc797",
+  "rows_digest": "adca0bdfc23105a9d6736b7968a580321c3d4e832f78861e8a8cafbbb496e571",
+  "spend_per_arm": 851,
+  "status": "NOT_PROMOTED",
+  "version": "babalon.squad-selection.v1"
+}

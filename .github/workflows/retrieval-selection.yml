@@ -1,0 +1,45 @@
+name: Replay retrieval selection receipts
+on:
+  pull_request:
+    paths:
+      - 'babalon/retrieval_selection.py'
+      - 'scripts/retrieval_selection_trial.py'
+      - 'reports/retrieval-selection-*.json'
+      - '.github/workflows/retrieval-selection.yml'
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Select and evaluate in separate processes
+        run: |
+          src=https://raw.githubusercontent.com/rajpurkar/SQuAD-explorer/eee5fdbf62f8613a7812b03419e6b29617b74fd1/dataset
+          curl -fsSL --retry 2 "$src/train-v1.1.json" -o "$RUNNER_TEMP/train.json"
+          python scripts/retrieval_selection_trial.py propose "$RUNNER_TEMP/trial.sqlite" "$RUNNER_TEMP/train.json" > proposal.json
+          cmp proposal.json reports/retrieval-selection-proposal.json
+          curl -fsSL --retry 2 "$src/dev-v1.1.json" -o "$RUNNER_TEMP/dev.json"
+          python scripts/retrieval_selection_trial.py evaluate "$RUNNER_TEMP/trial.sqlite" "$RUNNER_TEMP/dev.json" > evaluation.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from babalon.contracts import digest
+          r = json.loads(Path("evaluation.json").read_text())
+          expected = json.loads(Path("reports/retrieval-selection-result.json").read_text())
+          rows = r.pop("rows")
+          assert digest(rows) == expected.pop("rows_digest")
+          for arm, c in expected["comparisons"].items():
+              assert c.pop("loss_ids") == [row["id"] for row in rows if row["target"] in row[arm] and row["target"] not in row["candidate"]]
+          del expected["freeze"], expected["proposal_commit"]
+          assert r == expected
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: retrieval-selection-receipts
+          path: |
+            proposal.json
+            evaluation.json
