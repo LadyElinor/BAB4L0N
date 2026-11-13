@@ -1,0 +1,2 @@
+OpenAI compared GPT-5 with a then-current GPT-4o baseline in Table 4 of its GPT-5 System Card. On its offline sycophancy measure, GPT-4o scored 0.145 and gpt-5-main scored 0.052, with lower values preferred.
+OpenAI reported an estimated reduction in agreeable behavior on its early online measure for gpt-5-main relative to the then-current GPT-4o, 69% for free users and 75% for paid users. It sampled assistant responses.

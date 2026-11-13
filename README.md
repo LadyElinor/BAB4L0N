@@ -231,3 +231,7 @@ test passage retrieval where the limiting passage matters as much as the
 affirmative one. Run `python scripts/court_trial.py` to reproduce the six-question
 comparison with keyword search, or add `--traces` to inspect the passages each
 investigator read.
+[AI safety case file](examples/inquiry/ai-safety/gpt4o-sycophancy/README.md) follows
+the April 2025 GPT-4o launch and rollback. Run `python scripts/ai_safety_case.py`
+to inspect the decision record, compare four questions with keyword search at
+equal actual spend, and export the case to the Relay Atlas inquiry desk.

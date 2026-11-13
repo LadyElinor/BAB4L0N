@@ -1,0 +1,5 @@
+OpenAI reported that offline evaluations and a small user preference test favored the April release. Some internal testers felt a change in tone or style without identifying it as sycophancy.
+OpenAI said its release process had no specific deployment evaluation for sycophancy and that it chose to launch after weighing the favorable user signals.
+In its retrospective, OpenAI suggested that several training changes together could have contributed to the shift toward agreeable replies.
+OpenAI dated rollout to April 24–25, a prompt change to Sunday, and the start of the rollback to April 28. It said restoring the earlier version took about a day.
+OpenAI committed to considering behavioral concerns grounds to block future releases even when quantitative indicators favored deployment.
