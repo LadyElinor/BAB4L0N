@@ -8,7 +8,8 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 FILES = ("README.md", "NOTICE.md", "pyproject.toml", ".gitignore")
-DIRECTORIES = ("babalon", "docs", "examples", "scripts", "tests", ".github", "reports")
+DIRECTORIES = ("babalon", "docs", "examples", "scripts", "tests", ".github", "reports",
+               ".agents/skills/trace-power-and-oversight")
 
 
 def main():

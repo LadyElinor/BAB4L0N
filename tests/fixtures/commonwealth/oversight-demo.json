@@ -1,0 +1,106 @@
+{
+  "profile": "commonwealth.proposal-oversight.v1",
+  "source_family": "one-local-workshop-journal",
+  "through_seq": 23,
+  "prefix_head": "96baf584d179654e5abc836d127afdac80d916a08c05bcb482f732a01c0acb0a",
+  "episodes": [
+    {
+      "proposal_id": "propose-2",
+      "generation": 1,
+      "scenario": "missing",
+      "method": "positive-only",
+      "proposal": {
+        "seq": 2,
+        "actor": "worker-1"
+      },
+      "approval": {
+        "seq": 3,
+        "actor": "keeper"
+      },
+      "execution": {
+        "seq": 4,
+        "actor": "worker-1"
+      },
+      "observation": {
+        "seq": 5,
+        "actor": "worker-1",
+        "id": "observe-5",
+        "tick": 2,
+        "peer_on_time": false,
+        "primary_correct": true
+      }
+    },
+    {
+      "proposal_id": "propose-10",
+      "generation": 1,
+      "scenario": "missing",
+      "method": "quality-stream",
+      "proposal": {
+        "seq": 10,
+        "actor": "worker-1"
+      },
+      "approval": {
+        "seq": 11,
+        "actor": "keeper"
+      },
+      "execution": {
+        "seq": 12,
+        "actor": "worker-1"
+      },
+      "observation": {
+        "seq": 13,
+        "actor": "worker-1",
+        "id": "observe-13",
+        "tick": 3,
+        "peer_on_time": true,
+        "primary_correct": true
+      }
+    },
+    {
+      "proposal_id": "propose-20",
+      "generation": 2,
+      "scenario": "signed",
+      "method": "quality-stream",
+      "proposal": {
+        "seq": 20,
+        "actor": "worker-2"
+      },
+      "approval": {
+        "seq": 21,
+        "actor": "keeper"
+      },
+      "execution": {
+        "seq": 22,
+        "actor": "worker-2"
+      },
+      "observation": {
+        "seq": 23,
+        "actor": "worker-2",
+        "id": "observe-23",
+        "tick": 5,
+        "peer_on_time": true,
+        "primary_correct": true
+      }
+    }
+  ],
+  "accounts": [
+    {
+      "seq": 6,
+      "actor": "neighbor",
+      "id": "testify-6",
+      "about": "observe-5",
+      "acknowledgments": [
+        {
+          "seq": 7,
+          "actor": "worker-1"
+        },
+        {
+          "seq": 19,
+          "actor": "worker-2"
+        }
+      ]
+    }
+  ],
+  "intent": "not-established",
+  "authority_granted": false
+}

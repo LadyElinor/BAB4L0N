@@ -42,6 +42,10 @@ Method-selection accuracy is diagnostic only. All fixtures remain exposed, not
 independent holdouts. The former weak baseline is included only as a labeled
 reference, never the deployment benchmark.
 
+## Trace power and oversight
+
+[Review a Commonwealth decision](docs/OVERSIGHT_TRACE.md) against the pinned event history. Separate a keeper approval, a peer deadline miss, a later worker acknowledgment, and any claim about intent.
+
 ## Read a Commonwealth handoff
 
 From the checkout, run the deterministic reader on the bundled synthetic summary:

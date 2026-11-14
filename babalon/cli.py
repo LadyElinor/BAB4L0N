@@ -42,6 +42,13 @@ def main(argv=None):
     checker.add_argument("summary")
     checker.add_argument("--events", help="local protocol-2 export")
     checker.add_argument("--allow", nargs="*", choices=VIEWS, required=True)
+    oversight = sub.add_parser("oversight-review", help="check a proposal oversight packet against the pinned workshop journal")
+    oversight.add_argument("packet")
+    oversight.add_argument("--events", help="complete protocol-2 demo event export")
+    instructions = sub.add_parser("oversight-study", help="compare five synthetic R1 decision records")
+    instructions.add_argument("packet")
+    from .recount import EVENT_COUNT
+    oversight.add_argument("--through-seq", type=int, default=EVENT_COUNT - 1, help="inclusive cutoff; defaults to the full demo")
     successor = sub.add_parser("successor-review", help="verify a construction and update its dated standing")
     successor.add_argument("directory", help="directory containing the frozen evidence files")
     successor.add_argument("--candidate", help="JSON answer to grade on three independent fields")
@@ -109,6 +116,12 @@ def main(argv=None):
             if args.questions:
                 from .remedy_questions import question_guide
                 result["question_guide"] = question_guide(result, args.questions)
+        elif args.command == "oversight-study":
+            from .oversight_study import review_study
+            result = review_study(read(args.packet))
+        elif args.command == "oversight-review":
+            from .oversight import review
+            result = review(read(args.packet), args.events, args.through_seq)
         elif args.command == "recount":
             from .recount import recount
             result = recount(args.summary, args.events, args.allow)
