@@ -1,0 +1,83 @@
+{
+  "candidate": [
+    1.2,
+    0.75,
+    0
+  ],
+  "claim_scope": "public_replay_sensitivity_not_fresh_promotion",
+  "comparisons": {
+    "active": {
+      "loss_ids": [
+        "572fbfa504bcaa1900d76c76"
+      ],
+      "losses": 1,
+      "ties": 225,
+      "wins": 7
+    },
+    "bm25": {
+      "loss_ids": [],
+      "losses": 0,
+      "ties": 233,
+      "wins": 0
+    },
+    "keyword": {
+      "loss_ids": [],
+      "losses": 0,
+      "ties": 227,
+      "wins": 6
+    }
+  },
+  "dataset_sha256": "95aa6a52d5d6a735563366753ca50492a658031da74f301ac5238b03966972c9",
+  "drawn_gold_position_histogram": [
+    19,
+    25,
+    21,
+    19,
+    25,
+    21,
+    11,
+    19,
+    21,
+    24,
+    26,
+    25
+  ],
+  "evaluated": 233,
+  "excluded": {
+    "document line exceeds 2000 characters": 23
+  },
+  "gate_status": "NOT_PROMOTED",
+  "gold_position_histogram": [
+    19,
+    22,
+    21,
+    16,
+    23,
+    16,
+    9,
+    18,
+    18,
+    22,
+    24,
+    25
+  ],
+  "hits": {
+    "active": 223,
+    "bm25": 229,
+    "candidate": 229,
+    "keyword": 223
+  },
+  "parent_policy": "shared-gap",
+  "phase": "evaluate",
+  "position_control_hits": {
+    "position_first": 76,
+    "position_last_first": 82
+  },
+  "presentation_domain": "babalon.squad-selection.v2.presentation",
+  "promotion_eligible": false,
+  "proposal_digest": "2b47dfd1326a4cfd048a231526a5f42b9ff40471b618d6a9627bc9b56b182511",
+  "rows_digest": "8c1ae351ff0fbfdb12591a8110a60dc20da3a4f0a9741a6860d84d85cd809c19",
+  "spend_per_arm": 851,
+  "status": "NOT_PROMOTED",
+  "version": "babalon.squad-selection.v2"
+}

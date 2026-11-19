@@ -1,0 +1,37 @@
+name: Replay retrieval selection receipts
+on:
+  pull_request:
+    paths:
+      - 'babalon/inquiry.py'
+      - 'babalon/contracts.py'
+      - 'babalon/retrieval_selection.py'
+      - 'scripts/court_trial.py'
+      - 'scripts/retrieval_selection_trial*.py'
+      - 'scripts/retrieval_position_sensitivity.py'
+      - 'scripts/replay_retrieval_selection.py'
+      - 'tests/test_retrieval_selection.py'
+      - 'docs/RETRIEVAL*.md'
+      - 'reports/retrieval-*.json'
+      - '.github/workflows/retrieval-selection.yml'
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download the pinned public splits
+        run: |
+          src=https://raw.githubusercontent.com/rajpurkar/SQuAD-explorer/eee5fdbf62f8613a7812b03419e6b29617b74fd1/dataset
+          curl -fsSL --retry 2 "$src/train-v1.1.json" -o "$RUNNER_TEMP/train.json"
+          curl -fsSL --retry 2 "$src/dev-v1.1.json" -o "$RUNNER_TEMP/dev.json"
+      - name: Preserve v1 and replay corrected v2 sensitivity
+        run: |
+          python scripts/replay_retrieval_selection.py "$RUNNER_TEMP/train.json" "$RUNNER_TEMP/dev.json" "$RUNNER_TEMP/retrieval-replay"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: retrieval-selection-v1-v2-receipts
+          path: ${{ runner.temp }}/retrieval-replay/*.json

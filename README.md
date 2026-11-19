@@ -235,3 +235,12 @@ investigator read.
 The [West Calumet notice study](examples/inquiry/west-calumet/README.md)
 replays two dated evidence sets from East Chicago, Indiana, and compares
 Babalon's retrieval with keyword search under the same inspection allowance.
+
+The [bounded retrieval-selection trial](docs/RETRIEVAL_SELECTION.md) lets a
+training split select a candidate policy and evaluates that one proposal
+against shared-gap, BM25 and keyword search on a separate split.
+
+A [versioned position-bias correction](docs/RETRIEVAL_POSITION_V2.md) preserves
+the original SQuAD receipts and adds a public sensitivity replay. It changes
+presentation order only, checks identical passage membership and actual spend,
+and adds content-blind position controls. Both results remain `NOT_PROMOTED`.

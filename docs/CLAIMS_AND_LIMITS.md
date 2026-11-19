@@ -74,3 +74,19 @@ each proposal. The trusted Python host owns the grants and evidence files. The
 classifier's success on this one task family does not establish open-ended
 planning. The historical arithmetic runner continues to trust Python policies.
 The optional study uses a third-party runtime and synthetic records.
+
+## Retrieval selection
+
+The SQLite-backed [retrieval experiment](RETRIEVAL_SELECTION.md) persists one
+proposal and one linked evaluation per trial database. The arithmetic demo
+still has an in-memory promotion gate. A frozen bounded search selected the
+BM25 baseline on SQuAD training cases and failed promotion on new cases.
+Earlier HotpotQA gains concerned a developer-designed shared-gap strategy.
+These are separate experimental claims.
+
+The SQuAD v1 adapter concentrated gold paragraphs in the final position. The
+v2 replay corrects presentation ordering while preserving membership and original
+receipts. Its label remains public sensitivity, not a fresh promotion experiment.
+The selected BM25 candidate did not change. A forced-gold twelve-paragraph set
+is not open-corpus retrieval, and paragraph inspection parity is not model-token,
+wall-clock or monetary cost parity.
