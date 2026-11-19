@@ -1,13 +1,18 @@
 # Can bounded search earn a retrieval policy replacement?
 
+**Historical v1 record.** A subsequent review found position bias in the
+project-authored paragraph adapter. The original receipts and `NOT_PROMOTED`
+decision are retained. See [the v2 correction and sensitivity results](RETRIEVAL_POSITION_V2.md).
+
 Freeze before inspecting corpus contents or scores. Use the upstream
 [SQuAD 1.1](https://rajpurkar.github.io/SQuAD-explorer/) train and development
 files at SQuAD-explorer revision eee5fdbf62f8613a7812b03419e6b29617b74fd1.
 The runner pins both byte hashes. The evaluator constructs a retrieval task
 from a reading comprehension dataset. A hit means finding the question's
 annotated parent paragraph. Other plausible passages receive no credit.
-The source paragraph is offered with eleven same-article distractors in a
-deterministic hash order. All texts are shared across arms; no answer spans
+The source paragraph is offered with eleven same-article distractors. V1
+used the same hash order for distractor selection and display, creating a
+last-position bias; the historical results below retain that limitation. All texts are shared across arms; no answer spans
 or target indicators reach a ranker. One paragraph inspection costs one.
 
 For articles with twelve or more paragraphs, order questions by SHA-256 of
@@ -31,8 +36,8 @@ No runtime default or external permission follows from the trial.
 
 Run from a checkout with the two upstream files:
 
-    python scripts/retrieval_selection_trial.py propose trial.sqlite train-v1.1.json
-    python scripts/retrieval_selection_trial.py evaluate trial.sqlite dev-v1.1.json
+    python scripts/retrieval_selection_trial_v1.py propose trial.sqlite train-v1.1.json
+    python scripts/retrieval_selection_trial_v1.py evaluate trial.sqlite dev-v1.1.json
 
 Within one operator-owned SQLite file commits bind selection, trial counts
 and an evaluation receipt linked to the proposal digest. Reopening replays
