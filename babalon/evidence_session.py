@@ -8,12 +8,15 @@ import sqlite3
 import tempfile
 import uuid
 
-from .contracts import Invalid, canonical, digest, label
+from .contracts import Invalid, canonical, digest, integer, label
 from .peer_events import EVENT_PROJECTION, project_jobs
 from .handoff import load_snapshot, project_view, validate_grant
 
 
-PROFILE = "babalon.evidence-session.v1"
+LEGACY_PROFILE = "babalon.evidence-session.v1"
+PROFILE = "babalon.evidence-session.v2"
+DEFAULT_REQUESTS = 64
+MAX_REQUESTS = 4096
 PROJECTION = "babalon.commonwealth-handoff.v1"
 
 
@@ -22,10 +25,10 @@ class EvidenceSession:
         self.path = Path(database).resolve()
 
     @classmethod
-    def create(cls, database, source, allowed, max_inspections):
+    def create(cls, database, source, allowed, max_inspections, *, max_requests=DEFAULT_REQUESTS):
         allowed = validate_grant(allowed, max_inspections)
         raw, _ = load_snapshot(source)
-        return cls._create(database, raw, allowed, max_inspections, PROJECTION)
+        return cls._create(database, raw, allowed, max_inspections, PROJECTION, max_requests)
 
     @classmethod
     def create_last_credit(cls, database, event_file, permitted):
@@ -33,10 +36,11 @@ class EvidenceSession:
         if type(permitted) is not bool:
             raise Invalid("expected boolean event access")
         raw, _ = load_snapshot(event_file)
-        return cls._create(database, raw, ("timing",) if permitted else (), 1, EVENT_PROJECTION)
+        return cls._create(database, raw, ("timing",) if permitted else (), 1, EVENT_PROJECTION, DEFAULT_REQUESTS)
 
     @classmethod
-    def _create(cls, database, raw, allowed, max_inspections, projection):
+    def _create(cls, database, raw, allowed, max_inspections, projection, max_requests):
+        integer(max_requests, 0, MAX_REQUESTS)
         path = Path(database)
         # Publish only a fully committed database; never replace an existing path.
         fd, temporary = tempfile.mkstemp(dir=path.parent, prefix=".babalon-evidence-")
@@ -47,16 +51,16 @@ class EvidenceSession:
                     CREATE TABLE session (
                         singleton INTEGER PRIMARY KEY CHECK(singleton=1), profile TEXT NOT NULL,
                         session_id TEXT NOT NULL, projection TEXT NOT NULL, source_sha256 TEXT NOT NULL,
-                        views TEXT NOT NULL, credits INTEGER NOT NULL, revoked_after INTEGER
+                        views TEXT NOT NULL, credits INTEGER NOT NULL, revoked_after INTEGER, max_requests INTEGER NOT NULL
                     );
                     CREATE TABLE snapshot (singleton INTEGER PRIMARY KEY CHECK(singleton=1), raw BLOB NOT NULL);
                     CREATE TABLE inspections (view TEXT PRIMARY KEY, result TEXT NOT NULL);
                     CREATE TABLE requests (seq INTEGER PRIMARY KEY, request_id TEXT UNIQUE NOT NULL,
                                            view TEXT NOT NULL, receipt TEXT NOT NULL);
                 """)
-                db.execute("INSERT INTO session VALUES (1,?,?,?,?,?,?,NULL)",
+                db.execute("INSERT INTO session VALUES (1,?,?,?,?,?,?,NULL,?)",
                            (PROFILE, uuid.uuid4().hex, projection, hashlib.sha256(raw).hexdigest(),
-                            canonical(allowed), max_inspections))
+                            canonical(allowed), max_inspections, max_requests))
                 db.execute("INSERT INTO snapshot VALUES (1,?)", (raw,))
             os.link(temporary, path)
         finally:
@@ -72,9 +76,16 @@ class EvidenceSession:
             with db:
                 db.execute("BEGIN IMMEDIATE" if write else "BEGIN")
                 state = db.execute("SELECT * FROM session WHERE singleton=1").fetchone()
-                if not state or state["profile"] != PROFILE or state["projection"] not in (PROJECTION, EVENT_PROJECTION):
+                if not state or state["profile"] not in (LEGACY_PROFILE, PROFILE) or state["projection"] not in (PROJECTION, EVENT_PROJECTION):
                     raise Invalid("unsupported evidence session or projection")
                 yield db, state
+
+    @staticmethod
+    def _remaining_requests(db, state):
+        # Apply a finite ceiling on reopening v1; keep old rows and historical receipt identities.
+        limit = DEFAULT_REQUESTS if state["profile"] == LEGACY_PROFILE else state["max_requests"]
+        integer(limit, 0, MAX_REQUESTS)
+        return max(0, limit - db.execute("SELECT count(*) FROM requests").fetchone()[0])
 
     def observe(self):
         with self._transaction(write=False) as (db, state):
@@ -82,6 +93,7 @@ class EvidenceSession:
             revoked = state["revoked_after"] is not None
             return {"session_id": state["session_id"], "revoked": revoked,
                     "views": [] if revoked else json.loads(state["views"]),
+                    "remaining_requests": self._remaining_requests(db, state),
                     "remaining_inspections": 0 if revoked else state["credits"] - used}
 
     def revoke(self):
@@ -119,6 +131,8 @@ class EvidenceSession:
                 raise Invalid("request id conflict")
             if previous:
                 receipt = json.loads(previous["receipt"])
+            elif self._remaining_requests(db, state) == 0:
+                return {"status": "REFUSED", "reason": "request_budget_exhausted", "charged": 0}
             else:
                 receipt = self._issue(db, state, request_id, view)
             if state["revoked_after"] is not None:
@@ -152,7 +166,7 @@ class EvidenceSession:
             decision = {"status": "REFUSED", "reason": "outside_grant", "charged": 0}
         else:
             decision = self._inspect_granted(db, state, view)
-        receipt = {"profile": PROFILE, "projection": state["projection"], "session_id": state["session_id"],
+        receipt = {"profile": state["profile"], "projection": state["projection"], "session_id": state["session_id"],
                    "request_id": request_id, "view": view, **decision}
         receipt["receipt_id"] = digest(receipt)
         db.execute("INSERT INTO requests (request_id, view, receipt) VALUES (?,?,?)",
