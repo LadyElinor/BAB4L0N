@@ -51,6 +51,8 @@ def main(argv=None):
     remedy.add_argument("--account", help="optional local record of what the person chose to share")
     remedy.add_argument("--questions", choices=("records", "invited"),
                         help="draft office questions; invited means the person has invited questions in this conversation")
+    remedy.add_argument("--nine-stations", action="store_true",
+                        help="include the Nine Stations operator questions and return to outstanding office duties")
     remedy.add_argument("--as-of", type=int, required=True, help="inclusive review tick")
     study = sub.add_parser("last-credit", help="draw or run the paired evidence inspection trial")
     phases = study.add_subparsers(dest="phase", required=True)
@@ -109,6 +111,9 @@ def main(argv=None):
             if args.questions:
                 from .remedy_questions import question_guide
                 result["question_guide"] = question_guide(result, args.questions)
+            if args.nine_stations:
+                from .nine_stations import station_guide
+                result["nine_stations"] = station_guide(result)
         elif args.command == "recount":
             from .recount import recount
             result = recount(args.summary, args.events, args.allow)

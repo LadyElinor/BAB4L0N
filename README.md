@@ -217,3 +217,5 @@ outcome unknown. Per-case [uncertainty assessments](docs/REMEDY_REVIEW.md#uncert
 retain conflicting accounts and identify missing findings. Add `--questions records` to see which questions the responsible
 offices can address using existing evidence. The [remedy study and completion criteria](docs/REMEDY_REVIEW.md)
 include runnable examples and the remaining independent and human review gates.
+
+The optional [Nine Stations reading](docs/NINE_STATIONS.md) adds nine operator questions to `remedy-review --nine-stations` and returns each outstanding check to the responsible office.
