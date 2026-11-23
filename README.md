@@ -244,3 +244,5 @@ A [versioned position-bias correction](docs/RETRIEVAL_POSITION_V2.md) preserves
 the original SQuAD receipts and adds a public sensitivity replay. It changes
 presentation order only, checks identical passage membership and actual spend,
 and adds content-blind position controls. Both results remain `NOT_PROMOTED`.
+
+For independently selected AI-safety questions, the [blinded inquiry protocol](docs/BLIND_INQUIRY.md) freezes questions, source families, rubric and allowance, then compares shared-gap with keyword and fixed BM25 at equal actual passage spend. The protocol has no independent results or promotion authority yet.

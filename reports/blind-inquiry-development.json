@@ -1,0 +1,345 @@
+{
+  "cases": {
+    "astra-release-hold": {
+      "packet_sha256": "9258cc4ea26cc5b002ef0e5da8a1b41389d0065180803283e61ad03462c4313b",
+      "questions": [
+        {
+          "arms": {
+            "bm25": {
+              "hits": 1,
+              "matched_refs": [
+                "commitment.txt#L1",
+                "confirmation.txt#L1",
+                "terra.txt#L1"
+              ],
+              "matched_spend": 3,
+              "natural_spend": 4
+            },
+            "keyword": {
+              "hits": 1,
+              "matched_refs": [
+                "commitment.txt#L1",
+                "confirmation.txt#L1",
+                "terra.txt#L1"
+              ],
+              "matched_spend": 3,
+              "natural_spend": 3
+            },
+            "shared-gap": {
+              "hits": 1,
+              "matched_refs": [
+                "commitment.txt#L1",
+                "confirmation.txt#L1",
+                "terra.txt#L1"
+              ],
+              "matched_spend": 3,
+              "natural_spend": 3
+            }
+          },
+          "question": "Which behavior worried the testers enough to stop the October launch?",
+          "targets": [
+            "confirmation.txt#L1",
+            "confirmation.txt#L2"
+          ]
+        },
+        {
+          "arms": {
+            "bm25": {
+              "hits": 2,
+              "matched_refs": [
+                "disposition.txt#L1",
+                "confirmation.txt#L2",
+                "recommendation.txt#L1"
+              ],
+              "matched_spend": 3,
+              "natural_spend": 4
+            },
+            "keyword": {
+              "hits": 2,
+              "matched_refs": [
+                "disposition.txt#L1",
+                "confirmation.txt#L2",
+                "recommendation.txt#L1"
+              ],
+              "matched_spend": 3,
+              "natural_spend": 3
+            },
+            "shared-gap": {
+              "hits": 2,
+              "matched_refs": [
+                "disposition.txt#L1",
+                "confirmation.txt#L2",
+                "recommendation.txt#L1"
+              ],
+              "matched_spend": 3,
+              "natural_spend": 3
+            }
+          },
+          "question": "Who recommended withholding the candidate, and who decided against shipping it?",
+          "targets": [
+            "disposition.txt#L1",
+            "recommendation.txt#L1"
+          ]
+        },
+        {
+          "arms": {
+            "bm25": {
+              "hits": 1,
+              "matched_refs": [
+                "oversight.txt#L1",
+                "disposition.txt#L2",
+                "recommendation.txt#L1",
+                "confirmation.txt#L1"
+              ],
+              "matched_spend": 4,
+              "natural_spend": 4
+            },
+            "keyword": {
+              "hits": 1,
+              "matched_refs": [
+                "oversight.txt#L1",
+                "confirmation.txt#L1",
+                "disposition.txt#L2",
+                "recommendation.txt#L1"
+              ],
+              "matched_spend": 4,
+              "natural_spend": 4
+            },
+            "shared-gap": {
+              "hits": 1,
+              "matched_refs": [
+                "oversight.txt#L1",
+                "confirmation.txt#L1",
+                "disposition.txt#L2",
+                "oversight.txt#L2"
+              ],
+              "matched_spend": 4,
+              "natural_spend": 4
+            }
+          },
+          "question": "Does the board's authority to delay a release tell us who acted in this case?",
+          "targets": [
+            "disposition.txt#L1",
+            "oversight.txt#L1"
+          ]
+        },
+        {
+          "arms": {
+            "bm25": {
+              "hits": 2,
+              "matched_refs": [
+                "confirmation.txt#L1",
+                "terra.txt#L1",
+                "disposition.txt#L1",
+                "oversight.txt#L2"
+              ],
+              "matched_spend": 4,
+              "natural_spend": 4
+            },
+            "keyword": {
+              "hits": 2,
+              "matched_refs": [
+                "confirmation.txt#L1",
+                "terra.txt#L1",
+                "disposition.txt#L1",
+                "confirmation.txt#L2"
+              ],
+              "matched_spend": 4,
+              "natural_spend": 4
+            },
+            "shared-gap": {
+              "hits": 2,
+              "matched_refs": [
+                "confirmation.txt#L1",
+                "terra.txt#L1",
+                "disposition.txt#L2",
+                "confirmation.txt#L2"
+              ],
+              "matched_spend": 4,
+              "natural_spend": 4
+            }
+          },
+          "question": "Does the October Terra announcement show that the canceled Astra candidate returned?",
+          "targets": [
+            "confirmation.txt#L1",
+            "terra.txt#L1"
+          ]
+        }
+      ]
+    },
+    "gpt4o-sycophancy": {
+      "packet_sha256": "7920810bd1d407b65a07f8c66303258bac73a9d98951db4ebedbcc584f5f547c",
+      "questions": [
+        {
+          "arms": {
+            "bm25": {
+              "hits": 2,
+              "matched_refs": [
+                "review.txt#L2",
+                "review.txt#L1",
+                "review.txt#L5"
+              ],
+              "matched_spend": 3,
+              "natural_spend": 4
+            },
+            "keyword": {
+              "hits": 2,
+              "matched_refs": [
+                "review.txt#L2",
+                "review.txt#L1",
+                "review.txt#L5"
+              ],
+              "matched_spend": 3,
+              "natural_spend": 3
+            },
+            "shared-gap": {
+              "hits": 2,
+              "matched_refs": [
+                "review.txt#L2",
+                "review.txt#L1",
+                "review.txt#L3"
+              ],
+              "matched_spend": 3,
+              "natural_spend": 4
+            }
+          },
+          "question": "What concerns did testers raise before release, and who chose to launch?",
+          "targets": [
+            "review.txt#L1",
+            "review.txt#L2"
+          ]
+        },
+        {
+          "arms": {
+            "bm25": {
+              "hits": 1,
+              "matched_refs": [
+                "rollback.txt#L2",
+                "review.txt#L1",
+                "review.txt#L4",
+                "review.txt#L3"
+              ],
+              "matched_spend": 4,
+              "natural_spend": 4
+            },
+            "keyword": {
+              "hits": 1,
+              "matched_refs": [
+                "review.txt#L1",
+                "review.txt#L2",
+                "review.txt#L3",
+                "review.txt#L4"
+              ],
+              "matched_spend": 4,
+              "natural_spend": 4
+            },
+            "shared-gap": {
+              "hits": 0,
+              "matched_refs": [
+                "review.txt#L1",
+                "review.txt#L2",
+                "review.txt#L3",
+                "rollback.txt#L2"
+              ],
+              "matched_spend": 4,
+              "natural_spend": 4
+            }
+          },
+          "question": "Which changes did OpenAI report carrying out in April, and which release safeguard was a commitment?",
+          "targets": [
+            "review.txt#L4",
+            "review.txt#L5"
+          ]
+        },
+        {
+          "arms": {
+            "bm25": {
+              "hits": 2,
+              "matched_refs": [
+                "system-card.txt#L1",
+                "system-card.txt#L2",
+                "rollback.txt#L1",
+                "review.txt#L4"
+              ],
+              "matched_spend": 4,
+              "natural_spend": 4
+            },
+            "keyword": {
+              "hits": 2,
+              "matched_refs": [
+                "system-card.txt#L2",
+                "rollback.txt#L1",
+                "system-card.txt#L1",
+                "review.txt#L4"
+              ],
+              "matched_spend": 4,
+              "natural_spend": 4
+            },
+            "shared-gap": {
+              "hits": 2,
+              "matched_refs": [
+                "system-card.txt#L2",
+                "rollback.txt#L1",
+                "review.txt#L1",
+                "system-card.txt#L1"
+              ],
+              "matched_spend": 4,
+              "natural_spend": 4
+            }
+          },
+          "question": "Does the GPT-5 comparison measure the effect of the April rollback on users?",
+          "targets": [
+            "rollback.txt#L1",
+            "system-card.txt#L2"
+          ]
+        },
+        {
+          "arms": {
+            "bm25": {
+              "hits": 2,
+              "matched_refs": [
+                "advice-study.txt#L2",
+                "advice-study.txt#L3",
+                "review.txt#L5",
+                "system-card.txt#L1"
+              ],
+              "matched_spend": 4,
+              "natural_spend": 4
+            },
+            "keyword": {
+              "hits": 2,
+              "matched_refs": [
+                "advice-study.txt#L2",
+                "advice-study.txt#L3",
+                "advice-study.txt#L1",
+                "review.txt#L3"
+              ],
+              "matched_spend": 4,
+              "natural_spend": 4
+            },
+            "shared-gap": {
+              "hits": 2,
+              "matched_refs": [
+                "advice-study.txt#L2",
+                "advice-study.txt#L3",
+                "advice-study.txt#L1",
+                "review.txt#L3"
+              ],
+              "matched_spend": 4,
+              "natural_spend": 4
+            }
+          },
+          "question": "When people preferred agreeable advice, what happened to their willingness to repair a conflict?",
+          "targets": [
+            "advice-study.txt#L2",
+            "advice-study.txt#L3"
+          ]
+        }
+      ]
+    }
+  },
+  "metric": "designated passage hits, not human answer quality",
+  "per_question_cap": 4,
+  "promotion_eligible": false,
+  "scope": "exposed_development_only"
+}
