@@ -38,6 +38,37 @@ class EvidenceSessionTests(unittest.TestCase):
         self.assertEqual(result.returncode, code, result.stderr)
         return json.loads(result.stdout or result.stderr)
 
+    def test_receipt_limit_is_atomic_and_keeps_history_after_revocation(self):
+        self.cli("init", str(self.source), "--allow", "timing", "--max-inspections", "1", "--max-requests", "2")
+        session = EvidenceSession(self.db)
+        first = session.inspect("a", "timing")
+        with ThreadPoolExecutor(2) as pool:
+            pair = list(pool.map(lambda rid: session.inspect(rid, "advice"), ["b", "c"]))
+        self.assertCountEqual([r["reason"] for r in pair], ["outside_grant", "request_budget_exhausted"])
+        self.assertEqual(session.inspect("a", "timing"), first)
+        self.assertEqual(session.observe()["remaining_requests"], 0)
+        with self.assertRaises(Invalid):
+            session.inspect("a", "advice")
+        session.revoke()
+        self.assertNotIn("evidence", session.inspect("a", "timing"))
+        self.assertEqual(session.operator_receipt("a"), first)
+        self.assertNotIn("receipt_id", session.inspect("fresh", "timing"))
+        with closing(sqlite3.connect(self.db)) as db:
+            self.assertEqual(db.execute("SELECT COUNT(*) FROM requests").fetchone()[0], 2)
+
+    def test_zero_receipt_slots_preserve_inspections_and_legacy_reopens(self):
+        session = EvidenceSession.create(self.db, self.source, ["timing"], 1, max_requests=0)
+        self.assertEqual(session.inspect("one", "timing")["reason"], "request_budget_exhausted")
+        self.assertEqual(session.observe()["remaining_inspections"], 1)
+        # Reconstruct the legacy table, including its original column layout.
+        with closing(sqlite3.connect(self.db)) as db, db:
+            db.execute("ALTER TABLE session DROP COLUMN max_requests")
+            db.execute("UPDATE session SET profile='babalon.evidence-session.v1'")
+        self.assertEqual(session.observe()["remaining_requests"], 64)
+        historical = session.inspect("old", "timing")
+        self.assertEqual(historical["profile"], "babalon.evidence-session.v1")
+        self.assertEqual(EvidenceSession(self.db).operator_receipt("old"), historical)
+
     def test_pinned_offline_regression(self):
         self.assertEqual(hashlib.sha256(PINNED.read_bytes()).hexdigest(), PINNED_SHA)
         original = handoff(self.source, ["timing", "advice"], 2)

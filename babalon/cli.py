@@ -68,6 +68,8 @@ def main(argv=None):
             command.add_argument("summary")
             command.add_argument("--allow", nargs="*", choices=VIEWS, required=True)
             command.add_argument("--max-inspections", type=int, required=True)
+            from .evidence_session import DEFAULT_REQUESTS
+            command.add_argument("--max-requests", type=int, default=DEFAULT_REQUESTS)
         if action in ("inspect", "operator-receipt"):
             command.add_argument("request_id")
         if action == "inspect":
@@ -116,7 +118,8 @@ def main(argv=None):
             from .evidence_session import EvidenceSession
             session = EvidenceSession(args.database)
             if args.action == "init":
-                session = EvidenceSession.create(args.database, args.summary, args.allow, args.max_inspections)
+                session = EvidenceSession.create(args.database, args.summary, args.allow, args.max_inspections,
+                                                 max_requests=args.max_requests)
                 result = session.observe()
             elif args.action == "observe":
                 result = session.observe()
