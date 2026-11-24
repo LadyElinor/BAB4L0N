@@ -1,0 +1,11 @@
+{
+  "metric": "Number of exact designated references returned, counted once per question and reference. Report matched and native inspection totals separately. Equivalents are for human evidence review and do not add to exact-reference retrieval hits. The unresolved question contributes no target to the denominator and remains in the worksheet and spending totals.",
+  "questions": [
+    {"id":"q1","targets":["f.txt#L1","c.txt#L1"],"equivalents":{"f.txt#L1":[],"c.txt#L1":["f.txt#L2","b.txt#L1"]}},
+    {"id":"q2","targets":["c.txt#L3","c.txt#L4"],"equivalents":{}},
+    {"id":"q3","targets":["f.txt#L3","f.txt#L4"],"equivalents":{}},
+    {"id":"q4","targets":["e.txt#L1","d.txt#L2"],"equivalents":{}},
+    {"id":"q5","targets":["b.txt#L2","f.txt#L5"],"equivalents":{}},
+    {"id":"q6","targets":[],"equivalents":{}}
+  ]
+}

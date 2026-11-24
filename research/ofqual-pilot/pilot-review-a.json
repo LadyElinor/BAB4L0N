@@ -1,0 +1,381 @@
+{
+  "reviewer": "pilot-review-a",
+  "worksheet_digest": "d48655651dfd00e88b25ea09e54118b5bd268c518e6b01d3ee31ebadc6cbf5c8",
+  "answer_digest": "80cefd646cfe710daeef6558e8e03dae8364f7f3c3d19a645f612efb9687febe",
+  "rows": [
+    {
+      "id": "q1",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "f.txt#L1",
+        "f.txt#L2",
+        "c.txt#L1"
+      ],
+      "rationale": "The retrospective GRADE account dates the issue of calculated results and the later reissue instruction. Ofqual's 26 August guidance independently describes receipt. The answer uses all three passages for the right events and dates.",
+      "unanswered": "Both the 13 August award and the rule in effect by 26 August are resolved."
+    },
+    {
+      "id": "q1",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "f.txt#L1",
+        "f.txt#L2",
+        "c.txt#L1"
+      ],
+      "rationale": "The retrospective GRADE account dates the issue of calculated results and the later reissue instruction. Ofqual's 26 August guidance independently describes receipt. The answer uses all three passages for the right events and dates.",
+      "unanswered": "Both the 13 August award and the rule in effect by 26 August are resolved."
+    },
+    {
+      "id": "q1",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "f.txt#L1",
+        "f.txt#L2",
+        "c.txt#L1"
+      ],
+      "rationale": "The retrospective GRADE account dates the issue of calculated results and the later reissue instruction. Ofqual's 26 August guidance independently describes receipt. The answer uses all three passages for the right events and dates.",
+      "unanswered": "Both the 13 August award and the rule in effect by 26 August are resolved."
+    },
+    {
+      "id": "q1",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "f.txt#L1",
+        "f.txt#L2",
+        "c.txt#L1"
+      ],
+      "rationale": "The retrospective GRADE account dates the issue of calculated results and the later reissue instruction. Ofqual's 26 August guidance independently describes receipt. The answer uses all three passages for the right events and dates.",
+      "unanswered": "Both the 13 August award and the rule in effect by 26 August are resolved."
+    },
+    {
+      "id": "q2",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "c.txt#L3"
+      ],
+      "rationale": "Ofqual explicitly allows a pupil with evidence of discrimination to submit it directly to the relevant board. This supplies the first part only. Neither the general higher-grade rule nor any other returned line establishes what a board does after finding malpractice.",
+      "unanswered": "The award procedure following a finding of wrongdoing remains unanswered."
+    },
+    {
+      "id": "q2",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "c.txt#L3"
+      ],
+      "rationale": "Ofqual explicitly allows a pupil with evidence of discrimination to submit it directly to the relevant board. This supplies the first part only. Neither the general higher-grade rule nor any other returned line establishes what a board does after finding malpractice.",
+      "unanswered": "The award procedure following a finding of wrongdoing remains unanswered."
+    },
+    {
+      "id": "q2",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "c.txt#L3"
+      ],
+      "rationale": "Ofqual explicitly allows a pupil with evidence of discrimination to submit it directly to the relevant board. This supplies the first part only. Neither the general higher-grade rule nor any other returned line establishes what a board does after finding malpractice. The separate provision for appeals by centres concerns moderation errors.",
+      "unanswered": "The award procedure following a finding of wrongdoing remains unanswered."
+    },
+    {
+      "id": "q2",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "b.txt#L1"
+      ],
+      "rationale": "The answer accurately cites the general award rule for context. The passages on the plan, the change in summer award and hypothetical exam performance give no direct complaints route or decision rule for proven wrongdoing. The answer limits its conclusion to this return.",
+      "unanswered": "Neither the right to bypass the school nor the consequence for the grade can be recovered here."
+    },
+    {
+      "id": "q3",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "b.txt#L1"
+      ],
+      "rationale": "The cited announcement explains why a grade might rise. It supplies neither the subject-entry statistic nor the candidate statistic. The count of autumn results belongs to a different sitting. The interpreter correctly declines to assign denominators.",
+      "unanswered": "How many subject entries improved and how many people benefited in at least one subject cannot be reconciled from the return."
+    },
+    {
+      "id": "q3",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "b.txt#L1"
+      ],
+      "rationale": "The cited announcement explains why a grade might rise. It supplies neither the subject-entry statistic nor the candidate statistic. The count of autumn results belongs to a different sitting. The interpreter correctly declines to assign denominators.",
+      "unanswered": "How many subject entries improved and how many people benefited in at least one subject cannot be reconciled from the return."
+    },
+    {
+      "id": "q3",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "b.txt#L1"
+      ],
+      "rationale": "The cited announcement explains why a grade might rise. It supplies neither the subject-entry statistic nor the candidate statistic. The count of autumn results belongs to a different sitting. The interpreter correctly declines to assign denominators.",
+      "unanswered": "How many subject entries improved and how many people benefited in at least one subject cannot be reconciled from the return."
+    },
+    {
+      "id": "q3",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "f.txt#L1",
+        "f.txt#L6"
+      ],
+      "rationale": "The cited retrospective lines identify August's original award and its inputs. Neither measures changes in subject entries or the number of candidates gaining in at least one subject. Autumn participation is unrelated to either summer fraction.",
+      "unanswered": "The populations behind both fractions, and hence their relationship, remain unidentified."
+    },
+    {
+      "id": "q4",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "d.txt#L2"
+      ],
+      "rationale": "The department's figure is the share of autumn A level entries with no summer grade in that subject. It establishes use by that group. The answer retains the entry denominator and does not assign the 16 percent to private candidates. The line describing an opportunity to improve existing grades cannot establish private-candidate provision.",
+      "unanswered": "The intended provision for private candidates who lacked a summer award is missing. The entry share does not establish their status."
+    },
+    {
+      "id": "q4",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "e.txt#L1"
+      ],
+      "rationale": "Ofqual's retrospective account explicitly describes an autumn exam opportunity for private candidates without summer awards. The answer describes that offer and leaves take-up open. The opportunity to improve existing grades supplies no entry breakdown by prior grade status.",
+      "unanswered": "No figure for actual use by those lacking a summer result is returned."
+    },
+    {
+      "id": "q4",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "e.txt#L1"
+      ],
+      "rationale": "Ofqual's retrospective account explicitly describes an autumn exam opportunity for private candidates without summer awards. The answer describes that offer and leaves take-up open. The opportunity to improve existing grades supplies no entry breakdown by prior grade status.",
+      "unanswered": "No figure for actual use by those lacking a summer result is returned."
+    },
+    {
+      "id": "q4",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "e.txt#L1",
+        "d.txt#L3"
+      ],
+      "rationale": "The Ofqual passage describes the requested opportunity. The department's cited improvement figures require an existing summer grade for comparison. The interpreter correctly excludes those figures as evidence of uptake by people without one.",
+      "unanswered": "The figure specifically showing entry without a summer grade is absent."
+    },
+    {
+      "id": "q5",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "b.txt#L2",
+        "f.txt#L5"
+      ],
+      "rationale": "Taylor is the person named in the acknowledgment. The answer attributes the acknowledgment to him and the later limitation to the researchers. The cited research explicitly permits ranking discrepancies and disclaims identifying the greatest distress. No first-person account or individual harm is inferred.",
+      "unanswered": "Both questions are answered. The underlying identities of those who suffered most remain unknown, as the researchers state."
+    },
+    {
+      "id": "q5",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "b.txt#L2",
+        "f.txt#L5"
+      ],
+      "rationale": "Taylor is the person named in the acknowledgment. The answer attributes the acknowledgment to him and the later limitation to the researchers. The cited research explicitly permits ranking discrepancies and disclaims identifying the greatest distress. No first-person account or individual harm is inferred.",
+      "unanswered": "Both questions are answered. The underlying identities of those who suffered most remain unknown, as the researchers state."
+    },
+    {
+      "id": "q5",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "b.txt#L2",
+        "f.txt#L5"
+      ],
+      "rationale": "Taylor is the person named in the acknowledgment. The answer attributes the acknowledgment to him and the later limitation to the researchers. The cited research explicitly permits ranking discrepancies and disclaims identifying the greatest distress. No first-person account or individual harm is inferred.",
+      "unanswered": "Both questions are answered. The underlying identities of those who suffered most remain unknown, as the researchers state."
+    },
+    {
+      "id": "q5",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "b.txt#L2",
+        "f.txt#L5"
+      ],
+      "rationale": "Taylor is the person named in the acknowledgment. The answer attributes the acknowledgment to him and the later limitation to the researchers. The cited research explicitly permits ranking discrepancies and disclaims identifying the greatest distress. No first-person account or individual harm is inferred.",
+      "unanswered": "Both questions are answered. The underlying identities of those who suffered most remain unknown, as the researchers state."
+    },
+    {
+      "id": "q6",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "f.txt#L2"
+      ],
+      "rationale": "The reissue instruction supports the stated context only. None of these passages tracks the loss and restoration of the same first-choice offer before its deadline. The interpreter correctly supplies no numerical estimate and names the required admissions linkage. This item has no assigned retrieval target.",
+      "unanswered": "The count is unknown. Evidence linking qualifying losses with reinstatements of the same place and the relevant deadline is missing."
+    },
+    {
+      "id": "q6",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "f.txt#L2"
+      ],
+      "rationale": "The reissue instruction supports the stated context only. None of these passages tracks the loss and restoration of the same first-choice offer before its deadline. The interpreter correctly supplies no numerical estimate and names the required admissions linkage. This item has no assigned retrieval target.",
+      "unanswered": "The count is unknown. Evidence linking qualifying losses with reinstatements of the same place and the relevant deadline is missing."
+    },
+    {
+      "id": "q6",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "f.txt#L2"
+      ],
+      "rationale": "The reissue instruction supports the stated context only. None of these passages tracks the loss and restoration of the same first-choice offer before its deadline. The interpreter correctly supplies no numerical estimate and names the required admissions linkage. This item has no assigned retrieval target.",
+      "unanswered": "The count is unknown. Evidence linking qualifying losses with reinstatements of the same place and the relevant deadline is missing."
+    },
+    {
+      "id": "q6",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "f.txt#L2"
+      ],
+      "rationale": "The reissue instruction supports the stated context only. None of these passages tracks the loss and restoration of the same first-choice offer before its deadline. The interpreter correctly supplies no numerical estimate and names the required admissions linkage. This item has no assigned retrieval target.",
+      "unanswered": "The count is unknown. Evidence linking qualifying losses with reinstatements of the same place and the relevant deadline is missing."
+    }
+  ]
+}

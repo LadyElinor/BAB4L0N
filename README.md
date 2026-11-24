@@ -245,7 +245,7 @@ the original SQuAD receipts and adds a public sensitivity replay. It changes
 presentation order only, checks identical passage membership and actual spend,
 and adds content-blind position controls. Both results remain `NOT_PROMOTED`.
 
-For new AI-safety inquiries, follow the [v2 blinded collection procedure](docs/BLIND_INQUIRY_V2.md). It uses the [v1 retrieval protocol](docs/BLIND_INQUIRY.md) to compare shared-gap, keyword and fixed BM25 at equal actual passage spend. Before unblinding, a custodian closes a register of the interpreter's answer digest and each reviewer's individual deposit. The exposed development rehearsal remains the only reported result. An independent evaluation is still needed.
+For new AI-safety inquiries, follow the [v2 blinded collection procedure](docs/BLIND_INQUIRY_V2.md). It uses the [v1 retrieval protocol](docs/BLIND_INQUIRY.md) to compare shared-gap, keyword and fixed BM25 at equal actual passage spend. Before unblinding, a custodian closes a register of the interpreter's answer digest and each reviewer's individual deposit. The original three-reader result is an exposed development rehearsal. An independent evaluation is still needed.
 
 An optional [four-reader comparison](docs/BLIND_INQUIRY_COVERAGE.md) tests one fixed hypothesis about two-part questions. It adds a clause-based BM25 reader to the same three controls and uses the v2 custody process for independent review.
 
@@ -262,3 +262,5 @@ python scripts/rehearse_inquiry_coverage.py ../atlas-packets > ../coverage-repla
 ```
 
 The rehearsal checks the source bytes against the original packet pins. Compare the parsed JSON with the development receipt. The reader, scoring rule and protocol were frozen at `4effd6e2440648af0beb406281e4e9354af3e398` before the replay.
+
+A [six-question transfer pilot](research/ofqual-pilot/README.md) used a separately prepared case and two blinded AI reviewers. The clause-based reader, fixed BM25 and shared-gap each found 6 of 10 designated passages. All four methods supported two full answers at 24 inspections each. The packet, reviews and a replay command are included.

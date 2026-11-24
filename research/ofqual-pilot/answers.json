@@ -1,0 +1,284 @@
+{
+  "interpreter": "pilot-interpreter",
+  "worksheet_digest": "d48655651dfd00e88b25ea09e54118b5bd268c518e6b01d3ee31ebadc6cbf5c8",
+  "rows": [
+    {
+      "id": "q1",
+      "arm": "A",
+      "decision": "answer",
+      "interpretation": "Exam boards issued calculated A level grades on 13 August. On 17 August Ofqual instructed them to reissue grades using the better of the teacher estimate and the calculated result. By 26 August, Ofqual reported that students had received the higher of their centre assessment grade and their standardised grade.",
+      "cites": [
+        "f.txt#L1",
+        "f.txt#L2",
+        "c.txt#L1"
+      ],
+      "uncertainty": "The 17 August date is the date of the instruction. The 26 August guidance describes the grades already received.",
+      "unanswered": "Both the initial grade and the subsequent award rule are identified."
+    },
+    {
+      "id": "q1",
+      "arm": "B",
+      "decision": "answer",
+      "interpretation": "Exam boards issued calculated A level grades on 13 August. On 17 August Ofqual instructed them to reissue grades using the better of the teacher estimate and the calculated result. By 26 August, Ofqual reported that students had received the higher of their centre assessment grade and their standardised grade.",
+      "cites": [
+        "f.txt#L1",
+        "f.txt#L2",
+        "c.txt#L1"
+      ],
+      "uncertainty": "The 17 August date is the date of the instruction. The 26 August guidance describes the grades already received.",
+      "unanswered": "Both the initial grade and the subsequent award rule are identified."
+    },
+    {
+      "id": "q1",
+      "arm": "C",
+      "decision": "answer",
+      "interpretation": "Exam boards issued calculated A level grades on 13 August. On 17 August Ofqual instructed them to reissue grades using the better of the teacher estimate and the calculated result. By 26 August, Ofqual reported that students had received the higher of their centre assessment grade and their standardised grade.",
+      "cites": [
+        "f.txt#L1",
+        "f.txt#L2",
+        "c.txt#L1"
+      ],
+      "uncertainty": "The 17 August date is the date of the instruction. The 26 August guidance describes the grades already received.",
+      "unanswered": "Both the initial grade and the subsequent award rule are identified."
+    },
+    {
+      "id": "q1",
+      "arm": "D",
+      "decision": "answer",
+      "interpretation": "Exam boards issued calculated A level grades on 13 August. On 17 August Ofqual instructed them to reissue grades using the better of the teacher estimate and the calculated result. By 26 August, Ofqual reported that students had received the higher of their centre assessment grade and their standardised grade.",
+      "cites": [
+        "f.txt#L1",
+        "f.txt#L2",
+        "c.txt#L1"
+      ],
+      "uncertainty": "The 17 August date is the date of the instruction. The 26 August guidance describes the grades already received.",
+      "unanswered": "Both the initial grade and the subsequent award rule are identified."
+    },
+    {
+      "id": "q2",
+      "arm": "A",
+      "decision": "abstain",
+      "interpretation": "Yes. A pupil with evidence of bias or discrimination could take it straight to the relevant exam board without going through their school. The supplied evidence ends before the board’s decision on the award.",
+      "cites": [
+        "c.txt#L3"
+      ],
+      "uncertainty": "The right to submit evidence does not establish what remedy followed a finding of wrongdoing.",
+      "unanswered": "What happened to the award if wrongdoing was proved?"
+    },
+    {
+      "id": "q2",
+      "arm": "B",
+      "decision": "abstain",
+      "interpretation": "Yes. A pupil with evidence of bias or discrimination could take it straight to the relevant exam board without going through their school. The supplied evidence ends before the board’s decision on the award.",
+      "cites": [
+        "c.txt#L3"
+      ],
+      "uncertainty": "The right to submit evidence does not establish what remedy followed a finding of wrongdoing.",
+      "unanswered": "What happened to the award if wrongdoing was proved?"
+    },
+    {
+      "id": "q2",
+      "arm": "C",
+      "decision": "abstain",
+      "interpretation": "Yes. A pupil with evidence of bias or discrimination could take it straight to the relevant exam board without going through their school. The supplied evidence ends before the board’s decision on the award.",
+      "cites": [
+        "c.txt#L3"
+      ],
+      "uncertainty": "The right to submit evidence does not establish what remedy followed a finding of wrongdoing.",
+      "unanswered": "What happened to the award if wrongdoing was proved?"
+    },
+    {
+      "id": "q2",
+      "arm": "D",
+      "decision": "abstain",
+      "interpretation": "The general summer rule awarded the better of the school or college estimate and the moderated result. That rule gives no procedure for a pupil alleging discrimination and no remedy if the allegation is upheld.",
+      "cites": [
+        "b.txt#L1"
+      ],
+      "uncertainty": "The passages about moderating original submissions do not identify who could receive a discrimination complaint.",
+      "unanswered": "Both the route around the school and the effect of proved wrongdoing on the award are unknown."
+    },
+    {
+      "id": "q3",
+      "arm": "A",
+      "decision": "abstain",
+      "interpretation": "The summer rule awarded the better of the estimate and the moderated result, which explains how an upward revision could occur. It gives no counts with which to interpret the two fractions.",
+      "cites": [
+        "b.txt#L1"
+      ],
+      "uncertainty": "The two fractions appear in the question, but the passages do not identify the cases counted in either one.",
+      "unanswered": "The numerators and denominators for about four in ten and more than two in three are missing, so the two figures cannot be reconciled here."
+    },
+    {
+      "id": "q3",
+      "arm": "B",
+      "decision": "abstain",
+      "interpretation": "The summer rule awarded the better of the estimate and the moderated result, which explains how an upward revision could occur. It gives no counts with which to interpret the two fractions.",
+      "cites": [
+        "b.txt#L1"
+      ],
+      "uncertainty": "The two fractions appear in the question, but the passages do not identify the cases counted in either one.",
+      "unanswered": "The numerators and denominators for about four in ten and more than two in three are missing, so the two figures cannot be reconciled here."
+    },
+    {
+      "id": "q3",
+      "arm": "C",
+      "decision": "abstain",
+      "interpretation": "The summer rule awarded the better of the estimate and the moderated result, which explains how an upward revision could occur. It gives no counts with which to interpret the two fractions.",
+      "cites": [
+        "b.txt#L1"
+      ],
+      "uncertainty": "The two fractions appear in the question, but the passages do not identify the cases counted in either one.",
+      "unanswered": "The numerators and denominators for about four in ten and more than two in three are missing, so the two figures cannot be reconciled here."
+    },
+    {
+      "id": "q3",
+      "arm": "D",
+      "decision": "abstain",
+      "interpretation": "The passages identify the initial results as calculated grades and give inputs to the calculation. Neither passage measures the frequency of subsequent upgrades.",
+      "cites": [
+        "f.txt#L1",
+        "f.txt#L6"
+      ],
+      "uncertainty": "Knowing how the original grades were calculated does not identify which cases either fraction counts.",
+      "unanswered": "Neither fraction has a reported numerator or denominator here, so their relationship is unresolved."
+    },
+    {
+      "id": "q4",
+      "arm": "A",
+      "decision": "abstain",
+      "interpretation": "Around 16 percent of autumn A level entries came from students who had no summer grade in the same subject. That shows students without such a grade used the autumn sitting.",
+      "cites": [
+        "d.txt#L2"
+      ],
+      "uncertainty": "The 16 percent is a share of entries. The passage does not say which of those entries came from private candidates.",
+      "unanswered": "The specific provision made for private candidates who could not obtain a summer grade is not described."
+    },
+    {
+      "id": "q4",
+      "arm": "B",
+      "decision": "abstain",
+      "interpretation": "Private candidates who could not obtain a summer grade were offered autumn examinations as another opportunity to earn one.",
+      "cites": [
+        "e.txt#L1"
+      ],
+      "uncertainty": "The offer establishes access to the autumn sitting. These passages give no breakdown of entries by summer grade status.",
+      "unanswered": "The later figure showing take-up by people without a summer grade is missing."
+    },
+    {
+      "id": "q4",
+      "arm": "C",
+      "decision": "abstain",
+      "interpretation": "Private candidates who could not obtain a summer grade were offered autumn examinations as another opportunity to earn one.",
+      "cites": [
+        "e.txt#L1"
+      ],
+      "uncertainty": "The offer establishes access to the autumn sitting. These passages give no breakdown of entries by summer grade status.",
+      "unanswered": "The later figure showing take-up by people without a summer grade is missing."
+    },
+    {
+      "id": "q4",
+      "arm": "D",
+      "decision": "abstain",
+      "interpretation": "The autumn examinations gave private candidates who could not obtain a summer grade another chance to earn one. The improvement figures cover students whose summer grades were available for comparison.",
+      "cites": [
+        "e.txt#L1",
+        "d.txt#L3"
+      ],
+      "uncertainty": "Those improvement percentages omit the group asked about because that group lacked a summer grade to compare.",
+      "unanswered": "The figure showing take-up among those without a summer grade is missing."
+    },
+    {
+      "id": "q5",
+      "arm": "A",
+      "decision": "answer",
+      "interpretation": "Taylor acknowledged students’ anxiety and distress after the results. The researchers could identify people with the largest grade discrepancies across subjects, but their data could not identify whose distress or other consequences were greatest.",
+      "cites": [
+        "b.txt#L2",
+        "f.txt#L5"
+      ],
+      "uncertainty": "Taylor is identified by surname in the passage. The size of a grade discrepancy does not measure how much the individual suffered.",
+      "unanswered": "Which particular individuals suffered most remains unknown."
+    },
+    {
+      "id": "q5",
+      "arm": "B",
+      "decision": "answer",
+      "interpretation": "Taylor acknowledged students’ anxiety and distress after the results. The researchers could identify people with the largest grade discrepancies across subjects, but their data could not identify whose distress or other consequences were greatest.",
+      "cites": [
+        "b.txt#L2",
+        "f.txt#L5"
+      ],
+      "uncertainty": "Taylor is identified by surname in the passage. The size of a grade discrepancy does not measure how much the individual suffered.",
+      "unanswered": "Which particular individuals suffered most remains unknown."
+    },
+    {
+      "id": "q5",
+      "arm": "C",
+      "decision": "answer",
+      "interpretation": "Taylor acknowledged students’ anxiety and distress after the results. The researchers could identify people with the largest grade discrepancies across subjects, but their data could not identify whose distress or other consequences were greatest.",
+      "cites": [
+        "b.txt#L2",
+        "f.txt#L5"
+      ],
+      "uncertainty": "Taylor is identified by surname in the passage. The size of a grade discrepancy does not measure how much the individual suffered.",
+      "unanswered": "Which particular individuals suffered most remains unknown."
+    },
+    {
+      "id": "q5",
+      "arm": "D",
+      "decision": "answer",
+      "interpretation": "Taylor acknowledged students’ anxiety and distress after the results. The researchers could identify people with the largest grade discrepancies across subjects, but their data could not identify whose distress or other consequences were greatest.",
+      "cites": [
+        "b.txt#L2",
+        "f.txt#L5"
+      ],
+      "uncertainty": "Taylor is identified by surname in the passage. The size of a grade discrepancy does not measure how much the individual suffered.",
+      "unanswered": "Which particular individuals suffered most remains unknown."
+    },
+    {
+      "id": "q6",
+      "arm": "A",
+      "decision": "abstain",
+      "interpretation": "Ofqual instructed awarding bodies on 17 August to reissue grades using the better of the two results. The instruction provides no count of first-choice university places regained before their deadlines.",
+      "cites": [
+        "f.txt#L2"
+      ],
+      "uncertainty": "A revised grade alone does not establish that a pupil lost a particular place because of the first result or recovered it in time.",
+      "unanswered": "The count requires admissions outcomes linking each such loss to reinstatement of the same place and its deadline. The passages give no such outcomes."
+    },
+    {
+      "id": "q6",
+      "arm": "B",
+      "decision": "abstain",
+      "interpretation": "Ofqual instructed awarding bodies on 17 August to reissue grades using the better of the two results. The instruction provides no count of first-choice university places regained before their deadlines.",
+      "cites": [
+        "f.txt#L2"
+      ],
+      "uncertainty": "A revised grade alone does not establish that a pupil lost a particular place because of the first result or recovered it in time.",
+      "unanswered": "The count requires admissions outcomes linking each such loss to reinstatement of the same place and its deadline. The passages give no such outcomes."
+    },
+    {
+      "id": "q6",
+      "arm": "C",
+      "decision": "abstain",
+      "interpretation": "Ofqual instructed awarding bodies on 17 August to reissue grades using the better of the two results. The instruction provides no count of first-choice university places regained before their deadlines.",
+      "cites": [
+        "f.txt#L2"
+      ],
+      "uncertainty": "A revised grade alone does not establish that a pupil lost a particular place because of the first result or recovered it in time.",
+      "unanswered": "The count requires admissions outcomes linking each such loss to reinstatement of the same place and its deadline. The passages give no such outcomes."
+    },
+    {
+      "id": "q6",
+      "arm": "D",
+      "decision": "abstain",
+      "interpretation": "Ofqual instructed awarding bodies on 17 August to reissue grades using the better of the two results. The instruction provides no count of first-choice university places regained before their deadlines.",
+      "cites": [
+        "f.txt#L2"
+      ],
+      "uncertainty": "A revised grade alone does not establish that a pupil lost a particular place because of the first result or recovered it in time.",
+      "unanswered": "The count requires admissions outcomes linking each such loss to reinstatement of the same place and its deadline. The passages give no such outcomes."
+    }
+  ]
+}

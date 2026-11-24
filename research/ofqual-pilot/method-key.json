@@ -1,0 +1,463 @@
+{
+  "commitment": "4cd70474d680730b21093675c271de9660614b0c83101a2aed6dae9c8d130718",
+  "worksheet_digest": "d48655651dfd00e88b25ea09e54118b5bd268c518e6b01d3ee31ebadc6cbf5c8",
+  "rows": [
+    {
+      "id": "q1",
+      "arm": "A",
+      "method": "shared-gap",
+      "natural_refs": [
+        "f.txt#L1",
+        "f.txt#L2",
+        "c.txt#L1",
+        "d.txt#L1"
+      ],
+      "matched_refs": [
+        "f.txt#L1",
+        "f.txt#L2",
+        "c.txt#L1",
+        "d.txt#L1"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    },
+    {
+      "id": "q1",
+      "arm": "B",
+      "method": "keyword",
+      "natural_refs": [
+        "f.txt#L4",
+        "f.txt#L1",
+        "f.txt#L2",
+        "c.txt#L1"
+      ],
+      "matched_refs": [
+        "f.txt#L4",
+        "f.txt#L1",
+        "f.txt#L2",
+        "c.txt#L1"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    },
+    {
+      "id": "q1",
+      "arm": "C",
+      "method": "bm25",
+      "natural_refs": [
+        "f.txt#L4",
+        "f.txt#L1",
+        "c.txt#L1",
+        "f.txt#L2"
+      ],
+      "matched_refs": [
+        "f.txt#L4",
+        "f.txt#L1",
+        "c.txt#L1",
+        "f.txt#L2"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    },
+    {
+      "method": "clause-bm25",
+      "natural_refs": [
+        "f.txt#L4",
+        "c.txt#L1",
+        "f.txt#L1",
+        "f.txt#L2"
+      ],
+      "matched_refs": [
+        "f.txt#L4",
+        "c.txt#L1",
+        "f.txt#L1",
+        "f.txt#L2"
+      ],
+      "matched_spend": 4,
+      "id": "q1",
+      "arm": "D",
+      "natural_spend": 4
+    },
+    {
+      "id": "q2",
+      "arm": "A",
+      "method": "bm25",
+      "natural_refs": [
+        "c.txt#L3",
+        "f.txt#L7",
+        "b.txt#L1",
+        "e.txt#L1"
+      ],
+      "matched_refs": [
+        "c.txt#L3",
+        "f.txt#L7",
+        "b.txt#L1",
+        "e.txt#L1"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    },
+    {
+      "method": "clause-bm25",
+      "natural_refs": [
+        "c.txt#L3",
+        "b.txt#L1",
+        "e.txt#L1",
+        "e.txt#L4"
+      ],
+      "matched_refs": [
+        "c.txt#L3",
+        "b.txt#L1",
+        "e.txt#L1",
+        "e.txt#L4"
+      ],
+      "matched_spend": 4,
+      "id": "q2",
+      "arm": "B",
+      "natural_spend": 4
+    },
+    {
+      "id": "q2",
+      "arm": "C",
+      "method": "shared-gap",
+      "natural_refs": [
+        "f.txt#L7",
+        "b.txt#L1",
+        "a.txt#L3",
+        "c.txt#L3"
+      ],
+      "matched_refs": [
+        "f.txt#L7",
+        "b.txt#L1",
+        "a.txt#L3",
+        "c.txt#L3"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    },
+    {
+      "id": "q2",
+      "arm": "D",
+      "method": "keyword",
+      "natural_refs": [
+        "f.txt#L7",
+        "b.txt#L1",
+        "a.txt#L1",
+        "a.txt#L2"
+      ],
+      "matched_refs": [
+        "f.txt#L7",
+        "b.txt#L1",
+        "a.txt#L1",
+        "a.txt#L2"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    },
+    {
+      "id": "q3",
+      "arm": "A",
+      "method": "bm25",
+      "natural_refs": [
+        "d.txt#L1",
+        "c.txt#L2",
+        "b.txt#L1",
+        "f.txt#L1"
+      ],
+      "matched_refs": [
+        "d.txt#L1",
+        "c.txt#L2",
+        "b.txt#L1",
+        "f.txt#L1"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    },
+    {
+      "id": "q3",
+      "arm": "B",
+      "method": "shared-gap",
+      "natural_refs": [
+        "d.txt#L1",
+        "b.txt#L1",
+        "c.txt#L2",
+        "f.txt#L6"
+      ],
+      "matched_refs": [
+        "d.txt#L1",
+        "b.txt#L1",
+        "c.txt#L2",
+        "f.txt#L6"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    },
+    {
+      "id": "q3",
+      "arm": "C",
+      "method": "keyword",
+      "natural_refs": [
+        "d.txt#L1",
+        "b.txt#L1",
+        "c.txt#L2",
+        "c.txt#L5"
+      ],
+      "matched_refs": [
+        "d.txt#L1",
+        "b.txt#L1",
+        "c.txt#L2",
+        "c.txt#L5"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    },
+    {
+      "method": "clause-bm25",
+      "natural_refs": [
+        "d.txt#L1",
+        "c.txt#L2",
+        "f.txt#L6",
+        "f.txt#L1"
+      ],
+      "matched_refs": [
+        "d.txt#L1",
+        "c.txt#L2",
+        "f.txt#L6",
+        "f.txt#L1"
+      ],
+      "matched_spend": 4,
+      "id": "q3",
+      "arm": "D",
+      "natural_spend": 4
+    },
+    {
+      "method": "clause-bm25",
+      "natural_refs": [
+        "c.txt#L5",
+        "d.txt#L3",
+        "e.txt#L2",
+        "d.txt#L2"
+      ],
+      "matched_refs": [
+        "c.txt#L5",
+        "d.txt#L3",
+        "e.txt#L2",
+        "d.txt#L2"
+      ],
+      "matched_spend": 4,
+      "id": "q4",
+      "arm": "A",
+      "natural_spend": 4
+    },
+    {
+      "id": "q4",
+      "arm": "B",
+      "method": "shared-gap",
+      "natural_refs": [
+        "e.txt#L1",
+        "e.txt#L2",
+        "b.txt#L1",
+        "c.txt#L5"
+      ],
+      "matched_refs": [
+        "e.txt#L1",
+        "e.txt#L2",
+        "b.txt#L1",
+        "c.txt#L5"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    },
+    {
+      "id": "q4",
+      "arm": "C",
+      "method": "keyword",
+      "natural_refs": [
+        "e.txt#L1",
+        "e.txt#L2",
+        "b.txt#L1",
+        "c.txt#L5"
+      ],
+      "matched_refs": [
+        "e.txt#L1",
+        "e.txt#L2",
+        "b.txt#L1",
+        "c.txt#L5"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    },
+    {
+      "id": "q4",
+      "arm": "D",
+      "method": "bm25",
+      "natural_refs": [
+        "c.txt#L5",
+        "e.txt#L1",
+        "d.txt#L3",
+        "e.txt#L2"
+      ],
+      "matched_refs": [
+        "c.txt#L5",
+        "e.txt#L1",
+        "d.txt#L3",
+        "e.txt#L2"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    },
+    {
+      "id": "q5",
+      "arm": "A",
+      "method": "bm25",
+      "natural_refs": [
+        "b.txt#L2",
+        "f.txt#L5",
+        "e.txt#L1",
+        "d.txt#L1"
+      ],
+      "matched_refs": [
+        "b.txt#L2",
+        "f.txt#L5",
+        "e.txt#L1",
+        "d.txt#L1"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    },
+    {
+      "id": "q5",
+      "arm": "B",
+      "method": "keyword",
+      "natural_refs": [
+        "b.txt#L2",
+        "f.txt#L5",
+        "b.txt#L3",
+        "c.txt#L2"
+      ],
+      "matched_refs": [
+        "b.txt#L2",
+        "f.txt#L5",
+        "b.txt#L3",
+        "c.txt#L2"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    },
+    {
+      "id": "q5",
+      "arm": "C",
+      "method": "shared-gap",
+      "natural_refs": [
+        "b.txt#L2",
+        "f.txt#L5",
+        "b.txt#L3",
+        "c.txt#L2"
+      ],
+      "matched_refs": [
+        "b.txt#L2",
+        "f.txt#L5",
+        "b.txt#L3",
+        "c.txt#L2"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    },
+    {
+      "method": "clause-bm25",
+      "natural_refs": [
+        "b.txt#L2",
+        "f.txt#L5",
+        "e.txt#L1",
+        "c.txt#L2"
+      ],
+      "matched_refs": [
+        "b.txt#L2",
+        "f.txt#L5",
+        "e.txt#L1",
+        "c.txt#L2"
+      ],
+      "matched_spend": 4,
+      "id": "q5",
+      "arm": "D",
+      "natural_spend": 4
+    },
+    {
+      "id": "q6",
+      "arm": "A",
+      "method": "bm25",
+      "natural_refs": [
+        "f.txt#L2",
+        "d.txt#L2",
+        "f.txt#L6",
+        "f.txt#L1"
+      ],
+      "matched_refs": [
+        "f.txt#L2",
+        "d.txt#L2",
+        "f.txt#L6",
+        "f.txt#L1"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    },
+    {
+      "id": "q6",
+      "arm": "B",
+      "method": "shared-gap",
+      "natural_refs": [
+        "f.txt#L2",
+        "c.txt#L5",
+        "f.txt#L6",
+        "d.txt#L2"
+      ],
+      "matched_refs": [
+        "f.txt#L2",
+        "c.txt#L5",
+        "f.txt#L6",
+        "d.txt#L2"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    },
+    {
+      "method": "clause-bm25",
+      "natural_refs": [
+        "f.txt#L2",
+        "d.txt#L2",
+        "f.txt#L6",
+        "f.txt#L1"
+      ],
+      "matched_refs": [
+        "f.txt#L2",
+        "d.txt#L2",
+        "f.txt#L6",
+        "f.txt#L1"
+      ],
+      "matched_spend": 4,
+      "id": "q6",
+      "arm": "C",
+      "natural_spend": 4
+    },
+    {
+      "id": "q6",
+      "arm": "D",
+      "method": "keyword",
+      "natural_refs": [
+        "f.txt#L2",
+        "c.txt#L5",
+        "d.txt#L2",
+        "d.txt#L3"
+      ],
+      "matched_refs": [
+        "f.txt#L2",
+        "c.txt#L5",
+        "d.txt#L2",
+        "d.txt#L3"
+      ],
+      "matched_spend": 4,
+      "natural_spend": 4
+    }
+  ],
+  "promotion_eligible": false
+}

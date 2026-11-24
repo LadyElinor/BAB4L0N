@@ -1,0 +1,19 @@
+{
+  "budget": 4,
+  "families": {
+    "a.txt": "ofqual",
+    "b.txt": "ofqual",
+    "c.txt": "ofqual",
+    "d.txt": "dfe",
+    "e.txt": "ofqual",
+    "f.txt": "ofqual"
+  },
+  "questions": [
+    {"id": "q1", "question": "When A level results first went out on 13 August, which grades were issued, and what rule was in effect by 26 August?"},
+    {"id": "q2", "question": "Could a pupil who had evidence of discriminatory grading bypass the school, and what would happen to the award if wrongdoing was proved?"},
+    {"id": "q3", "question": "How can the figures of about four in ten and more than two in three both describe upward revisions to A levels?"},
+    {"id": "q4", "question": "What provision was made for private candidates left without a summer result, and what later figure shows that people without a summer grade actually used it?"},
+    {"id": "q5", "question": "Who acknowledged that the initial results had caused young people distress, and could the later analysts identify which individuals suffered most?"},
+    {"id": "q6", "question": "Among pupils who lost a first-choice university place because of the initial A level result, how many regained that same place before its deadline after grades changed?"}
+  ]
+}

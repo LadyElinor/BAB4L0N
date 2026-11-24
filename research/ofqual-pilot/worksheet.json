@@ -1,0 +1,653 @@
+{
+  "commitment": "4cd70474d680730b21093675c271de9660614b0c83101a2aed6dae9c8d130718",
+  "rows": [
+    {
+      "id": "q1",
+      "question": "When A level results first went out on 13 August, which grades were issued, and what rule was in effect by 26 August?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "c.txt#L1",
+          "family": "ofqual",
+          "text": "In guidance dated 26 August 2020, Ofqual reported that students had received whichever was better, the centre assessment grade or the standardised grade."
+        },
+        {
+          "ref": "d.txt#L1",
+          "family": "dfe",
+          "text": "The Department for Education announced on 17 December 2020 that more than 10,000 people would receive AS and A level results following examinations held in October."
+        },
+        {
+          "ref": "f.txt#L1",
+          "family": "ofqual",
+          "text": "In its retrospective study of A levels in England, the GRADE research team recorded that exam boards issued calculated grades on 13 August 2020."
+        },
+        {
+          "ref": "f.txt#L2",
+          "family": "ofqual",
+          "text": "The team reported that on 17 August Ofqual told awarding bodies to reissue A level grades using the better of the teacher estimate and the calculated result."
+        }
+      ]
+    },
+    {
+      "id": "q1",
+      "question": "When A level results first went out on 13 August, which grades were issued, and what rule was in effect by 26 August?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "c.txt#L1",
+          "family": "ofqual",
+          "text": "In guidance dated 26 August 2020, Ofqual reported that students had received whichever was better, the centre assessment grade or the standardised grade."
+        },
+        {
+          "ref": "f.txt#L1",
+          "family": "ofqual",
+          "text": "In its retrospective study of A levels in England, the GRADE research team recorded that exam boards issued calculated grades on 13 August 2020."
+        },
+        {
+          "ref": "f.txt#L2",
+          "family": "ofqual",
+          "text": "The team reported that on 17 August Ofqual told awarding bodies to reissue A level grades using the better of the teacher estimate and the calculated result."
+        },
+        {
+          "ref": "f.txt#L4",
+          "family": "ofqual",
+          "text": "Across individual candidates, 68 percent received an upgrade in at least one A level subject when final grades were issued."
+        }
+      ]
+    },
+    {
+      "id": "q1",
+      "question": "When A level results first went out on 13 August, which grades were issued, and what rule was in effect by 26 August?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "c.txt#L1",
+          "family": "ofqual",
+          "text": "In guidance dated 26 August 2020, Ofqual reported that students had received whichever was better, the centre assessment grade or the standardised grade."
+        },
+        {
+          "ref": "f.txt#L1",
+          "family": "ofqual",
+          "text": "In its retrospective study of A levels in England, the GRADE research team recorded that exam boards issued calculated grades on 13 August 2020."
+        },
+        {
+          "ref": "f.txt#L2",
+          "family": "ofqual",
+          "text": "The team reported that on 17 August Ofqual told awarding bodies to reissue A level grades using the better of the teacher estimate and the calculated result."
+        },
+        {
+          "ref": "f.txt#L4",
+          "family": "ofqual",
+          "text": "Across individual candidates, 68 percent received an upgrade in at least one A level subject when final grades were issued."
+        }
+      ]
+    },
+    {
+      "id": "q1",
+      "question": "When A level results first went out on 13 August, which grades were issued, and what rule was in effect by 26 August?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "c.txt#L1",
+          "family": "ofqual",
+          "text": "In guidance dated 26 August 2020, Ofqual reported that students had received whichever was better, the centre assessment grade or the standardised grade."
+        },
+        {
+          "ref": "f.txt#L1",
+          "family": "ofqual",
+          "text": "In its retrospective study of A levels in England, the GRADE research team recorded that exam boards issued calculated grades on 13 August 2020."
+        },
+        {
+          "ref": "f.txt#L2",
+          "family": "ofqual",
+          "text": "The team reported that on 17 August Ofqual told awarding bodies to reissue A level grades using the better of the teacher estimate and the calculated result."
+        },
+        {
+          "ref": "f.txt#L4",
+          "family": "ofqual",
+          "text": "Across individual candidates, 68 percent received an upgrade in at least one A level subject when final grades were issued."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Could a pupil who had evidence of discriminatory grading bypass the school, and what would happen to the award if wrongdoing was proved?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "b.txt#L1",
+          "family": "ofqual",
+          "text": "On 17 August 2020 Ofqual chair Roger Taylor announced that the summer award in England would be the better of a school or college estimate and the moderated result. The change covered AS and A levels and GCSEs."
+        },
+        {
+          "ref": "c.txt#L3",
+          "family": "ofqual",
+          "text": "Ofqual identified a separate route for a student with evidence of bias or discrimination who did not wish to take it to their own institution. They could give the evidence directly to the relevant exam board."
+        },
+        {
+          "ref": "e.txt#L1",
+          "family": "ofqual",
+          "text": "On 25 May 2021 Ofqual explained that the autumn examinations had offered private candidates who could not obtain a summer grade another opportunity to earn one."
+        },
+        {
+          "ref": "f.txt#L7",
+          "family": "ofqual",
+          "text": "The researchers could not determine whether a school estimate or calculated result would have come closer to an individual's performance had the cancelled summer examinations taken place."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Could a pupil who had evidence of discriminatory grading bypass the school, and what would happen to the award if wrongdoing was proved?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "b.txt#L1",
+          "family": "ofqual",
+          "text": "On 17 August 2020 Ofqual chair Roger Taylor announced that the summer award in England would be the better of a school or college estimate and the moderated result. The change covered AS and A levels and GCSEs."
+        },
+        {
+          "ref": "c.txt#L3",
+          "family": "ofqual",
+          "text": "Ofqual identified a separate route for a student with evidence of bias or discrimination who did not wish to take it to their own institution. They could give the evidence directly to the relevant exam board."
+        },
+        {
+          "ref": "e.txt#L1",
+          "family": "ofqual",
+          "text": "On 25 May 2021 Ofqual explained that the autumn examinations had offered private candidates who could not obtain a summer grade another opportunity to earn one."
+        },
+        {
+          "ref": "e.txt#L4",
+          "family": "ofqual",
+          "text": "Ofqual recorded 13,275 candidates taking the autumn GCSE examinations. The November series was restricted to English language and mathematics."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Could a pupil who had evidence of discriminatory grading bypass the school, and what would happen to the award if wrongdoing was proved?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "a.txt#L3",
+          "family": "ofqual",
+          "text": "Ofqual said a centre with evidence of an error or unreliable moderation would be able to appeal."
+        },
+        {
+          "ref": "b.txt#L1",
+          "family": "ofqual",
+          "text": "On 17 August 2020 Ofqual chair Roger Taylor announced that the summer award in England would be the better of a school or college estimate and the moderated result. The change covered AS and A levels and GCSEs."
+        },
+        {
+          "ref": "c.txt#L3",
+          "family": "ofqual",
+          "text": "Ofqual identified a separate route for a student with evidence of bias or discrimination who did not wish to take it to their own institution. They could give the evidence directly to the relevant exam board."
+        },
+        {
+          "ref": "f.txt#L7",
+          "family": "ofqual",
+          "text": "The researchers could not determine whether a school estimate or calculated result would have come closer to an individual's performance had the cancelled summer examinations taken place."
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "Could a pupil who had evidence of discriminatory grading bypass the school, and what would happen to the award if wrongdoing was proved?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "a.txt#L1",
+          "family": "ofqual",
+          "text": "On 7 August 2020 Ofqual described the planned use of school estimates and an ordering of pupils. Awarding bodies would moderate the submissions to make standards comparable across centres."
+        },
+        {
+          "ref": "a.txt#L2",
+          "family": "ofqual",
+          "text": "Ofqual said school judgments would carry greater weight for subjects or centres with relatively few entries. It intended to publish further details the following week."
+        },
+        {
+          "ref": "b.txt#L1",
+          "family": "ofqual",
+          "text": "On 17 August 2020 Ofqual chair Roger Taylor announced that the summer award in England would be the better of a school or college estimate and the moderated result. The change covered AS and A levels and GCSEs."
+        },
+        {
+          "ref": "f.txt#L7",
+          "family": "ofqual",
+          "text": "The researchers could not determine whether a school estimate or calculated result would have come closer to an individual's performance had the cancelled summer examinations taken place."
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "How can the figures of about four in ten and more than two in three both describe upward revisions to A levels?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "b.txt#L1",
+          "family": "ofqual",
+          "text": "On 17 August 2020 Ofqual chair Roger Taylor announced that the summer award in England would be the better of a school or college estimate and the moderated result. The change covered AS and A levels and GCSEs."
+        },
+        {
+          "ref": "c.txt#L2",
+          "family": "ofqual",
+          "text": "Ofqual explained that most students concerned about how their school or college handled their grade should first discuss the matter there. An unresolved complaint could then go to the exam board."
+        },
+        {
+          "ref": "d.txt#L1",
+          "family": "dfe",
+          "text": "The Department for Education announced on 17 December 2020 that more than 10,000 people would receive AS and A level results following examinations held in October."
+        },
+        {
+          "ref": "f.txt#L1",
+          "family": "ofqual",
+          "text": "In its retrospective study of A levels in England, the GRADE research team recorded that exam boards issued calculated grades on 13 August 2020."
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "How can the figures of about four in ten and more than two in three both describe upward revisions to A levels?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "b.txt#L1",
+          "family": "ofqual",
+          "text": "On 17 August 2020 Ofqual chair Roger Taylor announced that the summer award in England would be the better of a school or college estimate and the moderated result. The change covered AS and A levels and GCSEs."
+        },
+        {
+          "ref": "c.txt#L2",
+          "family": "ofqual",
+          "text": "Ofqual explained that most students concerned about how their school or college handled their grade should first discuss the matter there. An unresolved complaint could then go to the exam board."
+        },
+        {
+          "ref": "d.txt#L1",
+          "family": "dfe",
+          "text": "The Department for Education announced on 17 December 2020 that more than 10,000 people would receive AS and A level results following examinations held in October."
+        },
+        {
+          "ref": "f.txt#L6",
+          "family": "ofqual",
+          "text": "According to the study, the calculation used the school's ranking of students, its past subject results and information about the prior attainment of its current pupils."
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "How can the figures of about four in ten and more than two in three both describe upward revisions to A levels?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "b.txt#L1",
+          "family": "ofqual",
+          "text": "On 17 August 2020 Ofqual chair Roger Taylor announced that the summer award in England would be the better of a school or college estimate and the moderated result. The change covered AS and A levels and GCSEs."
+        },
+        {
+          "ref": "c.txt#L2",
+          "family": "ofqual",
+          "text": "Ofqual explained that most students concerned about how their school or college handled their grade should first discuss the matter there. An unresolved complaint could then go to the exam board."
+        },
+        {
+          "ref": "c.txt#L5",
+          "family": "ofqual",
+          "text": "Ofqual noted that schools made the estimates for the summer award at a different time and for a different purpose than the grades predicted for university applications."
+        },
+        {
+          "ref": "d.txt#L1",
+          "family": "dfe",
+          "text": "The Department for Education announced on 17 December 2020 that more than 10,000 people would receive AS and A level results following examinations held in October."
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "How can the figures of about four in ten and more than two in three both describe upward revisions to A levels?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "c.txt#L2",
+          "family": "ofqual",
+          "text": "Ofqual explained that most students concerned about how their school or college handled their grade should first discuss the matter there. An unresolved complaint could then go to the exam board."
+        },
+        {
+          "ref": "d.txt#L1",
+          "family": "dfe",
+          "text": "The Department for Education announced on 17 December 2020 that more than 10,000 people would receive AS and A level results following examinations held in October."
+        },
+        {
+          "ref": "f.txt#L1",
+          "family": "ofqual",
+          "text": "In its retrospective study of A levels in England, the GRADE research team recorded that exam boards issued calculated grades on 13 August 2020."
+        },
+        {
+          "ref": "f.txt#L6",
+          "family": "ofqual",
+          "text": "According to the study, the calculation used the school's ranking of students, its past subject results and information about the prior attainment of its current pupils."
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What provision was made for private candidates left without a summer result, and what later figure shows that people without a summer grade actually used it?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "c.txt#L5",
+          "family": "ofqual",
+          "text": "Ofqual noted that schools made the estimates for the summer award at a different time and for a different purpose than the grades predicted for university applications."
+        },
+        {
+          "ref": "d.txt#L2",
+          "family": "dfe",
+          "text": "The department reported that around 16 percent of autumn A level entries came from students with no summer grade in the same subject."
+        },
+        {
+          "ref": "d.txt#L3",
+          "family": "dfe",
+          "text": "Where a summer result was available for comparison, the department reported an improvement for almost half of the students at A level and just under 40 percent at AS."
+        },
+        {
+          "ref": "e.txt#L2",
+          "family": "ofqual",
+          "text": "The autumn sitting also gave people disappointed by their summer grade a chance to improve it. Ofqual distinguished this exceptional series from the usual November GCSE sitting."
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What provision was made for private candidates left without a summer result, and what later figure shows that people without a summer grade actually used it?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "b.txt#L1",
+          "family": "ofqual",
+          "text": "On 17 August 2020 Ofqual chair Roger Taylor announced that the summer award in England would be the better of a school or college estimate and the moderated result. The change covered AS and A levels and GCSEs."
+        },
+        {
+          "ref": "c.txt#L5",
+          "family": "ofqual",
+          "text": "Ofqual noted that schools made the estimates for the summer award at a different time and for a different purpose than the grades predicted for university applications."
+        },
+        {
+          "ref": "e.txt#L1",
+          "family": "ofqual",
+          "text": "On 25 May 2021 Ofqual explained that the autumn examinations had offered private candidates who could not obtain a summer grade another opportunity to earn one."
+        },
+        {
+          "ref": "e.txt#L2",
+          "family": "ofqual",
+          "text": "The autumn sitting also gave people disappointed by their summer grade a chance to improve it. Ofqual distinguished this exceptional series from the usual November GCSE sitting."
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What provision was made for private candidates left without a summer result, and what later figure shows that people without a summer grade actually used it?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "b.txt#L1",
+          "family": "ofqual",
+          "text": "On 17 August 2020 Ofqual chair Roger Taylor announced that the summer award in England would be the better of a school or college estimate and the moderated result. The change covered AS and A levels and GCSEs."
+        },
+        {
+          "ref": "c.txt#L5",
+          "family": "ofqual",
+          "text": "Ofqual noted that schools made the estimates for the summer award at a different time and for a different purpose than the grades predicted for university applications."
+        },
+        {
+          "ref": "e.txt#L1",
+          "family": "ofqual",
+          "text": "On 25 May 2021 Ofqual explained that the autumn examinations had offered private candidates who could not obtain a summer grade another opportunity to earn one."
+        },
+        {
+          "ref": "e.txt#L2",
+          "family": "ofqual",
+          "text": "The autumn sitting also gave people disappointed by their summer grade a chance to improve it. Ofqual distinguished this exceptional series from the usual November GCSE sitting."
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "What provision was made for private candidates left without a summer result, and what later figure shows that people without a summer grade actually used it?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "c.txt#L5",
+          "family": "ofqual",
+          "text": "Ofqual noted that schools made the estimates for the summer award at a different time and for a different purpose than the grades predicted for university applications."
+        },
+        {
+          "ref": "d.txt#L3",
+          "family": "dfe",
+          "text": "Where a summer result was available for comparison, the department reported an improvement for almost half of the students at A level and just under 40 percent at AS."
+        },
+        {
+          "ref": "e.txt#L1",
+          "family": "ofqual",
+          "text": "On 25 May 2021 Ofqual explained that the autumn examinations had offered private candidates who could not obtain a summer grade another opportunity to earn one."
+        },
+        {
+          "ref": "e.txt#L2",
+          "family": "ofqual",
+          "text": "The autumn sitting also gave people disappointed by their summer grade a chance to improve it. Ofqual distinguished this exceptional series from the usual November GCSE sitting."
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Who acknowledged that the initial results had caused young people distress, and could the later analysts identify which individuals suffered most?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "b.txt#L2",
+          "family": "ofqual",
+          "text": "Taylor acknowledged students' anxiety and distress following the results. In his account, relying on schools to lodge appeals added to teachers' workload and prolonged uncertainty for young people."
+        },
+        {
+          "ref": "d.txt#L1",
+          "family": "dfe",
+          "text": "The Department for Education announced on 17 December 2020 that more than 10,000 people would receive AS and A level results following examinations held in October."
+        },
+        {
+          "ref": "e.txt#L1",
+          "family": "ofqual",
+          "text": "On 25 May 2021 Ofqual explained that the autumn examinations had offered private candidates who could not obtain a summer grade another opportunity to earn one."
+        },
+        {
+          "ref": "f.txt#L5",
+          "family": "ofqual",
+          "text": "The researchers could identify people with the largest discrepancies across subjects. Their data could not establish whose distress or other consequences were greatest."
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Who acknowledged that the initial results had caused young people distress, and could the later analysts identify which individuals suffered most?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "b.txt#L2",
+          "family": "ofqual",
+          "text": "Taylor acknowledged students' anxiety and distress following the results. In his account, relying on schools to lodge appeals added to teachers' workload and prolonged uncertainty for young people."
+        },
+        {
+          "ref": "b.txt#L3",
+          "family": "ofqual",
+          "text": "Taylor said the Secretary of State had asked Ofqual to devise a way to maintain qualification standards and keep overall results broadly comparable with earlier years."
+        },
+        {
+          "ref": "c.txt#L2",
+          "family": "ofqual",
+          "text": "Ofqual explained that most students concerned about how their school or college handled their grade should first discuss the matter there. An unresolved complaint could then go to the exam board."
+        },
+        {
+          "ref": "f.txt#L5",
+          "family": "ofqual",
+          "text": "The researchers could identify people with the largest discrepancies across subjects. Their data could not establish whose distress or other consequences were greatest."
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Who acknowledged that the initial results had caused young people distress, and could the later analysts identify which individuals suffered most?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "b.txt#L2",
+          "family": "ofqual",
+          "text": "Taylor acknowledged students' anxiety and distress following the results. In his account, relying on schools to lodge appeals added to teachers' workload and prolonged uncertainty for young people."
+        },
+        {
+          "ref": "b.txt#L3",
+          "family": "ofqual",
+          "text": "Taylor said the Secretary of State had asked Ofqual to devise a way to maintain qualification standards and keep overall results broadly comparable with earlier years."
+        },
+        {
+          "ref": "c.txt#L2",
+          "family": "ofqual",
+          "text": "Ofqual explained that most students concerned about how their school or college handled their grade should first discuss the matter there. An unresolved complaint could then go to the exam board."
+        },
+        {
+          "ref": "f.txt#L5",
+          "family": "ofqual",
+          "text": "The researchers could identify people with the largest discrepancies across subjects. Their data could not establish whose distress or other consequences were greatest."
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Who acknowledged that the initial results had caused young people distress, and could the later analysts identify which individuals suffered most?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "b.txt#L2",
+          "family": "ofqual",
+          "text": "Taylor acknowledged students' anxiety and distress following the results. In his account, relying on schools to lodge appeals added to teachers' workload and prolonged uncertainty for young people."
+        },
+        {
+          "ref": "c.txt#L2",
+          "family": "ofqual",
+          "text": "Ofqual explained that most students concerned about how their school or college handled their grade should first discuss the matter there. An unresolved complaint could then go to the exam board."
+        },
+        {
+          "ref": "e.txt#L1",
+          "family": "ofqual",
+          "text": "On 25 May 2021 Ofqual explained that the autumn examinations had offered private candidates who could not obtain a summer grade another opportunity to earn one."
+        },
+        {
+          "ref": "f.txt#L5",
+          "family": "ofqual",
+          "text": "The researchers could identify people with the largest discrepancies across subjects. Their data could not establish whose distress or other consequences were greatest."
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Among pupils who lost a first-choice university place because of the initial A level result, how many regained that same place before its deadline after grades changed?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "d.txt#L2",
+          "family": "dfe",
+          "text": "The department reported that around 16 percent of autumn A level entries came from students with no summer grade in the same subject."
+        },
+        {
+          "ref": "f.txt#L1",
+          "family": "ofqual",
+          "text": "In its retrospective study of A levels in England, the GRADE research team recorded that exam boards issued calculated grades on 13 August 2020."
+        },
+        {
+          "ref": "f.txt#L2",
+          "family": "ofqual",
+          "text": "The team reported that on 17 August Ofqual told awarding bodies to reissue A level grades using the better of the teacher estimate and the calculated result."
+        },
+        {
+          "ref": "f.txt#L6",
+          "family": "ofqual",
+          "text": "According to the study, the calculation used the school's ranking of students, its past subject results and information about the prior attainment of its current pupils."
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Among pupils who lost a first-choice university place because of the initial A level result, how many regained that same place before its deadline after grades changed?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "c.txt#L5",
+          "family": "ofqual",
+          "text": "Ofqual noted that schools made the estimates for the summer award at a different time and for a different purpose than the grades predicted for university applications."
+        },
+        {
+          "ref": "d.txt#L2",
+          "family": "dfe",
+          "text": "The department reported that around 16 percent of autumn A level entries came from students with no summer grade in the same subject."
+        },
+        {
+          "ref": "f.txt#L2",
+          "family": "ofqual",
+          "text": "The team reported that on 17 August Ofqual told awarding bodies to reissue A level grades using the better of the teacher estimate and the calculated result."
+        },
+        {
+          "ref": "f.txt#L6",
+          "family": "ofqual",
+          "text": "According to the study, the calculation used the school's ranking of students, its past subject results and information about the prior attainment of its current pupils."
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Among pupils who lost a first-choice university place because of the initial A level result, how many regained that same place before its deadline after grades changed?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "d.txt#L2",
+          "family": "dfe",
+          "text": "The department reported that around 16 percent of autumn A level entries came from students with no summer grade in the same subject."
+        },
+        {
+          "ref": "f.txt#L1",
+          "family": "ofqual",
+          "text": "In its retrospective study of A levels in England, the GRADE research team recorded that exam boards issued calculated grades on 13 August 2020."
+        },
+        {
+          "ref": "f.txt#L2",
+          "family": "ofqual",
+          "text": "The team reported that on 17 August Ofqual told awarding bodies to reissue A level grades using the better of the teacher estimate and the calculated result."
+        },
+        {
+          "ref": "f.txt#L6",
+          "family": "ofqual",
+          "text": "According to the study, the calculation used the school's ranking of students, its past subject results and information about the prior attainment of its current pupils."
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Among pupils who lost a first-choice university place because of the initial A level result, how many regained that same place before its deadline after grades changed?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "c.txt#L5",
+          "family": "ofqual",
+          "text": "Ofqual noted that schools made the estimates for the summer award at a different time and for a different purpose than the grades predicted for university applications."
+        },
+        {
+          "ref": "d.txt#L2",
+          "family": "dfe",
+          "text": "The department reported that around 16 percent of autumn A level entries came from students with no summer grade in the same subject."
+        },
+        {
+          "ref": "d.txt#L3",
+          "family": "dfe",
+          "text": "Where a summer result was available for comparison, the department reported an improvement for almost half of the students at A level and just under 40 percent at AS."
+        },
+        {
+          "ref": "f.txt#L2",
+          "family": "ofqual",
+          "text": "The team reported that on 17 August Ofqual told awarding bodies to reissue A level grades using the better of the teacher estimate and the calculated result."
+        }
+      ]
+    }
+  ]
+}
