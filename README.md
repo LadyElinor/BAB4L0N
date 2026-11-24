@@ -245,4 +245,4 @@ the original SQuAD receipts and adds a public sensitivity replay. It changes
 presentation order only, checks identical passage membership and actual spend,
 and adds content-blind position controls. Both results remain `NOT_PROMOTED`.
 
-For independently selected AI-safety questions, the [blinded inquiry protocol](docs/BLIND_INQUIRY.md) freezes questions, source families, rubric and allowance, then compares shared-gap with keyword and fixed BM25 at equal actual passage spend. The protocol has no independent results or promotion authority yet.
+For new AI-safety inquiries, follow the [v2 blinded collection procedure](docs/BLIND_INQUIRY_V2.md). It uses the [v1 retrieval protocol](docs/BLIND_INQUIRY.md) to compare shared-gap, keyword and fixed BM25 at equal actual passage spend. Before unblinding, a custodian closes a register of the interpreter's answer digest and each reviewer's individual deposit. The exposed development rehearsal remains the only reported result. An independent evaluation is still needed.
