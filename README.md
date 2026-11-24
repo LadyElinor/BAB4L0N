@@ -248,3 +248,17 @@ and adds content-blind position controls. Both results remain `NOT_PROMOTED`.
 For new AI-safety inquiries, follow the [v2 blinded collection procedure](docs/BLIND_INQUIRY_V2.md). It uses the [v1 retrieval protocol](docs/BLIND_INQUIRY.md) to compare shared-gap, keyword and fixed BM25 at equal actual passage spend. Before unblinding, a custodian closes a register of the interpreter's answer digest and each reviewer's individual deposit. The exposed development rehearsal remains the only reported result. An independent evaluation is still needed.
 
 An optional [four-reader comparison](docs/BLIND_INQUIRY_COVERAGE.md) tests one fixed hypothesis about two-part questions. It adds a clause-based BM25 reader to the same three controls and uses the v2 custody process for independent review.
+
+On the two published Atlas cases, the frozen clause reader found 12 of 16 designated passages, shared-gap found 12, and fixed BM25 and keyword each found 13. All four spent 29 matched inspections. Against fixed BM25 the clause reader tied on seven questions and lost on the implemented-versus-promised question that motivated the study. The [development receipt](reports/blind-inquiry-coverage-development.json) preserves the natural and matched returns. The candidate remains at `NOT_PROMOTED`.
+
+To reproduce the two inputs from the repository's historical exporter, use a checkout that includes the published Astra case branch:
+
+```sh
+git worktree add --detach ../atlas-export 2d73eced5364358d4841a9f1d6a25d5481f4114a
+mkdir ../atlas-packets
+python ../atlas-export/scripts/ai_safety_case.py --compact --case gpt4o-sycophancy > ../atlas-packets/gpt4o-sycophancy.json
+python ../atlas-export/scripts/ai_safety_case.py --compact --case astra-release-hold > ../atlas-packets/astra-release-hold.json
+python scripts/rehearse_inquiry_coverage.py ../atlas-packets > ../coverage-replay.json
+```
+
+The rehearsal checks the source bytes against the original packet pins. Compare the parsed JSON with the development receipt. The reader, scoring rule and protocol were frozen at `4effd6e2440648af0beb406281e4e9354af3e398` before the replay.
