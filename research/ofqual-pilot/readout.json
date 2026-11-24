@@ -1,0 +1,388 @@
+{
+  "arms": {
+    "bm25": {
+      "reviewers": {
+        "pilot-review-a": {
+          "equivalent_evidence/no": 3,
+          "equivalent_evidence/not_applicable": 1,
+          "equivalent_evidence/yes": 2,
+          "source_attribution/yes": 6,
+          "unsupported_claim/no": 6,
+          "warranted_abstention/not_applicable": 2,
+          "warranted_abstention/yes": 4
+        },
+        "pilot-review-b": {
+          "equivalent_evidence/no": 3,
+          "equivalent_evidence/not_applicable": 1,
+          "equivalent_evidence/yes": 2,
+          "source_attribution/yes": 6,
+          "unsupported_claim/no": 6,
+          "warranted_abstention/not_applicable": 2,
+          "warranted_abstention/yes": 4
+        }
+      },
+      "totals": {
+        "abstentions": 4,
+        "answers": 2,
+        "designated_hits": 6,
+        "designated_targets": 10,
+        "matched_passages": 24,
+        "native_passages": 24,
+        "rows_with_disagreement": 0
+      }
+    },
+    "clause-bm25": {
+      "reviewers": {
+        "pilot-review-a": {
+          "equivalent_evidence/no": 3,
+          "equivalent_evidence/not_applicable": 1,
+          "equivalent_evidence/yes": 2,
+          "source_attribution/yes": 6,
+          "unsupported_claim/no": 6,
+          "warranted_abstention/not_applicable": 2,
+          "warranted_abstention/yes": 4
+        },
+        "pilot-review-b": {
+          "equivalent_evidence/no": 3,
+          "equivalent_evidence/not_applicable": 1,
+          "equivalent_evidence/yes": 2,
+          "source_attribution/yes": 6,
+          "unsupported_claim/no": 6,
+          "warranted_abstention/not_applicable": 2,
+          "warranted_abstention/yes": 4
+        }
+      },
+      "totals": {
+        "abstentions": 4,
+        "answers": 2,
+        "designated_hits": 6,
+        "designated_targets": 10,
+        "matched_passages": 24,
+        "native_passages": 24,
+        "rows_with_disagreement": 0
+      }
+    },
+    "keyword": {
+      "reviewers": {
+        "pilot-review-a": {
+          "equivalent_evidence/no": 3,
+          "equivalent_evidence/not_applicable": 1,
+          "equivalent_evidence/yes": 2,
+          "source_attribution/yes": 6,
+          "unsupported_claim/no": 6,
+          "warranted_abstention/not_applicable": 2,
+          "warranted_abstention/yes": 4
+        },
+        "pilot-review-b": {
+          "equivalent_evidence/no": 3,
+          "equivalent_evidence/not_applicable": 1,
+          "equivalent_evidence/yes": 2,
+          "source_attribution/yes": 6,
+          "unsupported_claim/no": 6,
+          "warranted_abstention/not_applicable": 2,
+          "warranted_abstention/yes": 4
+        }
+      },
+      "totals": {
+        "abstentions": 4,
+        "answers": 2,
+        "designated_hits": 5,
+        "designated_targets": 10,
+        "matched_passages": 24,
+        "native_passages": 24,
+        "rows_with_disagreement": 0
+      }
+    },
+    "shared-gap": {
+      "reviewers": {
+        "pilot-review-a": {
+          "equivalent_evidence/no": 3,
+          "equivalent_evidence/not_applicable": 1,
+          "equivalent_evidence/yes": 2,
+          "source_attribution/yes": 6,
+          "unsupported_claim/no": 6,
+          "warranted_abstention/not_applicable": 2,
+          "warranted_abstention/yes": 4
+        },
+        "pilot-review-b": {
+          "equivalent_evidence/no": 3,
+          "equivalent_evidence/not_applicable": 1,
+          "equivalent_evidence/yes": 2,
+          "source_attribution/yes": 6,
+          "unsupported_claim/no": 6,
+          "warranted_abstention/not_applicable": 2,
+          "warranted_abstention/yes": 4
+        }
+      },
+      "totals": {
+        "abstentions": 4,
+        "answers": 2,
+        "designated_hits": 6,
+        "designated_targets": 10,
+        "matched_passages": 24,
+        "native_passages": 24,
+        "rows_with_disagreement": 0
+      }
+    }
+  },
+  "collection_digest": "5288486ddf5acf61f988eb64157702f42ee4c2d1deb6c0bec49c1cd5b631b941",
+  "promotion_eligible": false,
+  "rows": [
+    {
+      "decision": "answer",
+      "disagreements": [],
+      "hits": [
+        "c.txt#L1",
+        "f.txt#L1"
+      ],
+      "id": "q1",
+      "matched_spend": 4,
+      "method": "bm25",
+      "target_count": 2
+    },
+    {
+      "decision": "answer",
+      "disagreements": [],
+      "hits": [
+        "c.txt#L1",
+        "f.txt#L1"
+      ],
+      "id": "q1",
+      "matched_spend": 4,
+      "method": "clause-bm25",
+      "target_count": 2
+    },
+    {
+      "decision": "answer",
+      "disagreements": [],
+      "hits": [
+        "c.txt#L1",
+        "f.txt#L1"
+      ],
+      "id": "q1",
+      "matched_spend": 4,
+      "method": "keyword",
+      "target_count": 2
+    },
+    {
+      "decision": "answer",
+      "disagreements": [],
+      "hits": [
+        "c.txt#L1",
+        "f.txt#L1"
+      ],
+      "id": "q1",
+      "matched_spend": 4,
+      "method": "shared-gap",
+      "target_count": 2
+    },
+    {
+      "decision": "abstain",
+      "disagreements": [],
+      "hits": [
+        "c.txt#L3"
+      ],
+      "id": "q2",
+      "matched_spend": 4,
+      "method": "bm25",
+      "target_count": 2
+    },
+    {
+      "decision": "abstain",
+      "disagreements": [],
+      "hits": [
+        "c.txt#L3"
+      ],
+      "id": "q2",
+      "matched_spend": 4,
+      "method": "clause-bm25",
+      "target_count": 2
+    },
+    {
+      "decision": "abstain",
+      "disagreements": [],
+      "hits": [],
+      "id": "q2",
+      "matched_spend": 4,
+      "method": "keyword",
+      "target_count": 2
+    },
+    {
+      "decision": "abstain",
+      "disagreements": [],
+      "hits": [
+        "c.txt#L3"
+      ],
+      "id": "q2",
+      "matched_spend": 4,
+      "method": "shared-gap",
+      "target_count": 2
+    },
+    {
+      "decision": "abstain",
+      "disagreements": [],
+      "hits": [],
+      "id": "q3",
+      "matched_spend": 4,
+      "method": "bm25",
+      "target_count": 2
+    },
+    {
+      "decision": "abstain",
+      "disagreements": [],
+      "hits": [],
+      "id": "q3",
+      "matched_spend": 4,
+      "method": "clause-bm25",
+      "target_count": 2
+    },
+    {
+      "decision": "abstain",
+      "disagreements": [],
+      "hits": [],
+      "id": "q3",
+      "matched_spend": 4,
+      "method": "keyword",
+      "target_count": 2
+    },
+    {
+      "decision": "abstain",
+      "disagreements": [],
+      "hits": [],
+      "id": "q3",
+      "matched_spend": 4,
+      "method": "shared-gap",
+      "target_count": 2
+    },
+    {
+      "decision": "abstain",
+      "disagreements": [],
+      "hits": [
+        "e.txt#L1"
+      ],
+      "id": "q4",
+      "matched_spend": 4,
+      "method": "bm25",
+      "target_count": 2
+    },
+    {
+      "decision": "abstain",
+      "disagreements": [],
+      "hits": [
+        "d.txt#L2"
+      ],
+      "id": "q4",
+      "matched_spend": 4,
+      "method": "clause-bm25",
+      "target_count": 2
+    },
+    {
+      "decision": "abstain",
+      "disagreements": [],
+      "hits": [
+        "e.txt#L1"
+      ],
+      "id": "q4",
+      "matched_spend": 4,
+      "method": "keyword",
+      "target_count": 2
+    },
+    {
+      "decision": "abstain",
+      "disagreements": [],
+      "hits": [
+        "e.txt#L1"
+      ],
+      "id": "q4",
+      "matched_spend": 4,
+      "method": "shared-gap",
+      "target_count": 2
+    },
+    {
+      "decision": "answer",
+      "disagreements": [],
+      "hits": [
+        "b.txt#L2",
+        "f.txt#L5"
+      ],
+      "id": "q5",
+      "matched_spend": 4,
+      "method": "bm25",
+      "target_count": 2
+    },
+    {
+      "decision": "answer",
+      "disagreements": [],
+      "hits": [
+        "b.txt#L2",
+        "f.txt#L5"
+      ],
+      "id": "q5",
+      "matched_spend": 4,
+      "method": "clause-bm25",
+      "target_count": 2
+    },
+    {
+      "decision": "answer",
+      "disagreements": [],
+      "hits": [
+        "b.txt#L2",
+        "f.txt#L5"
+      ],
+      "id": "q5",
+      "matched_spend": 4,
+      "method": "keyword",
+      "target_count": 2
+    },
+    {
+      "decision": "answer",
+      "disagreements": [],
+      "hits": [
+        "b.txt#L2",
+        "f.txt#L5"
+      ],
+      "id": "q5",
+      "matched_spend": 4,
+      "method": "shared-gap",
+      "target_count": 2
+    },
+    {
+      "decision": "abstain",
+      "disagreements": [],
+      "hits": [],
+      "id": "q6",
+      "matched_spend": 4,
+      "method": "bm25",
+      "target_count": 0
+    },
+    {
+      "decision": "abstain",
+      "disagreements": [],
+      "hits": [],
+      "id": "q6",
+      "matched_spend": 4,
+      "method": "clause-bm25",
+      "target_count": 0
+    },
+    {
+      "decision": "abstain",
+      "disagreements": [],
+      "hits": [],
+      "id": "q6",
+      "matched_spend": 4,
+      "method": "keyword",
+      "target_count": 0
+    },
+    {
+      "decision": "abstain",
+      "disagreements": [],
+      "hits": [],
+      "id": "q6",
+      "matched_spend": 4,
+      "method": "shared-gap",
+      "target_count": 0
+    }
+  ],
+  "scope": "one internal transfer pilot with AI interpretation and review",
+  "status": "NOT_PROMOTED"
+}
