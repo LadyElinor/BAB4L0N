@@ -5,6 +5,14 @@
   "rubric_file_sha256": "b317d026754d53c8b4ad6b9fc3e1755eb1a05d12e716637f1c17a01ddc1161fa",
   "targets_file_sha256": "b9e54d4a279b580b033be65d95c9d1f0da840c2a9995af1f7ec33bdf6d9ec146",
   "freeze_digest": "4cd70474d680730b21093675c271de9660614b0c83101a2aed6dae9c8d130718",
-  "role_roster": {"interpreter":"pilot-interpreter","reviewers":["pilot-review-a","pilot-review-b"]},
-  "custody": "One coordinating operator with logically separated AI curator, developer, interpreter and two AI review contexts sharing a workspace. No external or human identity or access control is asserted. One frozen run, no tuning, no promotion."
+  "role_roster": {
+    "interpreter": "pilot-interpreter",
+    "reviewers": [
+      "pilot-review-a",
+      "pilot-review-b"
+    ]
+  },
+  "custody": "One coordinating operator with logically separated AI curator, developer, interpreter and two AI review contexts sharing a workspace. No external or human identity or access control is asserted. One frozen run, no tuning, no promotion.",
+  "worksheet_digest": "d48655651dfd00e88b25ea09e54118b5bd268c518e6b01d3ee31ebadc6cbf5c8",
+  "key_digest": "071ec5695ae029b8f3b4e3878ac2f0320c59bbc2c3b83470ad1ea1e1ec3f7daa"
 }
