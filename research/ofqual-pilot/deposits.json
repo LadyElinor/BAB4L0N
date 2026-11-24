@@ -15,5 +15,10 @@
   "custody": "One coordinating operator with logically separated AI curator, developer, interpreter and two AI review contexts sharing a workspace. No external or human identity or access control is asserted. One frozen run, no tuning, no promotion.",
   "worksheet_digest": "d48655651dfd00e88b25ea09e54118b5bd268c518e6b01d3ee31ebadc6cbf5c8",
   "key_digest": "071ec5695ae029b8f3b4e3878ac2f0320c59bbc2c3b83470ad1ea1e1ec3f7daa",
-  "answer_digest": "80cefd646cfe710daeef6558e8e03dae8364f7f3c3d19a645f612efb9687febe"
+  "answer_digest": "80cefd646cfe710daeef6558e8e03dae8364f7f3c3d19a645f612efb9687febe",
+  "review_digests": {
+    "pilot-review-a": "6daedb406950c2cdf4feebd1cc3c94af0fe1b4fd47d2d7c78bf10b319f2e6da7",
+    "pilot-review-b": "d66e7ae7e1eceb5a1bdb2dd3a3d8191c4a91ed6f9831218388f518f896492a39"
+  },
+  "register_digest": "ab7d0d44f34347e0e343ec5d68384be0481b32ac5c73643bb7b5f49de98afe5a"
 }
