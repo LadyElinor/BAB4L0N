@@ -246,3 +246,5 @@ presentation order only, checks identical passage membership and actual spend,
 and adds content-blind position controls. Both results remain `NOT_PROMOTED`.
 
 For new AI-safety inquiries, follow the [v2 blinded collection procedure](docs/BLIND_INQUIRY_V2.md). It uses the [v1 retrieval protocol](docs/BLIND_INQUIRY.md) to compare shared-gap, keyword and fixed BM25 at equal actual passage spend. Before unblinding, a custodian closes a register of the interpreter's answer digest and each reviewer's individual deposit. The exposed development rehearsal remains the only reported result. An independent evaluation is still needed.
+
+An optional [four-reader comparison](docs/BLIND_INQUIRY_COVERAGE.md) tests one fixed hypothesis about two-part questions. It adds a clause-based BM25 reader to the same three controls and uses the v2 custody process for independent review.
