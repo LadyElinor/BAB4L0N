@@ -1,0 +1,1585 @@
+{
+  "reviewer": "review-a",
+  "worksheet_digest": "094e3eb285acf4415932f43214bfd41f7cc4631b524979b9d76e6bf42b659cb0",
+  "answer_digest": "5d7274437c4f9a4533d3b223fa61f0b93e9b3a22e6c91d14e96f68645fea929d",
+  "rows": [
+    {
+      "id": "q01",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record01.txt#L3",
+        "record07.txt#L1"
+      ],
+      "rationale": "The Mint names Jody Clark and Queen Elizabeth II. The Treasury credits David Pearce for the winning reverse, without describing its plants.",
+      "unanswered": "Which four plants appeared on the reverse?"
+    },
+    {
+      "id": "q01",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record01.txt#L3",
+        "record07.txt#L1"
+      ],
+      "rationale": "The Mint names Jody Clark and Queen Elizabeth II. The Treasury credits David Pearce for the winning reverse, without describing its plants.",
+      "unanswered": "Which four plants appeared on the reverse?"
+    },
+    {
+      "id": "q01",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record01.txt#L3",
+        "record07.txt#L1"
+      ],
+      "rationale": "The Mint names Jody Clark and Queen Elizabeth II. The Treasury credits David Pearce for the winning reverse, without describing its plants.",
+      "unanswered": "Which four plants appeared on the reverse?"
+    },
+    {
+      "id": "q01",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record01.txt#L3",
+        "record07.txt#L1"
+      ],
+      "rationale": "The Mint names Jody Clark and Queen Elizabeth II. The Treasury credits David Pearce for the winning reverse, without describing its plants.",
+      "unanswered": "Which four plants appeared on the reverse?"
+    },
+    {
+      "id": "q01",
+      "arm": "E",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record01.txt#L3",
+        "record07.txt#L1"
+      ],
+      "rationale": "The Mint names Jody Clark and Queen Elizabeth II. The Treasury credits David Pearce for the winning reverse, without describing its plants.",
+      "unanswered": "Which four plants appeared on the reverse?"
+    },
+    {
+      "id": "q01",
+      "arm": "F",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record01.txt#L3",
+        "record07.txt#L1"
+      ],
+      "rationale": "The Mint names Jody Clark and Queen Elizabeth II. The Treasury credits David Pearce for the winning reverse, without describing its plants.",
+      "unanswered": "Which four plants appeared on the reverse?"
+    },
+    {
+      "id": "q01",
+      "arm": "G",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record01.txt#L3",
+        "record07.txt#L1"
+      ],
+      "rationale": "The Mint names Jody Clark and Queen Elizabeth II. The Treasury credits David Pearce for the winning reverse, without describing its plants.",
+      "unanswered": "Which four plants appeared on the reverse?"
+    },
+    {
+      "id": "q01",
+      "arm": "H",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record01.txt#L3",
+        "record07.txt#L1"
+      ],
+      "rationale": "The Mint names Jody Clark and Queen Elizabeth II. The Treasury credits David Pearce for the winning reverse, without describing its plants.",
+      "unanswered": "Which four plants appeared on the reverse?"
+    },
+    {
+      "id": "q02",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "rationale": "NASA gives 51.2 grams for one removal and 121.6 grams for the entire returned sample. Neither measurement isolates an individual stone allocated to Canada.",
+      "unanswered": "What was the mass in grams of the largest stone in the Canadian allocation?"
+    },
+    {
+      "id": "q02",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "rationale": "NASA gives 51.2 grams for one removal and 121.6 grams for the entire returned sample. Neither measurement isolates an individual stone allocated to Canada.",
+      "unanswered": "What was the mass in grams of the largest stone in the Canadian allocation?"
+    },
+    {
+      "id": "q02",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "rationale": "NASA gives 51.2 grams for one removal and 121.6 grams for the entire returned sample. Neither measurement isolates an individual stone allocated to Canada.",
+      "unanswered": "What was the mass in grams of the largest stone in the Canadian allocation?"
+    },
+    {
+      "id": "q02",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "rationale": "NASA gives 51.2 grams for one removal and 121.6 grams for the entire returned sample. Neither measurement isolates an individual stone allocated to Canada.",
+      "unanswered": "What was the mass in grams of the largest stone in the Canadian allocation?"
+    },
+    {
+      "id": "q02",
+      "arm": "E",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "rationale": "NASA gives 51.2 grams for one removal and 121.6 grams for the entire returned sample. Neither measurement isolates an individual stone allocated to Canada.",
+      "unanswered": "What was the mass in grams of the largest stone in the Canadian allocation?"
+    },
+    {
+      "id": "q02",
+      "arm": "F",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "rationale": "NASA gives 51.2 grams for one removal and 121.6 grams for the entire returned sample. Neither measurement isolates an individual stone allocated to Canada.",
+      "unanswered": "What was the mass in grams of the largest stone in the Canadian allocation?"
+    },
+    {
+      "id": "q02",
+      "arm": "G",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "rationale": "NASA gives 51.2 grams for one removal and 121.6 grams for the entire returned sample. Neither measurement isolates an individual stone allocated to Canada.",
+      "unanswered": "What was the mass in grams of the largest stone in the Canadian allocation?"
+    },
+    {
+      "id": "q02",
+      "arm": "H",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "rationale": "NASA gives 51.2 grams for one removal and 121.6 grams for the entire returned sample. Neither measurement isolates an individual stone allocated to Canada.",
+      "unanswered": "What was the mass in grams of the largest stone in the Canadian allocation?"
+    },
+    {
+      "id": "q03",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record02.txt#L2",
+        "record06.txt#L1"
+      ],
+      "rationale": "The Census Bureau ranks Texas first by its gain of 3,999,944 residents. The Legislative Council's 36 and 38 U.S. House districts establish the seats after 2010 and 2020 respectively.",
+      "unanswered": "All requested facts are established."
+    },
+    {
+      "id": "q03",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record02.txt#L2",
+        "record06.txt#L1"
+      ],
+      "rationale": "The Census Bureau ranks Texas first by its gain of 3,999,944 residents. The Legislative Council's 36 and 38 U.S. House districts establish the seats after 2010 and 2020 respectively.",
+      "unanswered": "All requested facts are established."
+    },
+    {
+      "id": "q03",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record02.txt#L2",
+        "record06.txt#L1"
+      ],
+      "rationale": "The Census Bureau ranks Texas first by its gain of 3,999,944 residents. The Legislative Council's 36 and 38 U.S. House districts establish the seats after 2010 and 2020 respectively.",
+      "unanswered": "All requested facts are established."
+    },
+    {
+      "id": "q03",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record02.txt#L2",
+        "record06.txt#L1"
+      ],
+      "rationale": "The Census Bureau ranks Texas first by its gain of 3,999,944 residents. The Legislative Council's 36 and 38 U.S. House districts establish the seats after 2010 and 2020 respectively.",
+      "unanswered": "All requested facts are established."
+    },
+    {
+      "id": "q03",
+      "arm": "E",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record02.txt#L2",
+        "record06.txt#L1"
+      ],
+      "rationale": "The Census Bureau ranks Texas first by its gain of 3,999,944 residents. The Legislative Council's 36 and 38 U.S. House districts establish the seats after 2010 and 2020 respectively.",
+      "unanswered": "All requested facts are established."
+    },
+    {
+      "id": "q03",
+      "arm": "F",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record02.txt#L2",
+        "record06.txt#L1"
+      ],
+      "rationale": "The Census Bureau ranks Texas first by its gain of 3,999,944 residents. The Legislative Council's 36 and 38 U.S. House districts establish the seats after 2010 and 2020 respectively.",
+      "unanswered": "All requested facts are established."
+    },
+    {
+      "id": "q03",
+      "arm": "G",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record02.txt#L2",
+        "record06.txt#L1"
+      ],
+      "rationale": "The Census Bureau ranks Texas first by its gain of 3,999,944 residents. The Legislative Council's 36 and 38 U.S. House districts establish the seats after 2010 and 2020 respectively.",
+      "unanswered": "All requested facts are established."
+    },
+    {
+      "id": "q03",
+      "arm": "H",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record02.txt#L2",
+        "record06.txt#L1"
+      ],
+      "rationale": "The Census Bureau ranks Texas first by its gain of 3,999,944 residents. The Legislative Council's 36 and 38 U.S. House districts establish the seats after 2010 and 2020 respectively.",
+      "unanswered": "All requested facts are established."
+    },
+    {
+      "id": "q04",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record03.txt#L3",
+        "record03.txt#L1"
+      ],
+      "rationale": "The Treasury account identifies Andrew Jones as the person who struck the coin. The joint July 10 announcement places new-pound production at one billion coins.",
+      "unanswered": "Both the striker and the production count are established."
+    },
+    {
+      "id": "q04",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record03.txt#L1",
+        "record07.txt#L1"
+      ],
+      "rationale": "The joint announcement gives one billion new coins. The Treasury names David Pearce in his role as design competition winner, which does not identify who struck the milestone coin.",
+      "unanswered": "Who struck the milestone coin?"
+    },
+    {
+      "id": "q04",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record03.txt#L3",
+        "record03.txt#L1"
+      ],
+      "rationale": "The official account attributes the strike to Andrew Jones and reports one billion twelve-sided coins made by July 10. The interpretation uses the production figure for the new coins.",
+      "unanswered": "Both requested details are established."
+    },
+    {
+      "id": "q04",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record03.txt#L3",
+        "record03.txt#L1"
+      ],
+      "rationale": "The official account attributes the strike to Andrew Jones and reports one billion twelve-sided coins made by July 10. The interpretation uses the production figure for the new coins.",
+      "unanswered": "Both requested details are established."
+    },
+    {
+      "id": "q04",
+      "arm": "E",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record03.txt#L3",
+        "record03.txt#L1"
+      ],
+      "rationale": "The official account attributes the strike to Andrew Jones and reports one billion twelve-sided coins made by July 10. The interpretation uses the production figure for the new coins.",
+      "unanswered": "Both requested details are established."
+    },
+    {
+      "id": "q04",
+      "arm": "F",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record07.txt#L1"
+      ],
+      "rationale": "The one billion refers to new coins produced. The count of old coins returned and the name of the reverse designer provide no evidence of who performed the ceremonial strike.",
+      "unanswered": "Who struck the milestone coin?"
+    },
+    {
+      "id": "q04",
+      "arm": "G",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record03.txt#L3",
+        "record03.txt#L1"
+      ],
+      "rationale": "The Treasury account identifies Andrew Jones as the person who struck the coin. The joint July 10 announcement places new-pound production at one billion coins.",
+      "unanswered": "Both the striker and the production count are established."
+    },
+    {
+      "id": "q04",
+      "arm": "H",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record07.txt#L1"
+      ],
+      "rationale": "The one billion refers to new coins produced. The count of old coins returned and the name of the reverse designer provide no evidence of who performed the ceremonial strike.",
+      "unanswered": "Who struck the milestone coin?"
+    },
+    {
+      "id": "q05",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record04.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L1"
+      ],
+      "rationale": "The Canadian Space Agency links its OSIRIS-REx Laser Altimeter and its three-dimensional surface mapping to site selection. It identifies Nightingale as the collection site, as do the Arizona images.",
+      "unanswered": "The instrument, measurement and site are established."
+    },
+    {
+      "id": "q05",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record04.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L1"
+      ],
+      "rationale": "The Canadian agency identifies the laser altimeter and its mapping of surface shape in three dimensions. Its collection account and the Arizona image description independently identify Nightingale.",
+      "unanswered": "The instrument, measurement and site are established."
+    },
+    {
+      "id": "q05",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record04.txt#L2",
+        "record09.txt#L1",
+        "record09.txt#L2"
+      ],
+      "rationale": "Both accounts locate collection at Nightingale. Arizona's distance for a later imaging pass supplies neither a selection instrument nor that instrument's measurement.",
+      "unanswered": "Which Canadian instrument helped choose the site and what did it measure?"
+    },
+    {
+      "id": "q05",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record04.txt#L2",
+        "record09.txt#L1",
+        "record09.txt#L2"
+      ],
+      "rationale": "Both accounts locate collection at Nightingale. Arizona's distance for a later imaging pass supplies neither a selection instrument nor that instrument's measurement.",
+      "unanswered": "Which Canadian instrument helped choose the site and what did it measure?"
+    },
+    {
+      "id": "q05",
+      "arm": "E",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record04.txt#L2",
+        "record09.txt#L1",
+        "record09.txt#L2"
+      ],
+      "rationale": "The Canadian and Arizona accounts both identify Nightingale. A distance for the later photographic pass does not establish which instrument guided earlier site selection or what it measured.",
+      "unanswered": "Which Canadian instrument helped choose the site and what did it measure?"
+    },
+    {
+      "id": "q05",
+      "arm": "F",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record04.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L1"
+      ],
+      "rationale": "The Canadian agency identifies the laser altimeter and its mapping of surface shape in three dimensions. Its collection account and the Arizona image description independently identify Nightingale.",
+      "unanswered": "The instrument, measurement and site are established."
+    },
+    {
+      "id": "q05",
+      "arm": "G",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record04.txt#L2",
+        "record09.txt#L1",
+        "record09.txt#L2"
+      ],
+      "rationale": "The Canadian and Arizona accounts both identify Nightingale. A distance for the later photographic pass does not establish which instrument guided earlier site selection or what it measured.",
+      "unanswered": "Which Canadian instrument helped choose the site and what did it measure?"
+    },
+    {
+      "id": "q05",
+      "arm": "H",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record04.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L1"
+      ],
+      "rationale": "The Canadian Space Agency links its OSIRIS-REx Laser Altimeter and its three-dimensional surface mapping to site selection. It identifies Nightingale as the collection site, as do the Arizona images.",
+      "unanswered": "The instrument, measurement and site are established."
+    },
+    {
+      "id": "q06",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L3"
+      ],
+      "rationale": "The bureau includes D.C. residents in the national count and explains the exclusion from apportionment. The reply correctly limits overseas credit to military personnel, federal civilian employees and dependents living with them, conditional on an identifiable home state.",
+      "unanswered": "The treatment of D.C. residents and the overseas inclusion rule are established."
+    },
+    {
+      "id": "q06",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L3"
+      ],
+      "rationale": "The bureau includes D.C. residents in the national count and explains the exclusion from apportionment. The reply correctly limits overseas credit to military personnel, federal civilian employees and dependents living with them, conditional on an identifiable home state.",
+      "unanswered": "The treatment of D.C. residents and the overseas inclusion rule are established."
+    },
+    {
+      "id": "q06",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L3"
+      ],
+      "rationale": "The bureau includes D.C. residents in the national count and explains the exclusion from apportionment. The reply correctly limits overseas credit to military personnel, federal civilian employees and dependents living with them, conditional on an identifiable home state.",
+      "unanswered": "The treatment of D.C. residents and the overseas inclusion rule are established."
+    },
+    {
+      "id": "q06",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L3"
+      ],
+      "rationale": "The bureau includes D.C. residents in the national count and explains the exclusion from apportionment. The reply correctly limits overseas credit to military personnel, federal civilian employees and dependents living with them, conditional on an identifiable home state.",
+      "unanswered": "The treatment of D.C. residents and the overseas inclusion rule are established."
+    },
+    {
+      "id": "q06",
+      "arm": "E",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L3"
+      ],
+      "rationale": "The bureau includes D.C. residents in the national count and explains the exclusion from apportionment. The reply correctly limits overseas credit to military personnel, federal civilian employees and dependents living with them, conditional on an identifiable home state.",
+      "unanswered": "The treatment of D.C. residents and the overseas inclusion rule are established."
+    },
+    {
+      "id": "q06",
+      "arm": "F",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L3"
+      ],
+      "rationale": "The bureau includes D.C. residents in the national count and explains the exclusion from apportionment. The reply correctly limits overseas credit to military personnel, federal civilian employees and dependents living with them, conditional on an identifiable home state.",
+      "unanswered": "The treatment of D.C. residents and the overseas inclusion rule are established."
+    },
+    {
+      "id": "q06",
+      "arm": "G",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L3"
+      ],
+      "rationale": "The bureau includes D.C. residents in the national count and explains the exclusion from apportionment. The reply correctly limits overseas credit to military personnel, federal civilian employees and dependents living with them, conditional on an identifiable home state.",
+      "unanswered": "The treatment of D.C. residents and the overseas inclusion rule are established."
+    },
+    {
+      "id": "q06",
+      "arm": "H",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L3"
+      ],
+      "rationale": "The bureau includes D.C. residents in the national count and explains the exclusion from apportionment. The reply correctly limits overseas credit to military personnel, federal civilian employees and dependents living with them, conditional on an identifiable home state.",
+      "unanswered": "The treatment of D.C. residents and the overseas inclusion rule are established."
+    },
+    {
+      "id": "q07",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4"
+      ],
+      "rationale": "The 800 million counted returns. The chief executive described planned melting and reuse, which supplies no completed-melting count. The absence of that count can be verified for the supplied announcement excerpts.",
+      "unanswered": "How many returned round pounds had actually been melted by July 10?"
+    },
+    {
+      "id": "q07",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4"
+      ],
+      "rationale": "The 800 million counted returns. The chief executive described planned melting and reuse, which supplies no completed-melting count. The absence of that count can be verified for the supplied announcement excerpts.",
+      "unanswered": "How many returned round pounds had actually been melted by July 10?"
+    },
+    {
+      "id": "q07",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4"
+      ],
+      "rationale": "The 800 million counted returns. The chief executive described planned melting and reuse, which supplies no completed-melting count. The absence of that count can be verified for the supplied announcement excerpts.",
+      "unanswered": "How many returned round pounds had actually been melted by July 10?"
+    },
+    {
+      "id": "q07",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4"
+      ],
+      "rationale": "The 800 million counted returns. The chief executive described planned melting and reuse, which supplies no completed-melting count. The absence of that count can be verified for the supplied announcement excerpts.",
+      "unanswered": "How many returned round pounds had actually been melted by July 10?"
+    },
+    {
+      "id": "q07",
+      "arm": "E",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4"
+      ],
+      "rationale": "The 800 million counted returns. The chief executive described planned melting and reuse, which supplies no completed-melting count. The absence of that count can be verified for the supplied announcement excerpts.",
+      "unanswered": "How many returned round pounds had actually been melted by July 10?"
+    },
+    {
+      "id": "q07",
+      "arm": "F",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4"
+      ],
+      "rationale": "The 800 million counted returns. The chief executive described planned melting and reuse, which supplies no completed-melting count. The absence of that count can be verified for the supplied announcement excerpts.",
+      "unanswered": "How many returned round pounds had actually been melted by July 10?"
+    },
+    {
+      "id": "q07",
+      "arm": "G",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4"
+      ],
+      "rationale": "The 800 million counted returns. The chief executive described planned melting and reuse, which supplies no completed-melting count. The absence of that count can be verified for the supplied announcement excerpts.",
+      "unanswered": "How many returned round pounds had actually been melted by July 10?"
+    },
+    {
+      "id": "q07",
+      "arm": "H",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4"
+      ],
+      "rationale": "The 800 million counted returns. The chief executive described planned melting and reuse, which supplies no completed-melting count. The absence of that count can be verified for the supplied announcement excerpts.",
+      "unanswered": "How many returned round pounds had actually been melted by July 10?"
+    },
+    {
+      "id": "q08",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record04.txt#L3",
+        "record05.txt#L5"
+      ],
+      "rationale": "The Canadian agency ties the agreed 4 percent to supplying the instrument. NASA identifies Johnson, future research and a minimum retention share of 70 percent. The interpretation preserves the commitment and minimum.",
+      "unanswered": "Both prospective shares are established."
+    },
+    {
+      "id": "q08",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record04.txt#L3",
+        "record05.txt#L5"
+      ],
+      "rationale": "The Canadian agency ties the agreed 4 percent to supplying the instrument. NASA identifies Johnson, future research and a minimum retention share of 70 percent. The interpretation preserves the commitment and minimum.",
+      "unanswered": "Both prospective shares are established."
+    },
+    {
+      "id": "q08",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record04.txt#L3",
+        "record05.txt#L5"
+      ],
+      "rationale": "The Canadian agency ties the agreed 4 percent to supplying the instrument. NASA identifies Johnson, future research and a minimum retention share of 70 percent. The interpretation preserves the commitment and minimum.",
+      "unanswered": "Both prospective shares are established."
+    },
+    {
+      "id": "q08",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record04.txt#L3",
+        "record05.txt#L5"
+      ],
+      "rationale": "The Canadian agency ties the agreed 4 percent to supplying the instrument. NASA identifies Johnson, future research and a minimum retention share of 70 percent. The interpretation preserves the commitment and minimum.",
+      "unanswered": "Both prospective shares are established."
+    },
+    {
+      "id": "q08",
+      "arm": "E",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record04.txt#L3",
+        "record05.txt#L5"
+      ],
+      "rationale": "The Canadian agency ties the agreed 4 percent to supplying the instrument. NASA identifies Johnson, future research and a minimum retention share of 70 percent. The interpretation preserves the commitment and minimum.",
+      "unanswered": "Both prospective shares are established."
+    },
+    {
+      "id": "q08",
+      "arm": "F",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record04.txt#L3",
+        "record05.txt#L5"
+      ],
+      "rationale": "The Canadian agency ties the agreed 4 percent to supplying the instrument. NASA identifies Johnson, future research and a minimum retention share of 70 percent. The interpretation preserves the commitment and minimum.",
+      "unanswered": "Both prospective shares are established."
+    },
+    {
+      "id": "q08",
+      "arm": "G",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record04.txt#L3",
+        "record05.txt#L5"
+      ],
+      "rationale": "The Canadian agency ties the agreed 4 percent to supplying the instrument. NASA identifies Johnson, future research and a minimum retention share of 70 percent. The interpretation preserves the commitment and minimum.",
+      "unanswered": "Both prospective shares are established."
+    },
+    {
+      "id": "q08",
+      "arm": "H",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record04.txt#L3",
+        "record05.txt#L5"
+      ],
+      "rationale": "The Canadian agency ties the agreed 4 percent to supplying the instrument. NASA identifies Johnson, future research and a minimum retention share of 70 percent. The interpretation preserves the commitment and minimum.",
+      "unanswered": "Both prospective shares are established."
+    },
+    {
+      "id": "q09",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record08.txt#L1",
+        "record08.txt#L2"
+      ],
+      "rationale": "The bureau guarantees each state its first seat. Its priority rule uses the state's apportionment population divided by the geometric mean of current and next seat counts, then assigns the seat to the highest priority.",
+      "unanswered": "Both the guarantee and the selection calculation are established."
+    },
+    {
+      "id": "q09",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record08.txt#L1",
+        "record08.txt#L5"
+      ],
+      "rationale": "The bureau establishes a guaranteed first seat and names the equal proportions method. Its history of adoption supplies no formula or comparison rule for assigning the next seat.",
+      "unanswered": "How is priority for the next seat calculated and compared?"
+    },
+    {
+      "id": "q09",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record08.txt#L1",
+        "record08.txt#L2"
+      ],
+      "rationale": "The bureau guarantees each state its first seat. Its priority rule uses the state's apportionment population divided by the geometric mean of current and next seat counts, then assigns the seat to the highest priority.",
+      "unanswered": "Both the guarantee and the selection calculation are established."
+    },
+    {
+      "id": "q09",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record08.txt#L1",
+        "record08.txt#L2"
+      ],
+      "rationale": "The bureau guarantees each state its first seat. Its priority rule uses the state's apportionment population divided by the geometric mean of current and next seat counts, then assigns the seat to the highest priority.",
+      "unanswered": "Both the guarantee and the selection calculation are established."
+    },
+    {
+      "id": "q09",
+      "arm": "E",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record08.txt#L1",
+        "record08.txt#L2"
+      ],
+      "rationale": "The bureau guarantees each state its first seat. Its priority rule uses the state's apportionment population divided by the geometric mean of current and next seat counts, then assigns the seat to the highest priority.",
+      "unanswered": "Both the guarantee and the selection calculation are established."
+    },
+    {
+      "id": "q09",
+      "arm": "F",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record08.txt#L1",
+        "record08.txt#L2"
+      ],
+      "rationale": "The bureau guarantees each state its first seat. Its priority rule uses the state's apportionment population divided by the geometric mean of current and next seat counts, then assigns the seat to the highest priority.",
+      "unanswered": "Both the guarantee and the selection calculation are established."
+    },
+    {
+      "id": "q09",
+      "arm": "G",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record08.txt#L1",
+        "record08.txt#L2"
+      ],
+      "rationale": "The bureau guarantees each state its first seat. Its priority rule uses the state's apportionment population divided by the geometric mean of current and next seat counts, then assigns the seat to the highest priority.",
+      "unanswered": "Both the guarantee and the selection calculation are established."
+    },
+    {
+      "id": "q09",
+      "arm": "H",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record08.txt#L1",
+        "record08.txt#L2"
+      ],
+      "rationale": "The bureau guarantees each state its first seat. Its priority rule uses the state's apportionment population divided by the geometric mean of current and next seat counts, then assigns the seat to the highest priority.",
+      "unanswered": "Both the guarantee and the selection calculation are established."
+    },
+    {
+      "id": "q10",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record05.txt#L1",
+        "record05.txt#L4"
+      ],
+      "rationale": "NASA gives the 60-gram requirement and 121.6-gram final total. Subtracting those quantities yields the stated 61.6-gram excess.",
+      "unanswered": "The minimum and the excess are established."
+    },
+    {
+      "id": "q10",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record05.txt#L1",
+        "record05.txt#L4"
+      ],
+      "rationale": "NASA gives the 60-gram requirement and 121.6-gram final total. Subtracting those quantities yields the stated 61.6-gram excess.",
+      "unanswered": "The minimum and the excess are established."
+    },
+    {
+      "id": "q10",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record05.txt#L1",
+        "record05.txt#L4"
+      ],
+      "rationale": "The cited NASA minimum is 60 grams and the reported total is 121.6 grams. These quantities support the difference of 61.6 grams without adding any amount extracted separately.",
+      "unanswered": "The minimum and the excess are established."
+    },
+    {
+      "id": "q10",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record05.txt#L1",
+        "record05.txt#L4"
+      ],
+      "rationale": "The cited NASA minimum is 60 grams and the reported total is 121.6 grams. These quantities support the difference of 61.6 grams without adding any amount extracted separately.",
+      "unanswered": "The minimum and the excess are established."
+    },
+    {
+      "id": "q10",
+      "arm": "E",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record05.txt#L1",
+        "record05.txt#L4"
+      ],
+      "rationale": "The NASA requirement and final accounting provide both inputs in grams. The 121.6-gram return exceeded the 60-gram minimum by 61.6 grams.",
+      "unanswered": "The minimum and the excess are established."
+    },
+    {
+      "id": "q10",
+      "arm": "F",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record05.txt#L1",
+        "record05.txt#L4"
+      ],
+      "rationale": "The cited NASA minimum is 60 grams and the reported total is 121.6 grams. These quantities support the difference of 61.6 grams without adding any amount extracted separately.",
+      "unanswered": "The minimum and the excess are established."
+    },
+    {
+      "id": "q10",
+      "arm": "G",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record05.txt#L1",
+        "record05.txt#L4"
+      ],
+      "rationale": "NASA supplies an explicit minimum of 60 grams and a final total of 121.6 grams. Their difference establishes the reported excess of 61.6 grams.",
+      "unanswered": "The minimum and the excess are established."
+    },
+    {
+      "id": "q10",
+      "arm": "H",
+      "assessment": {
+        "equivalent_evidence": "yes",
+        "source_attribution": "yes",
+        "unsupported_claim": "no",
+        "warranted_abstention": "not_applicable"
+      },
+      "cites": [
+        "record05.txt#L1",
+        "record05.txt#L4"
+      ],
+      "rationale": "The cited NASA minimum is 60 grams and the reported total is 121.6 grams. These quantities support the difference of 61.6 grams without adding any amount extracted separately.",
+      "unanswered": "The minimum and the excess are established."
+    },
+    {
+      "id": "q11",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record06.txt#L2",
+        "record06.txt#L3"
+      ],
+      "rationale": "The council identifies Senate Bill 6 as the congressional map and records gubernatorial signature. Passage and signature do not establish the identity of the authoring senator.",
+      "unanswered": "Which state senator authored Senate Bill 6?"
+    },
+    {
+      "id": "q11",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record06.txt#L2",
+        "record06.txt#L3"
+      ],
+      "rationale": "The council identifies Senate Bill 6 as the congressional map and records gubernatorial signature. Passage and signature do not establish the identity of the authoring senator.",
+      "unanswered": "Which state senator authored Senate Bill 6?"
+    },
+    {
+      "id": "q11",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record06.txt#L2",
+        "record06.txt#L3"
+      ],
+      "rationale": "The council identifies Senate Bill 6 as the congressional map and records gubernatorial signature. Passage and signature do not establish the identity of the authoring senator.",
+      "unanswered": "Which state senator authored Senate Bill 6?"
+    },
+    {
+      "id": "q11",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record06.txt#L2",
+        "record06.txt#L3"
+      ],
+      "rationale": "The council identifies Senate Bill 6 as the congressional map and records gubernatorial signature. Passage and signature do not establish the identity of the authoring senator.",
+      "unanswered": "Which state senator authored Senate Bill 6?"
+    },
+    {
+      "id": "q11",
+      "arm": "E",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record06.txt#L2",
+        "record06.txt#L3"
+      ],
+      "rationale": "The council identifies Senate Bill 6 as the congressional map and records gubernatorial signature. Passage and signature do not establish the identity of the authoring senator.",
+      "unanswered": "Which state senator authored Senate Bill 6?"
+    },
+    {
+      "id": "q11",
+      "arm": "F",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record06.txt#L2",
+        "record06.txt#L3"
+      ],
+      "rationale": "The council identifies Senate Bill 6 as the congressional map and records gubernatorial signature. Passage and signature do not establish the identity of the authoring senator.",
+      "unanswered": "Which state senator authored Senate Bill 6?"
+    },
+    {
+      "id": "q11",
+      "arm": "G",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record06.txt#L2",
+        "record06.txt#L3"
+      ],
+      "rationale": "The council identifies Senate Bill 6 as the congressional map and records gubernatorial signature. Passage and signature do not establish the identity of the authoring senator.",
+      "unanswered": "Which state senator authored Senate Bill 6?"
+    },
+    {
+      "id": "q11",
+      "arm": "H",
+      "assessment": {
+        "equivalent_evidence": "not_applicable",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record06.txt#L2",
+        "record06.txt#L3"
+      ],
+      "rationale": "The council identifies Senate Bill 6 as the congressional map and records gubernatorial signature. Passage and signature do not establish the identity of the authoring senator.",
+      "unanswered": "Which state senator authored Senate Bill 6?"
+    },
+    {
+      "id": "q12",
+      "arm": "A",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L4"
+      ],
+      "rationale": "The Mint gives the March 28 start and the October 15 end at 23:59 in 2017. Its chief executive described intended metal reuse. One billion counts newly made coins, leaving the number of old coins returned unresolved.",
+      "unanswered": "How many round pounds had been returned by the July update?"
+    },
+    {
+      "id": "q12",
+      "arm": "B",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L4"
+      ],
+      "rationale": "The Mint gives the March 28 start and the October 15 end at 23:59 in 2017. Its chief executive described intended metal reuse. One billion counts newly made coins, leaving the number of old coins returned unresolved.",
+      "unanswered": "How many round pounds had been returned by the July update?"
+    },
+    {
+      "id": "q12",
+      "arm": "C",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L4"
+      ],
+      "rationale": "The Mint gives the March 28 start and the October 15 end at 23:59 in 2017. Its chief executive described intended metal reuse. One billion counts newly made coins, leaving the number of old coins returned unresolved.",
+      "unanswered": "How many round pounds had been returned by the July update?"
+    },
+    {
+      "id": "q12",
+      "arm": "D",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L4"
+      ],
+      "rationale": "The Mint gives the March 28 start and the October 15 end at 23:59 in 2017. Its chief executive described intended metal reuse. One billion counts newly made coins, leaving the number of old coins returned unresolved.",
+      "unanswered": "How many round pounds had been returned by the July update?"
+    },
+    {
+      "id": "q12",
+      "arm": "E",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L4"
+      ],
+      "rationale": "The Mint gives the March 28 start and the October 15 end at 23:59 in 2017. Its chief executive described intended metal reuse. One billion counts newly made coins, leaving the number of old coins returned unresolved.",
+      "unanswered": "How many round pounds had been returned by the July update?"
+    },
+    {
+      "id": "q12",
+      "arm": "F",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L4"
+      ],
+      "rationale": "The Mint gives the March 28 start and the October 15 end at 23:59 in 2017. Its chief executive described intended metal reuse. One billion counts newly made coins, leaving the number of old coins returned unresolved.",
+      "unanswered": "How many round pounds had been returned by the July update?"
+    },
+    {
+      "id": "q12",
+      "arm": "G",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L4"
+      ],
+      "rationale": "The Mint gives the March 28 start and the October 15 end at 23:59 in 2017. Its chief executive described intended metal reuse. One billion counts newly made coins, leaving the number of old coins returned unresolved.",
+      "unanswered": "How many round pounds had been returned by the July update?"
+    },
+    {
+      "id": "q12",
+      "arm": "H",
+      "assessment": {
+        "equivalent_evidence": "no",
+        "source_attribution": "yes",
+        "unsupported_claim": "not_applicable",
+        "warranted_abstention": "yes"
+      },
+      "cites": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L4"
+      ],
+      "rationale": "The Mint gives the March 28 start and the October 15 end at 23:59 in 2017. Its chief executive described intended metal reuse. One billion counts newly made coins, leaving the number of old coins returned unresolved.",
+      "unanswered": "How many round pounds had been returned by the July update?"
+    }
+  ]
+}

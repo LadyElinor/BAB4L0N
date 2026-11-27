@@ -1,0 +1,1183 @@
+{
+  "interpreter": "evidence-reader",
+  "worksheet_digest": "094e3eb285acf4415932f43214bfd41f7cc4631b524979b9d76e6bf42b659cb0",
+  "rows": [
+    {
+      "id": "q01",
+      "arm": "A",
+      "decision": "abstain",
+      "interpretation": "The Royal Mint credits Jody Clark with the portrait of Queen Elizabeth II. HM Treasury identifies David Pearce as the winner of the reverse design competition. The four plants cannot be identified from these passages.",
+      "cites": [
+        "record01.txt#L3",
+        "record07.txt#L1"
+      ],
+      "uncertainty": "The competition result names the designer but gives no description of the plants.",
+      "unanswered": "Which four plants appeared on the reverse?"
+    },
+    {
+      "id": "q01",
+      "arm": "B",
+      "decision": "abstain",
+      "interpretation": "The Royal Mint credits Jody Clark with the portrait of Queen Elizabeth II. HM Treasury identifies David Pearce as the winner of the reverse design competition. The four plants cannot be identified from these passages.",
+      "cites": [
+        "record01.txt#L3",
+        "record07.txt#L1"
+      ],
+      "uncertainty": "The competition result names the designer but gives no description of the plants.",
+      "unanswered": "Which four plants appeared on the reverse?"
+    },
+    {
+      "id": "q01",
+      "arm": "C",
+      "decision": "abstain",
+      "interpretation": "The Royal Mint credits Jody Clark with the portrait of Queen Elizabeth II. HM Treasury identifies David Pearce as the winner of the reverse design competition. The four plants cannot be identified from these passages.",
+      "cites": [
+        "record01.txt#L3",
+        "record07.txt#L1"
+      ],
+      "uncertainty": "The competition result names the designer but gives no description of the plants.",
+      "unanswered": "Which four plants appeared on the reverse?"
+    },
+    {
+      "id": "q01",
+      "arm": "D",
+      "decision": "abstain",
+      "interpretation": "The Royal Mint credits Jody Clark with the portrait of Queen Elizabeth II. HM Treasury identifies David Pearce as the winner of the reverse design competition. The four plants cannot be identified from these passages.",
+      "cites": [
+        "record01.txt#L3",
+        "record07.txt#L1"
+      ],
+      "uncertainty": "The competition result names the designer but gives no description of the plants.",
+      "unanswered": "Which four plants appeared on the reverse?"
+    },
+    {
+      "id": "q01",
+      "arm": "E",
+      "decision": "abstain",
+      "interpretation": "The Royal Mint credits Jody Clark with the portrait of Queen Elizabeth II. HM Treasury identifies David Pearce as the winner of the reverse design competition. The four plants cannot be identified from these passages.",
+      "cites": [
+        "record01.txt#L3",
+        "record07.txt#L1"
+      ],
+      "uncertainty": "The competition result names the designer but gives no description of the plants.",
+      "unanswered": "Which four plants appeared on the reverse?"
+    },
+    {
+      "id": "q01",
+      "arm": "F",
+      "decision": "abstain",
+      "interpretation": "The Royal Mint credits Jody Clark with the portrait of Queen Elizabeth II. HM Treasury identifies David Pearce as the winner of the reverse design competition. The four plants cannot be identified from these passages.",
+      "cites": [
+        "record01.txt#L3",
+        "record07.txt#L1"
+      ],
+      "uncertainty": "The competition result names the designer but gives no description of the plants.",
+      "unanswered": "Which four plants appeared on the reverse?"
+    },
+    {
+      "id": "q01",
+      "arm": "G",
+      "decision": "abstain",
+      "interpretation": "The Royal Mint credits Jody Clark with the portrait of Queen Elizabeth II. HM Treasury identifies David Pearce as the winner of the reverse design competition. The four plants cannot be identified from these passages.",
+      "cites": [
+        "record01.txt#L3",
+        "record07.txt#L1"
+      ],
+      "uncertainty": "The competition result names the designer but gives no description of the plants.",
+      "unanswered": "Which four plants appeared on the reverse?"
+    },
+    {
+      "id": "q01",
+      "arm": "H",
+      "decision": "abstain",
+      "interpretation": "The Royal Mint credits Jody Clark with the portrait of Queen Elizabeth II. HM Treasury identifies David Pearce as the winner of the reverse design competition. The four plants cannot be identified from these passages.",
+      "cites": [
+        "record01.txt#L3",
+        "record07.txt#L1"
+      ],
+      "uncertainty": "The competition result names the designer but gives no description of the plants.",
+      "unanswered": "Which four plants appeared on the reverse?"
+    },
+    {
+      "id": "q02",
+      "arm": "A",
+      "decision": "abstain",
+      "interpretation": "NASA reports 51.2 grams of material removed from the collection head and 121.6 grams for the entire returned sample. Neither figure gives the mass of the largest stone in Canada's allocation.",
+      "cites": [
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "uncertainty": "Both measurements cover collections of material. An individual stone mass cannot be inferred.",
+      "unanswered": "How many grams did Canada's largest individual Bennu stone weigh?"
+    },
+    {
+      "id": "q02",
+      "arm": "B",
+      "decision": "abstain",
+      "interpretation": "NASA reports 51.2 grams of material removed from the collection head and 121.6 grams for the entire returned sample. Neither figure gives the mass of the largest stone in Canada's allocation.",
+      "cites": [
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "uncertainty": "Both measurements cover collections of material. An individual stone mass cannot be inferred.",
+      "unanswered": "How many grams did Canada's largest individual Bennu stone weigh?"
+    },
+    {
+      "id": "q02",
+      "arm": "C",
+      "decision": "abstain",
+      "interpretation": "NASA reports 51.2 grams of material removed from the collection head and 121.6 grams for the entire returned sample. Neither figure gives the mass of the largest stone in Canada's allocation.",
+      "cites": [
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "uncertainty": "Both measurements cover collections of material. An individual stone mass cannot be inferred.",
+      "unanswered": "How many grams did Canada's largest individual Bennu stone weigh?"
+    },
+    {
+      "id": "q02",
+      "arm": "D",
+      "decision": "abstain",
+      "interpretation": "NASA reports 51.2 grams of material removed from the collection head and 121.6 grams for the entire returned sample. Neither figure gives the mass of the largest stone in Canada's allocation.",
+      "cites": [
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "uncertainty": "Both measurements cover collections of material. An individual stone mass cannot be inferred.",
+      "unanswered": "How many grams did Canada's largest individual Bennu stone weigh?"
+    },
+    {
+      "id": "q02",
+      "arm": "E",
+      "decision": "abstain",
+      "interpretation": "NASA reports 51.2 grams of material removed from the collection head and 121.6 grams for the entire returned sample. Neither figure gives the mass of the largest stone in Canada's allocation.",
+      "cites": [
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "uncertainty": "Both measurements cover collections of material. An individual stone mass cannot be inferred.",
+      "unanswered": "How many grams did Canada's largest individual Bennu stone weigh?"
+    },
+    {
+      "id": "q02",
+      "arm": "F",
+      "decision": "abstain",
+      "interpretation": "NASA reports 51.2 grams of material removed from the collection head and 121.6 grams for the entire returned sample. Neither figure gives the mass of the largest stone in Canada's allocation.",
+      "cites": [
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "uncertainty": "Both measurements cover collections of material. An individual stone mass cannot be inferred.",
+      "unanswered": "How many grams did Canada's largest individual Bennu stone weigh?"
+    },
+    {
+      "id": "q02",
+      "arm": "G",
+      "decision": "abstain",
+      "interpretation": "NASA reports 51.2 grams of material removed from the collection head and 121.6 grams for the entire returned sample. Neither figure gives the mass of the largest stone in Canada's allocation.",
+      "cites": [
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "uncertainty": "Both measurements cover collections of material. An individual stone mass cannot be inferred.",
+      "unanswered": "How many grams did Canada's largest individual Bennu stone weigh?"
+    },
+    {
+      "id": "q02",
+      "arm": "H",
+      "decision": "abstain",
+      "interpretation": "NASA reports 51.2 grams of material removed from the collection head and 121.6 grams for the entire returned sample. Neither figure gives the mass of the largest stone in Canada's allocation.",
+      "cites": [
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "uncertainty": "Both measurements cover collections of material. An individual stone mass cannot be inferred.",
+      "unanswered": "How many grams did Canada's largest individual Bennu stone weigh?"
+    },
+    {
+      "id": "q03",
+      "arm": "A",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau reports that Texas had the largest numerical gain, adding 3,999,944 residents between 2010 and 2020. The Texas Legislative Council records 36 U.S. House seats after the 2010 census and 38 after the 2020 census.",
+      "cites": [
+        "record02.txt#L2",
+        "record06.txt#L1"
+      ],
+      "uncertainty": "The sources identify the numerical gain and give a seat count for each census.",
+      "unanswered": "All requested facts are resolved."
+    },
+    {
+      "id": "q03",
+      "arm": "B",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau reports that Texas had the largest numerical gain, adding 3,999,944 residents between 2010 and 2020. The Texas Legislative Council records 36 U.S. House seats after the 2010 census and 38 after the 2020 census.",
+      "cites": [
+        "record02.txt#L2",
+        "record06.txt#L1"
+      ],
+      "uncertainty": "The sources identify the numerical gain and give a seat count for each census.",
+      "unanswered": "All requested facts are resolved."
+    },
+    {
+      "id": "q03",
+      "arm": "C",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau reports that Texas had the largest numerical gain, adding 3,999,944 residents between 2010 and 2020. The Texas Legislative Council records 36 U.S. House seats after the 2010 census and 38 after the 2020 census.",
+      "cites": [
+        "record02.txt#L2",
+        "record06.txt#L1"
+      ],
+      "uncertainty": "The sources identify the numerical gain and give a seat count for each census.",
+      "unanswered": "All requested facts are resolved."
+    },
+    {
+      "id": "q03",
+      "arm": "D",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau reports that Texas had the largest numerical gain, adding 3,999,944 residents between 2010 and 2020. The Texas Legislative Council records 36 U.S. House seats after the 2010 census and 38 after the 2020 census.",
+      "cites": [
+        "record02.txt#L2",
+        "record06.txt#L1"
+      ],
+      "uncertainty": "The sources identify the numerical gain and give a seat count for each census.",
+      "unanswered": "All requested facts are resolved."
+    },
+    {
+      "id": "q03",
+      "arm": "E",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau reports that Texas had the largest numerical gain, adding 3,999,944 residents between 2010 and 2020. The Texas Legislative Council records 36 U.S. House seats after the 2010 census and 38 after the 2020 census.",
+      "cites": [
+        "record02.txt#L2",
+        "record06.txt#L1"
+      ],
+      "uncertainty": "The sources identify the numerical gain and give a seat count for each census.",
+      "unanswered": "All requested facts are resolved."
+    },
+    {
+      "id": "q03",
+      "arm": "F",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau reports that Texas had the largest numerical gain, adding 3,999,944 residents between 2010 and 2020. The Texas Legislative Council records 36 U.S. House seats after the 2010 census and 38 after the 2020 census.",
+      "cites": [
+        "record02.txt#L2",
+        "record06.txt#L1"
+      ],
+      "uncertainty": "The sources identify the numerical gain and give a seat count for each census.",
+      "unanswered": "All requested facts are resolved."
+    },
+    {
+      "id": "q03",
+      "arm": "G",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau reports that Texas had the largest numerical gain, adding 3,999,944 residents between 2010 and 2020. The Texas Legislative Council records 36 U.S. House seats after the 2010 census and 38 after the 2020 census.",
+      "cites": [
+        "record02.txt#L2",
+        "record06.txt#L1"
+      ],
+      "uncertainty": "The sources identify the numerical gain and give a seat count for each census.",
+      "unanswered": "All requested facts are resolved."
+    },
+    {
+      "id": "q03",
+      "arm": "H",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau reports that Texas had the largest numerical gain, adding 3,999,944 residents between 2010 and 2020. The Texas Legislative Council records 36 U.S. House seats after the 2010 census and 38 after the 2020 census.",
+      "cites": [
+        "record02.txt#L2",
+        "record06.txt#L1"
+      ],
+      "uncertainty": "The sources identify the numerical gain and give a seat count for each census.",
+      "unanswered": "All requested facts are resolved."
+    },
+    {
+      "id": "q04",
+      "arm": "A",
+      "decision": "answer",
+      "interpretation": "Exchequer Secretary Andrew Jones struck the milestone coin. The joint Treasury and Royal Mint announcement of 10 July 2017 put production at one billion twelve-sided pound coins.",
+      "cites": [
+        "record03.txt#L3",
+        "record03.txt#L1"
+      ],
+      "uncertainty": "The official account identifies the person and gives the number produced by the announcement date.",
+      "unanswered": "Both the person and the production total are identified."
+    },
+    {
+      "id": "q04",
+      "arm": "B",
+      "decision": "abstain",
+      "interpretation": "The Treasury and Royal Mint reported that one billion twelve-sided pound coins had been made by 10 July 2017. These passages do not identify who struck the milestone coin.",
+      "cites": [
+        "record03.txt#L1"
+      ],
+      "uncertainty": "The production total is explicit, but the ceremonial striker is unnamed.",
+      "unanswered": "Who struck the milestone coin?"
+    },
+    {
+      "id": "q04",
+      "arm": "C",
+      "decision": "answer",
+      "interpretation": "Exchequer Secretary Andrew Jones struck the milestone coin. The joint Treasury and Royal Mint announcement of 10 July 2017 put production at one billion twelve-sided pound coins.",
+      "cites": [
+        "record03.txt#L3",
+        "record03.txt#L1"
+      ],
+      "uncertainty": "The official account identifies the person and gives the number produced by the announcement date.",
+      "unanswered": "Both the person and the production total are identified."
+    },
+    {
+      "id": "q04",
+      "arm": "D",
+      "decision": "answer",
+      "interpretation": "Exchequer Secretary Andrew Jones struck the milestone coin. The joint Treasury and Royal Mint announcement of 10 July 2017 put production at one billion twelve-sided pound coins.",
+      "cites": [
+        "record03.txt#L3",
+        "record03.txt#L1"
+      ],
+      "uncertainty": "The official account identifies the person and gives the number produced by the announcement date.",
+      "unanswered": "Both the person and the production total are identified."
+    },
+    {
+      "id": "q04",
+      "arm": "E",
+      "decision": "answer",
+      "interpretation": "Exchequer Secretary Andrew Jones struck the milestone coin. The joint Treasury and Royal Mint announcement of 10 July 2017 put production at one billion twelve-sided pound coins.",
+      "cites": [
+        "record03.txt#L3",
+        "record03.txt#L1"
+      ],
+      "uncertainty": "The official account identifies the person and gives the number produced by the announcement date.",
+      "unanswered": "Both the person and the production total are identified."
+    },
+    {
+      "id": "q04",
+      "arm": "F",
+      "decision": "abstain",
+      "interpretation": "The Treasury and Royal Mint reported that one billion twelve-sided pound coins had been made by 10 July 2017. These passages do not identify who struck the milestone coin.",
+      "cites": [
+        "record03.txt#L1"
+      ],
+      "uncertainty": "The production total is explicit, but the ceremonial striker is unnamed.",
+      "unanswered": "Who struck the milestone coin?"
+    },
+    {
+      "id": "q04",
+      "arm": "G",
+      "decision": "answer",
+      "interpretation": "Exchequer Secretary Andrew Jones struck the milestone coin. The joint Treasury and Royal Mint announcement of 10 July 2017 put production at one billion twelve-sided pound coins.",
+      "cites": [
+        "record03.txt#L3",
+        "record03.txt#L1"
+      ],
+      "uncertainty": "The official account identifies the person and gives the number produced by the announcement date.",
+      "unanswered": "Both the person and the production total are identified."
+    },
+    {
+      "id": "q04",
+      "arm": "H",
+      "decision": "abstain",
+      "interpretation": "The Treasury and Royal Mint reported that one billion twelve-sided pound coins had been made by 10 July 2017. These passages do not identify who struck the milestone coin.",
+      "cites": [
+        "record03.txt#L1"
+      ],
+      "uncertainty": "The production total is explicit, but the ceremonial striker is unnamed.",
+      "unanswered": "Who struck the milestone coin?"
+    },
+    {
+      "id": "q05",
+      "arm": "A",
+      "decision": "answer",
+      "interpretation": "The Canadian Space Agency says its OSIRIS-REx Laser Altimeter measured the three-dimensional shape of Bennu's surface to help choose the collection site. The agency identifies Nightingale as the site OSIRIS-REx used, and the University of Arizona also places the sample collection there.",
+      "cites": [
+        "record04.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L1"
+      ],
+      "uncertainty": "The agency specifies the measurement and instrument. Both accounts identify the collection site.",
+      "unanswered": "The instrument, measurement and site are all identified."
+    },
+    {
+      "id": "q05",
+      "arm": "B",
+      "decision": "answer",
+      "interpretation": "The Canadian Space Agency says its OSIRIS-REx Laser Altimeter measured the three-dimensional shape of Bennu's surface to help choose the collection site. The agency identifies Nightingale as the site OSIRIS-REx used, and the University of Arizona also places the sample collection there.",
+      "cites": [
+        "record04.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L1"
+      ],
+      "uncertainty": "The agency specifies the measurement and instrument. Both accounts identify the collection site.",
+      "unanswered": "The instrument, measurement and site are all identified."
+    },
+    {
+      "id": "q05",
+      "arm": "C",
+      "decision": "abstain",
+      "interpretation": "The Canadian Space Agency and the University of Arizona identify Nightingale as the site where OSIRIS-REx collected material. The passages do not name the Canadian instrument used in site selection or describe its measurement.",
+      "cites": [
+        "record04.txt#L2",
+        "record09.txt#L1"
+      ],
+      "uncertainty": "Both accounts identify the collection site, but neither connects an instrument or measurement to its selection.",
+      "unanswered": "Which Canadian instrument helped choose the site, and what did it measure?"
+    },
+    {
+      "id": "q05",
+      "arm": "D",
+      "decision": "abstain",
+      "interpretation": "The Canadian Space Agency and the University of Arizona identify Nightingale as the site where OSIRIS-REx collected material. The passages do not name the Canadian instrument used in site selection or describe its measurement.",
+      "cites": [
+        "record04.txt#L2",
+        "record09.txt#L1"
+      ],
+      "uncertainty": "Both accounts identify the collection site, but neither connects an instrument or measurement to its selection.",
+      "unanswered": "Which Canadian instrument helped choose the site, and what did it measure?"
+    },
+    {
+      "id": "q05",
+      "arm": "E",
+      "decision": "abstain",
+      "interpretation": "The Canadian Space Agency and the University of Arizona identify Nightingale as the site where OSIRIS-REx collected material. The passages do not name the Canadian instrument used in site selection or describe its measurement.",
+      "cites": [
+        "record04.txt#L2",
+        "record09.txt#L1"
+      ],
+      "uncertainty": "Both accounts identify the collection site, but neither connects an instrument or measurement to its selection.",
+      "unanswered": "Which Canadian instrument helped choose the site, and what did it measure?"
+    },
+    {
+      "id": "q05",
+      "arm": "F",
+      "decision": "answer",
+      "interpretation": "The Canadian Space Agency says its OSIRIS-REx Laser Altimeter measured the three-dimensional shape of Bennu's surface to help choose the collection site. The agency identifies Nightingale as the site OSIRIS-REx used, and the University of Arizona also places the sample collection there.",
+      "cites": [
+        "record04.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L1"
+      ],
+      "uncertainty": "The agency specifies the measurement and instrument. Both accounts identify the collection site.",
+      "unanswered": "The instrument, measurement and site are all identified."
+    },
+    {
+      "id": "q05",
+      "arm": "G",
+      "decision": "abstain",
+      "interpretation": "The Canadian Space Agency and the University of Arizona identify Nightingale as the site where OSIRIS-REx collected material. The passages do not name the Canadian instrument used in site selection or describe its measurement.",
+      "cites": [
+        "record04.txt#L2",
+        "record09.txt#L1"
+      ],
+      "uncertainty": "Both accounts identify the collection site, but neither connects an instrument or measurement to its selection.",
+      "unanswered": "Which Canadian instrument helped choose the site, and what did it measure?"
+    },
+    {
+      "id": "q05",
+      "arm": "H",
+      "decision": "answer",
+      "interpretation": "The Canadian Space Agency says its OSIRIS-REx Laser Altimeter measured the three-dimensional shape of Bennu's surface to help choose the collection site. The agency identifies Nightingale as the site OSIRIS-REx used, and the University of Arizona also places the sample collection there.",
+      "cites": [
+        "record04.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L1"
+      ],
+      "uncertainty": "The agency specifies the measurement and instrument. Both accounts identify the collection site.",
+      "unanswered": "The instrument, measurement and site are all identified."
+    },
+    {
+      "id": "q06",
+      "arm": "A",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau included District of Columbia residents in the 2020 national resident count and excluded the District from House apportionment because it has no voting seat. U.S. military personnel and federal civilian employees abroad, along with dependents living with them, counted toward a state when a home state could be identified.",
+      "cites": [
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L3"
+      ],
+      "uncertainty": "The bureau specifies the geographic coverage and makes overseas inclusion conditional on identifying a home state.",
+      "unanswered": "The treatment of D.C. residents and the overseas eligibility conditions are resolved."
+    },
+    {
+      "id": "q06",
+      "arm": "B",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau included District of Columbia residents in the 2020 national resident count and excluded the District from House apportionment because it has no voting seat. U.S. military personnel and federal civilian employees abroad, along with dependents living with them, counted toward a state when a home state could be identified.",
+      "cites": [
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L3"
+      ],
+      "uncertainty": "The bureau specifies the geographic coverage and makes overseas inclusion conditional on identifying a home state.",
+      "unanswered": "The treatment of D.C. residents and the overseas eligibility conditions are resolved."
+    },
+    {
+      "id": "q06",
+      "arm": "C",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau included District of Columbia residents in the 2020 national resident count and excluded the District from House apportionment because it has no voting seat. U.S. military personnel and federal civilian employees abroad, along with dependents living with them, counted toward a state when a home state could be identified.",
+      "cites": [
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L3"
+      ],
+      "uncertainty": "The bureau specifies the geographic coverage and makes overseas inclusion conditional on identifying a home state.",
+      "unanswered": "The treatment of D.C. residents and the overseas eligibility conditions are resolved."
+    },
+    {
+      "id": "q06",
+      "arm": "D",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau included District of Columbia residents in the 2020 national resident count and excluded the District from House apportionment because it has no voting seat. U.S. military personnel and federal civilian employees abroad, along with dependents living with them, counted toward a state when a home state could be identified.",
+      "cites": [
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L3"
+      ],
+      "uncertainty": "The bureau specifies the geographic coverage and makes overseas inclusion conditional on identifying a home state.",
+      "unanswered": "The treatment of D.C. residents and the overseas eligibility conditions are resolved."
+    },
+    {
+      "id": "q06",
+      "arm": "E",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau included District of Columbia residents in the 2020 national resident count and excluded the District from House apportionment because it has no voting seat. U.S. military personnel and federal civilian employees abroad, along with dependents living with them, counted toward a state when a home state could be identified.",
+      "cites": [
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L3"
+      ],
+      "uncertainty": "The bureau specifies the geographic coverage and makes overseas inclusion conditional on identifying a home state.",
+      "unanswered": "The treatment of D.C. residents and the overseas eligibility conditions are resolved."
+    },
+    {
+      "id": "q06",
+      "arm": "F",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau included District of Columbia residents in the 2020 national resident count and excluded the District from House apportionment because it has no voting seat. U.S. military personnel and federal civilian employees abroad, along with dependents living with them, counted toward a state when a home state could be identified.",
+      "cites": [
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L3"
+      ],
+      "uncertainty": "The bureau specifies the geographic coverage and makes overseas inclusion conditional on identifying a home state.",
+      "unanswered": "The treatment of D.C. residents and the overseas eligibility conditions are resolved."
+    },
+    {
+      "id": "q06",
+      "arm": "G",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau included District of Columbia residents in the 2020 national resident count and excluded the District from House apportionment because it has no voting seat. U.S. military personnel and federal civilian employees abroad, along with dependents living with them, counted toward a state when a home state could be identified.",
+      "cites": [
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L3"
+      ],
+      "uncertainty": "The bureau specifies the geographic coverage and makes overseas inclusion conditional on identifying a home state.",
+      "unanswered": "The treatment of D.C. residents and the overseas eligibility conditions are resolved."
+    },
+    {
+      "id": "q06",
+      "arm": "H",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau included District of Columbia residents in the 2020 national resident count and excluded the District from House apportionment because it has no voting seat. U.S. military personnel and federal civilian employees abroad, along with dependents living with them, counted toward a state when a home state could be identified.",
+      "cites": [
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L3"
+      ],
+      "uncertainty": "The bureau specifies the geographic coverage and makes overseas inclusion conditional on identifying a home state.",
+      "unanswered": "The treatment of D.C. residents and the overseas eligibility conditions are resolved."
+    },
+    {
+      "id": "q07",
+      "arm": "A",
+      "decision": "abstain",
+      "interpretation": "The July 10 Treasury and Royal Mint announcement counted 800 million old round pounds returned. The Mint's chief executive expected to melt down many returned coins to reuse their metal, but the announcement gives no count of coins already melted.",
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4"
+      ],
+      "uncertainty": "The count measures returns, while the statement about melting describes an expectation. The amount of melting completed by that date is unknown.",
+      "unanswered": "How many old round pounds had actually been melted by 10 July 2017?"
+    },
+    {
+      "id": "q07",
+      "arm": "B",
+      "decision": "abstain",
+      "interpretation": "The July 10 Treasury and Royal Mint announcement counted 800 million old round pounds returned. The Mint's chief executive expected to melt down many returned coins to reuse their metal, but the announcement gives no count of coins already melted.",
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4"
+      ],
+      "uncertainty": "The count measures returns, while the statement about melting describes an expectation. The amount of melting completed by that date is unknown.",
+      "unanswered": "How many old round pounds had actually been melted by 10 July 2017?"
+    },
+    {
+      "id": "q07",
+      "arm": "C",
+      "decision": "abstain",
+      "interpretation": "The July 10 Treasury and Royal Mint announcement counted 800 million old round pounds returned. The Mint's chief executive expected to melt down many returned coins to reuse their metal, but the announcement gives no count of coins already melted.",
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4"
+      ],
+      "uncertainty": "The count measures returns, while the statement about melting describes an expectation. The amount of melting completed by that date is unknown.",
+      "unanswered": "How many old round pounds had actually been melted by 10 July 2017?"
+    },
+    {
+      "id": "q07",
+      "arm": "D",
+      "decision": "abstain",
+      "interpretation": "The July 10 Treasury and Royal Mint announcement counted 800 million old round pounds returned. The Mint's chief executive expected to melt down many returned coins to reuse their metal, but the announcement gives no count of coins already melted.",
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4"
+      ],
+      "uncertainty": "The count measures returns, while the statement about melting describes an expectation. The amount of melting completed by that date is unknown.",
+      "unanswered": "How many old round pounds had actually been melted by 10 July 2017?"
+    },
+    {
+      "id": "q07",
+      "arm": "E",
+      "decision": "abstain",
+      "interpretation": "The July 10 Treasury and Royal Mint announcement counted 800 million old round pounds returned. The Mint's chief executive expected to melt down many returned coins to reuse their metal, but the announcement gives no count of coins already melted.",
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4"
+      ],
+      "uncertainty": "The count measures returns, while the statement about melting describes an expectation. The amount of melting completed by that date is unknown.",
+      "unanswered": "How many old round pounds had actually been melted by 10 July 2017?"
+    },
+    {
+      "id": "q07",
+      "arm": "F",
+      "decision": "abstain",
+      "interpretation": "The July 10 Treasury and Royal Mint announcement counted 800 million old round pounds returned. The Mint's chief executive expected to melt down many returned coins to reuse their metal, but the announcement gives no count of coins already melted.",
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4"
+      ],
+      "uncertainty": "The count measures returns, while the statement about melting describes an expectation. The amount of melting completed by that date is unknown.",
+      "unanswered": "How many old round pounds had actually been melted by 10 July 2017?"
+    },
+    {
+      "id": "q07",
+      "arm": "G",
+      "decision": "abstain",
+      "interpretation": "The July 10 Treasury and Royal Mint announcement counted 800 million old round pounds returned. The Mint's chief executive expected to melt down many returned coins to reuse their metal, but the announcement gives no count of coins already melted.",
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4"
+      ],
+      "uncertainty": "The count measures returns, while the statement about melting describes an expectation. The amount of melting completed by that date is unknown.",
+      "unanswered": "How many old round pounds had actually been melted by 10 July 2017?"
+    },
+    {
+      "id": "q07",
+      "arm": "H",
+      "decision": "abstain",
+      "interpretation": "The July 10 Treasury and Royal Mint announcement counted 800 million old round pounds returned. The Mint's chief executive expected to melt down many returned coins to reuse their metal, but the announcement gives no count of coins already melted.",
+      "cites": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4"
+      ],
+      "uncertainty": "The count measures returns, while the statement about melting describes an expectation. The amount of melting completed by that date is unknown.",
+      "unanswered": "How many old round pounds had actually been melted by 10 July 2017?"
+    },
+    {
+      "id": "q08",
+      "arm": "A",
+      "decision": "answer",
+      "interpretation": "The Canadian Space Agency says Canada was promised 4% of the recovered Bennu sample in return for its instrument. NASA intended to keep at least 70% of the collection at Johnson Space Center for future research.",
+      "cites": [
+        "record04.txt#L3",
+        "record05.txt#L5"
+      ],
+      "uncertainty": "NASA specified a minimum retention share. Both statements describe agreed or intended shares.",
+      "unanswered": "Both requested shares are established."
+    },
+    {
+      "id": "q08",
+      "arm": "B",
+      "decision": "answer",
+      "interpretation": "The Canadian Space Agency says Canada was promised 4% of the recovered Bennu sample in return for its instrument. NASA intended to keep at least 70% of the collection at Johnson Space Center for future research.",
+      "cites": [
+        "record04.txt#L3",
+        "record05.txt#L5"
+      ],
+      "uncertainty": "NASA specified a minimum retention share. Both statements describe agreed or intended shares.",
+      "unanswered": "Both requested shares are established."
+    },
+    {
+      "id": "q08",
+      "arm": "C",
+      "decision": "answer",
+      "interpretation": "The Canadian Space Agency says Canada was promised 4% of the recovered Bennu sample in return for its instrument. NASA intended to keep at least 70% of the collection at Johnson Space Center for future research.",
+      "cites": [
+        "record04.txt#L3",
+        "record05.txt#L5"
+      ],
+      "uncertainty": "NASA specified a minimum retention share. Both statements describe agreed or intended shares.",
+      "unanswered": "Both requested shares are established."
+    },
+    {
+      "id": "q08",
+      "arm": "D",
+      "decision": "answer",
+      "interpretation": "The Canadian Space Agency says Canada was promised 4% of the recovered Bennu sample in return for its instrument. NASA intended to keep at least 70% of the collection at Johnson Space Center for future research.",
+      "cites": [
+        "record04.txt#L3",
+        "record05.txt#L5"
+      ],
+      "uncertainty": "NASA specified a minimum retention share. Both statements describe agreed or intended shares.",
+      "unanswered": "Both requested shares are established."
+    },
+    {
+      "id": "q08",
+      "arm": "E",
+      "decision": "answer",
+      "interpretation": "The Canadian Space Agency says Canada was promised 4% of the recovered Bennu sample in return for its instrument. NASA intended to keep at least 70% of the collection at Johnson Space Center for future research.",
+      "cites": [
+        "record04.txt#L3",
+        "record05.txt#L5"
+      ],
+      "uncertainty": "NASA specified a minimum retention share. Both statements describe agreed or intended shares.",
+      "unanswered": "Both requested shares are established."
+    },
+    {
+      "id": "q08",
+      "arm": "F",
+      "decision": "answer",
+      "interpretation": "The Canadian Space Agency says Canada was promised 4% of the recovered Bennu sample in return for its instrument. NASA intended to keep at least 70% of the collection at Johnson Space Center for future research.",
+      "cites": [
+        "record04.txt#L3",
+        "record05.txt#L5"
+      ],
+      "uncertainty": "NASA specified a minimum retention share. Both statements describe agreed or intended shares.",
+      "unanswered": "Both requested shares are established."
+    },
+    {
+      "id": "q08",
+      "arm": "G",
+      "decision": "answer",
+      "interpretation": "The Canadian Space Agency says Canada was promised 4% of the recovered Bennu sample in return for its instrument. NASA intended to keep at least 70% of the collection at Johnson Space Center for future research.",
+      "cites": [
+        "record04.txt#L3",
+        "record05.txt#L5"
+      ],
+      "uncertainty": "NASA specified a minimum retention share. Both statements describe agreed or intended shares.",
+      "unanswered": "Both requested shares are established."
+    },
+    {
+      "id": "q08",
+      "arm": "H",
+      "decision": "answer",
+      "interpretation": "The Canadian Space Agency says Canada was promised 4% of the recovered Bennu sample in return for its instrument. NASA intended to keep at least 70% of the collection at Johnson Space Center for future research.",
+      "cites": [
+        "record04.txt#L3",
+        "record05.txt#L5"
+      ],
+      "uncertainty": "NASA specified a minimum retention share. Both statements describe agreed or intended shares.",
+      "unanswered": "Both requested shares are established."
+    },
+    {
+      "id": "q09",
+      "arm": "A",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau says each of the 50 states was guaranteed one U.S. House seat. For each additional seat, the equal proportions method divided each state's apportionment population by the geometric mean of its current seat count and that count plus one. The state with the highest resulting priority value received the seat.",
+      "cites": [
+        "record08.txt#L1",
+        "record08.txt#L2"
+      ],
+      "uncertainty": "The bureau specifies the guaranteed seat, the inputs to the priority calculation and how the next state was selected.",
+      "unanswered": "The guarantee and the next-seat calculation are resolved."
+    },
+    {
+      "id": "q09",
+      "arm": "B",
+      "decision": "abstain",
+      "interpretation": "The U.S. Census Bureau says each state was guaranteed one House seat and identifies equal proportions as the apportionment method. These passages do not explain how that method calculates which state gets the next seat.",
+      "cites": [
+        "record08.txt#L1",
+        "record08.txt#L5"
+      ],
+      "uncertainty": "Naming the method establishes which system was used, but supplies no calculation for assigning the next seat.",
+      "unanswered": "What calculation determined which state received the next House seat?"
+    },
+    {
+      "id": "q09",
+      "arm": "C",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau says each of the 50 states was guaranteed one U.S. House seat. For each additional seat, the equal proportions method divided each state's apportionment population by the geometric mean of its current seat count and that count plus one. The state with the highest resulting priority value received the seat.",
+      "cites": [
+        "record08.txt#L1",
+        "record08.txt#L2"
+      ],
+      "uncertainty": "The bureau specifies the guaranteed seat, the inputs to the priority calculation and how the next state was selected.",
+      "unanswered": "The guarantee and the next-seat calculation are resolved."
+    },
+    {
+      "id": "q09",
+      "arm": "D",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau says each of the 50 states was guaranteed one U.S. House seat. For each additional seat, the equal proportions method divided each state's apportionment population by the geometric mean of its current seat count and that count plus one. The state with the highest resulting priority value received the seat.",
+      "cites": [
+        "record08.txt#L1",
+        "record08.txt#L2"
+      ],
+      "uncertainty": "The bureau specifies the guaranteed seat, the inputs to the priority calculation and how the next state was selected.",
+      "unanswered": "The guarantee and the next-seat calculation are resolved."
+    },
+    {
+      "id": "q09",
+      "arm": "E",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau says each of the 50 states was guaranteed one U.S. House seat. For each additional seat, the equal proportions method divided each state's apportionment population by the geometric mean of its current seat count and that count plus one. The state with the highest resulting priority value received the seat.",
+      "cites": [
+        "record08.txt#L1",
+        "record08.txt#L2"
+      ],
+      "uncertainty": "The bureau specifies the guaranteed seat, the inputs to the priority calculation and how the next state was selected.",
+      "unanswered": "The guarantee and the next-seat calculation are resolved."
+    },
+    {
+      "id": "q09",
+      "arm": "F",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau says each of the 50 states was guaranteed one U.S. House seat. For each additional seat, the equal proportions method divided each state's apportionment population by the geometric mean of its current seat count and that count plus one. The state with the highest resulting priority value received the seat.",
+      "cites": [
+        "record08.txt#L1",
+        "record08.txt#L2"
+      ],
+      "uncertainty": "The bureau specifies the guaranteed seat, the inputs to the priority calculation and how the next state was selected.",
+      "unanswered": "The guarantee and the next-seat calculation are resolved."
+    },
+    {
+      "id": "q09",
+      "arm": "G",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau says each of the 50 states was guaranteed one U.S. House seat. For each additional seat, the equal proportions method divided each state's apportionment population by the geometric mean of its current seat count and that count plus one. The state with the highest resulting priority value received the seat.",
+      "cites": [
+        "record08.txt#L1",
+        "record08.txt#L2"
+      ],
+      "uncertainty": "The bureau specifies the guaranteed seat, the inputs to the priority calculation and how the next state was selected.",
+      "unanswered": "The guarantee and the next-seat calculation are resolved."
+    },
+    {
+      "id": "q09",
+      "arm": "H",
+      "decision": "answer",
+      "interpretation": "The U.S. Census Bureau says each of the 50 states was guaranteed one U.S. House seat. For each additional seat, the equal proportions method divided each state's apportionment population by the geometric mean of its current seat count and that count plus one. The state with the highest resulting priority value received the seat.",
+      "cites": [
+        "record08.txt#L1",
+        "record08.txt#L2"
+      ],
+      "uncertainty": "The bureau specifies the guaranteed seat, the inputs to the priority calculation and how the next state was selected.",
+      "unanswered": "The guarantee and the next-seat calculation are resolved."
+    },
+    {
+      "id": "q10",
+      "arm": "A",
+      "decision": "answer",
+      "interpretation": "NASA required at least 60 grams. Its February 2024 accounting put the final sample at 121.6 grams, which exceeded the minimum by 61.6 grams (121.6 minus 60).",
+      "cites": [
+        "record05.txt#L1",
+        "record05.txt#L4"
+      ],
+      "uncertainty": "The excess is calculated from NASA's reported total and minimum.",
+      "unanswered": "The minimum and the amount above it are resolved."
+    },
+    {
+      "id": "q10",
+      "arm": "B",
+      "decision": "answer",
+      "interpretation": "NASA required at least 60 grams. Its February 2024 accounting put the final sample at 121.6 grams, which exceeded the minimum by 61.6 grams (121.6 minus 60).",
+      "cites": [
+        "record05.txt#L1",
+        "record05.txt#L4"
+      ],
+      "uncertainty": "The excess is calculated from NASA's reported total and minimum.",
+      "unanswered": "The minimum and the amount above it are resolved."
+    },
+    {
+      "id": "q10",
+      "arm": "C",
+      "decision": "answer",
+      "interpretation": "NASA required at least 60 grams. Its February 2024 accounting put the final sample at 121.6 grams, which exceeded the minimum by 61.6 grams (121.6 minus 60).",
+      "cites": [
+        "record05.txt#L1",
+        "record05.txt#L4"
+      ],
+      "uncertainty": "The excess is calculated from NASA's reported total and minimum.",
+      "unanswered": "The minimum and the amount above it are resolved."
+    },
+    {
+      "id": "q10",
+      "arm": "D",
+      "decision": "answer",
+      "interpretation": "NASA required at least 60 grams. Its February 2024 accounting put the final sample at 121.6 grams, which exceeded the minimum by 61.6 grams (121.6 minus 60).",
+      "cites": [
+        "record05.txt#L1",
+        "record05.txt#L4"
+      ],
+      "uncertainty": "The excess is calculated from NASA's reported total and minimum.",
+      "unanswered": "The minimum and the amount above it are resolved."
+    },
+    {
+      "id": "q10",
+      "arm": "E",
+      "decision": "answer",
+      "interpretation": "NASA required at least 60 grams. Its February 2024 accounting put the final sample at 121.6 grams, which exceeded the minimum by 61.6 grams (121.6 minus 60).",
+      "cites": [
+        "record05.txt#L1",
+        "record05.txt#L4"
+      ],
+      "uncertainty": "The excess is calculated from NASA's reported total and minimum.",
+      "unanswered": "The minimum and the amount above it are resolved."
+    },
+    {
+      "id": "q10",
+      "arm": "F",
+      "decision": "answer",
+      "interpretation": "NASA required at least 60 grams. Its February 2024 accounting put the final sample at 121.6 grams, which exceeded the minimum by 61.6 grams (121.6 minus 60).",
+      "cites": [
+        "record05.txt#L1",
+        "record05.txt#L4"
+      ],
+      "uncertainty": "The excess is calculated from NASA's reported total and minimum.",
+      "unanswered": "The minimum and the amount above it are resolved."
+    },
+    {
+      "id": "q10",
+      "arm": "G",
+      "decision": "answer",
+      "interpretation": "NASA required at least 60 grams. Its February 2024 accounting put the final sample at 121.6 grams, which exceeded the minimum by 61.6 grams (121.6 minus 60).",
+      "cites": [
+        "record05.txt#L1",
+        "record05.txt#L4"
+      ],
+      "uncertainty": "The excess is calculated from NASA's reported total and minimum.",
+      "unanswered": "The minimum and the amount above it are resolved."
+    },
+    {
+      "id": "q10",
+      "arm": "H",
+      "decision": "answer",
+      "interpretation": "NASA required at least 60 grams. Its February 2024 accounting put the final sample at 121.6 grams, which exceeded the minimum by 61.6 grams (121.6 minus 60).",
+      "cites": [
+        "record05.txt#L1",
+        "record05.txt#L4"
+      ],
+      "uncertainty": "The excess is calculated from NASA's reported total and minimum.",
+      "unanswered": "The minimum and the amount above it are resolved."
+    },
+    {
+      "id": "q11",
+      "arm": "A",
+      "decision": "abstain",
+      "interpretation": "The Texas Legislative Council identifies Senate Bill 6 as the 2021 congressional map bill. The passages do not identify its author.",
+      "cites": [
+        "record06.txt#L2"
+      ],
+      "uncertainty": "The bill number and passage are documented, but the author is unnamed.",
+      "unanswered": "Which Texas state senator authored Senate Bill 6?"
+    },
+    {
+      "id": "q11",
+      "arm": "B",
+      "decision": "abstain",
+      "interpretation": "The Texas Legislative Council identifies Senate Bill 6 as the 2021 congressional map bill. The passages do not identify its author.",
+      "cites": [
+        "record06.txt#L2"
+      ],
+      "uncertainty": "The bill number and passage are documented, but the author is unnamed.",
+      "unanswered": "Which Texas state senator authored Senate Bill 6?"
+    },
+    {
+      "id": "q11",
+      "arm": "C",
+      "decision": "abstain",
+      "interpretation": "The Texas Legislative Council identifies Senate Bill 6 as the 2021 congressional map bill. The passages do not identify its author.",
+      "cites": [
+        "record06.txt#L2"
+      ],
+      "uncertainty": "The bill number and passage are documented, but the author is unnamed.",
+      "unanswered": "Which Texas state senator authored Senate Bill 6?"
+    },
+    {
+      "id": "q11",
+      "arm": "D",
+      "decision": "abstain",
+      "interpretation": "The Texas Legislative Council identifies Senate Bill 6 as the 2021 congressional map bill. The passages do not identify its author.",
+      "cites": [
+        "record06.txt#L2"
+      ],
+      "uncertainty": "The bill number and passage are documented, but the author is unnamed.",
+      "unanswered": "Which Texas state senator authored Senate Bill 6?"
+    },
+    {
+      "id": "q11",
+      "arm": "E",
+      "decision": "abstain",
+      "interpretation": "The Texas Legislative Council identifies Senate Bill 6 as the 2021 congressional map bill. The passages do not identify its author.",
+      "cites": [
+        "record06.txt#L2"
+      ],
+      "uncertainty": "The bill number and passage are documented, but the author is unnamed.",
+      "unanswered": "Which Texas state senator authored Senate Bill 6?"
+    },
+    {
+      "id": "q11",
+      "arm": "F",
+      "decision": "abstain",
+      "interpretation": "The Texas Legislative Council identifies Senate Bill 6 as the 2021 congressional map bill. The passages do not identify its author.",
+      "cites": [
+        "record06.txt#L2"
+      ],
+      "uncertainty": "The bill number and passage are documented, but the author is unnamed.",
+      "unanswered": "Which Texas state senator authored Senate Bill 6?"
+    },
+    {
+      "id": "q11",
+      "arm": "G",
+      "decision": "abstain",
+      "interpretation": "The Texas Legislative Council identifies Senate Bill 6 as the 2021 congressional map bill. The passages do not identify its author.",
+      "cites": [
+        "record06.txt#L2"
+      ],
+      "uncertainty": "The bill number and passage are documented, but the author is unnamed.",
+      "unanswered": "Which Texas state senator authored Senate Bill 6?"
+    },
+    {
+      "id": "q11",
+      "arm": "H",
+      "decision": "abstain",
+      "interpretation": "The Texas Legislative Council identifies Senate Bill 6 as the 2021 congressional map bill. The passages do not identify its author.",
+      "cites": [
+        "record06.txt#L2"
+      ],
+      "uncertainty": "The bill number and passage are documented, but the author is unnamed.",
+      "unanswered": "Which Texas state senator authored Senate Bill 6?"
+    },
+    {
+      "id": "q12",
+      "arm": "A",
+      "decision": "abstain",
+      "interpretation": "The Royal Mint dates the overlap from 28 March 2017, when the new pound became legal tender, to 23:59 on 15 October 2017, when the round pound lost that status. The Mint's chief executive expected to melt down many returned round pounds and reuse their metal to strike new coins. The July 10 announcement's one billion is the number of new pounds produced. The number of round pounds returned is missing.",
+      "cites": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "uncertainty": "The dates and intended reuse are explicit, but the July production figure cannot establish the number returned.",
+      "unanswered": "How many old round pounds had been returned by the July update?"
+    },
+    {
+      "id": "q12",
+      "arm": "B",
+      "decision": "abstain",
+      "interpretation": "The Royal Mint dates the overlap from 28 March 2017, when the new pound became legal tender, to 23:59 on 15 October 2017, when the round pound lost that status. The Mint's chief executive expected to melt down many returned round pounds and reuse their metal to strike new coins. The July 10 announcement's one billion is the number of new pounds produced. The number of round pounds returned is missing.",
+      "cites": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "uncertainty": "The dates and intended reuse are explicit, but the July production figure cannot establish the number returned.",
+      "unanswered": "How many old round pounds had been returned by the July update?"
+    },
+    {
+      "id": "q12",
+      "arm": "C",
+      "decision": "abstain",
+      "interpretation": "The Royal Mint dates the overlap from 28 March 2017, when the new pound became legal tender, to 23:59 on 15 October 2017, when the round pound lost that status. The Mint's chief executive expected to melt down many returned round pounds and reuse their metal to strike new coins. The July 10 announcement's one billion is the number of new pounds produced. The number of round pounds returned is missing.",
+      "cites": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "uncertainty": "The dates and intended reuse are explicit, but the July production figure cannot establish the number returned.",
+      "unanswered": "How many old round pounds had been returned by the July update?"
+    },
+    {
+      "id": "q12",
+      "arm": "D",
+      "decision": "abstain",
+      "interpretation": "The Royal Mint dates the overlap from 28 March 2017, when the new pound became legal tender, to 23:59 on 15 October 2017, when the round pound lost that status. The Mint's chief executive expected to melt down many returned round pounds and reuse their metal to strike new coins. The July 10 announcement's one billion is the number of new pounds produced. The number of round pounds returned is missing.",
+      "cites": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "uncertainty": "The dates and intended reuse are explicit, but the July production figure cannot establish the number returned.",
+      "unanswered": "How many old round pounds had been returned by the July update?"
+    },
+    {
+      "id": "q12",
+      "arm": "E",
+      "decision": "abstain",
+      "interpretation": "The Royal Mint dates the overlap from 28 March 2017, when the new pound became legal tender, to 23:59 on 15 October 2017, when the round pound lost that status. The Mint's chief executive expected to melt down many returned round pounds and reuse their metal to strike new coins. The July 10 announcement's one billion is the number of new pounds produced. The number of round pounds returned is missing.",
+      "cites": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "uncertainty": "The dates and intended reuse are explicit, but the July production figure cannot establish the number returned.",
+      "unanswered": "How many old round pounds had been returned by the July update?"
+    },
+    {
+      "id": "q12",
+      "arm": "F",
+      "decision": "abstain",
+      "interpretation": "The Royal Mint dates the overlap from 28 March 2017, when the new pound became legal tender, to 23:59 on 15 October 2017, when the round pound lost that status. The Mint's chief executive expected to melt down many returned round pounds and reuse their metal to strike new coins. The July 10 announcement's one billion is the number of new pounds produced. The number of round pounds returned is missing.",
+      "cites": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "uncertainty": "The dates and intended reuse are explicit, but the July production figure cannot establish the number returned.",
+      "unanswered": "How many old round pounds had been returned by the July update?"
+    },
+    {
+      "id": "q12",
+      "arm": "G",
+      "decision": "abstain",
+      "interpretation": "The Royal Mint dates the overlap from 28 March 2017, when the new pound became legal tender, to 23:59 on 15 October 2017, when the round pound lost that status. The Mint's chief executive expected to melt down many returned round pounds and reuse their metal to strike new coins. The July 10 announcement's one billion is the number of new pounds produced. The number of round pounds returned is missing.",
+      "cites": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "uncertainty": "The dates and intended reuse are explicit, but the July production figure cannot establish the number returned.",
+      "unanswered": "How many old round pounds had been returned by the July update?"
+    },
+    {
+      "id": "q12",
+      "arm": "H",
+      "decision": "abstain",
+      "interpretation": "The Royal Mint dates the overlap from 28 March 2017, when the new pound became legal tender, to 23:59 on 15 October 2017, when the round pound lost that status. The Mint's chief executive expected to melt down many returned round pounds and reuse their metal to strike new coins. The July 10 announcement's one billion is the number of new pounds produced. The number of round pounds returned is missing.",
+      "cites": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "uncertainty": "The dates and intended reuse are explicit, but the July production figure cannot establish the number returned.",
+      "unanswered": "How many old round pounds had been returned by the July update?"
+    }
+  ]
+}

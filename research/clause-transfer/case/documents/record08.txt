@@ -1,0 +1,5 @@
+The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion.
+For each possible extra seat, the equal proportions method divides the state's apportionment population by the geometric mean of its present and next seat counts. The highest priority value goes first.
+The 2020 state apportionment totals included U.S. military personnel and federal civilian employees abroad, plus dependents living with them, when a home state could be identified.
+The bureau excluded the District of Columbia and Puerto Rico from apportionment because neither has a voting seat in the House.
+Congress chose the equal proportions method in 1941, and the bureau says it has been used at each census since.

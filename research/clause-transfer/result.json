@@ -1,0 +1,1438 @@
+{
+  "by_case": {
+    "bennu-return": {
+      "bm25.d4": {
+        "complete": 3,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "bm25.d8": {
+        "complete": 3,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "clause-coverage.d4": {
+        "complete": 2,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "clause-coverage.d8": {
+        "complete": 2,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "ranker-exclusive.d4": {
+        "complete": 3,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "ranker-exclusive.d8": {
+        "complete": 3,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "reciprocal-rank.d4": {
+        "complete": 2,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "reciprocal-rank.d8": {
+        "complete": 2,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      }
+    },
+    "house-apportionment": {
+      "bm25.d4": {
+        "complete": 3,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "bm25.d8": {
+        "complete": 3,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "clause-coverage.d4": {
+        "complete": 3,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "clause-coverage.d8": {
+        "complete": 3,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "ranker-exclusive.d4": {
+        "complete": 3,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "ranker-exclusive.d8": {
+        "complete": 2,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "reciprocal-rank.d4": {
+        "complete": 3,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "reciprocal-rank.d8": {
+        "complete": 3,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      }
+    },
+    "pound-changeover": {
+      "bm25.d4": {
+        "complete": 1,
+        "matched_spend": 16,
+        "pool_complete": 1,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "bm25.d8": {
+        "complete": 1,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "clause-coverage.d4": {
+        "complete": 1,
+        "matched_spend": 16,
+        "pool_complete": 1,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "clause-coverage.d8": {
+        "complete": 0,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "ranker-exclusive.d4": {
+        "complete": 1,
+        "matched_spend": 16,
+        "pool_complete": 1,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "ranker-exclusive.d8": {
+        "complete": 0,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "reciprocal-rank.d4": {
+        "complete": 1,
+        "matched_spend": 16,
+        "pool_complete": 1,
+        "questions": 4,
+        "target_bearing": 3
+      },
+      "reciprocal-rank.d8": {
+        "complete": 0,
+        "matched_spend": 16,
+        "pool_complete": 3,
+        "questions": 4,
+        "target_bearing": 3
+      }
+    }
+  },
+  "collection_digest": "a12c140b467894126c5c55dd59256a6e60fbcec312e1fec53123782d58c1bca2",
+  "disagreements": [],
+  "distinct_cards": 22,
+  "external_study_screen": {
+    "criteria": {
+      "gains_in_two_cases": false,
+      "more_complete_primary": false,
+      "positive_at_sensitivity": false,
+      "review_safeguards": true
+    },
+    "increases_in_adverse_review_counts": [],
+    "met": false,
+    "primary_cases_gaining_against_both": []
+  },
+  "items": {
+    "q01": {
+      "bm25.d4": {
+        "canonical_hits": [
+          "record01.txt#L3",
+          "record07.txt#L1"
+        ],
+        "canonical_targets": 3,
+        "complete": false,
+        "pool_complete": false
+      },
+      "bm25.d8": {
+        "canonical_hits": [
+          "record01.txt#L3",
+          "record07.txt#L1"
+        ],
+        "canonical_targets": 3,
+        "complete": false,
+        "pool_complete": true
+      },
+      "clause-coverage.d4": {
+        "canonical_hits": [
+          "record01.txt#L3",
+          "record07.txt#L1"
+        ],
+        "canonical_targets": 3,
+        "complete": false,
+        "pool_complete": false
+      },
+      "clause-coverage.d8": {
+        "canonical_hits": [
+          "record01.txt#L3",
+          "record07.txt#L1"
+        ],
+        "canonical_targets": 3,
+        "complete": false,
+        "pool_complete": true
+      },
+      "ranker-exclusive.d4": {
+        "canonical_hits": [
+          "record01.txt#L3",
+          "record07.txt#L1"
+        ],
+        "canonical_targets": 3,
+        "complete": false,
+        "pool_complete": false
+      },
+      "ranker-exclusive.d8": {
+        "canonical_hits": [
+          "record01.txt#L3",
+          "record07.txt#L1"
+        ],
+        "canonical_targets": 3,
+        "complete": false,
+        "pool_complete": true
+      },
+      "reciprocal-rank.d4": {
+        "canonical_hits": [
+          "record01.txt#L3",
+          "record07.txt#L1"
+        ],
+        "canonical_targets": 3,
+        "complete": false,
+        "pool_complete": false
+      },
+      "reciprocal-rank.d8": {
+        "canonical_hits": [
+          "record01.txt#L3",
+          "record07.txt#L1"
+        ],
+        "canonical_targets": 3,
+        "complete": false,
+        "pool_complete": true
+      }
+    },
+    "q02": {
+      "bm25.d4": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "bm25.d8": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "clause-coverage.d4": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "clause-coverage.d8": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "ranker-exclusive.d4": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "ranker-exclusive.d8": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "reciprocal-rank.d4": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "reciprocal-rank.d8": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      }
+    },
+    "q03": {
+      "bm25.d4": {
+        "canonical_hits": [
+          "record02.txt#L2",
+          "record06.txt#L1"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "bm25.d8": {
+        "canonical_hits": [
+          "record02.txt#L2",
+          "record06.txt#L1"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "clause-coverage.d4": {
+        "canonical_hits": [
+          "record02.txt#L2",
+          "record06.txt#L1"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "clause-coverage.d8": {
+        "canonical_hits": [
+          "record02.txt#L2",
+          "record06.txt#L1"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "ranker-exclusive.d4": {
+        "canonical_hits": [
+          "record02.txt#L2",
+          "record06.txt#L1"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "ranker-exclusive.d8": {
+        "canonical_hits": [
+          "record02.txt#L2",
+          "record06.txt#L1"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "reciprocal-rank.d4": {
+        "canonical_hits": [
+          "record02.txt#L2",
+          "record06.txt#L1"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "reciprocal-rank.d8": {
+        "canonical_hits": [
+          "record02.txt#L2",
+          "record06.txt#L1"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      }
+    },
+    "q04": {
+      "bm25.d4": {
+        "canonical_hits": [
+          "record03.txt#L1",
+          "record03.txt#L3"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "bm25.d8": {
+        "canonical_hits": [
+          "record03.txt#L1",
+          "record03.txt#L3"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "clause-coverage.d4": {
+        "canonical_hits": [
+          "record03.txt#L1",
+          "record03.txt#L3"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "clause-coverage.d8": {
+        "canonical_hits": [
+          "record03.txt#L1"
+        ],
+        "canonical_targets": 2,
+        "complete": false,
+        "pool_complete": true
+      },
+      "ranker-exclusive.d4": {
+        "canonical_hits": [
+          "record03.txt#L1",
+          "record03.txt#L3"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "ranker-exclusive.d8": {
+        "canonical_hits": [
+          "record03.txt#L1"
+        ],
+        "canonical_targets": 2,
+        "complete": false,
+        "pool_complete": true
+      },
+      "reciprocal-rank.d4": {
+        "canonical_hits": [
+          "record03.txt#L1",
+          "record03.txt#L3"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "reciprocal-rank.d8": {
+        "canonical_hits": [
+          "record03.txt#L1"
+        ],
+        "canonical_targets": 2,
+        "complete": false,
+        "pool_complete": true
+      }
+    },
+    "q05": {
+      "bm25.d4": {
+        "canonical_hits": [
+          "record04.txt#L1",
+          "record04.txt#L2"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "bm25.d8": {
+        "canonical_hits": [
+          "record04.txt#L1",
+          "record04.txt#L2"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "clause-coverage.d4": {
+        "canonical_hits": [
+          "record04.txt#L2"
+        ],
+        "canonical_targets": 2,
+        "complete": false,
+        "pool_complete": true
+      },
+      "clause-coverage.d8": {
+        "canonical_hits": [
+          "record04.txt#L2"
+        ],
+        "canonical_targets": 2,
+        "complete": false,
+        "pool_complete": true
+      },
+      "ranker-exclusive.d4": {
+        "canonical_hits": [
+          "record04.txt#L1",
+          "record04.txt#L2"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "ranker-exclusive.d8": {
+        "canonical_hits": [
+          "record04.txt#L1",
+          "record04.txt#L2"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "reciprocal-rank.d4": {
+        "canonical_hits": [
+          "record04.txt#L2"
+        ],
+        "canonical_targets": 2,
+        "complete": false,
+        "pool_complete": true
+      },
+      "reciprocal-rank.d8": {
+        "canonical_hits": [
+          "record04.txt#L2"
+        ],
+        "canonical_targets": 2,
+        "complete": false,
+        "pool_complete": true
+      }
+    },
+    "q06": {
+      "bm25.d4": {
+        "canonical_hits": [
+          "record02.txt#L1",
+          "record08.txt#L3",
+          "record08.txt#L4"
+        ],
+        "canonical_targets": 3,
+        "complete": true,
+        "pool_complete": true
+      },
+      "bm25.d8": {
+        "canonical_hits": [
+          "record02.txt#L1",
+          "record08.txt#L3",
+          "record08.txt#L4"
+        ],
+        "canonical_targets": 3,
+        "complete": true,
+        "pool_complete": true
+      },
+      "clause-coverage.d4": {
+        "canonical_hits": [
+          "record02.txt#L1",
+          "record08.txt#L3",
+          "record08.txt#L4"
+        ],
+        "canonical_targets": 3,
+        "complete": true,
+        "pool_complete": true
+      },
+      "clause-coverage.d8": {
+        "canonical_hits": [
+          "record02.txt#L1",
+          "record08.txt#L3",
+          "record08.txt#L4"
+        ],
+        "canonical_targets": 3,
+        "complete": true,
+        "pool_complete": true
+      },
+      "ranker-exclusive.d4": {
+        "canonical_hits": [
+          "record02.txt#L1",
+          "record08.txt#L3",
+          "record08.txt#L4"
+        ],
+        "canonical_targets": 3,
+        "complete": true,
+        "pool_complete": true
+      },
+      "ranker-exclusive.d8": {
+        "canonical_hits": [
+          "record02.txt#L1",
+          "record08.txt#L3",
+          "record08.txt#L4"
+        ],
+        "canonical_targets": 3,
+        "complete": true,
+        "pool_complete": true
+      },
+      "reciprocal-rank.d4": {
+        "canonical_hits": [
+          "record02.txt#L1",
+          "record08.txt#L3",
+          "record08.txt#L4"
+        ],
+        "canonical_targets": 3,
+        "complete": true,
+        "pool_complete": true
+      },
+      "reciprocal-rank.d8": {
+        "canonical_hits": [
+          "record02.txt#L1",
+          "record08.txt#L3",
+          "record08.txt#L4"
+        ],
+        "canonical_targets": 3,
+        "complete": true,
+        "pool_complete": true
+      }
+    },
+    "q07": {
+      "bm25.d4": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "bm25.d8": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "clause-coverage.d4": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "clause-coverage.d8": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "ranker-exclusive.d4": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "ranker-exclusive.d8": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "reciprocal-rank.d4": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "reciprocal-rank.d8": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      }
+    },
+    "q08": {
+      "bm25.d4": {
+        "canonical_hits": [
+          "record04.txt#L3",
+          "record05.txt#L5"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "bm25.d8": {
+        "canonical_hits": [
+          "record04.txt#L3",
+          "record05.txt#L5"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "clause-coverage.d4": {
+        "canonical_hits": [
+          "record04.txt#L3",
+          "record05.txt#L5"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "clause-coverage.d8": {
+        "canonical_hits": [
+          "record04.txt#L3",
+          "record05.txt#L5"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "ranker-exclusive.d4": {
+        "canonical_hits": [
+          "record04.txt#L3",
+          "record05.txt#L5"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "ranker-exclusive.d8": {
+        "canonical_hits": [
+          "record04.txt#L3",
+          "record05.txt#L5"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "reciprocal-rank.d4": {
+        "canonical_hits": [
+          "record04.txt#L3",
+          "record05.txt#L5"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "reciprocal-rank.d8": {
+        "canonical_hits": [
+          "record04.txt#L3",
+          "record05.txt#L5"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      }
+    },
+    "q09": {
+      "bm25.d4": {
+        "canonical_hits": [
+          "record08.txt#L1",
+          "record08.txt#L2"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "bm25.d8": {
+        "canonical_hits": [
+          "record08.txt#L1",
+          "record08.txt#L2"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "clause-coverage.d4": {
+        "canonical_hits": [
+          "record08.txt#L1",
+          "record08.txt#L2"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "clause-coverage.d8": {
+        "canonical_hits": [
+          "record08.txt#L1",
+          "record08.txt#L2"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "ranker-exclusive.d4": {
+        "canonical_hits": [
+          "record08.txt#L1",
+          "record08.txt#L2"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "ranker-exclusive.d8": {
+        "canonical_hits": [
+          "record08.txt#L1"
+        ],
+        "canonical_targets": 2,
+        "complete": false,
+        "pool_complete": true
+      },
+      "reciprocal-rank.d4": {
+        "canonical_hits": [
+          "record08.txt#L1",
+          "record08.txt#L2"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "reciprocal-rank.d8": {
+        "canonical_hits": [
+          "record08.txt#L1",
+          "record08.txt#L2"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      }
+    },
+    "q10": {
+      "bm25.d4": {
+        "canonical_hits": [
+          "record05.txt#L1",
+          "record05.txt#L4"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "bm25.d8": {
+        "canonical_hits": [
+          "record05.txt#L1",
+          "record05.txt#L4"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "clause-coverage.d4": {
+        "canonical_hits": [
+          "record05.txt#L1",
+          "record05.txt#L4"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "clause-coverage.d8": {
+        "canonical_hits": [
+          "record05.txt#L1",
+          "record05.txt#L4"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "ranker-exclusive.d4": {
+        "canonical_hits": [
+          "record05.txt#L1",
+          "record05.txt#L4"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "ranker-exclusive.d8": {
+        "canonical_hits": [
+          "record05.txt#L1",
+          "record05.txt#L4"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "reciprocal-rank.d4": {
+        "canonical_hits": [
+          "record05.txt#L1",
+          "record05.txt#L4"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      },
+      "reciprocal-rank.d8": {
+        "canonical_hits": [
+          "record05.txt#L1",
+          "record05.txt#L4"
+        ],
+        "canonical_targets": 2,
+        "complete": true,
+        "pool_complete": true
+      }
+    },
+    "q11": {
+      "bm25.d4": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "bm25.d8": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "clause-coverage.d4": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "clause-coverage.d8": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "ranker-exclusive.d4": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "ranker-exclusive.d8": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "reciprocal-rank.d4": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      },
+      "reciprocal-rank.d8": {
+        "canonical_hits": [],
+        "canonical_targets": 0,
+        "complete": null,
+        "pool_complete": null
+      }
+    },
+    "q12": {
+      "bm25.d4": {
+        "canonical_hits": [
+          "record01.txt#L1",
+          "record01.txt#L4",
+          "record03.txt#L4"
+        ],
+        "canonical_targets": 4,
+        "complete": false,
+        "pool_complete": false
+      },
+      "bm25.d8": {
+        "canonical_hits": [
+          "record01.txt#L1",
+          "record01.txt#L4",
+          "record03.txt#L4"
+        ],
+        "canonical_targets": 4,
+        "complete": false,
+        "pool_complete": true
+      },
+      "clause-coverage.d4": {
+        "canonical_hits": [
+          "record01.txt#L1",
+          "record01.txt#L4",
+          "record03.txt#L4"
+        ],
+        "canonical_targets": 4,
+        "complete": false,
+        "pool_complete": false
+      },
+      "clause-coverage.d8": {
+        "canonical_hits": [
+          "record01.txt#L1",
+          "record01.txt#L4",
+          "record03.txt#L4"
+        ],
+        "canonical_targets": 4,
+        "complete": false,
+        "pool_complete": true
+      },
+      "ranker-exclusive.d4": {
+        "canonical_hits": [
+          "record01.txt#L1",
+          "record01.txt#L4",
+          "record03.txt#L4"
+        ],
+        "canonical_targets": 4,
+        "complete": false,
+        "pool_complete": false
+      },
+      "ranker-exclusive.d8": {
+        "canonical_hits": [
+          "record01.txt#L1",
+          "record01.txt#L4",
+          "record03.txt#L4"
+        ],
+        "canonical_targets": 4,
+        "complete": false,
+        "pool_complete": true
+      },
+      "reciprocal-rank.d4": {
+        "canonical_hits": [
+          "record01.txt#L1",
+          "record01.txt#L4",
+          "record03.txt#L4"
+        ],
+        "canonical_targets": 4,
+        "complete": false,
+        "pool_complete": false
+      },
+      "reciprocal-rank.d8": {
+        "canonical_hits": [
+          "record01.txt#L1",
+          "record01.txt#L4",
+          "record03.txt#L4"
+        ],
+        "canonical_targets": 4,
+        "complete": false,
+        "pool_complete": true
+      }
+    }
+  },
+  "labeled_returns": 96,
+  "leave_one_case_out": {
+    "bennu-return": {
+      "net_complete": 0,
+      "rate_difference": 0.0,
+      "target_bearing": 6
+    },
+    "house-apportionment": {
+      "net_complete": 0,
+      "rate_difference": 0.0,
+      "target_bearing": 6
+    },
+    "pound-changeover": {
+      "net_complete": 0,
+      "rate_difference": 0.0,
+      "target_bearing": 6
+    }
+  },
+  "paired": {
+    "clause-coverage.d4 vs bm25.d4": {
+      "gains": [],
+      "losses": [
+        "q05"
+      ],
+      "ties": 8
+    },
+    "clause-coverage.d4 vs ranker-exclusive.d4": {
+      "gains": [],
+      "losses": [
+        "q05"
+      ],
+      "ties": 8
+    },
+    "clause-coverage.d4 vs reciprocal-rank.d4": {
+      "gains": [],
+      "losses": [],
+      "ties": 9
+    },
+    "clause-coverage.d8 vs bm25.d8": {
+      "gains": [],
+      "losses": [
+        "q04",
+        "q05"
+      ],
+      "ties": 7
+    },
+    "clause-coverage.d8 vs ranker-exclusive.d8": {
+      "gains": [
+        "q09"
+      ],
+      "losses": [
+        "q05"
+      ],
+      "ties": 7
+    },
+    "clause-coverage.d8 vs reciprocal-rank.d8": {
+      "gains": [],
+      "losses": [],
+      "ties": 9
+    }
+  },
+  "profile": "babalon.blind-clause-coverage.v1",
+  "promotion_eligible": false,
+  "reviewer_tally": {
+    "bm25.d4/review-a": {
+      "abstentions": 5,
+      "answers": 7,
+      "credited_passage_hits": 7,
+      "designated_passage_hits": 20,
+      "designated_passage_targets": 22,
+      "matched_spend": 48,
+      "rows": 12,
+      "supported_answers": 7,
+      "uncertain": 0,
+      "unsupported_claims": 0,
+      "unwarranted_abstentions": 0,
+      "warranted_abstentions": 5
+    },
+    "bm25.d4/review-b": {
+      "abstentions": 5,
+      "answers": 7,
+      "credited_passage_hits": 7,
+      "designated_passage_hits": 20,
+      "designated_passage_targets": 22,
+      "matched_spend": 48,
+      "rows": 12,
+      "supported_answers": 7,
+      "uncertain": 0,
+      "unsupported_claims": 0,
+      "unwarranted_abstentions": 0,
+      "warranted_abstentions": 5
+    },
+    "bm25.d8/review-a": {
+      "abstentions": 5,
+      "answers": 7,
+      "credited_passage_hits": 7,
+      "designated_passage_hits": 20,
+      "designated_passage_targets": 22,
+      "matched_spend": 48,
+      "rows": 12,
+      "supported_answers": 7,
+      "uncertain": 0,
+      "unsupported_claims": 0,
+      "unwarranted_abstentions": 0,
+      "warranted_abstentions": 5
+    },
+    "bm25.d8/review-b": {
+      "abstentions": 5,
+      "answers": 7,
+      "credited_passage_hits": 7,
+      "designated_passage_hits": 20,
+      "designated_passage_targets": 22,
+      "matched_spend": 48,
+      "rows": 12,
+      "supported_answers": 7,
+      "uncertain": 0,
+      "unsupported_claims": 0,
+      "unwarranted_abstentions": 0,
+      "warranted_abstentions": 5
+    },
+    "clause-coverage.d4/review-a": {
+      "abstentions": 6,
+      "answers": 6,
+      "credited_passage_hits": 6,
+      "designated_passage_hits": 19,
+      "designated_passage_targets": 22,
+      "matched_spend": 48,
+      "rows": 12,
+      "supported_answers": 6,
+      "uncertain": 0,
+      "unsupported_claims": 0,
+      "unwarranted_abstentions": 0,
+      "warranted_abstentions": 6
+    },
+    "clause-coverage.d4/review-b": {
+      "abstentions": 6,
+      "answers": 6,
+      "credited_passage_hits": 6,
+      "designated_passage_hits": 19,
+      "designated_passage_targets": 22,
+      "matched_spend": 48,
+      "rows": 12,
+      "supported_answers": 6,
+      "uncertain": 0,
+      "unsupported_claims": 0,
+      "unwarranted_abstentions": 0,
+      "warranted_abstentions": 6
+    },
+    "clause-coverage.d8/review-a": {
+      "abstentions": 7,
+      "answers": 5,
+      "credited_passage_hits": 5,
+      "designated_passage_hits": 18,
+      "designated_passage_targets": 22,
+      "matched_spend": 48,
+      "rows": 12,
+      "supported_answers": 5,
+      "uncertain": 0,
+      "unsupported_claims": 0,
+      "unwarranted_abstentions": 0,
+      "warranted_abstentions": 7
+    },
+    "clause-coverage.d8/review-b": {
+      "abstentions": 7,
+      "answers": 5,
+      "credited_passage_hits": 5,
+      "designated_passage_hits": 18,
+      "designated_passage_targets": 22,
+      "matched_spend": 48,
+      "rows": 12,
+      "supported_answers": 5,
+      "uncertain": 0,
+      "unsupported_claims": 0,
+      "unwarranted_abstentions": 0,
+      "warranted_abstentions": 7
+    },
+    "ranker-exclusive.d4/review-a": {
+      "abstentions": 5,
+      "answers": 7,
+      "credited_passage_hits": 7,
+      "designated_passage_hits": 20,
+      "designated_passage_targets": 22,
+      "matched_spend": 48,
+      "rows": 12,
+      "supported_answers": 7,
+      "uncertain": 0,
+      "unsupported_claims": 0,
+      "unwarranted_abstentions": 0,
+      "warranted_abstentions": 5
+    },
+    "ranker-exclusive.d4/review-b": {
+      "abstentions": 5,
+      "answers": 7,
+      "credited_passage_hits": 7,
+      "designated_passage_hits": 20,
+      "designated_passage_targets": 22,
+      "matched_spend": 48,
+      "rows": 12,
+      "supported_answers": 7,
+      "uncertain": 0,
+      "unsupported_claims": 0,
+      "unwarranted_abstentions": 0,
+      "warranted_abstentions": 5
+    },
+    "ranker-exclusive.d8/review-a": {
+      "abstentions": 7,
+      "answers": 5,
+      "credited_passage_hits": 5,
+      "designated_passage_hits": 18,
+      "designated_passage_targets": 22,
+      "matched_spend": 48,
+      "rows": 12,
+      "supported_answers": 5,
+      "uncertain": 0,
+      "unsupported_claims": 0,
+      "unwarranted_abstentions": 0,
+      "warranted_abstentions": 7
+    },
+    "ranker-exclusive.d8/review-b": {
+      "abstentions": 7,
+      "answers": 5,
+      "credited_passage_hits": 5,
+      "designated_passage_hits": 18,
+      "designated_passage_targets": 22,
+      "matched_spend": 48,
+      "rows": 12,
+      "supported_answers": 5,
+      "uncertain": 0,
+      "unsupported_claims": 0,
+      "unwarranted_abstentions": 0,
+      "warranted_abstentions": 7
+    },
+    "reciprocal-rank.d4/review-a": {
+      "abstentions": 6,
+      "answers": 6,
+      "credited_passage_hits": 6,
+      "designated_passage_hits": 19,
+      "designated_passage_targets": 22,
+      "matched_spend": 48,
+      "rows": 12,
+      "supported_answers": 6,
+      "uncertain": 0,
+      "unsupported_claims": 0,
+      "unwarranted_abstentions": 0,
+      "warranted_abstentions": 6
+    },
+    "reciprocal-rank.d4/review-b": {
+      "abstentions": 6,
+      "answers": 6,
+      "credited_passage_hits": 6,
+      "designated_passage_hits": 19,
+      "designated_passage_targets": 22,
+      "matched_spend": 48,
+      "rows": 12,
+      "supported_answers": 6,
+      "uncertain": 0,
+      "unsupported_claims": 0,
+      "unwarranted_abstentions": 0,
+      "warranted_abstentions": 6
+    },
+    "reciprocal-rank.d8/review-a": {
+      "abstentions": 7,
+      "answers": 5,
+      "credited_passage_hits": 5,
+      "designated_passage_hits": 18,
+      "designated_passage_targets": 22,
+      "matched_spend": 48,
+      "rows": 12,
+      "supported_answers": 5,
+      "uncertain": 0,
+      "unsupported_claims": 0,
+      "unwarranted_abstentions": 0,
+      "warranted_abstentions": 7
+    },
+    "reciprocal-rank.d8/review-b": {
+      "abstentions": 7,
+      "answers": 5,
+      "credited_passage_hits": 5,
+      "designated_passage_hits": 18,
+      "designated_passage_targets": 22,
+      "matched_spend": 48,
+      "rows": 12,
+      "supported_answers": 5,
+      "uncertain": 0,
+      "unsupported_claims": 0,
+      "unwarranted_abstentions": 0,
+      "warranted_abstentions": 7
+    }
+  },
+  "status": "NOT_PROMOTED",
+  "totals": {
+    "bm25.d4": {
+      "canonical_hits": 20,
+      "canonical_targets": 22,
+      "complete": 7,
+      "input_positions": 48,
+      "matched_spend": 48,
+      "natural_spend": 48,
+      "pool_complete": 7,
+      "pool_unattainable": 2,
+      "questions": 12,
+      "rank_calls": 12,
+      "scored_pairs": 564,
+      "selection_misses": 0,
+      "split_questions": 5,
+      "target_bearing": 9
+    },
+    "bm25.d8": {
+      "canonical_hits": 20,
+      "canonical_targets": 22,
+      "complete": 7,
+      "input_positions": 96,
+      "matched_spend": 48,
+      "natural_spend": 48,
+      "pool_complete": 9,
+      "pool_unattainable": 0,
+      "questions": 12,
+      "rank_calls": 12,
+      "scored_pairs": 564,
+      "selection_misses": 2,
+      "split_questions": 5,
+      "target_bearing": 9
+    },
+    "clause-coverage.d4": {
+      "canonical_hits": 19,
+      "canonical_targets": 22,
+      "complete": 6,
+      "input_positions": 136,
+      "matched_spend": 48,
+      "natural_spend": 48,
+      "pool_complete": 7,
+      "pool_unattainable": 2,
+      "questions": 12,
+      "rank_calls": 22,
+      "scored_pairs": 1034,
+      "selection_misses": 1,
+      "split_questions": 5,
+      "target_bearing": 9
+    },
+    "clause-coverage.d8": {
+      "canonical_hits": 18,
+      "canonical_targets": 22,
+      "complete": 5,
+      "input_positions": 272,
+      "matched_spend": 48,
+      "natural_spend": 48,
+      "pool_complete": 9,
+      "pool_unattainable": 0,
+      "questions": 12,
+      "rank_calls": 22,
+      "scored_pairs": 1034,
+      "selection_misses": 4,
+      "split_questions": 5,
+      "target_bearing": 9
+    },
+    "ranker-exclusive.d4": {
+      "canonical_hits": 20,
+      "canonical_targets": 22,
+      "complete": 7,
+      "input_positions": 96,
+      "matched_spend": 48,
+      "natural_spend": 48,
+      "pool_complete": 7,
+      "pool_unattainable": 2,
+      "questions": 12,
+      "rank_calls": 22,
+      "scored_pairs": 1034,
+      "selection_misses": 0,
+      "split_questions": 5,
+      "target_bearing": 9
+    },
+    "ranker-exclusive.d8": {
+      "canonical_hits": 18,
+      "canonical_targets": 22,
+      "complete": 5,
+      "input_positions": 192,
+      "matched_spend": 48,
+      "natural_spend": 48,
+      "pool_complete": 9,
+      "pool_unattainable": 0,
+      "questions": 12,
+      "rank_calls": 22,
+      "scored_pairs": 1034,
+      "selection_misses": 4,
+      "split_questions": 5,
+      "target_bearing": 9
+    },
+    "reciprocal-rank.d4": {
+      "canonical_hits": 19,
+      "canonical_targets": 22,
+      "complete": 6,
+      "input_positions": 96,
+      "matched_spend": 48,
+      "natural_spend": 48,
+      "pool_complete": 7,
+      "pool_unattainable": 2,
+      "questions": 12,
+      "rank_calls": 22,
+      "scored_pairs": 1034,
+      "selection_misses": 1,
+      "split_questions": 5,
+      "target_bearing": 9
+    },
+    "reciprocal-rank.d8": {
+      "canonical_hits": 18,
+      "canonical_targets": 22,
+      "complete": 5,
+      "input_positions": 192,
+      "matched_spend": 48,
+      "natural_spend": 48,
+      "pool_complete": 9,
+      "pool_unattainable": 0,
+      "questions": 12,
+      "rank_calls": 22,
+      "scored_pairs": 1034,
+      "selection_misses": 4,
+      "split_questions": 5,
+      "target_bearing": 9
+    }
+  }
+}

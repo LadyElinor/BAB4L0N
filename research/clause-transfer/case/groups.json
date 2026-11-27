@@ -1,0 +1,130 @@
+{
+  "questions": [
+    {
+      "id": "q01",
+      "case": "pound-changeover",
+      "groups": [
+        [
+          "record07.txt#L1",
+          "record07.txt#L3",
+          "record01.txt#L3"
+        ],
+        [
+          "record07.txt#L1",
+          "record01.txt#L2",
+          "record01.txt#L3"
+        ]
+      ]
+    },
+    {
+      "id": "q02",
+      "case": "bennu-return",
+      "groups": []
+    },
+    {
+      "id": "q03",
+      "case": "house-apportionment",
+      "groups": [
+        [
+          "record02.txt#L2",
+          "record06.txt#L1"
+        ]
+      ]
+    },
+    {
+      "id": "q04",
+      "case": "pound-changeover",
+      "groups": [
+        [
+          "record03.txt#L1",
+          "record03.txt#L3"
+        ]
+      ]
+    },
+    {
+      "id": "q05",
+      "case": "bennu-return",
+      "groups": [
+        [
+          "record04.txt#L1",
+          "record04.txt#L2"
+        ],
+        [
+          "record10.txt#L2",
+          "record09.txt#L1"
+        ],
+        [
+          "record04.txt#L1",
+          "record09.txt#L1"
+        ],
+        [
+          "record10.txt#L2",
+          "record04.txt#L2"
+        ]
+      ]
+    },
+    {
+      "id": "q06",
+      "case": "house-apportionment",
+      "groups": [
+        [
+          "record02.txt#L1",
+          "record08.txt#L4",
+          "record08.txt#L3"
+        ]
+      ]
+    },
+    {
+      "id": "q07",
+      "case": "pound-changeover",
+      "groups": []
+    },
+    {
+      "id": "q08",
+      "case": "bennu-return",
+      "groups": [
+        [
+          "record04.txt#L3",
+          "record05.txt#L5"
+        ]
+      ]
+    },
+    {
+      "id": "q09",
+      "case": "house-apportionment",
+      "groups": [
+        [
+          "record08.txt#L1",
+          "record08.txt#L2"
+        ]
+      ]
+    },
+    {
+      "id": "q10",
+      "case": "bennu-return",
+      "groups": [
+        [
+          "record05.txt#L1",
+          "record05.txt#L4"
+        ]
+      ]
+    },
+    {
+      "id": "q11",
+      "case": "house-apportionment",
+      "groups": []
+    },
+    {
+      "id": "q12",
+      "case": "pound-changeover",
+      "groups": [
+        [
+          "record01.txt#L1",
+          "record01.txt#L4",
+          "record03.txt#L2",
+          "record03.txt#L4"
+        ]
+      ]
+    }
+  ]
+}
