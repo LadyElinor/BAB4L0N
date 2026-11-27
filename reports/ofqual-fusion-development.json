@@ -1,0 +1,1180 @@
+{
+  "corpus_passages": 27,
+  "fusion_answer_review": null,
+  "historical_readout_sha256": "dba0f74888eb3c9b00851e35368a70f80ef8559f79610f50c479c72d7feda141",
+  "per_question_budget": 4,
+  "pilot_revision": "d4f5fbea74f9b2df381289587c17e5bd4e0efec9",
+  "promotion_eligible": false,
+  "questions": {
+    "q1": {
+      "methods": {
+        "bm25": {
+          "complete": true,
+          "fusion_input_slots": 0,
+          "hits": [
+            "c.txt#L1",
+            "f.txt#L1"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 1,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "f.txt#L4",
+            "f.txt#L1",
+            "c.txt#L1",
+            "f.txt#L2"
+          ]
+        },
+        "clause-bm25": {
+          "complete": true,
+          "fusion_input_slots": 0,
+          "hits": [
+            "c.txt#L1",
+            "f.txt#L1"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 3,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "f.txt#L4",
+            "c.txt#L1",
+            "f.txt#L1",
+            "f.txt#L2"
+          ]
+        },
+        "interleave": {
+          "complete": true,
+          "fusion_input_slots": 8,
+          "hits": [
+            "c.txt#L1",
+            "f.txt#L1"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "f.txt#L4",
+            "f.txt#L1",
+            "c.txt#L1",
+            "f.txt#L2"
+          ]
+        },
+        "keyword": {
+          "complete": true,
+          "fusion_input_slots": 0,
+          "hits": [
+            "c.txt#L1",
+            "f.txt#L1"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 0,
+            "gap": 0,
+            "keyword": 1,
+            "role": 0
+          },
+          "refs": [
+            "f.txt#L4",
+            "f.txt#L1",
+            "f.txt#L2",
+            "c.txt#L1"
+          ]
+        },
+        "ranker-exclusive": {
+          "complete": true,
+          "fusion_input_slots": 8,
+          "hits": [
+            "c.txt#L1",
+            "f.txt#L1"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "f.txt#L4",
+            "c.txt#L1",
+            "f.txt#L1",
+            "f.txt#L2"
+          ]
+        },
+        "reciprocal-rank": {
+          "complete": true,
+          "fusion_input_slots": 8,
+          "hits": [
+            "c.txt#L1",
+            "f.txt#L1"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "f.txt#L4",
+            "c.txt#L1",
+            "f.txt#L1",
+            "f.txt#L2"
+          ]
+        },
+        "shared-gap": {
+          "complete": true,
+          "fusion_input_slots": 0,
+          "hits": [
+            "c.txt#L1",
+            "f.txt#L1"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 0,
+            "gap": 1,
+            "keyword": 0,
+            "role": 4
+          },
+          "refs": [
+            "f.txt#L1",
+            "f.txt#L2",
+            "c.txt#L1",
+            "d.txt#L1"
+          ]
+        },
+        "source-family": {
+          "complete": true,
+          "fusion_input_slots": 8,
+          "hits": [
+            "c.txt#L1",
+            "f.txt#L1"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "f.txt#L4",
+            "c.txt#L1",
+            "f.txt#L1",
+            "f.txt#L2"
+          ]
+        }
+      },
+      "pool": [
+        "c.txt#L1",
+        "f.txt#L1",
+        "f.txt#L2",
+        "f.txt#L4"
+      ],
+      "pool_complete_within_budget": true,
+      "targets": [
+        "c.txt#L1",
+        "f.txt#L1"
+      ]
+    },
+    "q2": {
+      "methods": {
+        "bm25": {
+          "complete": false,
+          "fusion_input_slots": 0,
+          "hits": [
+            "c.txt#L3"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 1,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "c.txt#L3",
+            "f.txt#L7",
+            "b.txt#L1",
+            "e.txt#L1"
+          ]
+        },
+        "clause-bm25": {
+          "complete": false,
+          "fusion_input_slots": 0,
+          "hits": [
+            "c.txt#L3"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 3,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "c.txt#L3",
+            "b.txt#L1",
+            "e.txt#L1",
+            "e.txt#L4"
+          ]
+        },
+        "interleave": {
+          "complete": false,
+          "fusion_input_slots": 8,
+          "hits": [
+            "c.txt#L3"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "c.txt#L3",
+            "f.txt#L7",
+            "b.txt#L1",
+            "e.txt#L1"
+          ]
+        },
+        "keyword": {
+          "complete": false,
+          "fusion_input_slots": 0,
+          "hits": [],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 0,
+            "gap": 0,
+            "keyword": 1,
+            "role": 0
+          },
+          "refs": [
+            "f.txt#L7",
+            "b.txt#L1",
+            "a.txt#L1",
+            "a.txt#L2"
+          ]
+        },
+        "ranker-exclusive": {
+          "complete": false,
+          "fusion_input_slots": 8,
+          "hits": [
+            "c.txt#L3"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "f.txt#L7",
+            "e.txt#L4",
+            "c.txt#L3",
+            "b.txt#L1"
+          ]
+        },
+        "reciprocal-rank": {
+          "complete": false,
+          "fusion_input_slots": 8,
+          "hits": [
+            "c.txt#L3"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "c.txt#L3",
+            "b.txt#L1",
+            "e.txt#L1",
+            "f.txt#L7"
+          ]
+        },
+        "shared-gap": {
+          "complete": false,
+          "fusion_input_slots": 0,
+          "hits": [
+            "c.txt#L3"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 0,
+            "gap": 1,
+            "keyword": 0,
+            "role": 4
+          },
+          "refs": [
+            "f.txt#L7",
+            "b.txt#L1",
+            "a.txt#L3",
+            "c.txt#L3"
+          ]
+        },
+        "source-family": {
+          "complete": false,
+          "fusion_input_slots": 8,
+          "hits": [
+            "c.txt#L3"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "c.txt#L3",
+            "b.txt#L1",
+            "e.txt#L1",
+            "f.txt#L7"
+          ]
+        }
+      },
+      "pool": [
+        "b.txt#L1",
+        "c.txt#L3",
+        "e.txt#L1",
+        "e.txt#L4",
+        "f.txt#L7"
+      ],
+      "pool_complete_within_budget": false,
+      "targets": [
+        "c.txt#L3",
+        "c.txt#L4"
+      ]
+    },
+    "q3": {
+      "methods": {
+        "bm25": {
+          "complete": false,
+          "fusion_input_slots": 0,
+          "hits": [],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 1,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "d.txt#L1",
+            "c.txt#L2",
+            "b.txt#L1",
+            "f.txt#L1"
+          ]
+        },
+        "clause-bm25": {
+          "complete": false,
+          "fusion_input_slots": 0,
+          "hits": [],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 3,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "d.txt#L1",
+            "c.txt#L2",
+            "f.txt#L6",
+            "f.txt#L1"
+          ]
+        },
+        "interleave": {
+          "complete": false,
+          "fusion_input_slots": 8,
+          "hits": [],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "d.txt#L1",
+            "c.txt#L2",
+            "b.txt#L1",
+            "f.txt#L6"
+          ]
+        },
+        "keyword": {
+          "complete": false,
+          "fusion_input_slots": 0,
+          "hits": [],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 0,
+            "gap": 0,
+            "keyword": 1,
+            "role": 0
+          },
+          "refs": [
+            "d.txt#L1",
+            "b.txt#L1",
+            "c.txt#L2",
+            "c.txt#L5"
+          ]
+        },
+        "ranker-exclusive": {
+          "complete": false,
+          "fusion_input_slots": 8,
+          "hits": [],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "b.txt#L1",
+            "f.txt#L6",
+            "d.txt#L1",
+            "c.txt#L2"
+          ]
+        },
+        "reciprocal-rank": {
+          "complete": false,
+          "fusion_input_slots": 8,
+          "hits": [],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "d.txt#L1",
+            "c.txt#L2",
+            "f.txt#L1",
+            "b.txt#L1"
+          ]
+        },
+        "shared-gap": {
+          "complete": false,
+          "fusion_input_slots": 0,
+          "hits": [],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 0,
+            "gap": 1,
+            "keyword": 0,
+            "role": 4
+          },
+          "refs": [
+            "d.txt#L1",
+            "b.txt#L1",
+            "c.txt#L2",
+            "f.txt#L6"
+          ]
+        },
+        "source-family": {
+          "complete": false,
+          "fusion_input_slots": 8,
+          "hits": [],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "d.txt#L1",
+            "c.txt#L2",
+            "f.txt#L1",
+            "b.txt#L1"
+          ]
+        }
+      },
+      "pool": [
+        "b.txt#L1",
+        "c.txt#L2",
+        "d.txt#L1",
+        "f.txt#L1",
+        "f.txt#L6"
+      ],
+      "pool_complete_within_budget": false,
+      "targets": [
+        "f.txt#L3",
+        "f.txt#L4"
+      ]
+    },
+    "q4": {
+      "methods": {
+        "bm25": {
+          "complete": false,
+          "fusion_input_slots": 0,
+          "hits": [
+            "e.txt#L1"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 1,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "c.txt#L5",
+            "e.txt#L1",
+            "d.txt#L3",
+            "e.txt#L2"
+          ]
+        },
+        "clause-bm25": {
+          "complete": false,
+          "fusion_input_slots": 0,
+          "hits": [
+            "d.txt#L2"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 3,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "c.txt#L5",
+            "d.txt#L3",
+            "e.txt#L2",
+            "d.txt#L2"
+          ]
+        },
+        "interleave": {
+          "complete": false,
+          "fusion_input_slots": 8,
+          "hits": [
+            "e.txt#L1"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "c.txt#L5",
+            "e.txt#L1",
+            "d.txt#L3",
+            "e.txt#L2"
+          ]
+        },
+        "keyword": {
+          "complete": false,
+          "fusion_input_slots": 0,
+          "hits": [
+            "e.txt#L1"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 0,
+            "gap": 0,
+            "keyword": 1,
+            "role": 0
+          },
+          "refs": [
+            "e.txt#L1",
+            "e.txt#L2",
+            "b.txt#L1",
+            "c.txt#L5"
+          ]
+        },
+        "ranker-exclusive": {
+          "complete": true,
+          "fusion_input_slots": 8,
+          "hits": [
+            "d.txt#L2",
+            "e.txt#L1"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "e.txt#L1",
+            "d.txt#L2",
+            "c.txt#L5",
+            "d.txt#L3"
+          ]
+        },
+        "reciprocal-rank": {
+          "complete": false,
+          "fusion_input_slots": 8,
+          "hits": [
+            "e.txt#L1"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "c.txt#L5",
+            "d.txt#L3",
+            "e.txt#L2",
+            "e.txt#L1"
+          ]
+        },
+        "shared-gap": {
+          "complete": false,
+          "fusion_input_slots": 0,
+          "hits": [
+            "e.txt#L1"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 0,
+            "gap": 1,
+            "keyword": 0,
+            "role": 4
+          },
+          "refs": [
+            "e.txt#L1",
+            "e.txt#L2",
+            "b.txt#L1",
+            "c.txt#L5"
+          ]
+        },
+        "source-family": {
+          "complete": false,
+          "fusion_input_slots": 8,
+          "hits": [
+            "e.txt#L1"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "c.txt#L5",
+            "d.txt#L3",
+            "e.txt#L2",
+            "e.txt#L1"
+          ]
+        }
+      },
+      "pool": [
+        "c.txt#L5",
+        "d.txt#L2",
+        "d.txt#L3",
+        "e.txt#L1",
+        "e.txt#L2"
+      ],
+      "pool_complete_within_budget": true,
+      "targets": [
+        "d.txt#L2",
+        "e.txt#L1"
+      ]
+    },
+    "q5": {
+      "methods": {
+        "bm25": {
+          "complete": true,
+          "fusion_input_slots": 0,
+          "hits": [
+            "b.txt#L2",
+            "f.txt#L5"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 1,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "b.txt#L2",
+            "f.txt#L5",
+            "e.txt#L1",
+            "d.txt#L1"
+          ]
+        },
+        "clause-bm25": {
+          "complete": true,
+          "fusion_input_slots": 0,
+          "hits": [
+            "b.txt#L2",
+            "f.txt#L5"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 3,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "b.txt#L2",
+            "f.txt#L5",
+            "e.txt#L1",
+            "c.txt#L2"
+          ]
+        },
+        "interleave": {
+          "complete": true,
+          "fusion_input_slots": 8,
+          "hits": [
+            "b.txt#L2",
+            "f.txt#L5"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "b.txt#L2",
+            "f.txt#L5",
+            "e.txt#L1",
+            "d.txt#L1"
+          ]
+        },
+        "keyword": {
+          "complete": true,
+          "fusion_input_slots": 0,
+          "hits": [
+            "b.txt#L2",
+            "f.txt#L5"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 0,
+            "gap": 0,
+            "keyword": 1,
+            "role": 0
+          },
+          "refs": [
+            "b.txt#L2",
+            "f.txt#L5",
+            "b.txt#L3",
+            "c.txt#L2"
+          ]
+        },
+        "ranker-exclusive": {
+          "complete": true,
+          "fusion_input_slots": 8,
+          "hits": [
+            "b.txt#L2",
+            "f.txt#L5"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "d.txt#L1",
+            "c.txt#L2",
+            "b.txt#L2",
+            "f.txt#L5"
+          ]
+        },
+        "reciprocal-rank": {
+          "complete": true,
+          "fusion_input_slots": 8,
+          "hits": [
+            "b.txt#L2",
+            "f.txt#L5"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "b.txt#L2",
+            "f.txt#L5",
+            "e.txt#L1",
+            "c.txt#L2"
+          ]
+        },
+        "shared-gap": {
+          "complete": true,
+          "fusion_input_slots": 0,
+          "hits": [
+            "b.txt#L2",
+            "f.txt#L5"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 0,
+            "gap": 1,
+            "keyword": 0,
+            "role": 4
+          },
+          "refs": [
+            "b.txt#L2",
+            "f.txt#L5",
+            "b.txt#L3",
+            "c.txt#L2"
+          ]
+        },
+        "source-family": {
+          "complete": true,
+          "fusion_input_slots": 8,
+          "hits": [
+            "b.txt#L2",
+            "f.txt#L5"
+          ],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 4,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "b.txt#L2",
+            "d.txt#L1",
+            "f.txt#L5",
+            "e.txt#L1"
+          ]
+        }
+      },
+      "pool": [
+        "b.txt#L2",
+        "c.txt#L2",
+        "d.txt#L1",
+        "e.txt#L1",
+        "f.txt#L5"
+      ],
+      "pool_complete_within_budget": true,
+      "targets": [
+        "b.txt#L2",
+        "f.txt#L5"
+      ]
+    },
+    "q6": {
+      "methods": {
+        "bm25": {
+          "complete": null,
+          "fusion_input_slots": 0,
+          "hits": [],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 1,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "f.txt#L2",
+            "d.txt#L2",
+            "f.txt#L6",
+            "f.txt#L1"
+          ]
+        },
+        "clause-bm25": {
+          "complete": null,
+          "fusion_input_slots": 0,
+          "hits": [],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 1,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "f.txt#L2",
+            "d.txt#L2",
+            "f.txt#L6",
+            "f.txt#L1"
+          ]
+        },
+        "interleave": {
+          "complete": null,
+          "fusion_input_slots": 8,
+          "hits": [],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 2,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "f.txt#L2",
+            "d.txt#L2",
+            "f.txt#L6",
+            "f.txt#L1"
+          ]
+        },
+        "keyword": {
+          "complete": null,
+          "fusion_input_slots": 0,
+          "hits": [],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 0,
+            "gap": 0,
+            "keyword": 1,
+            "role": 0
+          },
+          "refs": [
+            "f.txt#L2",
+            "c.txt#L5",
+            "d.txt#L2",
+            "d.txt#L3"
+          ]
+        },
+        "ranker-exclusive": {
+          "complete": null,
+          "fusion_input_slots": 8,
+          "hits": [],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 2,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "f.txt#L2",
+            "d.txt#L2",
+            "f.txt#L6",
+            "f.txt#L1"
+          ]
+        },
+        "reciprocal-rank": {
+          "complete": null,
+          "fusion_input_slots": 8,
+          "hits": [],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 2,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "f.txt#L2",
+            "d.txt#L2",
+            "f.txt#L6",
+            "f.txt#L1"
+          ]
+        },
+        "shared-gap": {
+          "complete": null,
+          "fusion_input_slots": 0,
+          "hits": [],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 0,
+            "gap": 1,
+            "keyword": 0,
+            "role": 4
+          },
+          "refs": [
+            "f.txt#L2",
+            "c.txt#L5",
+            "f.txt#L6",
+            "d.txt#L2"
+          ]
+        },
+        "source-family": {
+          "complete": null,
+          "fusion_input_slots": 8,
+          "hits": [],
+          "inspections": 4,
+          "ranking_calls": {
+            "bm25": 2,
+            "gap": 0,
+            "keyword": 0,
+            "role": 0
+          },
+          "refs": [
+            "f.txt#L2",
+            "d.txt#L2",
+            "f.txt#L6",
+            "f.txt#L1"
+          ]
+        }
+      },
+      "pool": [
+        "d.txt#L2",
+        "f.txt#L1",
+        "f.txt#L2",
+        "f.txt#L6"
+      ],
+      "pool_complete_within_budget": null,
+      "targets": []
+    }
+  },
+  "scope": "retrospective exposed Ofqual development",
+  "status": "NOT_PROMOTED",
+  "target_bearing_questions": 5,
+  "target_references": 10,
+  "totals": {
+    "bm25": {
+      "complete": 2,
+      "complete_changes_vs_fixed": {
+        "gained": [],
+        "lost": []
+      },
+      "fusion_input_slots": 0,
+      "hits": 6,
+      "inspections": 24,
+      "ranking_calls": {
+        "bm25": 6,
+        "gap": 0,
+        "keyword": 0,
+        "role": 0
+      }
+    },
+    "clause-bm25": {
+      "complete": 2,
+      "complete_changes_vs_fixed": {
+        "gained": [],
+        "lost": []
+      },
+      "fusion_input_slots": 0,
+      "hits": 6,
+      "inspections": 24,
+      "ranking_calls": {
+        "bm25": 16,
+        "gap": 0,
+        "keyword": 0,
+        "role": 0
+      }
+    },
+    "interleave": {
+      "complete": 2,
+      "complete_changes_vs_fixed": {
+        "gained": [],
+        "lost": []
+      },
+      "fusion_input_slots": 48,
+      "hits": 6,
+      "inspections": 24,
+      "ranking_calls": {
+        "bm25": 22,
+        "gap": 0,
+        "keyword": 0,
+        "role": 0
+      }
+    },
+    "keyword": {
+      "complete": 2,
+      "complete_changes_vs_fixed": {
+        "gained": [],
+        "lost": []
+      },
+      "fusion_input_slots": 0,
+      "hits": 5,
+      "inspections": 24,
+      "ranking_calls": {
+        "bm25": 0,
+        "gap": 0,
+        "keyword": 6,
+        "role": 0
+      }
+    },
+    "ranker-exclusive": {
+      "complete": 3,
+      "complete_changes_vs_fixed": {
+        "gained": [
+          "q4"
+        ],
+        "lost": []
+      },
+      "fusion_input_slots": 48,
+      "hits": 7,
+      "inspections": 24,
+      "ranking_calls": {
+        "bm25": 22,
+        "gap": 0,
+        "keyword": 0,
+        "role": 0
+      }
+    },
+    "reciprocal-rank": {
+      "complete": 2,
+      "complete_changes_vs_fixed": {
+        "gained": [],
+        "lost": []
+      },
+      "fusion_input_slots": 48,
+      "hits": 6,
+      "inspections": 24,
+      "ranking_calls": {
+        "bm25": 22,
+        "gap": 0,
+        "keyword": 0,
+        "role": 0
+      }
+    },
+    "shared-gap": {
+      "complete": 2,
+      "complete_changes_vs_fixed": {
+        "gained": [],
+        "lost": []
+      },
+      "fusion_input_slots": 0,
+      "hits": 6,
+      "inspections": 24,
+      "ranking_calls": {
+        "bm25": 0,
+        "gap": 6,
+        "keyword": 0,
+        "role": 24
+      }
+    },
+    "source-family": {
+      "complete": 2,
+      "complete_changes_vs_fixed": {
+        "gained": [],
+        "lost": []
+      },
+      "fusion_input_slots": 48,
+      "hits": 6,
+      "inspections": 24,
+      "ranking_calls": {
+        "bm25": 22,
+        "gap": 0,
+        "keyword": 0,
+        "role": 0
+      }
+    }
+  }
+}

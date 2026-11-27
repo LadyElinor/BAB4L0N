@@ -266,3 +266,5 @@ The rehearsal checks the source bytes against the original packet pins. Compare 
 A [six-question transfer pilot](research/ofqual-pilot/README.md) used a separately prepared case and two blinded AI reviewers. The clause-based reader, fixed BM25 and shared-gap each found 6 of 10 designated passages. All four methods supported two full answers at 24 inspections each. The packet, reviews and a replay command are included.
 
 For new trials use the [v3 collection and tally](docs/BLIND_INQUIRY_V3.md) to see each reviewer’s supported answers, unsupported claims, warranted and unwarranted abstentions alongside passage inspections and optional precommitted exact hits. The comparison supports both reader sets.
+
+A [bounded fusion replay on the disclosed Ofqual rankings](docs/OFQUAL_FUSION.md) tests whether the same four inspections can recover every required passage. Reserving one exclusive result from each BM25 list completed the autumn-exam question and preserved the two previously complete evidence sets. The exposed result remains `NOT_PROMOTED`.
