@@ -38,6 +38,12 @@ class ClauseCoverageTests(unittest.TestCase):
         self.assertEqual(len(set(result)), 4)
         self.assertNotIn("outside", result)
 
+    def test_underrepresented_clause_can_outrank_the_next_consensus_passage(self):
+        order = ["a", "b", "c", "d"]
+        views = trial.Views(order, order, [["a", "b"], ["d", "c"]], 3)
+        self.assertEqual(trial.choose("reciprocal-rank", views, 2), ["a", "b"])
+        self.assertEqual(trial.choose("clause-coverage", views, 2), ["a", "d"])
+
     def test_alternative_sets_partial_mixture_and_budget(self):
         groups = [["a", "b"], ["c", "d"]]
         self.assertFalse(trial.evidence_score(["a", "d"], list("abcd"), groups, 2)["complete"])

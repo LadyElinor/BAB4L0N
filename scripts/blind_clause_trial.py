@@ -25,7 +25,7 @@ ROLES = {"curator": "packet-curator", "interpreter": "evidence-reader",
          "reviewers": ["review-a", "review-b"]}
 CODE = (*V3_CODE, "scripts/retrieval_fusion.py", "scripts/clause_coverage.py",
         "scripts/clause_coverage_scoring.py", "scripts/blind_clause_trial.py",
-        "docs/CLAUSE_COVERAGE_PROTOCOL.md")
+        "scripts/time_clause_readers.py", "docs/CLAUSE_COVERAGE_PROTOCOL.md", "docs/CLAUSE_COVERAGE_REVIEW.md")
 
 
 def freeze(case):
@@ -148,6 +148,32 @@ def validate_review(sheet, answers, published_answer, review):
     return digest
 
 
+def external_study_screen(report, tallies):
+    """Apply the registered descriptive criteria. The pilot cannot promote a method."""
+    primary, secondary = DEPTHS
+    controls = ("bm25", "reciprocal-rank")
+    def gains_at(counts, depth):
+        candidate = counts[method_id("clause-coverage", depth)]["complete"]
+        return all(candidate > counts[method_id(m, depth)]["complete"] for m in controls)
+    quality_flags = []
+    for depth in DEPTHS:
+        for reviewer in ROLES["reviewers"]:
+            candidate = tallies[f"{method_id('clause-coverage', depth)}/{reviewer}"]
+            for control in controls:
+                comparator = tallies[f"{method_id(control, depth)}/{reviewer}"]
+                for metric in ("unsupported_claims", "unwarranted_abstentions"):
+                    if candidate[metric] > comparator[metric]:
+                        quality_flags.append({"depth": depth, "reviewer": reviewer,
+                                              "control": control, "metric": metric})
+    gained_cases = sorted(case for case, counts in report["by_case"].items() if gains_at(counts, primary))
+    criteria = {"more_complete_primary": gains_at(report["totals"], primary),
+                "gains_in_two_cases": len(gained_cases) >= 2,
+                "positive_at_sensitivity": gains_at(report["totals"], secondary),
+                "review_safeguards": not quality_flags}
+    return {"criteria": criteria, "primary_cases_gaining_against_both": gained_cases,
+            "increases_in_adverse_review_counts": quality_flags, "met": all(criteria.values())}
+
+
 def recount(case, art, deposit):
     frozen = custody.read(art / "freeze.json")
     sheet = custody.read(art / "worksheet.json")
@@ -184,7 +210,8 @@ def recount(case, art, deposit):
     return {"profile": PROFILE, "status": result["status"], "promotion_eligible": False,
             "collection_digest": v1.digest(result), "distinct_cards": len(cards(sheet)[0]),
             "labeled_returns": len(sheet["rows"]), "reviewer_tally": tallies, "disagreements": disagreements,
-            "leave_one_case_out": leave_one_case_out(report), **report}
+            "leave_one_case_out": leave_one_case_out(report),
+            "external_study_screen": external_study_screen(report, tallies), **report}
 
 
 def main():
