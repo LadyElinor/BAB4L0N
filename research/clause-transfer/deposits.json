@@ -1,0 +1,20 @@
+{
+  "method_commit": "bce32851e8034d681d2894f29ef5648328eae66f",
+  "roles": {
+    "curator": "packet-curator",
+    "interpreter": "evidence-reader",
+    "reviewers": [
+      "review-a",
+      "review-b"
+    ]
+  },
+  "freeze_digest": "f666f5708c8ba3eaca88583389e6e31142d21896e0abd7e0fb9af69f67a72921",
+  "worksheet_digest": "094e3eb285acf4415932f43214bfd41f7cc4631b524979b9d76e6bf42b659cb0",
+  "key_digest": "5dc7a66a54f520833c85e94d36b9e146d1f4317668b5f03ac5a086bd1aa197a4",
+  "answer_digest": "5d7274437c4f9a4533d3b223fa61f0b93e9b3a22e6c91d14e96f68645fea929d",
+  "review_digests": {
+    "review-b": "181c8a6a2ab0804c7527579ab53b6a1edb39dc4ae723ebccd35c710df38f60a1",
+    "review-a": "2285af89fe1dbfa89fef2ca579b7bb1098462df6c63b4e7ae4a8f031873e7b5a"
+  },
+  "register_digest": "1c8e4cbf86e513b0faf1ad07b65a73d9cf40af5516b179bae00196d194ee015c"
+}

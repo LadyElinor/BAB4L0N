@@ -1,0 +1,3027 @@
+{
+  "commitment": "f666f5708c8ba3eaca88583389e6e31142d21896e0abd7e0fb9af69f67a72921",
+  "worksheet_digest": "094e3eb285acf4415932f43214bfd41f7cc4631b524979b9d76e6bf42b659cb0",
+  "promotion_eligible": false,
+  "rows": [
+    {
+      "arm": "A",
+      "id": "q01",
+      "method": "clause-coverage.d4",
+      "natural_refs": [
+        "record03.txt#L1",
+        "record01.txt#L1",
+        "record07.txt#L1",
+        "record01.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L3",
+        "record03.txt#L1",
+        "record07.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record03.txt#L1",
+        "record01.txt#L1",
+        "record07.txt#L1",
+        "record01.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "B",
+      "id": "q01",
+      "method": "reciprocal-rank.d8",
+      "natural_refs": [
+        "record03.txt#L1",
+        "record01.txt#L1",
+        "record07.txt#L1",
+        "record01.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L2",
+        "record01.txt#L3",
+        "record03.txt#L1",
+        "record04.txt#L2",
+        "record07.txt#L1",
+        "record07.txt#L3",
+        "record08.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record03.txt#L1",
+        "record01.txt#L1",
+        "record07.txt#L1",
+        "record01.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "C",
+      "id": "q01",
+      "method": "reciprocal-rank.d4",
+      "natural_refs": [
+        "record03.txt#L1",
+        "record01.txt#L1",
+        "record07.txt#L1",
+        "record01.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L3",
+        "record03.txt#L1",
+        "record07.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record03.txt#L1",
+        "record01.txt#L1",
+        "record07.txt#L1",
+        "record01.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "D",
+      "id": "q01",
+      "method": "ranker-exclusive.d8",
+      "natural_refs": [
+        "record03.txt#L1",
+        "record01.txt#L1",
+        "record07.txt#L1",
+        "record01.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L2",
+        "record01.txt#L3",
+        "record03.txt#L1",
+        "record04.txt#L2",
+        "record07.txt#L1",
+        "record07.txt#L3",
+        "record08.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record03.txt#L1",
+        "record01.txt#L1",
+        "record07.txt#L1",
+        "record01.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "E",
+      "id": "q01",
+      "method": "ranker-exclusive.d4",
+      "natural_refs": [
+        "record03.txt#L1",
+        "record01.txt#L1",
+        "record07.txt#L1",
+        "record01.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L3",
+        "record03.txt#L1",
+        "record07.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record03.txt#L1",
+        "record01.txt#L1",
+        "record07.txt#L1",
+        "record01.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "F",
+      "id": "q01",
+      "method": "clause-coverage.d8",
+      "natural_refs": [
+        "record03.txt#L1",
+        "record01.txt#L1",
+        "record07.txt#L1",
+        "record01.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L2",
+        "record01.txt#L3",
+        "record03.txt#L1",
+        "record04.txt#L2",
+        "record07.txt#L1",
+        "record07.txt#L3",
+        "record08.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record03.txt#L1",
+        "record01.txt#L1",
+        "record07.txt#L1",
+        "record01.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "G",
+      "id": "q01",
+      "method": "bm25.d8",
+      "natural_refs": [
+        "record03.txt#L1",
+        "record01.txt#L1",
+        "record07.txt#L1",
+        "record01.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L2",
+        "record01.txt#L3",
+        "record03.txt#L1",
+        "record04.txt#L2",
+        "record07.txt#L1",
+        "record07.txt#L3",
+        "record08.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record03.txt#L1",
+        "record01.txt#L1",
+        "record07.txt#L1",
+        "record01.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "H",
+      "id": "q01",
+      "method": "bm25.d4",
+      "natural_refs": [
+        "record03.txt#L1",
+        "record01.txt#L1",
+        "record07.txt#L1",
+        "record01.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L3",
+        "record03.txt#L1",
+        "record07.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 4,
+      "split": false,
+      "matched_refs": [
+        "record03.txt#L1",
+        "record01.txt#L1",
+        "record07.txt#L1",
+        "record01.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "A",
+      "id": "q02",
+      "method": "bm25.d8",
+      "natural_refs": [
+        "record05.txt#L3",
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L4"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record04.txt#L1",
+        "record04.txt#L3",
+        "record05.txt#L3",
+        "record05.txt#L4",
+        "record08.txt#L4",
+        "record10.txt#L2"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record05.txt#L3",
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L4"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "B",
+      "id": "q02",
+      "method": "ranker-exclusive.d4",
+      "natural_refs": [
+        "record05.txt#L3",
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L4"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record05.txt#L3",
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L4"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "C",
+      "id": "q02",
+      "method": "clause-coverage.d4",
+      "natural_refs": [
+        "record05.txt#L3",
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L4"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record05.txt#L3",
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L4"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "D",
+      "id": "q02",
+      "method": "ranker-exclusive.d8",
+      "natural_refs": [
+        "record05.txt#L3",
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L4"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record04.txt#L1",
+        "record04.txt#L3",
+        "record05.txt#L3",
+        "record05.txt#L4",
+        "record08.txt#L4",
+        "record10.txt#L2"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record05.txt#L3",
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L4"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "E",
+      "id": "q02",
+      "method": "clause-coverage.d8",
+      "natural_refs": [
+        "record05.txt#L3",
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L4"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record04.txt#L1",
+        "record04.txt#L3",
+        "record05.txt#L3",
+        "record05.txt#L4",
+        "record08.txt#L4",
+        "record10.txt#L2"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record05.txt#L3",
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L4"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "F",
+      "id": "q02",
+      "method": "reciprocal-rank.d4",
+      "natural_refs": [
+        "record05.txt#L3",
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L4"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record05.txt#L3",
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L4"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "G",
+      "id": "q02",
+      "method": "bm25.d4",
+      "natural_refs": [
+        "record05.txt#L3",
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L4"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L3",
+        "record05.txt#L4"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 4,
+      "split": false,
+      "matched_refs": [
+        "record05.txt#L3",
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L4"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "H",
+      "id": "q02",
+      "method": "reciprocal-rank.d8",
+      "natural_refs": [
+        "record05.txt#L3",
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L4"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record04.txt#L1",
+        "record04.txt#L3",
+        "record05.txt#L3",
+        "record05.txt#L4",
+        "record08.txt#L4",
+        "record10.txt#L2"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record05.txt#L3",
+        "record02.txt#L2",
+        "record03.txt#L4",
+        "record05.txt#L4"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "A",
+      "id": "q03",
+      "method": "ranker-exclusive.d4",
+      "natural_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record02.txt#L2",
+        "record08.txt#L5"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L2",
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L5"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record02.txt#L2",
+        "record08.txt#L5"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "B",
+      "id": "q03",
+      "method": "bm25.d8",
+      "natural_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record02.txt#L2",
+        "record08.txt#L5"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L1",
+        "record02.txt#L2",
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3",
+        "record08.txt#L5",
+        "record09.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record02.txt#L2",
+        "record08.txt#L5"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "C",
+      "id": "q03",
+      "method": "reciprocal-rank.d4",
+      "natural_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record02.txt#L2",
+        "record08.txt#L5"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L2",
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L5"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record02.txt#L2",
+        "record08.txt#L5"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "D",
+      "id": "q03",
+      "method": "clause-coverage.d8",
+      "natural_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record02.txt#L2",
+        "record08.txt#L5"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L1",
+        "record02.txt#L2",
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3",
+        "record08.txt#L5",
+        "record09.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record02.txt#L2",
+        "record08.txt#L5"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "E",
+      "id": "q03",
+      "method": "reciprocal-rank.d8",
+      "natural_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record02.txt#L2",
+        "record08.txt#L5"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L1",
+        "record02.txt#L2",
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3",
+        "record08.txt#L5",
+        "record09.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record02.txt#L2",
+        "record08.txt#L5"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "F",
+      "id": "q03",
+      "method": "ranker-exclusive.d8",
+      "natural_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record02.txt#L2",
+        "record08.txt#L5"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L1",
+        "record02.txt#L2",
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3",
+        "record08.txt#L5",
+        "record09.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record02.txt#L2",
+        "record08.txt#L5"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "G",
+      "id": "q03",
+      "method": "clause-coverage.d4",
+      "natural_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record02.txt#L2",
+        "record08.txt#L5"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L2",
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L5"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record02.txt#L2",
+        "record08.txt#L5"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "H",
+      "id": "q03",
+      "method": "bm25.d4",
+      "natural_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record02.txt#L2",
+        "record08.txt#L5"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L2",
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L5"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 4,
+      "split": false,
+      "matched_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record02.txt#L2",
+        "record08.txt#L5"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "A",
+      "id": "q04",
+      "method": "bm25.d8",
+      "natural_refs": [
+        "record03.txt#L1",
+        "record07.txt#L1",
+        "record03.txt#L3",
+        "record01.txt#L4"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L3",
+        "record03.txt#L4",
+        "record03.txt#L5",
+        "record07.txt#L1",
+        "record07.txt#L5"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": true,
+      "matched_refs": [
+        "record03.txt#L1",
+        "record07.txt#L1",
+        "record03.txt#L3",
+        "record01.txt#L4"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "B",
+      "id": "q04",
+      "method": "ranker-exclusive.d8",
+      "natural_refs": [
+        "record07.txt#L5",
+        "record01.txt#L1",
+        "record03.txt#L1",
+        "record07.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L3",
+        "record03.txt#L4",
+        "record03.txt#L5",
+        "record07.txt#L1",
+        "record07.txt#L5"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 16,
+      "split": true,
+      "matched_refs": [
+        "record07.txt#L5",
+        "record01.txt#L1",
+        "record03.txt#L1",
+        "record07.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "C",
+      "id": "q04",
+      "method": "ranker-exclusive.d4",
+      "natural_refs": [
+        "record03.txt#L3",
+        "record03.txt#L2",
+        "record03.txt#L1",
+        "record07.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L3",
+        "record03.txt#L4",
+        "record07.txt#L1"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 8,
+      "split": true,
+      "matched_refs": [
+        "record03.txt#L3",
+        "record03.txt#L2",
+        "record03.txt#L1",
+        "record07.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "D",
+      "id": "q04",
+      "method": "clause-coverage.d4",
+      "natural_refs": [
+        "record03.txt#L1",
+        "record07.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L3",
+        "record03.txt#L4",
+        "record07.txt#L1"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 16,
+      "split": true,
+      "matched_refs": [
+        "record03.txt#L1",
+        "record07.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "E",
+      "id": "q04",
+      "method": "reciprocal-rank.d4",
+      "natural_refs": [
+        "record03.txt#L1",
+        "record07.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L3",
+        "record03.txt#L4",
+        "record07.txt#L1"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 8,
+      "split": true,
+      "matched_refs": [
+        "record03.txt#L1",
+        "record07.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "F",
+      "id": "q04",
+      "method": "reciprocal-rank.d8",
+      "natural_refs": [
+        "record03.txt#L1",
+        "record07.txt#L1",
+        "record03.txt#L2",
+        "record01.txt#L4"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L3",
+        "record03.txt#L4",
+        "record03.txt#L5",
+        "record07.txt#L1",
+        "record07.txt#L5"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 16,
+      "split": true,
+      "matched_refs": [
+        "record03.txt#L1",
+        "record07.txt#L1",
+        "record03.txt#L2",
+        "record01.txt#L4"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "G",
+      "id": "q04",
+      "method": "bm25.d4",
+      "natural_refs": [
+        "record03.txt#L1",
+        "record07.txt#L1",
+        "record03.txt#L3",
+        "record01.txt#L4"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L3",
+        "record03.txt#L4",
+        "record07.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 4,
+      "split": true,
+      "matched_refs": [
+        "record03.txt#L1",
+        "record07.txt#L1",
+        "record03.txt#L3",
+        "record01.txt#L4"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "H",
+      "id": "q04",
+      "method": "clause-coverage.d8",
+      "natural_refs": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record07.txt#L1",
+        "record01.txt#L4"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L3",
+        "record03.txt#L4",
+        "record03.txt#L5",
+        "record07.txt#L1",
+        "record07.txt#L5"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 32,
+      "split": true,
+      "matched_refs": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record07.txt#L1",
+        "record01.txt#L4"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "A",
+      "id": "q05",
+      "method": "ranker-exclusive.d8",
+      "natural_refs": [
+        "record04.txt#L1",
+        "record01.txt#L1",
+        "record09.txt#L1",
+        "record04.txt#L2"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record04.txt#L1",
+        "record04.txt#L2",
+        "record04.txt#L5",
+        "record05.txt#L5",
+        "record08.txt#L1",
+        "record09.txt#L1",
+        "record09.txt#L2",
+        "record09.txt#L4",
+        "record10.txt#L1",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 16,
+      "split": true,
+      "matched_refs": [
+        "record04.txt#L1",
+        "record01.txt#L1",
+        "record09.txt#L1",
+        "record04.txt#L2"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "B",
+      "id": "q05",
+      "method": "bm25.d8",
+      "natural_refs": [
+        "record09.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L2",
+        "record04.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record04.txt#L1",
+        "record04.txt#L2",
+        "record04.txt#L5",
+        "record05.txt#L5",
+        "record08.txt#L1",
+        "record09.txt#L1",
+        "record09.txt#L2",
+        "record09.txt#L4",
+        "record10.txt#L1",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": true,
+      "matched_refs": [
+        "record09.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L2",
+        "record04.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "C",
+      "id": "q05",
+      "method": "reciprocal-rank.d4",
+      "natural_refs": [
+        "record09.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L2",
+        "record01.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record04.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L1",
+        "record09.txt#L2"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 8,
+      "split": true,
+      "matched_refs": [
+        "record09.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L2",
+        "record01.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "D",
+      "id": "q05",
+      "method": "clause-coverage.d4",
+      "natural_refs": [
+        "record04.txt#L2",
+        "record09.txt#L2",
+        "record09.txt#L1",
+        "record01.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record04.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L1",
+        "record09.txt#L2"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 16,
+      "split": true,
+      "matched_refs": [
+        "record04.txt#L2",
+        "record09.txt#L2",
+        "record09.txt#L1",
+        "record01.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "E",
+      "id": "q05",
+      "method": "clause-coverage.d8",
+      "natural_refs": [
+        "record04.txt#L2",
+        "record09.txt#L2",
+        "record09.txt#L1",
+        "record10.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record04.txt#L1",
+        "record04.txt#L2",
+        "record04.txt#L5",
+        "record05.txt#L5",
+        "record08.txt#L1",
+        "record09.txt#L1",
+        "record09.txt#L2",
+        "record09.txt#L4",
+        "record10.txt#L1",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 32,
+      "split": true,
+      "matched_refs": [
+        "record04.txt#L2",
+        "record09.txt#L2",
+        "record09.txt#L1",
+        "record10.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "F",
+      "id": "q05",
+      "method": "bm25.d4",
+      "natural_refs": [
+        "record09.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L2",
+        "record04.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record04.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L1",
+        "record09.txt#L2"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 4,
+      "split": true,
+      "matched_refs": [
+        "record09.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L2",
+        "record04.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "G",
+      "id": "q05",
+      "method": "reciprocal-rank.d8",
+      "natural_refs": [
+        "record09.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L2",
+        "record10.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record04.txt#L1",
+        "record04.txt#L2",
+        "record04.txt#L5",
+        "record05.txt#L5",
+        "record08.txt#L1",
+        "record09.txt#L1",
+        "record09.txt#L2",
+        "record09.txt#L4",
+        "record10.txt#L1",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 16,
+      "split": true,
+      "matched_refs": [
+        "record09.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L2",
+        "record10.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "H",
+      "id": "q05",
+      "method": "ranker-exclusive.d4",
+      "natural_refs": [
+        "record04.txt#L1",
+        "record01.txt#L1",
+        "record09.txt#L1",
+        "record04.txt#L2"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record04.txt#L1",
+        "record04.txt#L2",
+        "record09.txt#L1",
+        "record09.txt#L2"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 8,
+      "split": true,
+      "matched_refs": [
+        "record04.txt#L1",
+        "record01.txt#L1",
+        "record09.txt#L1",
+        "record04.txt#L2"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "A",
+      "id": "q06",
+      "method": "reciprocal-rank.d8",
+      "natural_refs": [
+        "record08.txt#L3",
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L1",
+        "record02.txt#L2",
+        "record02.txt#L4",
+        "record06.txt#L1",
+        "record06.txt#L4",
+        "record08.txt#L1",
+        "record08.txt#L3",
+        "record08.txt#L4"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record08.txt#L3",
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "B",
+      "id": "q06",
+      "method": "clause-coverage.d4",
+      "natural_refs": [
+        "record08.txt#L3",
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L3",
+        "record08.txt#L4"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record08.txt#L3",
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "C",
+      "id": "q06",
+      "method": "reciprocal-rank.d4",
+      "natural_refs": [
+        "record08.txt#L3",
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L3",
+        "record08.txt#L4"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record08.txt#L3",
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "D",
+      "id": "q06",
+      "method": "bm25.d8",
+      "natural_refs": [
+        "record08.txt#L3",
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L1",
+        "record02.txt#L2",
+        "record02.txt#L4",
+        "record06.txt#L1",
+        "record06.txt#L4",
+        "record08.txt#L1",
+        "record08.txt#L3",
+        "record08.txt#L4"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record08.txt#L3",
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "E",
+      "id": "q06",
+      "method": "ranker-exclusive.d8",
+      "natural_refs": [
+        "record08.txt#L3",
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L1",
+        "record02.txt#L2",
+        "record02.txt#L4",
+        "record06.txt#L1",
+        "record06.txt#L4",
+        "record08.txt#L1",
+        "record08.txt#L3",
+        "record08.txt#L4"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record08.txt#L3",
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "F",
+      "id": "q06",
+      "method": "bm25.d4",
+      "natural_refs": [
+        "record08.txt#L3",
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L3",
+        "record08.txt#L4"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 4,
+      "split": false,
+      "matched_refs": [
+        "record08.txt#L3",
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "G",
+      "id": "q06",
+      "method": "clause-coverage.d8",
+      "natural_refs": [
+        "record08.txt#L3",
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L1",
+        "record02.txt#L2",
+        "record02.txt#L4",
+        "record06.txt#L1",
+        "record06.txt#L4",
+        "record08.txt#L1",
+        "record08.txt#L3",
+        "record08.txt#L4"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record08.txt#L3",
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "H",
+      "id": "q06",
+      "method": "ranker-exclusive.d4",
+      "natural_refs": [
+        "record08.txt#L3",
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L3",
+        "record08.txt#L4"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record08.txt#L3",
+        "record02.txt#L1",
+        "record08.txt#L4",
+        "record08.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "A",
+      "id": "q07",
+      "method": "clause-coverage.d4",
+      "natural_refs": [
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L5"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L5"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L5"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "B",
+      "id": "q07",
+      "method": "bm25.d8",
+      "natural_refs": [
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L5"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record01.txt#L5",
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L5",
+        "record07.txt#L5"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L5"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "C",
+      "id": "q07",
+      "method": "reciprocal-rank.d8",
+      "natural_refs": [
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L5"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record01.txt#L5",
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L5",
+        "record07.txt#L5"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L5"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "D",
+      "id": "q07",
+      "method": "ranker-exclusive.d4",
+      "natural_refs": [
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L5"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L5"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L5"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "E",
+      "id": "q07",
+      "method": "ranker-exclusive.d8",
+      "natural_refs": [
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L5"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record01.txt#L5",
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L5",
+        "record07.txt#L5"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L5"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "F",
+      "id": "q07",
+      "method": "reciprocal-rank.d4",
+      "natural_refs": [
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L5"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L5"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L5"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "G",
+      "id": "q07",
+      "method": "clause-coverage.d8",
+      "natural_refs": [
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L5"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record01.txt#L5",
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L5",
+        "record07.txt#L5"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L5"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "H",
+      "id": "q07",
+      "method": "bm25.d4",
+      "natural_refs": [
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L5"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L5"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 4,
+      "split": false,
+      "matched_refs": [
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L5"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "A",
+      "id": "q08",
+      "method": "clause-coverage.d4",
+      "natural_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 16,
+      "split": true,
+      "matched_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "B",
+      "id": "q08",
+      "method": "ranker-exclusive.d8",
+      "natural_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record04.txt#L3",
+        "record04.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L4",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record09.txt#L2",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 16,
+      "split": true,
+      "matched_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "C",
+      "id": "q08",
+      "method": "bm25.d4",
+      "natural_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 4,
+      "split": true,
+      "matched_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "D",
+      "id": "q08",
+      "method": "bm25.d8",
+      "natural_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record04.txt#L3",
+        "record04.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L4",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record09.txt#L2",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": true,
+      "matched_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "E",
+      "id": "q08",
+      "method": "reciprocal-rank.d8",
+      "natural_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record04.txt#L3",
+        "record04.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L4",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record09.txt#L2",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 16,
+      "split": true,
+      "matched_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "F",
+      "id": "q08",
+      "method": "clause-coverage.d8",
+      "natural_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record04.txt#L3",
+        "record04.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L4",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record09.txt#L2",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 32,
+      "split": true,
+      "matched_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "G",
+      "id": "q08",
+      "method": "ranker-exclusive.d4",
+      "natural_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 8,
+      "split": true,
+      "matched_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "H",
+      "id": "q08",
+      "method": "reciprocal-rank.d4",
+      "natural_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 8,
+      "split": true,
+      "matched_refs": [
+        "record04.txt#L3",
+        "record05.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "A",
+      "id": "q09",
+      "method": "reciprocal-rank.d8",
+      "natural_refs": [
+        "record08.txt#L1",
+        "record06.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L4",
+        "record06.txt#L1",
+        "record06.txt#L3",
+        "record06.txt#L4",
+        "record08.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3",
+        "record08.txt#L4",
+        "record08.txt#L5"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 16,
+      "split": true,
+      "matched_refs": [
+        "record08.txt#L1",
+        "record06.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "B",
+      "id": "q09",
+      "method": "ranker-exclusive.d8",
+      "natural_refs": [
+        "record08.txt#L5",
+        "record06.txt#L3",
+        "record08.txt#L1",
+        "record06.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L4",
+        "record06.txt#L1",
+        "record06.txt#L3",
+        "record06.txt#L4",
+        "record08.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3",
+        "record08.txt#L4",
+        "record08.txt#L5"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 16,
+      "split": true,
+      "matched_refs": [
+        "record08.txt#L5",
+        "record06.txt#L3",
+        "record08.txt#L1",
+        "record06.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "C",
+      "id": "q09",
+      "method": "ranker-exclusive.d4",
+      "natural_refs": [
+        "record08.txt#L1",
+        "record06.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 8,
+      "split": true,
+      "matched_refs": [
+        "record08.txt#L1",
+        "record06.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "D",
+      "id": "q09",
+      "method": "reciprocal-rank.d4",
+      "natural_refs": [
+        "record08.txt#L1",
+        "record06.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 8,
+      "split": true,
+      "matched_refs": [
+        "record08.txt#L1",
+        "record06.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "E",
+      "id": "q09",
+      "method": "clause-coverage.d4",
+      "natural_refs": [
+        "record08.txt#L1",
+        "record06.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 16,
+      "split": true,
+      "matched_refs": [
+        "record08.txt#L1",
+        "record06.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "F",
+      "id": "q09",
+      "method": "bm25.d4",
+      "natural_refs": [
+        "record08.txt#L1",
+        "record06.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 4,
+      "split": true,
+      "matched_refs": [
+        "record08.txt#L1",
+        "record06.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "G",
+      "id": "q09",
+      "method": "clause-coverage.d8",
+      "natural_refs": [
+        "record08.txt#L2",
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L4",
+        "record06.txt#L1",
+        "record06.txt#L3",
+        "record06.txt#L4",
+        "record08.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3",
+        "record08.txt#L4",
+        "record08.txt#L5"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 32,
+      "split": true,
+      "matched_refs": [
+        "record08.txt#L2",
+        "record06.txt#L1",
+        "record08.txt#L1",
+        "record08.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "H",
+      "id": "q09",
+      "method": "bm25.d8",
+      "natural_refs": [
+        "record08.txt#L1",
+        "record06.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L4",
+        "record06.txt#L1",
+        "record06.txt#L3",
+        "record06.txt#L4",
+        "record08.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3",
+        "record08.txt#L4",
+        "record08.txt#L5"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": true,
+      "matched_refs": [
+        "record08.txt#L1",
+        "record06.txt#L1",
+        "record08.txt#L2",
+        "record08.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "A",
+      "id": "q10",
+      "method": "bm25.d8",
+      "natural_refs": [
+        "record05.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record09.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L5",
+        "record03.txt#L4",
+        "record04.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record05.txt#L4",
+        "record05.txt#L5",
+        "record08.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": true,
+      "matched_refs": [
+        "record05.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record09.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "B",
+      "id": "q10",
+      "method": "bm25.d4",
+      "natural_refs": [
+        "record05.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record09.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record03.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record05.txt#L4",
+        "record09.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 4,
+      "split": true,
+      "matched_refs": [
+        "record05.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record09.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "C",
+      "id": "q10",
+      "method": "clause-coverage.d4",
+      "natural_refs": [
+        "record05.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record03.txt#L4"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record03.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record05.txt#L4",
+        "record09.txt#L1"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 16,
+      "split": true,
+      "matched_refs": [
+        "record05.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record03.txt#L4"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "D",
+      "id": "q10",
+      "method": "clause-coverage.d8",
+      "natural_refs": [
+        "record05.txt#L4",
+        "record05.txt#L1",
+        "record03.txt#L4",
+        "record05.txt#L3"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L5",
+        "record03.txt#L4",
+        "record04.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record05.txt#L4",
+        "record05.txt#L5",
+        "record08.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 32,
+      "split": true,
+      "matched_refs": [
+        "record05.txt#L4",
+        "record05.txt#L1",
+        "record03.txt#L4",
+        "record05.txt#L3"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "E",
+      "id": "q10",
+      "method": "ranker-exclusive.d8",
+      "natural_refs": [
+        "record09.txt#L1",
+        "record10.txt#L3",
+        "record05.txt#L4",
+        "record05.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L5",
+        "record03.txt#L4",
+        "record04.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record05.txt#L4",
+        "record05.txt#L5",
+        "record08.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 16,
+      "split": true,
+      "matched_refs": [
+        "record09.txt#L1",
+        "record10.txt#L3",
+        "record05.txt#L4",
+        "record05.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "F",
+      "id": "q10",
+      "method": "reciprocal-rank.d8",
+      "natural_refs": [
+        "record05.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record03.txt#L4"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L5",
+        "record03.txt#L4",
+        "record04.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record05.txt#L4",
+        "record05.txt#L5",
+        "record08.txt#L5",
+        "record09.txt#L1",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 16,
+      "split": true,
+      "matched_refs": [
+        "record05.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record03.txt#L4"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "G",
+      "id": "q10",
+      "method": "ranker-exclusive.d4",
+      "natural_refs": [
+        "record09.txt#L1",
+        "record03.txt#L4",
+        "record05.txt#L4",
+        "record05.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record03.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record05.txt#L4",
+        "record09.txt#L1"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 8,
+      "split": true,
+      "matched_refs": [
+        "record09.txt#L1",
+        "record03.txt#L4",
+        "record05.txt#L4",
+        "record05.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "H",
+      "id": "q10",
+      "method": "reciprocal-rank.d4",
+      "natural_refs": [
+        "record05.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record03.txt#L4"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record03.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record05.txt#L4",
+        "record09.txt#L1"
+      ],
+      "rank_calls": 3,
+      "scored_pairs": 141,
+      "input_positions": 8,
+      "split": true,
+      "matched_refs": [
+        "record05.txt#L4",
+        "record05.txt#L1",
+        "record05.txt#L3",
+        "record03.txt#L4"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "A",
+      "id": "q11",
+      "method": "bm25.d8",
+      "natural_refs": [
+        "record06.txt#L4",
+        "record06.txt#L3",
+        "record06.txt#L2",
+        "record08.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L2",
+        "record05.txt#L1",
+        "record06.txt#L2",
+        "record06.txt#L3",
+        "record06.txt#L4",
+        "record07.txt#L1",
+        "record08.txt#L1",
+        "record09.txt#L2"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record06.txt#L4",
+        "record06.txt#L3",
+        "record06.txt#L2",
+        "record08.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "B",
+      "id": "q11",
+      "method": "ranker-exclusive.d4",
+      "natural_refs": [
+        "record06.txt#L4",
+        "record06.txt#L3",
+        "record06.txt#L2",
+        "record08.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record06.txt#L2",
+        "record06.txt#L3",
+        "record06.txt#L4",
+        "record08.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record06.txt#L4",
+        "record06.txt#L3",
+        "record06.txt#L2",
+        "record08.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "C",
+      "id": "q11",
+      "method": "reciprocal-rank.d4",
+      "natural_refs": [
+        "record06.txt#L4",
+        "record06.txt#L3",
+        "record06.txt#L2",
+        "record08.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record06.txt#L2",
+        "record06.txt#L3",
+        "record06.txt#L4",
+        "record08.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record06.txt#L4",
+        "record06.txt#L3",
+        "record06.txt#L2",
+        "record08.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "D",
+      "id": "q11",
+      "method": "reciprocal-rank.d8",
+      "natural_refs": [
+        "record06.txt#L4",
+        "record06.txt#L3",
+        "record06.txt#L2",
+        "record08.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L2",
+        "record05.txt#L1",
+        "record06.txt#L2",
+        "record06.txt#L3",
+        "record06.txt#L4",
+        "record07.txt#L1",
+        "record08.txt#L1",
+        "record09.txt#L2"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record06.txt#L4",
+        "record06.txt#L3",
+        "record06.txt#L2",
+        "record08.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "E",
+      "id": "q11",
+      "method": "bm25.d4",
+      "natural_refs": [
+        "record06.txt#L4",
+        "record06.txt#L3",
+        "record06.txt#L2",
+        "record08.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record06.txt#L2",
+        "record06.txt#L3",
+        "record06.txt#L4",
+        "record08.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 4,
+      "split": false,
+      "matched_refs": [
+        "record06.txt#L4",
+        "record06.txt#L3",
+        "record06.txt#L2",
+        "record08.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "F",
+      "id": "q11",
+      "method": "clause-coverage.d8",
+      "natural_refs": [
+        "record06.txt#L4",
+        "record06.txt#L3",
+        "record06.txt#L2",
+        "record08.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L2",
+        "record05.txt#L1",
+        "record06.txt#L2",
+        "record06.txt#L3",
+        "record06.txt#L4",
+        "record07.txt#L1",
+        "record08.txt#L1",
+        "record09.txt#L2"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record06.txt#L4",
+        "record06.txt#L3",
+        "record06.txt#L2",
+        "record08.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "G",
+      "id": "q11",
+      "method": "ranker-exclusive.d8",
+      "natural_refs": [
+        "record06.txt#L4",
+        "record06.txt#L3",
+        "record06.txt#L2",
+        "record08.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record02.txt#L2",
+        "record05.txt#L1",
+        "record06.txt#L2",
+        "record06.txt#L3",
+        "record06.txt#L4",
+        "record07.txt#L1",
+        "record08.txt#L1",
+        "record09.txt#L2"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record06.txt#L4",
+        "record06.txt#L3",
+        "record06.txt#L2",
+        "record08.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "H",
+      "id": "q11",
+      "method": "clause-coverage.d4",
+      "natural_refs": [
+        "record06.txt#L4",
+        "record06.txt#L3",
+        "record06.txt#L2",
+        "record08.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record06.txt#L2",
+        "record06.txt#L3",
+        "record06.txt#L4",
+        "record08.txt#L1"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record06.txt#L4",
+        "record06.txt#L3",
+        "record06.txt#L2",
+        "record08.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "A",
+      "id": "q12",
+      "method": "ranker-exclusive.d4",
+      "natural_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L4"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "B",
+      "id": "q12",
+      "method": "bm25.d4",
+      "natural_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L4"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 4,
+      "split": false,
+      "matched_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "C",
+      "id": "q12",
+      "method": "reciprocal-rank.d4",
+      "natural_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L4"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "D",
+      "id": "q12",
+      "method": "clause-coverage.d4",
+      "natural_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L4"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "E",
+      "id": "q12",
+      "method": "reciprocal-rank.d8",
+      "natural_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L5",
+        "record07.txt#L1",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "F",
+      "id": "q12",
+      "method": "clause-coverage.d8",
+      "natural_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L5",
+        "record07.txt#L1",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "G",
+      "id": "q12",
+      "method": "ranker-exclusive.d8",
+      "natural_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L5",
+        "record07.txt#L1",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 16,
+      "split": false,
+      "matched_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "matched_spend": 4
+    },
+    {
+      "arm": "H",
+      "id": "q12",
+      "method": "bm25.d8",
+      "natural_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "natural_spend": 4,
+      "pool_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L1",
+        "record03.txt#L2",
+        "record03.txt#L4",
+        "record03.txt#L5",
+        "record07.txt#L1",
+        "record10.txt#L3"
+      ],
+      "rank_calls": 1,
+      "scored_pairs": 47,
+      "input_positions": 8,
+      "split": false,
+      "matched_refs": [
+        "record01.txt#L1",
+        "record01.txt#L4",
+        "record03.txt#L4",
+        "record03.txt#L1"
+      ],
+      "matched_spend": 4
+    }
+  ]
+}

@@ -1,0 +1,2597 @@
+{
+  "commitment": "f666f5708c8ba3eaca88583389e6e31142d21896e0abd7e0fb9af69f67a72921",
+  "rows": [
+    {
+      "id": "q01",
+      "question": "Who designed the portrait and the competition-winning reverse of the first twelve-sided UK pound, and which monarch and four plants appeared on them?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record01.txt#L3",
+          "family": "royal-mint",
+          "text": "The Mint credits Jody Clark with the Queen Elizabeth II portrait on the heads side of the 2017 pound."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record07.txt#L1",
+          "family": "hm-treasury",
+          "text": "HM Treasury named David Pearce, a 15-year-old pupil in Walsall, as winner of the competition for the reverse of the new pound coin."
+        }
+      ]
+    },
+    {
+      "id": "q01",
+      "question": "Who designed the portrait and the competition-winning reverse of the first twelve-sided UK pound, and which monarch and four plants appeared on them?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record01.txt#L3",
+          "family": "royal-mint",
+          "text": "The Mint credits Jody Clark with the Queen Elizabeth II portrait on the heads side of the 2017 pound."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record07.txt#L1",
+          "family": "hm-treasury",
+          "text": "HM Treasury named David Pearce, a 15-year-old pupil in Walsall, as winner of the competition for the reverse of the new pound coin."
+        }
+      ]
+    },
+    {
+      "id": "q01",
+      "question": "Who designed the portrait and the competition-winning reverse of the first twelve-sided UK pound, and which monarch and four plants appeared on them?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record01.txt#L3",
+          "family": "royal-mint",
+          "text": "The Mint credits Jody Clark with the Queen Elizabeth II portrait on the heads side of the 2017 pound."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record07.txt#L1",
+          "family": "hm-treasury",
+          "text": "HM Treasury named David Pearce, a 15-year-old pupil in Walsall, as winner of the competition for the reverse of the new pound coin."
+        }
+      ]
+    },
+    {
+      "id": "q01",
+      "question": "Who designed the portrait and the competition-winning reverse of the first twelve-sided UK pound, and which monarch and four plants appeared on them?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record01.txt#L3",
+          "family": "royal-mint",
+          "text": "The Mint credits Jody Clark with the Queen Elizabeth II portrait on the heads side of the 2017 pound."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record07.txt#L1",
+          "family": "hm-treasury",
+          "text": "HM Treasury named David Pearce, a 15-year-old pupil in Walsall, as winner of the competition for the reverse of the new pound coin."
+        }
+      ]
+    },
+    {
+      "id": "q01",
+      "question": "Who designed the portrait and the competition-winning reverse of the first twelve-sided UK pound, and which monarch and four plants appeared on them?",
+      "arm": "E",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record01.txt#L3",
+          "family": "royal-mint",
+          "text": "The Mint credits Jody Clark with the Queen Elizabeth II portrait on the heads side of the 2017 pound."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record07.txt#L1",
+          "family": "hm-treasury",
+          "text": "HM Treasury named David Pearce, a 15-year-old pupil in Walsall, as winner of the competition for the reverse of the new pound coin."
+        }
+      ]
+    },
+    {
+      "id": "q01",
+      "question": "Who designed the portrait and the competition-winning reverse of the first twelve-sided UK pound, and which monarch and four plants appeared on them?",
+      "arm": "F",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record01.txt#L3",
+          "family": "royal-mint",
+          "text": "The Mint credits Jody Clark with the Queen Elizabeth II portrait on the heads side of the 2017 pound."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record07.txt#L1",
+          "family": "hm-treasury",
+          "text": "HM Treasury named David Pearce, a 15-year-old pupil in Walsall, as winner of the competition for the reverse of the new pound coin."
+        }
+      ]
+    },
+    {
+      "id": "q01",
+      "question": "Who designed the portrait and the competition-winning reverse of the first twelve-sided UK pound, and which monarch and four plants appeared on them?",
+      "arm": "G",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record01.txt#L3",
+          "family": "royal-mint",
+          "text": "The Mint credits Jody Clark with the Queen Elizabeth II portrait on the heads side of the 2017 pound."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record07.txt#L1",
+          "family": "hm-treasury",
+          "text": "HM Treasury named David Pearce, a 15-year-old pupil in Walsall, as winner of the competition for the reverse of the new pound coin."
+        }
+      ]
+    },
+    {
+      "id": "q01",
+      "question": "Who designed the portrait and the competition-winning reverse of the first twelve-sided UK pound, and which monarch and four plants appeared on them?",
+      "arm": "H",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record01.txt#L3",
+          "family": "royal-mint",
+          "text": "The Mint credits Jody Clark with the Queen Elizabeth II portrait on the heads side of the 2017 pound."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record07.txt#L1",
+          "family": "hm-treasury",
+          "text": "HM Treasury named David Pearce, a 15-year-old pupil in Walsall, as winner of the competition for the reverse of the new pound coin."
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "How many grams did the largest individual stone in Canada's allocation from Bennu weigh?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "record02.txt#L2",
+          "family": "us-census-bureau",
+          "text": "Texas added 3,999,944 residents over the decade from 2010 to 2020, the largest numerical increase of any state in the bureau's release."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record05.txt#L3",
+          "family": "nasa",
+          "text": "With new tools, the team freed the fasteners in January 2024 and poured another 51.2 grams of Bennu material from the head."
+        },
+        {
+          "ref": "record05.txt#L4",
+          "family": "nasa",
+          "text": "NASA's February 2024 accounting put the total mass of Bennu material brought back by OSIRIS-REx at 121.6 grams."
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "How many grams did the largest individual stone in Canada's allocation from Bennu weigh?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "record02.txt#L2",
+          "family": "us-census-bureau",
+          "text": "Texas added 3,999,944 residents over the decade from 2010 to 2020, the largest numerical increase of any state in the bureau's release."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record05.txt#L3",
+          "family": "nasa",
+          "text": "With new tools, the team freed the fasteners in January 2024 and poured another 51.2 grams of Bennu material from the head."
+        },
+        {
+          "ref": "record05.txt#L4",
+          "family": "nasa",
+          "text": "NASA's February 2024 accounting put the total mass of Bennu material brought back by OSIRIS-REx at 121.6 grams."
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "How many grams did the largest individual stone in Canada's allocation from Bennu weigh?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "record02.txt#L2",
+          "family": "us-census-bureau",
+          "text": "Texas added 3,999,944 residents over the decade from 2010 to 2020, the largest numerical increase of any state in the bureau's release."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record05.txt#L3",
+          "family": "nasa",
+          "text": "With new tools, the team freed the fasteners in January 2024 and poured another 51.2 grams of Bennu material from the head."
+        },
+        {
+          "ref": "record05.txt#L4",
+          "family": "nasa",
+          "text": "NASA's February 2024 accounting put the total mass of Bennu material brought back by OSIRIS-REx at 121.6 grams."
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "How many grams did the largest individual stone in Canada's allocation from Bennu weigh?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "record02.txt#L2",
+          "family": "us-census-bureau",
+          "text": "Texas added 3,999,944 residents over the decade from 2010 to 2020, the largest numerical increase of any state in the bureau's release."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record05.txt#L3",
+          "family": "nasa",
+          "text": "With new tools, the team freed the fasteners in January 2024 and poured another 51.2 grams of Bennu material from the head."
+        },
+        {
+          "ref": "record05.txt#L4",
+          "family": "nasa",
+          "text": "NASA's February 2024 accounting put the total mass of Bennu material brought back by OSIRIS-REx at 121.6 grams."
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "How many grams did the largest individual stone in Canada's allocation from Bennu weigh?",
+      "arm": "E",
+      "passages": [
+        {
+          "ref": "record02.txt#L2",
+          "family": "us-census-bureau",
+          "text": "Texas added 3,999,944 residents over the decade from 2010 to 2020, the largest numerical increase of any state in the bureau's release."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record05.txt#L3",
+          "family": "nasa",
+          "text": "With new tools, the team freed the fasteners in January 2024 and poured another 51.2 grams of Bennu material from the head."
+        },
+        {
+          "ref": "record05.txt#L4",
+          "family": "nasa",
+          "text": "NASA's February 2024 accounting put the total mass of Bennu material brought back by OSIRIS-REx at 121.6 grams."
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "How many grams did the largest individual stone in Canada's allocation from Bennu weigh?",
+      "arm": "F",
+      "passages": [
+        {
+          "ref": "record02.txt#L2",
+          "family": "us-census-bureau",
+          "text": "Texas added 3,999,944 residents over the decade from 2010 to 2020, the largest numerical increase of any state in the bureau's release."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record05.txt#L3",
+          "family": "nasa",
+          "text": "With new tools, the team freed the fasteners in January 2024 and poured another 51.2 grams of Bennu material from the head."
+        },
+        {
+          "ref": "record05.txt#L4",
+          "family": "nasa",
+          "text": "NASA's February 2024 accounting put the total mass of Bennu material brought back by OSIRIS-REx at 121.6 grams."
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "How many grams did the largest individual stone in Canada's allocation from Bennu weigh?",
+      "arm": "G",
+      "passages": [
+        {
+          "ref": "record02.txt#L2",
+          "family": "us-census-bureau",
+          "text": "Texas added 3,999,944 residents over the decade from 2010 to 2020, the largest numerical increase of any state in the bureau's release."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record05.txt#L3",
+          "family": "nasa",
+          "text": "With new tools, the team freed the fasteners in January 2024 and poured another 51.2 grams of Bennu material from the head."
+        },
+        {
+          "ref": "record05.txt#L4",
+          "family": "nasa",
+          "text": "NASA's February 2024 accounting put the total mass of Bennu material brought back by OSIRIS-REx at 121.6 grams."
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "question": "How many grams did the largest individual stone in Canada's allocation from Bennu weigh?",
+      "arm": "H",
+      "passages": [
+        {
+          "ref": "record02.txt#L2",
+          "family": "us-census-bureau",
+          "text": "Texas added 3,999,944 residents over the decade from 2010 to 2020, the largest numerical increase of any state in the bureau's release."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record05.txt#L3",
+          "family": "nasa",
+          "text": "With new tools, the team freed the fasteners in January 2024 and poured another 51.2 grams of Bennu material from the head."
+        },
+        {
+          "ref": "record05.txt#L4",
+          "family": "nasa",
+          "text": "NASA's February 2024 accounting put the total mass of Bennu material brought back by OSIRIS-REx at 121.6 grams."
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "Which state added the most people between the 2010 and 2020 U.S. censuses, what was its numerical gain, and how many House seats did it have after each census?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "record02.txt#L2",
+          "family": "us-census-bureau",
+          "text": "Texas added 3,999,944 residents over the decade from 2010 to 2020, the largest numerical increase of any state in the bureau's release."
+        },
+        {
+          "ref": "record06.txt#L1",
+          "family": "texas-legislative-council",
+          "text": "The Texas Legislative Council records a rise from 36 U.S. House districts for Texas after the 2010 census to 38 after the 2020 census."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L5",
+          "family": "us-census-bureau",
+          "text": "Congress chose the equal proportions method in 1941, and the bureau says it has been used at each census since."
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "Which state added the most people between the 2010 and 2020 U.S. censuses, what was its numerical gain, and how many House seats did it have after each census?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "record02.txt#L2",
+          "family": "us-census-bureau",
+          "text": "Texas added 3,999,944 residents over the decade from 2010 to 2020, the largest numerical increase of any state in the bureau's release."
+        },
+        {
+          "ref": "record06.txt#L1",
+          "family": "texas-legislative-council",
+          "text": "The Texas Legislative Council records a rise from 36 U.S. House districts for Texas after the 2010 census to 38 after the 2020 census."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L5",
+          "family": "us-census-bureau",
+          "text": "Congress chose the equal proportions method in 1941, and the bureau says it has been used at each census since."
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "Which state added the most people between the 2010 and 2020 U.S. censuses, what was its numerical gain, and how many House seats did it have after each census?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "record02.txt#L2",
+          "family": "us-census-bureau",
+          "text": "Texas added 3,999,944 residents over the decade from 2010 to 2020, the largest numerical increase of any state in the bureau's release."
+        },
+        {
+          "ref": "record06.txt#L1",
+          "family": "texas-legislative-council",
+          "text": "The Texas Legislative Council records a rise from 36 U.S. House districts for Texas after the 2010 census to 38 after the 2020 census."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L5",
+          "family": "us-census-bureau",
+          "text": "Congress chose the equal proportions method in 1941, and the bureau says it has been used at each census since."
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "Which state added the most people between the 2010 and 2020 U.S. censuses, what was its numerical gain, and how many House seats did it have after each census?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "record02.txt#L2",
+          "family": "us-census-bureau",
+          "text": "Texas added 3,999,944 residents over the decade from 2010 to 2020, the largest numerical increase of any state in the bureau's release."
+        },
+        {
+          "ref": "record06.txt#L1",
+          "family": "texas-legislative-council",
+          "text": "The Texas Legislative Council records a rise from 36 U.S. House districts for Texas after the 2010 census to 38 after the 2020 census."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L5",
+          "family": "us-census-bureau",
+          "text": "Congress chose the equal proportions method in 1941, and the bureau says it has been used at each census since."
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "Which state added the most people between the 2010 and 2020 U.S. censuses, what was its numerical gain, and how many House seats did it have after each census?",
+      "arm": "E",
+      "passages": [
+        {
+          "ref": "record02.txt#L2",
+          "family": "us-census-bureau",
+          "text": "Texas added 3,999,944 residents over the decade from 2010 to 2020, the largest numerical increase of any state in the bureau's release."
+        },
+        {
+          "ref": "record06.txt#L1",
+          "family": "texas-legislative-council",
+          "text": "The Texas Legislative Council records a rise from 36 U.S. House districts for Texas after the 2010 census to 38 after the 2020 census."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L5",
+          "family": "us-census-bureau",
+          "text": "Congress chose the equal proportions method in 1941, and the bureau says it has been used at each census since."
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "Which state added the most people between the 2010 and 2020 U.S. censuses, what was its numerical gain, and how many House seats did it have after each census?",
+      "arm": "F",
+      "passages": [
+        {
+          "ref": "record02.txt#L2",
+          "family": "us-census-bureau",
+          "text": "Texas added 3,999,944 residents over the decade from 2010 to 2020, the largest numerical increase of any state in the bureau's release."
+        },
+        {
+          "ref": "record06.txt#L1",
+          "family": "texas-legislative-council",
+          "text": "The Texas Legislative Council records a rise from 36 U.S. House districts for Texas after the 2010 census to 38 after the 2020 census."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L5",
+          "family": "us-census-bureau",
+          "text": "Congress chose the equal proportions method in 1941, and the bureau says it has been used at each census since."
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "Which state added the most people between the 2010 and 2020 U.S. censuses, what was its numerical gain, and how many House seats did it have after each census?",
+      "arm": "G",
+      "passages": [
+        {
+          "ref": "record02.txt#L2",
+          "family": "us-census-bureau",
+          "text": "Texas added 3,999,944 residents over the decade from 2010 to 2020, the largest numerical increase of any state in the bureau's release."
+        },
+        {
+          "ref": "record06.txt#L1",
+          "family": "texas-legislative-council",
+          "text": "The Texas Legislative Council records a rise from 36 U.S. House districts for Texas after the 2010 census to 38 after the 2020 census."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L5",
+          "family": "us-census-bureau",
+          "text": "Congress chose the equal proportions method in 1941, and the bureau says it has been used at each census since."
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "question": "Which state added the most people between the 2010 and 2020 U.S. censuses, what was its numerical gain, and how many House seats did it have after each census?",
+      "arm": "H",
+      "passages": [
+        {
+          "ref": "record02.txt#L2",
+          "family": "us-census-bureau",
+          "text": "Texas added 3,999,944 residents over the decade from 2010 to 2020, the largest numerical increase of any state in the bureau's release."
+        },
+        {
+          "ref": "record06.txt#L1",
+          "family": "texas-legislative-council",
+          "text": "The Texas Legislative Council records a rise from 36 U.S. House districts for Texas after the 2010 census to 38 after the 2020 census."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L5",
+          "family": "us-census-bureau",
+          "text": "Congress chose the equal proportions method in 1941, and the bureau says it has been used at each census since."
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "question": "At the July 2017 ceremony for Britain's new pound, who struck the milestone coin, and how many of the new coins had then been made?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "record01.txt#L4",
+          "family": "royal-mint",
+          "text": "The Mint records the withdrawal of the round pound's legal tender status at 23:59 on 15 October 2017."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L3",
+          "family": "hm-treasury",
+          "text": "Exchequer Secretary Andrew Jones visited the Royal Mint's Welsh headquarters and struck the coin that marked the occasion."
+        },
+        {
+          "ref": "record07.txt#L1",
+          "family": "hm-treasury",
+          "text": "HM Treasury named David Pearce, a 15-year-old pupil in Walsall, as winner of the competition for the reverse of the new pound coin."
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "question": "At the July 2017 ceremony for Britain's new pound, who struck the milestone coin, and how many of the new coins had then been made?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record07.txt#L1",
+          "family": "hm-treasury",
+          "text": "HM Treasury named David Pearce, a 15-year-old pupil in Walsall, as winner of the competition for the reverse of the new pound coin."
+        },
+        {
+          "ref": "record07.txt#L5",
+          "family": "hm-treasury",
+          "text": "The Treasury said some other entrants had proposed seaside piers or cups of tea to represent Britain."
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "question": "At the July 2017 ceremony for Britain's new pound, who struck the milestone coin, and how many of the new coins had then been made?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L2",
+          "family": "hm-treasury",
+          "text": "The announcement said 800 million of the old round pounds had already been returned."
+        },
+        {
+          "ref": "record03.txt#L3",
+          "family": "hm-treasury",
+          "text": "Exchequer Secretary Andrew Jones visited the Royal Mint's Welsh headquarters and struck the coin that marked the occasion."
+        },
+        {
+          "ref": "record07.txt#L1",
+          "family": "hm-treasury",
+          "text": "HM Treasury named David Pearce, a 15-year-old pupil in Walsall, as winner of the competition for the reverse of the new pound coin."
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "question": "At the July 2017 ceremony for Britain's new pound, who struck the milestone coin, and how many of the new coins had then been made?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L2",
+          "family": "hm-treasury",
+          "text": "The announcement said 800 million of the old round pounds had already been returned."
+        },
+        {
+          "ref": "record03.txt#L3",
+          "family": "hm-treasury",
+          "text": "Exchequer Secretary Andrew Jones visited the Royal Mint's Welsh headquarters and struck the coin that marked the occasion."
+        },
+        {
+          "ref": "record07.txt#L1",
+          "family": "hm-treasury",
+          "text": "HM Treasury named David Pearce, a 15-year-old pupil in Walsall, as winner of the competition for the reverse of the new pound coin."
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "question": "At the July 2017 ceremony for Britain's new pound, who struck the milestone coin, and how many of the new coins had then been made?",
+      "arm": "E",
+      "passages": [
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L2",
+          "family": "hm-treasury",
+          "text": "The announcement said 800 million of the old round pounds had already been returned."
+        },
+        {
+          "ref": "record03.txt#L3",
+          "family": "hm-treasury",
+          "text": "Exchequer Secretary Andrew Jones visited the Royal Mint's Welsh headquarters and struck the coin that marked the occasion."
+        },
+        {
+          "ref": "record07.txt#L1",
+          "family": "hm-treasury",
+          "text": "HM Treasury named David Pearce, a 15-year-old pupil in Walsall, as winner of the competition for the reverse of the new pound coin."
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "question": "At the July 2017 ceremony for Britain's new pound, who struck the milestone coin, and how many of the new coins had then been made?",
+      "arm": "F",
+      "passages": [
+        {
+          "ref": "record01.txt#L4",
+          "family": "royal-mint",
+          "text": "The Mint records the withdrawal of the round pound's legal tender status at 23:59 on 15 October 2017."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L2",
+          "family": "hm-treasury",
+          "text": "The announcement said 800 million of the old round pounds had already been returned."
+        },
+        {
+          "ref": "record07.txt#L1",
+          "family": "hm-treasury",
+          "text": "HM Treasury named David Pearce, a 15-year-old pupil in Walsall, as winner of the competition for the reverse of the new pound coin."
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "question": "At the July 2017 ceremony for Britain's new pound, who struck the milestone coin, and how many of the new coins had then been made?",
+      "arm": "G",
+      "passages": [
+        {
+          "ref": "record01.txt#L4",
+          "family": "royal-mint",
+          "text": "The Mint records the withdrawal of the round pound's legal tender status at 23:59 on 15 October 2017."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L3",
+          "family": "hm-treasury",
+          "text": "Exchequer Secretary Andrew Jones visited the Royal Mint's Welsh headquarters and struck the coin that marked the occasion."
+        },
+        {
+          "ref": "record07.txt#L1",
+          "family": "hm-treasury",
+          "text": "HM Treasury named David Pearce, a 15-year-old pupil in Walsall, as winner of the competition for the reverse of the new pound coin."
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "question": "At the July 2017 ceremony for Britain's new pound, who struck the milestone coin, and how many of the new coins had then been made?",
+      "arm": "H",
+      "passages": [
+        {
+          "ref": "record01.txt#L4",
+          "family": "royal-mint",
+          "text": "The Mint records the withdrawal of the round pound's legal tender status at 23:59 on 15 October 2017."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L2",
+          "family": "hm-treasury",
+          "text": "The announcement said 800 million of the old round pounds had already been returned."
+        },
+        {
+          "ref": "record07.txt#L1",
+          "family": "hm-treasury",
+          "text": "HM Treasury named David Pearce, a 15-year-old pupil in Walsall, as winner of the competition for the reverse of the new pound coin."
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "Which Canadian instrument helped decide where to collect material on Bennu, what did it measure, and which site did the spacecraft use?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record04.txt#L1",
+          "family": "canadian-space-agency",
+          "text": "The Canadian Space Agency says its OSIRIS-REx Laser Altimeter mapped Bennu's surface shape in three dimensions to guide the choice of a collection site."
+        },
+        {
+          "ref": "record04.txt#L2",
+          "family": "canadian-space-agency",
+          "text": "Four areas were considered before the team settled on Nightingale, where the Canadian agency says OSIRIS-REx collected material on October 20, 2020."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "Which Canadian instrument helped decide where to collect material on Bennu, what did it measure, and which site did the spacecraft use?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "record04.txt#L1",
+          "family": "canadian-space-agency",
+          "text": "The Canadian Space Agency says its OSIRIS-REx Laser Altimeter mapped Bennu's surface shape in three dimensions to guide the choice of a collection site."
+        },
+        {
+          "ref": "record04.txt#L2",
+          "family": "canadian-space-agency",
+          "text": "Four areas were considered before the team settled on Nightingale, where the Canadian agency says OSIRIS-REx collected material on October 20, 2020."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        },
+        {
+          "ref": "record09.txt#L2",
+          "family": "university-of-arizona",
+          "text": "The university reports that the spacecraft passed within 2.3 miles of Bennu on its April 7, 2021 return to photograph the area."
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "Which Canadian instrument helped decide where to collect material on Bennu, what did it measure, and which site did the spacecraft use?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record04.txt#L2",
+          "family": "canadian-space-agency",
+          "text": "Four areas were considered before the team settled on Nightingale, where the Canadian agency says OSIRIS-REx collected material on October 20, 2020."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        },
+        {
+          "ref": "record09.txt#L2",
+          "family": "university-of-arizona",
+          "text": "The university reports that the spacecraft passed within 2.3 miles of Bennu on its April 7, 2021 return to photograph the area."
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "Which Canadian instrument helped decide where to collect material on Bennu, what did it measure, and which site did the spacecraft use?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record04.txt#L2",
+          "family": "canadian-space-agency",
+          "text": "Four areas were considered before the team settled on Nightingale, where the Canadian agency says OSIRIS-REx collected material on October 20, 2020."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        },
+        {
+          "ref": "record09.txt#L2",
+          "family": "university-of-arizona",
+          "text": "The university reports that the spacecraft passed within 2.3 miles of Bennu on its April 7, 2021 return to photograph the area."
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "Which Canadian instrument helped decide where to collect material on Bennu, what did it measure, and which site did the spacecraft use?",
+      "arm": "E",
+      "passages": [
+        {
+          "ref": "record04.txt#L2",
+          "family": "canadian-space-agency",
+          "text": "Four areas were considered before the team settled on Nightingale, where the Canadian agency says OSIRIS-REx collected material on October 20, 2020."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        },
+        {
+          "ref": "record09.txt#L2",
+          "family": "university-of-arizona",
+          "text": "The university reports that the spacecraft passed within 2.3 miles of Bennu on its April 7, 2021 return to photograph the area."
+        },
+        {
+          "ref": "record10.txt#L1",
+          "family": "canadian-space-agency",
+          "text": "The Canadian Space Agency reported that the Bennu capsule reached the Utah desert on September 24, 2023."
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "Which Canadian instrument helped decide where to collect material on Bennu, what did it measure, and which site did the spacecraft use?",
+      "arm": "F",
+      "passages": [
+        {
+          "ref": "record04.txt#L1",
+          "family": "canadian-space-agency",
+          "text": "The Canadian Space Agency says its OSIRIS-REx Laser Altimeter mapped Bennu's surface shape in three dimensions to guide the choice of a collection site."
+        },
+        {
+          "ref": "record04.txt#L2",
+          "family": "canadian-space-agency",
+          "text": "Four areas were considered before the team settled on Nightingale, where the Canadian agency says OSIRIS-REx collected material on October 20, 2020."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        },
+        {
+          "ref": "record09.txt#L2",
+          "family": "university-of-arizona",
+          "text": "The university reports that the spacecraft passed within 2.3 miles of Bennu on its April 7, 2021 return to photograph the area."
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "Which Canadian instrument helped decide where to collect material on Bennu, what did it measure, and which site did the spacecraft use?",
+      "arm": "G",
+      "passages": [
+        {
+          "ref": "record04.txt#L2",
+          "family": "canadian-space-agency",
+          "text": "Four areas were considered before the team settled on Nightingale, where the Canadian agency says OSIRIS-REx collected material on October 20, 2020."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        },
+        {
+          "ref": "record09.txt#L2",
+          "family": "university-of-arizona",
+          "text": "The university reports that the spacecraft passed within 2.3 miles of Bennu on its April 7, 2021 return to photograph the area."
+        },
+        {
+          "ref": "record10.txt#L1",
+          "family": "canadian-space-agency",
+          "text": "The Canadian Space Agency reported that the Bennu capsule reached the Utah desert on September 24, 2023."
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "question": "Which Canadian instrument helped decide where to collect material on Bennu, what did it measure, and which site did the spacecraft use?",
+      "arm": "H",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record04.txt#L1",
+          "family": "canadian-space-agency",
+          "text": "The Canadian Space Agency says its OSIRIS-REx Laser Altimeter mapped Bennu's surface shape in three dimensions to guide the choice of a collection site."
+        },
+        {
+          "ref": "record04.txt#L2",
+          "family": "canadian-space-agency",
+          "text": "Four areas were considered before the team settled on Nightingale, where the Canadian agency says OSIRIS-REx collected material on October 20, 2020."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "How did the 2020 U.S. resident count and the House apportionment count treat people living in the District of Columbia, and which people living abroad could count toward a state's seats?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "record02.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau counted 331,449,281 people living in the 50 states and the District of Columbia for the national resident total on April 1, 2020."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L3",
+          "family": "us-census-bureau",
+          "text": "The 2020 state apportionment totals included U.S. military personnel and federal civilian employees abroad, plus dependents living with them, when a home state could be identified."
+        },
+        {
+          "ref": "record08.txt#L4",
+          "family": "us-census-bureau",
+          "text": "The bureau excluded the District of Columbia and Puerto Rico from apportionment because neither has a voting seat in the House."
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "How did the 2020 U.S. resident count and the House apportionment count treat people living in the District of Columbia, and which people living abroad could count toward a state's seats?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "record02.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau counted 331,449,281 people living in the 50 states and the District of Columbia for the national resident total on April 1, 2020."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L3",
+          "family": "us-census-bureau",
+          "text": "The 2020 state apportionment totals included U.S. military personnel and federal civilian employees abroad, plus dependents living with them, when a home state could be identified."
+        },
+        {
+          "ref": "record08.txt#L4",
+          "family": "us-census-bureau",
+          "text": "The bureau excluded the District of Columbia and Puerto Rico from apportionment because neither has a voting seat in the House."
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "How did the 2020 U.S. resident count and the House apportionment count treat people living in the District of Columbia, and which people living abroad could count toward a state's seats?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "record02.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau counted 331,449,281 people living in the 50 states and the District of Columbia for the national resident total on April 1, 2020."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L3",
+          "family": "us-census-bureau",
+          "text": "The 2020 state apportionment totals included U.S. military personnel and federal civilian employees abroad, plus dependents living with them, when a home state could be identified."
+        },
+        {
+          "ref": "record08.txt#L4",
+          "family": "us-census-bureau",
+          "text": "The bureau excluded the District of Columbia and Puerto Rico from apportionment because neither has a voting seat in the House."
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "How did the 2020 U.S. resident count and the House apportionment count treat people living in the District of Columbia, and which people living abroad could count toward a state's seats?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "record02.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau counted 331,449,281 people living in the 50 states and the District of Columbia for the national resident total on April 1, 2020."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L3",
+          "family": "us-census-bureau",
+          "text": "The 2020 state apportionment totals included U.S. military personnel and federal civilian employees abroad, plus dependents living with them, when a home state could be identified."
+        },
+        {
+          "ref": "record08.txt#L4",
+          "family": "us-census-bureau",
+          "text": "The bureau excluded the District of Columbia and Puerto Rico from apportionment because neither has a voting seat in the House."
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "How did the 2020 U.S. resident count and the House apportionment count treat people living in the District of Columbia, and which people living abroad could count toward a state's seats?",
+      "arm": "E",
+      "passages": [
+        {
+          "ref": "record02.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau counted 331,449,281 people living in the 50 states and the District of Columbia for the national resident total on April 1, 2020."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L3",
+          "family": "us-census-bureau",
+          "text": "The 2020 state apportionment totals included U.S. military personnel and federal civilian employees abroad, plus dependents living with them, when a home state could be identified."
+        },
+        {
+          "ref": "record08.txt#L4",
+          "family": "us-census-bureau",
+          "text": "The bureau excluded the District of Columbia and Puerto Rico from apportionment because neither has a voting seat in the House."
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "How did the 2020 U.S. resident count and the House apportionment count treat people living in the District of Columbia, and which people living abroad could count toward a state's seats?",
+      "arm": "F",
+      "passages": [
+        {
+          "ref": "record02.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau counted 331,449,281 people living in the 50 states and the District of Columbia for the national resident total on April 1, 2020."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L3",
+          "family": "us-census-bureau",
+          "text": "The 2020 state apportionment totals included U.S. military personnel and federal civilian employees abroad, plus dependents living with them, when a home state could be identified."
+        },
+        {
+          "ref": "record08.txt#L4",
+          "family": "us-census-bureau",
+          "text": "The bureau excluded the District of Columbia and Puerto Rico from apportionment because neither has a voting seat in the House."
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "How did the 2020 U.S. resident count and the House apportionment count treat people living in the District of Columbia, and which people living abroad could count toward a state's seats?",
+      "arm": "G",
+      "passages": [
+        {
+          "ref": "record02.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau counted 331,449,281 people living in the 50 states and the District of Columbia for the national resident total on April 1, 2020."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L3",
+          "family": "us-census-bureau",
+          "text": "The 2020 state apportionment totals included U.S. military personnel and federal civilian employees abroad, plus dependents living with them, when a home state could be identified."
+        },
+        {
+          "ref": "record08.txt#L4",
+          "family": "us-census-bureau",
+          "text": "The bureau excluded the District of Columbia and Puerto Rico from apportionment because neither has a voting seat in the House."
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "question": "How did the 2020 U.S. resident count and the House apportionment count treat people living in the District of Columbia, and which people living abroad could count toward a state's seats?",
+      "arm": "H",
+      "passages": [
+        {
+          "ref": "record02.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau counted 331,449,281 people living in the 50 states and the District of Columbia for the national resident total on April 1, 2020."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L3",
+          "family": "us-census-bureau",
+          "text": "The 2020 state apportionment totals included U.S. military personnel and federal civilian employees abroad, plus dependents living with them, when a home state could be identified."
+        },
+        {
+          "ref": "record08.txt#L4",
+          "family": "us-census-bureau",
+          "text": "The bureau excluded the District of Columbia and Puerto Rico from apportionment because neither has a voting seat in the House."
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "By the time of the Treasury's July 10, 2017 announcement, how many old round pounds had the Mint already melted down?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L2",
+          "family": "hm-treasury",
+          "text": "The announcement said 800 million of the old round pounds had already been returned."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record03.txt#L5",
+          "family": "hm-treasury",
+          "text": "The Treasury expected the replacement to outnumber the old coins in circulation by the end of July."
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "By the time of the Treasury's July 10, 2017 announcement, how many old round pounds had the Mint already melted down?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L2",
+          "family": "hm-treasury",
+          "text": "The announcement said 800 million of the old round pounds had already been returned."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record03.txt#L5",
+          "family": "hm-treasury",
+          "text": "The Treasury expected the replacement to outnumber the old coins in circulation by the end of July."
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "By the time of the Treasury's July 10, 2017 announcement, how many old round pounds had the Mint already melted down?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L2",
+          "family": "hm-treasury",
+          "text": "The announcement said 800 million of the old round pounds had already been returned."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record03.txt#L5",
+          "family": "hm-treasury",
+          "text": "The Treasury expected the replacement to outnumber the old coins in circulation by the end of July."
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "By the time of the Treasury's July 10, 2017 announcement, how many old round pounds had the Mint already melted down?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L2",
+          "family": "hm-treasury",
+          "text": "The announcement said 800 million of the old round pounds had already been returned."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record03.txt#L5",
+          "family": "hm-treasury",
+          "text": "The Treasury expected the replacement to outnumber the old coins in circulation by the end of July."
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "By the time of the Treasury's July 10, 2017 announcement, how many old round pounds had the Mint already melted down?",
+      "arm": "E",
+      "passages": [
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L2",
+          "family": "hm-treasury",
+          "text": "The announcement said 800 million of the old round pounds had already been returned."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record03.txt#L5",
+          "family": "hm-treasury",
+          "text": "The Treasury expected the replacement to outnumber the old coins in circulation by the end of July."
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "By the time of the Treasury's July 10, 2017 announcement, how many old round pounds had the Mint already melted down?",
+      "arm": "F",
+      "passages": [
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L2",
+          "family": "hm-treasury",
+          "text": "The announcement said 800 million of the old round pounds had already been returned."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record03.txt#L5",
+          "family": "hm-treasury",
+          "text": "The Treasury expected the replacement to outnumber the old coins in circulation by the end of July."
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "By the time of the Treasury's July 10, 2017 announcement, how many old round pounds had the Mint already melted down?",
+      "arm": "G",
+      "passages": [
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L2",
+          "family": "hm-treasury",
+          "text": "The announcement said 800 million of the old round pounds had already been returned."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record03.txt#L5",
+          "family": "hm-treasury",
+          "text": "The Treasury expected the replacement to outnumber the old coins in circulation by the end of July."
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "question": "By the time of the Treasury's July 10, 2017 announcement, how many old round pounds had the Mint already melted down?",
+      "arm": "H",
+      "passages": [
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L2",
+          "family": "hm-treasury",
+          "text": "The announcement said 800 million of the old round pounds had already been returned."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record03.txt#L5",
+          "family": "hm-treasury",
+          "text": "The Treasury expected the replacement to outnumber the old coins in circulation by the end of July."
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "What share of the Bennu sample was promised to Canada for its instrument, and what share did NASA intend to hold at Johnson for future research?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "record04.txt#L3",
+          "family": "canadian-space-agency",
+          "text": "Canada's agreed share in return for supplying the instrument amounted to four percent of the recovered sample, according to the space agency."
+        },
+        {
+          "ref": "record05.txt#L5",
+          "family": "nasa",
+          "text": "NASA said it would keep at least 70 percent of the Bennu collection at Johnson Space Center to support future scientific work."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        },
+        {
+          "ref": "record10.txt#L3",
+          "family": "canadian-space-agency",
+          "text": "The Canadian agency named NASA's Johnson Space Center in Houston as the destination for curation and distribution of the material."
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "What share of the Bennu sample was promised to Canada for its instrument, and what share did NASA intend to hold at Johnson for future research?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "record04.txt#L3",
+          "family": "canadian-space-agency",
+          "text": "Canada's agreed share in return for supplying the instrument amounted to four percent of the recovered sample, according to the space agency."
+        },
+        {
+          "ref": "record05.txt#L5",
+          "family": "nasa",
+          "text": "NASA said it would keep at least 70 percent of the Bennu collection at Johnson Space Center to support future scientific work."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        },
+        {
+          "ref": "record10.txt#L3",
+          "family": "canadian-space-agency",
+          "text": "The Canadian agency named NASA's Johnson Space Center in Houston as the destination for curation and distribution of the material."
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "What share of the Bennu sample was promised to Canada for its instrument, and what share did NASA intend to hold at Johnson for future research?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "record04.txt#L3",
+          "family": "canadian-space-agency",
+          "text": "Canada's agreed share in return for supplying the instrument amounted to four percent of the recovered sample, according to the space agency."
+        },
+        {
+          "ref": "record05.txt#L5",
+          "family": "nasa",
+          "text": "NASA said it would keep at least 70 percent of the Bennu collection at Johnson Space Center to support future scientific work."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        },
+        {
+          "ref": "record10.txt#L3",
+          "family": "canadian-space-agency",
+          "text": "The Canadian agency named NASA's Johnson Space Center in Houston as the destination for curation and distribution of the material."
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "What share of the Bennu sample was promised to Canada for its instrument, and what share did NASA intend to hold at Johnson for future research?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "record04.txt#L3",
+          "family": "canadian-space-agency",
+          "text": "Canada's agreed share in return for supplying the instrument amounted to four percent of the recovered sample, according to the space agency."
+        },
+        {
+          "ref": "record05.txt#L5",
+          "family": "nasa",
+          "text": "NASA said it would keep at least 70 percent of the Bennu collection at Johnson Space Center to support future scientific work."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        },
+        {
+          "ref": "record10.txt#L3",
+          "family": "canadian-space-agency",
+          "text": "The Canadian agency named NASA's Johnson Space Center in Houston as the destination for curation and distribution of the material."
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "What share of the Bennu sample was promised to Canada for its instrument, and what share did NASA intend to hold at Johnson for future research?",
+      "arm": "E",
+      "passages": [
+        {
+          "ref": "record04.txt#L3",
+          "family": "canadian-space-agency",
+          "text": "Canada's agreed share in return for supplying the instrument amounted to four percent of the recovered sample, according to the space agency."
+        },
+        {
+          "ref": "record05.txt#L5",
+          "family": "nasa",
+          "text": "NASA said it would keep at least 70 percent of the Bennu collection at Johnson Space Center to support future scientific work."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        },
+        {
+          "ref": "record10.txt#L3",
+          "family": "canadian-space-agency",
+          "text": "The Canadian agency named NASA's Johnson Space Center in Houston as the destination for curation and distribution of the material."
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "What share of the Bennu sample was promised to Canada for its instrument, and what share did NASA intend to hold at Johnson for future research?",
+      "arm": "F",
+      "passages": [
+        {
+          "ref": "record04.txt#L3",
+          "family": "canadian-space-agency",
+          "text": "Canada's agreed share in return for supplying the instrument amounted to four percent of the recovered sample, according to the space agency."
+        },
+        {
+          "ref": "record05.txt#L5",
+          "family": "nasa",
+          "text": "NASA said it would keep at least 70 percent of the Bennu collection at Johnson Space Center to support future scientific work."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        },
+        {
+          "ref": "record10.txt#L3",
+          "family": "canadian-space-agency",
+          "text": "The Canadian agency named NASA's Johnson Space Center in Houston as the destination for curation and distribution of the material."
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "What share of the Bennu sample was promised to Canada for its instrument, and what share did NASA intend to hold at Johnson for future research?",
+      "arm": "G",
+      "passages": [
+        {
+          "ref": "record04.txt#L3",
+          "family": "canadian-space-agency",
+          "text": "Canada's agreed share in return for supplying the instrument amounted to four percent of the recovered sample, according to the space agency."
+        },
+        {
+          "ref": "record05.txt#L5",
+          "family": "nasa",
+          "text": "NASA said it would keep at least 70 percent of the Bennu collection at Johnson Space Center to support future scientific work."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        },
+        {
+          "ref": "record10.txt#L3",
+          "family": "canadian-space-agency",
+          "text": "The Canadian agency named NASA's Johnson Space Center in Houston as the destination for curation and distribution of the material."
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "question": "What share of the Bennu sample was promised to Canada for its instrument, and what share did NASA intend to hold at Johnson for future research?",
+      "arm": "H",
+      "passages": [
+        {
+          "ref": "record04.txt#L3",
+          "family": "canadian-space-agency",
+          "text": "Canada's agreed share in return for supplying the instrument amounted to four percent of the recovered sample, according to the space agency."
+        },
+        {
+          "ref": "record05.txt#L5",
+          "family": "nasa",
+          "text": "NASA said it would keep at least 70 percent of the Bennu collection at Johnson Space Center to support future scientific work."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        },
+        {
+          "ref": "record10.txt#L3",
+          "family": "canadian-space-agency",
+          "text": "The Canadian agency named NASA's Johnson Space Center in Houston as the destination for curation and distribution of the material."
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "What House representation was each state guaranteed after the 2020 U.S. census, and what calculation determined which state got the next seat?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "record06.txt#L1",
+          "family": "texas-legislative-council",
+          "text": "The Texas Legislative Council records a rise from 36 U.S. House districts for Texas after the 2010 census to 38 after the 2020 census."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L2",
+          "family": "us-census-bureau",
+          "text": "For each possible extra seat, the equal proportions method divides the state's apportionment population by the geometric mean of its present and next seat counts. The highest priority value goes first."
+        },
+        {
+          "ref": "record08.txt#L3",
+          "family": "us-census-bureau",
+          "text": "The 2020 state apportionment totals included U.S. military personnel and federal civilian employees abroad, plus dependents living with them, when a home state could be identified."
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "What House representation was each state guaranteed after the 2020 U.S. census, and what calculation determined which state got the next seat?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "record06.txt#L1",
+          "family": "texas-legislative-council",
+          "text": "The Texas Legislative Council records a rise from 36 U.S. House districts for Texas after the 2010 census to 38 after the 2020 census."
+        },
+        {
+          "ref": "record06.txt#L3",
+          "family": "texas-legislative-council",
+          "text": "The governor signed the state's congressional redistricting bill on October 25, 2021."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L5",
+          "family": "us-census-bureau",
+          "text": "Congress chose the equal proportions method in 1941, and the bureau says it has been used at each census since."
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "What House representation was each state guaranteed after the 2020 U.S. census, and what calculation determined which state got the next seat?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "record06.txt#L1",
+          "family": "texas-legislative-council",
+          "text": "The Texas Legislative Council records a rise from 36 U.S. House districts for Texas after the 2010 census to 38 after the 2020 census."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L2",
+          "family": "us-census-bureau",
+          "text": "For each possible extra seat, the equal proportions method divides the state's apportionment population by the geometric mean of its present and next seat counts. The highest priority value goes first."
+        },
+        {
+          "ref": "record08.txt#L3",
+          "family": "us-census-bureau",
+          "text": "The 2020 state apportionment totals included U.S. military personnel and federal civilian employees abroad, plus dependents living with them, when a home state could be identified."
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "What House representation was each state guaranteed after the 2020 U.S. census, and what calculation determined which state got the next seat?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "record06.txt#L1",
+          "family": "texas-legislative-council",
+          "text": "The Texas Legislative Council records a rise from 36 U.S. House districts for Texas after the 2010 census to 38 after the 2020 census."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L2",
+          "family": "us-census-bureau",
+          "text": "For each possible extra seat, the equal proportions method divides the state's apportionment population by the geometric mean of its present and next seat counts. The highest priority value goes first."
+        },
+        {
+          "ref": "record08.txt#L3",
+          "family": "us-census-bureau",
+          "text": "The 2020 state apportionment totals included U.S. military personnel and federal civilian employees abroad, plus dependents living with them, when a home state could be identified."
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "What House representation was each state guaranteed after the 2020 U.S. census, and what calculation determined which state got the next seat?",
+      "arm": "E",
+      "passages": [
+        {
+          "ref": "record06.txt#L1",
+          "family": "texas-legislative-council",
+          "text": "The Texas Legislative Council records a rise from 36 U.S. House districts for Texas after the 2010 census to 38 after the 2020 census."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L2",
+          "family": "us-census-bureau",
+          "text": "For each possible extra seat, the equal proportions method divides the state's apportionment population by the geometric mean of its present and next seat counts. The highest priority value goes first."
+        },
+        {
+          "ref": "record08.txt#L3",
+          "family": "us-census-bureau",
+          "text": "The 2020 state apportionment totals included U.S. military personnel and federal civilian employees abroad, plus dependents living with them, when a home state could be identified."
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "What House representation was each state guaranteed after the 2020 U.S. census, and what calculation determined which state got the next seat?",
+      "arm": "F",
+      "passages": [
+        {
+          "ref": "record06.txt#L1",
+          "family": "texas-legislative-council",
+          "text": "The Texas Legislative Council records a rise from 36 U.S. House districts for Texas after the 2010 census to 38 after the 2020 census."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L2",
+          "family": "us-census-bureau",
+          "text": "For each possible extra seat, the equal proportions method divides the state's apportionment population by the geometric mean of its present and next seat counts. The highest priority value goes first."
+        },
+        {
+          "ref": "record08.txt#L3",
+          "family": "us-census-bureau",
+          "text": "The 2020 state apportionment totals included U.S. military personnel and federal civilian employees abroad, plus dependents living with them, when a home state could be identified."
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "What House representation was each state guaranteed after the 2020 U.S. census, and what calculation determined which state got the next seat?",
+      "arm": "G",
+      "passages": [
+        {
+          "ref": "record06.txt#L1",
+          "family": "texas-legislative-council",
+          "text": "The Texas Legislative Council records a rise from 36 U.S. House districts for Texas after the 2010 census to 38 after the 2020 census."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L2",
+          "family": "us-census-bureau",
+          "text": "For each possible extra seat, the equal proportions method divides the state's apportionment population by the geometric mean of its present and next seat counts. The highest priority value goes first."
+        },
+        {
+          "ref": "record08.txt#L3",
+          "family": "us-census-bureau",
+          "text": "The 2020 state apportionment totals included U.S. military personnel and federal civilian employees abroad, plus dependents living with them, when a home state could be identified."
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "question": "What House representation was each state guaranteed after the 2020 U.S. census, and what calculation determined which state got the next seat?",
+      "arm": "H",
+      "passages": [
+        {
+          "ref": "record06.txt#L1",
+          "family": "texas-legislative-council",
+          "text": "The Texas Legislative Council records a rise from 36 U.S. House districts for Texas after the 2010 census to 38 after the 2020 census."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        },
+        {
+          "ref": "record08.txt#L2",
+          "family": "us-census-bureau",
+          "text": "For each possible extra seat, the equal proportions method divides the state's apportionment population by the geometric mean of its present and next seat counts. The highest priority value goes first."
+        },
+        {
+          "ref": "record08.txt#L3",
+          "family": "us-census-bureau",
+          "text": "The 2020 state apportionment totals included U.S. military personnel and federal civilian employees abroad, plus dependents living with them, when a home state could be identified."
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "What minimum mass of Bennu material did the mission require, and by how many grams did the final sample exceed it?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "record05.txt#L1",
+          "family": "nasa",
+          "text": "NASA set a minimum of 60 grams of asteroid material for the OSIRIS-REx mission to meet its science goals."
+        },
+        {
+          "ref": "record05.txt#L3",
+          "family": "nasa",
+          "text": "With new tools, the team freed the fasteners in January 2024 and poured another 51.2 grams of Bennu material from the head."
+        },
+        {
+          "ref": "record05.txt#L4",
+          "family": "nasa",
+          "text": "NASA's February 2024 accounting put the total mass of Bennu material brought back by OSIRIS-REx at 121.6 grams."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "What minimum mass of Bennu material did the mission require, and by how many grams did the final sample exceed it?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "record05.txt#L1",
+          "family": "nasa",
+          "text": "NASA set a minimum of 60 grams of asteroid material for the OSIRIS-REx mission to meet its science goals."
+        },
+        {
+          "ref": "record05.txt#L3",
+          "family": "nasa",
+          "text": "With new tools, the team freed the fasteners in January 2024 and poured another 51.2 grams of Bennu material from the head."
+        },
+        {
+          "ref": "record05.txt#L4",
+          "family": "nasa",
+          "text": "NASA's February 2024 accounting put the total mass of Bennu material brought back by OSIRIS-REx at 121.6 grams."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "What minimum mass of Bennu material did the mission require, and by how many grams did the final sample exceed it?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record05.txt#L1",
+          "family": "nasa",
+          "text": "NASA set a minimum of 60 grams of asteroid material for the OSIRIS-REx mission to meet its science goals."
+        },
+        {
+          "ref": "record05.txt#L3",
+          "family": "nasa",
+          "text": "With new tools, the team freed the fasteners in January 2024 and poured another 51.2 grams of Bennu material from the head."
+        },
+        {
+          "ref": "record05.txt#L4",
+          "family": "nasa",
+          "text": "NASA's February 2024 accounting put the total mass of Bennu material brought back by OSIRIS-REx at 121.6 grams."
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "What minimum mass of Bennu material did the mission require, and by how many grams did the final sample exceed it?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record05.txt#L1",
+          "family": "nasa",
+          "text": "NASA set a minimum of 60 grams of asteroid material for the OSIRIS-REx mission to meet its science goals."
+        },
+        {
+          "ref": "record05.txt#L3",
+          "family": "nasa",
+          "text": "With new tools, the team freed the fasteners in January 2024 and poured another 51.2 grams of Bennu material from the head."
+        },
+        {
+          "ref": "record05.txt#L4",
+          "family": "nasa",
+          "text": "NASA's February 2024 accounting put the total mass of Bennu material brought back by OSIRIS-REx at 121.6 grams."
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "What minimum mass of Bennu material did the mission require, and by how many grams did the final sample exceed it?",
+      "arm": "E",
+      "passages": [
+        {
+          "ref": "record05.txt#L1",
+          "family": "nasa",
+          "text": "NASA set a minimum of 60 grams of asteroid material for the OSIRIS-REx mission to meet its science goals."
+        },
+        {
+          "ref": "record05.txt#L4",
+          "family": "nasa",
+          "text": "NASA's February 2024 accounting put the total mass of Bennu material brought back by OSIRIS-REx at 121.6 grams."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        },
+        {
+          "ref": "record10.txt#L3",
+          "family": "canadian-space-agency",
+          "text": "The Canadian agency named NASA's Johnson Space Center in Houston as the destination for curation and distribution of the material."
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "What minimum mass of Bennu material did the mission require, and by how many grams did the final sample exceed it?",
+      "arm": "F",
+      "passages": [
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record05.txt#L1",
+          "family": "nasa",
+          "text": "NASA set a minimum of 60 grams of asteroid material for the OSIRIS-REx mission to meet its science goals."
+        },
+        {
+          "ref": "record05.txt#L3",
+          "family": "nasa",
+          "text": "With new tools, the team freed the fasteners in January 2024 and poured another 51.2 grams of Bennu material from the head."
+        },
+        {
+          "ref": "record05.txt#L4",
+          "family": "nasa",
+          "text": "NASA's February 2024 accounting put the total mass of Bennu material brought back by OSIRIS-REx at 121.6 grams."
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "What minimum mass of Bennu material did the mission require, and by how many grams did the final sample exceed it?",
+      "arm": "G",
+      "passages": [
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record05.txt#L1",
+          "family": "nasa",
+          "text": "NASA set a minimum of 60 grams of asteroid material for the OSIRIS-REx mission to meet its science goals."
+        },
+        {
+          "ref": "record05.txt#L4",
+          "family": "nasa",
+          "text": "NASA's February 2024 accounting put the total mass of Bennu material brought back by OSIRIS-REx at 121.6 grams."
+        },
+        {
+          "ref": "record09.txt#L1",
+          "family": "university-of-arizona",
+          "text": "The University of Arizona's before-and-after pictures mark Nightingale as the place where OSIRIS-REx touched Bennu to collect its sample."
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "What minimum mass of Bennu material did the mission require, and by how many grams did the final sample exceed it?",
+      "arm": "H",
+      "passages": [
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        },
+        {
+          "ref": "record05.txt#L1",
+          "family": "nasa",
+          "text": "NASA set a minimum of 60 grams of asteroid material for the OSIRIS-REx mission to meet its science goals."
+        },
+        {
+          "ref": "record05.txt#L3",
+          "family": "nasa",
+          "text": "With new tools, the team freed the fasteners in January 2024 and poured another 51.2 grams of Bennu material from the head."
+        },
+        {
+          "ref": "record05.txt#L4",
+          "family": "nasa",
+          "text": "NASA's February 2024 accounting put the total mass of Bennu material brought back by OSIRIS-REx at 121.6 grams."
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "Which state senator was the author of the Texas bill that set the new congressional boundaries in 2021?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "record06.txt#L2",
+          "family": "texas-legislative-council",
+          "text": "Texas legislators passed the 2021 congressional map in Senate Bill 6 on October 19, during the third called session."
+        },
+        {
+          "ref": "record06.txt#L3",
+          "family": "texas-legislative-council",
+          "text": "The governor signed the state's congressional redistricting bill on October 25, 2021."
+        },
+        {
+          "ref": "record06.txt#L4",
+          "family": "texas-legislative-council",
+          "text": "Texas House Bill 1, passed on October 16 that year, dealt with boundaries for the state House."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "Which state senator was the author of the Texas bill that set the new congressional boundaries in 2021?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "record06.txt#L2",
+          "family": "texas-legislative-council",
+          "text": "Texas legislators passed the 2021 congressional map in Senate Bill 6 on October 19, during the third called session."
+        },
+        {
+          "ref": "record06.txt#L3",
+          "family": "texas-legislative-council",
+          "text": "The governor signed the state's congressional redistricting bill on October 25, 2021."
+        },
+        {
+          "ref": "record06.txt#L4",
+          "family": "texas-legislative-council",
+          "text": "Texas House Bill 1, passed on October 16 that year, dealt with boundaries for the state House."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "Which state senator was the author of the Texas bill that set the new congressional boundaries in 2021?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "record06.txt#L2",
+          "family": "texas-legislative-council",
+          "text": "Texas legislators passed the 2021 congressional map in Senate Bill 6 on October 19, during the third called session."
+        },
+        {
+          "ref": "record06.txt#L3",
+          "family": "texas-legislative-council",
+          "text": "The governor signed the state's congressional redistricting bill on October 25, 2021."
+        },
+        {
+          "ref": "record06.txt#L4",
+          "family": "texas-legislative-council",
+          "text": "Texas House Bill 1, passed on October 16 that year, dealt with boundaries for the state House."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "Which state senator was the author of the Texas bill that set the new congressional boundaries in 2021?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "record06.txt#L2",
+          "family": "texas-legislative-council",
+          "text": "Texas legislators passed the 2021 congressional map in Senate Bill 6 on October 19, during the third called session."
+        },
+        {
+          "ref": "record06.txt#L3",
+          "family": "texas-legislative-council",
+          "text": "The governor signed the state's congressional redistricting bill on October 25, 2021."
+        },
+        {
+          "ref": "record06.txt#L4",
+          "family": "texas-legislative-council",
+          "text": "Texas House Bill 1, passed on October 16 that year, dealt with boundaries for the state House."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "Which state senator was the author of the Texas bill that set the new congressional boundaries in 2021?",
+      "arm": "E",
+      "passages": [
+        {
+          "ref": "record06.txt#L2",
+          "family": "texas-legislative-council",
+          "text": "Texas legislators passed the 2021 congressional map in Senate Bill 6 on October 19, during the third called session."
+        },
+        {
+          "ref": "record06.txt#L3",
+          "family": "texas-legislative-council",
+          "text": "The governor signed the state's congressional redistricting bill on October 25, 2021."
+        },
+        {
+          "ref": "record06.txt#L4",
+          "family": "texas-legislative-council",
+          "text": "Texas House Bill 1, passed on October 16 that year, dealt with boundaries for the state House."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "Which state senator was the author of the Texas bill that set the new congressional boundaries in 2021?",
+      "arm": "F",
+      "passages": [
+        {
+          "ref": "record06.txt#L2",
+          "family": "texas-legislative-council",
+          "text": "Texas legislators passed the 2021 congressional map in Senate Bill 6 on October 19, during the third called session."
+        },
+        {
+          "ref": "record06.txt#L3",
+          "family": "texas-legislative-council",
+          "text": "The governor signed the state's congressional redistricting bill on October 25, 2021."
+        },
+        {
+          "ref": "record06.txt#L4",
+          "family": "texas-legislative-council",
+          "text": "Texas House Bill 1, passed on October 16 that year, dealt with boundaries for the state House."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "Which state senator was the author of the Texas bill that set the new congressional boundaries in 2021?",
+      "arm": "G",
+      "passages": [
+        {
+          "ref": "record06.txt#L2",
+          "family": "texas-legislative-council",
+          "text": "Texas legislators passed the 2021 congressional map in Senate Bill 6 on October 19, during the third called session."
+        },
+        {
+          "ref": "record06.txt#L3",
+          "family": "texas-legislative-council",
+          "text": "The governor signed the state's congressional redistricting bill on October 25, 2021."
+        },
+        {
+          "ref": "record06.txt#L4",
+          "family": "texas-legislative-council",
+          "text": "Texas House Bill 1, passed on October 16 that year, dealt with boundaries for the state House."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "question": "Which state senator was the author of the Texas bill that set the new congressional boundaries in 2021?",
+      "arm": "H",
+      "passages": [
+        {
+          "ref": "record06.txt#L2",
+          "family": "texas-legislative-council",
+          "text": "Texas legislators passed the 2021 congressional map in Senate Bill 6 on October 19, during the third called session."
+        },
+        {
+          "ref": "record06.txt#L3",
+          "family": "texas-legislative-council",
+          "text": "The governor signed the state's congressional redistricting bill on October 25, 2021."
+        },
+        {
+          "ref": "record06.txt#L4",
+          "family": "texas-legislative-council",
+          "text": "Texas House Bill 1, passed on October 16 that year, dealt with boundaries for the state House."
+        },
+        {
+          "ref": "record08.txt#L1",
+          "family": "us-census-bureau",
+          "text": "The Census Bureau explains that each of the 50 states has a guaranteed first seat in the U.S. House, which has 435 seats to apportion."
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "question": "What dates bracketed the two UK pound coins' overlap as legal tender, and what did the July update say about the number of round pounds returned and the Mint's plans for their metal?",
+      "arm": "A",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record01.txt#L4",
+          "family": "royal-mint",
+          "text": "The Mint records the withdrawal of the round pound's legal tender status at 23:59 on 15 October 2017."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "question": "What dates bracketed the two UK pound coins' overlap as legal tender, and what did the July update say about the number of round pounds returned and the Mint's plans for their metal?",
+      "arm": "B",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record01.txt#L4",
+          "family": "royal-mint",
+          "text": "The Mint records the withdrawal of the round pound's legal tender status at 23:59 on 15 October 2017."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "question": "What dates bracketed the two UK pound coins' overlap as legal tender, and what did the July update say about the number of round pounds returned and the Mint's plans for their metal?",
+      "arm": "C",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record01.txt#L4",
+          "family": "royal-mint",
+          "text": "The Mint records the withdrawal of the round pound's legal tender status at 23:59 on 15 October 2017."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "question": "What dates bracketed the two UK pound coins' overlap as legal tender, and what did the July update say about the number of round pounds returned and the Mint's plans for their metal?",
+      "arm": "D",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record01.txt#L4",
+          "family": "royal-mint",
+          "text": "The Mint records the withdrawal of the round pound's legal tender status at 23:59 on 15 October 2017."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "question": "What dates bracketed the two UK pound coins' overlap as legal tender, and what did the July update say about the number of round pounds returned and the Mint's plans for their metal?",
+      "arm": "E",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record01.txt#L4",
+          "family": "royal-mint",
+          "text": "The Mint records the withdrawal of the round pound's legal tender status at 23:59 on 15 October 2017."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "question": "What dates bracketed the two UK pound coins' overlap as legal tender, and what did the July update say about the number of round pounds returned and the Mint's plans for their metal?",
+      "arm": "F",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record01.txt#L4",
+          "family": "royal-mint",
+          "text": "The Mint records the withdrawal of the round pound's legal tender status at 23:59 on 15 October 2017."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "question": "What dates bracketed the two UK pound coins' overlap as legal tender, and what did the July update say about the number of round pounds returned and the Mint's plans for their metal?",
+      "arm": "G",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record01.txt#L4",
+          "family": "royal-mint",
+          "text": "The Mint records the withdrawal of the round pound's legal tender status at 23:59 on 15 October 2017."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "question": "What dates bracketed the two UK pound coins' overlap as legal tender, and what did the July update say about the number of round pounds returned and the Mint's plans for their metal?",
+      "arm": "H",
+      "passages": [
+        {
+          "ref": "record01.txt#L1",
+          "family": "royal-mint",
+          "text": "The Royal Mint dates the twelve-sided pound's entry into use as legal tender to 28 March 2017."
+        },
+        {
+          "ref": "record01.txt#L4",
+          "family": "royal-mint",
+          "text": "The Mint records the withdrawal of the round pound's legal tender status at 23:59 on 15 October 2017."
+        },
+        {
+          "ref": "record03.txt#L1",
+          "family": "hm-treasury",
+          "text": "A joint Treasury and Royal Mint announcement dated 10 July 2017 put production of the twelve-sided pound at one billion coins."
+        },
+        {
+          "ref": "record03.txt#L4",
+          "family": "hm-treasury",
+          "text": "The Mint's chief executive expected to reuse metal from many returned round pounds by melting them down to strike the new design."
+        }
+      ]
+    }
+  ]
+}

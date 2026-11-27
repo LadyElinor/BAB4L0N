@@ -1,0 +1,84 @@
+{
+  "profile": "babalon.blind-clause-coverage.v1",
+  "roles": {
+    "curator": "packet-curator",
+    "interpreter": "evidence-reader",
+    "reviewers": [
+      "review-a",
+      "review-b"
+    ]
+  },
+  "arms": [
+    "bm25.d4",
+    "reciprocal-rank.d4",
+    "ranker-exclusive.d4",
+    "clause-coverage.d4",
+    "bm25.d8",
+    "reciprocal-rank.d8",
+    "ranker-exclusive.d8",
+    "clause-coverage.d8"
+  ],
+  "method_commit": "bce32851e8034d681d2894f29ef5648328eae66f",
+  "inputs": {
+    "profile": "babalon.blind-inquiry.v1",
+    "packet_digest": "956ab700f448bfa619d8e389bd62e5a717838ebd1fc43372cd940fa79d43f1f5",
+    "rubric_sha256": "af8090895c48f41817d7d437ca499c6a6742161cc7e8bcfc9f1348e041197174",
+    "implementation": {
+      "scripts/blind_inquiry.py": "6da87c85a7d04a007e3da2af47e2a0775750b9280b28f52a5dc53e916463e5ca",
+      "scripts/court_trial.py": "29e7a2a5d337f93a4642a9f7be6f779d37249992efddc4e2c8cfb150164b40ee",
+      "babalon/inquiry.py": "d2eecffef19d12a0e958d29b8227b2b26682612bca9dc28b93544c989dc4c2d8",
+      "babalon/contracts.py": "5b32c7f10eccdbd0865699ac4e10716df8687983e499c771e9ea66a3fbda9b1d",
+      "babalon/retrieval_selection.py": "086a5e453d3b165062bf4abe123dc8a22c6e0136d7fbe43db284da521ffef60f",
+      "docs/BLIND_INQUIRY.md": "abe5f74be953d5fba6c9a53cc197867a833501ed2831a6eba4b901b5388542c7"
+    },
+    "arms": [
+      "shared-gap",
+      "keyword",
+      "bm25"
+    ],
+    "dimensions": [
+      "equivalent_evidence",
+      "source_attribution",
+      "unsupported_claim",
+      "warranted_abstention"
+    ],
+    "promotion_eligible": false,
+    "documents": {
+      "record01.txt": "45f67807f2829bc5bed0d0e99d8829bec508c819a63fcd9ae820c5785405c3d2",
+      "record02.txt": "f8e71187ea9d3eb27d0cb3dc5848ce06e78ddd882f3c40e967cb8fd7712b8f8b",
+      "record03.txt": "4f316980a054be6511ebdfbf6ebedf983cd38d66ddd246bd0ddf47b2c37b874d",
+      "record04.txt": "df15d8c8ec137351aff07bbfd2a0ba7e72835fb4de06e619acf2d2b99a27803d",
+      "record05.txt": "6c103c37c952caa153bdc8d9e5aab5703e4da29f40cd5e0a822ba68420034921",
+      "record06.txt": "809b37e851755c6898c44f0117798ead04780e5504a57e6c25cf5b4ffa812fd2",
+      "record07.txt": "a22fdf5b53d970b93531eaf5f361ec0e8a587d11f13af93b4f7578c3e446e2bc",
+      "record08.txt": "f6889b6a96a82e8a4d05e82752f29ddab2e842adfb68766c64d3e15801fbb168",
+      "record09.txt": "8dbd22e77725a6be81fd94d97ebdce5e11e2ea87a30fe3af98f03a7f4c3d5863",
+      "record10.txt": "4a7dee2dcd659b479141da0ecc8dfa62faea49e71d1fe3018b1842b3ea6a3894"
+    }
+  },
+  "implementation": {
+    "scripts/blind_inquiry.py": "6da87c85a7d04a007e3da2af47e2a0775750b9280b28f52a5dc53e916463e5ca",
+    "scripts/court_trial.py": "29e7a2a5d337f93a4642a9f7be6f779d37249992efddc4e2c8cfb150164b40ee",
+    "babalon/inquiry.py": "d2eecffef19d12a0e958d29b8227b2b26682612bca9dc28b93544c989dc4c2d8",
+    "babalon/contracts.py": "5b32c7f10eccdbd0865699ac4e10716df8687983e499c771e9ea66a3fbda9b1d",
+    "babalon/retrieval_selection.py": "086a5e453d3b165062bf4abe123dc8a22c6e0136d7fbe43db284da521ffef60f",
+    "docs/BLIND_INQUIRY.md": "abe5f74be953d5fba6c9a53cc197867a833501ed2831a6eba4b901b5388542c7",
+    "scripts/blind_inquiry_v2.py": "e1c80672f4259462fa226676e937b0500a06821300cfd70a1f0934b3cf203483",
+    "docs/BLIND_INQUIRY_V2.md": "26c026aa541f1b220d4caa19fd0f5acc6a130fbe7d89d1d78b46a99872fdf0ca",
+    "scripts/blind_inquiry_v3.py": "fc7ea4dbc06070de097e74b1c543b0d74f11b9f51153cdfd2ff447c6f33cea84",
+    "scripts/blind_inquiry_v3_freeze.py": "e263dc5d04ccb8ae82ffc3119208c0ddd835e7934dbc5731ea9aff76ddcf8a2e",
+    "scripts/blind_inquiry_targets.py": "58d6e561ad23ee2eabbeaf6f23e5f916a2444064e68fc5bc5ed9f227805c01cc",
+    "docs/BLIND_INQUIRY_V3.md": "d07b263e0726c3c14ed46fc2f82ad5a374e6a0987708cd2c3a80c5b0a08338f8",
+    "scripts/retrieval_fusion.py": "3244756ea05df014542b86ebc491d4106b59b304408e5970e27a0d4ef52fd7ee",
+    "scripts/clause_coverage.py": "96db04f12aa4c1c5d8c4af71feb246ac2366b34f0ff423f4b3eeb1b14c258ee0",
+    "scripts/clause_coverage_scoring.py": "1eb2080f6431036d2e31521aebceb07fd2f80103901f27c484ed96af01661fc7",
+    "scripts/blind_clause_trial.py": "cce55a47192a64796f5a1ebbcbdeaf5de54d4dcf2ba2470218ce18134c6e9040",
+    "scripts/time_clause_readers.py": "7455d081ea35c2ff025dcd5b92be06719b35e176ac61293e5862049597c747a0",
+    "docs/CLAUSE_COVERAGE_PROTOCOL.md": "c3d8d364d2d1a3358be8fe08567b2fb0087acfe0e07ccb3bd4dae2b24438e26b",
+    "docs/CLAUSE_COVERAGE_REVIEW.md": "2b452efad27e8f16a89c1fcad0087d77220a9adfb6783ffb50c284d6cf693af4"
+  },
+  "promotion_eligible": false,
+  "rubric_sha256": "af8090895c48f41817d7d437ca499c6a6742161cc7e8bcfc9f1348e041197174",
+  "groups_sha256": "dc631f19d426f858c2bc245993d474cc134e1e6a7f90bae9a7f12ac389422b3b",
+  "provenance_sha256": "88bc47d95ebba674aca05ead623a337259d7c59fd07dc435969c2a8b8dbf2747"
+}

@@ -267,4 +267,8 @@ A [six-question transfer pilot](research/ofqual-pilot/README.md) used a separate
 
 For new trials use the [v3 collection and tally](docs/BLIND_INQUIRY_V3.md) to see each reviewer’s supported answers, unsupported claims, warranted and unwarranted abstentions alongside passage inspections and optional precommitted exact hits. The comparison supports both reader sets.
 
-A [bounded fusion replay on the disclosed Ofqual rankings](docs/OFQUAL_FUSION.md) tests whether the same four inspections can recover every required passage. Reserving one exclusive result from each BM25 list completed the autumn-exam question and preserved the two previously complete evidence sets. The exposed result remains `NOT_PROMOTED`.
+### Four-passage evidence retrieval
+
+Use **fixed BM25 as the reference reader** for comparisons at four passage inspections per question. In the blinded three-case trial, it completed seven of nine answerable questions at both depths, using 12 rankings per condition. Clause coverage completed six at depth four and five at depth eight, using 22 rankings. It delivered the same passages as RRF on all twelve questions at both depths. The study also includes a 300-claim SciFact rehearsal within the supplied abstracts. The exclusive-slot and clause-coverage selectors remain `NOT_PROMOTED`. [Fresh trial, costs and reviewer judgments](research/clause-transfer/README.md)
+
+Compare the complete evidence available in the candidate pool with the complete evidence the reader actually receives. In the Ofqual development case, adding a fifth candidate to each input list cost the exclusive-slot reader two complete sets at the same four inspections. Keep warranted abstentions in the answer-quality tally. [Ofqual depth replay](docs/OFQUAL_FUSION.md#what-changed-one-rank-deeper)

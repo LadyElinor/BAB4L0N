@@ -1,0 +1,65 @@
+{
+  "budget": 4,
+  "families": {
+    "record01.txt": "royal-mint",
+    "record02.txt": "us-census-bureau",
+    "record03.txt": "hm-treasury",
+    "record04.txt": "canadian-space-agency",
+    "record05.txt": "nasa",
+    "record06.txt": "texas-legislative-council",
+    "record07.txt": "hm-treasury",
+    "record08.txt": "us-census-bureau",
+    "record09.txt": "university-of-arizona",
+    "record10.txt": "canadian-space-agency"
+  },
+  "questions": [
+    {
+      "id": "q01",
+      "question": "Who designed the portrait and the competition-winning reverse of the first twelve-sided UK pound, and which monarch and four plants appeared on them?"
+    },
+    {
+      "id": "q02",
+      "question": "How many grams did the largest individual stone in Canada's allocation from Bennu weigh?"
+    },
+    {
+      "id": "q03",
+      "question": "Which state added the most people between the 2010 and 2020 U.S. censuses, what was its numerical gain, and how many House seats did it have after each census?"
+    },
+    {
+      "id": "q04",
+      "question": "At the July 2017 ceremony for Britain's new pound, who struck the milestone coin, and how many of the new coins had then been made?"
+    },
+    {
+      "id": "q05",
+      "question": "Which Canadian instrument helped decide where to collect material on Bennu, what did it measure, and which site did the spacecraft use?"
+    },
+    {
+      "id": "q06",
+      "question": "How did the 2020 U.S. resident count and the House apportionment count treat people living in the District of Columbia, and which people living abroad could count toward a state's seats?"
+    },
+    {
+      "id": "q07",
+      "question": "By the time of the Treasury's July 10, 2017 announcement, how many old round pounds had the Mint already melted down?"
+    },
+    {
+      "id": "q08",
+      "question": "What share of the Bennu sample was promised to Canada for its instrument, and what share did NASA intend to hold at Johnson for future research?"
+    },
+    {
+      "id": "q09",
+      "question": "What House representation was each state guaranteed after the 2020 U.S. census, and what calculation determined which state got the next seat?"
+    },
+    {
+      "id": "q10",
+      "question": "What minimum mass of Bennu material did the mission require, and by how many grams did the final sample exceed it?"
+    },
+    {
+      "id": "q11",
+      "question": "Which state senator was the author of the Texas bill that set the new congressional boundaries in 2021?"
+    },
+    {
+      "id": "q12",
+      "question": "What dates bracketed the two UK pound coins' overlap as legal tender, and what did the July update say about the number of round pounds returned and the Mint's plans for their metal?"
+    }
+  ]
+}
