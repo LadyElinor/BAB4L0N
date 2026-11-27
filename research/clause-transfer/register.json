@@ -1,0 +1,20 @@
+{
+  "profile": "babalon.blind-inquiry.collection.v2",
+  "implementation": {
+    "scripts/blind_inquiry.py": "6da87c85a7d04a007e3da2af47e2a0775750b9280b28f52a5dc53e916463e5ca",
+    "scripts/court_trial.py": "29e7a2a5d337f93a4642a9f7be6f779d37249992efddc4e2c8cfb150164b40ee",
+    "babalon/inquiry.py": "d2eecffef19d12a0e958d29b8227b2b26682612bca9dc28b93544c989dc4c2d8",
+    "babalon/contracts.py": "5b32c7f10eccdbd0865699ac4e10716df8687983e499c771e9ea66a3fbda9b1d",
+    "babalon/retrieval_selection.py": "086a5e453d3b165062bf4abe123dc8a22c6e0136d7fbe43db284da521ffef60f",
+    "docs/BLIND_INQUIRY.md": "abe5f74be953d5fba6c9a53cc197867a833501ed2831a6eba4b901b5388542c7",
+    "scripts/blind_inquiry_v2.py": "e1c80672f4259462fa226676e937b0500a06821300cfd70a1f0934b3cf203483",
+    "docs/BLIND_INQUIRY_V2.md": "26c026aa541f1b220d4caa19fd0f5acc6a130fbe7d89d1d78b46a99872fdf0ca"
+  },
+  "worksheet_digest": "094e3eb285acf4415932f43214bfd41f7cc4631b524979b9d76e6bf42b659cb0",
+  "key_digest": "5dc7a66a54f520833c85e94d36b9e146d1f4317668b5f03ac5a086bd1aa197a4",
+  "answer_digest": "5d7274437c4f9a4533d3b223fa61f0b93e9b3a22e6c91d14e96f68645fea929d",
+  "review_digests": {
+    "review-a": "2285af89fe1dbfa89fef2ca579b7bb1098462df6c63b4e7ae4a8f031873e7b5a",
+    "review-b": "181c8a6a2ab0804c7527579ab53b6a1edb39dc4ae723ebccd35c710df38f60a1"
+  }
+}
