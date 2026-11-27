@@ -1,0 +1,11 @@
+{
+  "method_commit": "bce32851e8034d681d2894f29ef5648328eae66f",
+  "roles": {
+    "curator": "packet-curator",
+    "interpreter": "evidence-reader",
+    "reviewers": [
+      "review-a",
+      "review-b"
+    ]
+  }
+}

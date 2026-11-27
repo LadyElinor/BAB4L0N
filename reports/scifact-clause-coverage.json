@@ -1,0 +1,362 @@
+{
+  "alternative_group_questions": 83,
+  "answer_review": null,
+  "archive_sha256": "11c621288d41ac144d29b13b0f8503b3820b7d6e8b1f6ff24dff335c196d76be",
+  "by_case": {
+    "empty": {
+      "bm25.d4": {
+        "complete": 0,
+        "matched_spend": 409,
+        "pool_complete": 0,
+        "questions": 112,
+        "target_bearing": 0
+      },
+      "bm25.d8": {
+        "complete": 0,
+        "matched_spend": 409,
+        "pool_complete": 0,
+        "questions": 112,
+        "target_bearing": 0
+      },
+      "clause-coverage.d4": {
+        "complete": 0,
+        "matched_spend": 409,
+        "pool_complete": 0,
+        "questions": 112,
+        "target_bearing": 0
+      },
+      "clause-coverage.d8": {
+        "complete": 0,
+        "matched_spend": 409,
+        "pool_complete": 0,
+        "questions": 112,
+        "target_bearing": 0
+      },
+      "ranker-exclusive.d4": {
+        "complete": 0,
+        "matched_spend": 409,
+        "pool_complete": 0,
+        "questions": 112,
+        "target_bearing": 0
+      },
+      "ranker-exclusive.d8": {
+        "complete": 0,
+        "matched_spend": 409,
+        "pool_complete": 0,
+        "questions": 112,
+        "target_bearing": 0
+      },
+      "reciprocal-rank.d4": {
+        "complete": 0,
+        "matched_spend": 409,
+        "pool_complete": 0,
+        "questions": 112,
+        "target_bearing": 0
+      },
+      "reciprocal-rank.d8": {
+        "complete": 0,
+        "matched_spend": 409,
+        "pool_complete": 0,
+        "questions": 112,
+        "target_bearing": 0
+      }
+    },
+    "requires-multiple": {
+      "bm25.d4": {
+        "complete": 5,
+        "matched_spend": 39,
+        "pool_complete": 6,
+        "questions": 10,
+        "target_bearing": 10
+      },
+      "bm25.d8": {
+        "complete": 5,
+        "matched_spend": 39,
+        "pool_complete": 8,
+        "questions": 10,
+        "target_bearing": 10
+      },
+      "clause-coverage.d4": {
+        "complete": 5,
+        "matched_spend": 39,
+        "pool_complete": 6,
+        "questions": 10,
+        "target_bearing": 10
+      },
+      "clause-coverage.d8": {
+        "complete": 5,
+        "matched_spend": 39,
+        "pool_complete": 8,
+        "questions": 10,
+        "target_bearing": 10
+      },
+      "ranker-exclusive.d4": {
+        "complete": 5,
+        "matched_spend": 39,
+        "pool_complete": 6,
+        "questions": 10,
+        "target_bearing": 10
+      },
+      "ranker-exclusive.d8": {
+        "complete": 4,
+        "matched_spend": 39,
+        "pool_complete": 8,
+        "questions": 10,
+        "target_bearing": 10
+      },
+      "reciprocal-rank.d4": {
+        "complete": 5,
+        "matched_spend": 39,
+        "pool_complete": 6,
+        "questions": 10,
+        "target_bearing": 10
+      },
+      "reciprocal-rank.d8": {
+        "complete": 5,
+        "matched_spend": 39,
+        "pool_complete": 8,
+        "questions": 10,
+        "target_bearing": 10
+      }
+    },
+    "single-suffices": {
+      "bm25.d4": {
+        "complete": 153,
+        "matched_spend": 704,
+        "pool_complete": 154,
+        "questions": 178,
+        "target_bearing": 178
+      },
+      "bm25.d8": {
+        "complete": 153,
+        "matched_spend": 704,
+        "pool_complete": 171,
+        "questions": 178,
+        "target_bearing": 178
+      },
+      "clause-coverage.d4": {
+        "complete": 153,
+        "matched_spend": 704,
+        "pool_complete": 154,
+        "questions": 178,
+        "target_bearing": 178
+      },
+      "clause-coverage.d8": {
+        "complete": 154,
+        "matched_spend": 704,
+        "pool_complete": 171,
+        "questions": 178,
+        "target_bearing": 178
+      },
+      "ranker-exclusive.d4": {
+        "complete": 153,
+        "matched_spend": 704,
+        "pool_complete": 154,
+        "questions": 178,
+        "target_bearing": 178
+      },
+      "ranker-exclusive.d8": {
+        "complete": 153,
+        "matched_spend": 704,
+        "pool_complete": 171,
+        "questions": 178,
+        "target_bearing": 178
+      },
+      "reciprocal-rank.d4": {
+        "complete": 153,
+        "matched_spend": 704,
+        "pool_complete": 154,
+        "questions": 178,
+        "target_bearing": 178
+      },
+      "reciprocal-rank.d8": {
+        "complete": 154,
+        "matched_spend": 704,
+        "pool_complete": 171,
+        "questions": 178,
+        "target_bearing": 178
+      }
+    }
+  },
+  "claim_count": 300,
+  "paired": {
+    "clause-coverage.d4 vs bm25.d4": {
+      "gains": [],
+      "losses": [],
+      "ties": 188
+    },
+    "clause-coverage.d4 vs ranker-exclusive.d4": {
+      "gains": [
+        "133",
+        "1259"
+      ],
+      "losses": [
+        "957",
+        "1049"
+      ],
+      "ties": 184
+    },
+    "clause-coverage.d4 vs reciprocal-rank.d4": {
+      "gains": [],
+      "losses": [],
+      "ties": 188
+    },
+    "clause-coverage.d8 vs bm25.d8": {
+      "gains": [
+        "957"
+      ],
+      "losses": [],
+      "ties": 187
+    },
+    "clause-coverage.d8 vs ranker-exclusive.d8": {
+      "gains": [
+        "133",
+        "770",
+        "1259"
+      ],
+      "losses": [
+        "343"
+      ],
+      "ties": 184
+    },
+    "clause-coverage.d8 vs reciprocal-rank.d8": {
+      "gains": [],
+      "losses": [],
+      "ties": 188
+    }
+  },
+  "profile": "public SciFact development, candidate documents supplied",
+  "promotion_eligible": false,
+  "status": "NOT_PROMOTED",
+  "totals": {
+    "bm25.d4": {
+      "canonical_hits": 135,
+      "canonical_targets": 211,
+      "complete": 158,
+      "input_positions": 1152,
+      "matched_spend": 1152,
+      "natural_spend": 1152,
+      "pool_complete": 160,
+      "pool_unattainable": 28,
+      "questions": 300,
+      "rank_calls": 300,
+      "scored_pairs": 3106,
+      "selection_misses": 2,
+      "split_questions": 33,
+      "target_bearing": 188
+    },
+    "bm25.d8": {
+      "canonical_hits": 135,
+      "canonical_targets": 211,
+      "complete": 158,
+      "input_positions": 1961,
+      "matched_spend": 1152,
+      "natural_spend": 1152,
+      "pool_complete": 179,
+      "pool_unattainable": 9,
+      "questions": 300,
+      "rank_calls": 300,
+      "scored_pairs": 3106,
+      "selection_misses": 21,
+      "split_questions": 33,
+      "target_bearing": 188
+    },
+    "clause-coverage.d4": {
+      "canonical_hits": 135,
+      "canonical_targets": 211,
+      "complete": 158,
+      "input_positions": 2515,
+      "matched_spend": 1152,
+      "natural_spend": 1152,
+      "pool_complete": 160,
+      "pool_unattainable": 28,
+      "questions": 300,
+      "rank_calls": 366,
+      "scored_pairs": 3800,
+      "selection_misses": 2,
+      "split_questions": 33,
+      "target_bearing": 188
+    },
+    "clause-coverage.d8": {
+      "canonical_hits": 136,
+      "canonical_targets": 211,
+      "complete": 159,
+      "input_positions": 4254,
+      "matched_spend": 1152,
+      "natural_spend": 1152,
+      "pool_complete": 179,
+      "pool_unattainable": 9,
+      "questions": 300,
+      "rank_calls": 366,
+      "scored_pairs": 3800,
+      "selection_misses": 20,
+      "split_questions": 33,
+      "target_bearing": 188
+    },
+    "ranker-exclusive.d4": {
+      "canonical_hits": 136,
+      "canonical_targets": 211,
+      "complete": 158,
+      "input_positions": 2304,
+      "matched_spend": 1152,
+      "natural_spend": 1152,
+      "pool_complete": 160,
+      "pool_unattainable": 28,
+      "questions": 300,
+      "rank_calls": 366,
+      "scored_pairs": 3800,
+      "selection_misses": 2,
+      "split_questions": 33,
+      "target_bearing": 188
+    },
+    "ranker-exclusive.d8": {
+      "canonical_hits": 137,
+      "canonical_targets": 211,
+      "complete": 157,
+      "input_positions": 3922,
+      "matched_spend": 1152,
+      "natural_spend": 1152,
+      "pool_complete": 179,
+      "pool_unattainable": 9,
+      "questions": 300,
+      "rank_calls": 366,
+      "scored_pairs": 3800,
+      "selection_misses": 22,
+      "split_questions": 33,
+      "target_bearing": 188
+    },
+    "reciprocal-rank.d4": {
+      "canonical_hits": 135,
+      "canonical_targets": 211,
+      "complete": 158,
+      "input_positions": 2304,
+      "matched_spend": 1152,
+      "natural_spend": 1152,
+      "pool_complete": 160,
+      "pool_unattainable": 28,
+      "questions": 300,
+      "rank_calls": 366,
+      "scored_pairs": 3800,
+      "selection_misses": 2,
+      "split_questions": 33,
+      "target_bearing": 188
+    },
+    "reciprocal-rank.d8": {
+      "canonical_hits": 136,
+      "canonical_targets": 211,
+      "complete": 159,
+      "input_positions": 3922,
+      "matched_spend": 1152,
+      "natural_spend": 1152,
+      "pool_complete": 179,
+      "pool_unattainable": 9,
+      "questions": 300,
+      "rank_calls": 366,
+      "scored_pairs": 3800,
+      "selection_misses": 20,
+      "split_questions": 33,
+      "target_bearing": 188
+    }
+  },
+  "trace_digest": "f1323ac0c720fec3010532bfd092280d3bb51638762ee2fe7b007130012a43c9"
+}
