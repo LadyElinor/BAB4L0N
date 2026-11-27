@@ -15,6 +15,12 @@ Each complete set contains all references in at least one accepted group. The se
 
 Five of twelve questions met the reader's two-clause rule. A post-unblinding comparison found that the candidate changed RRF's order on one question at depth four and four questions at depth eight. None of those changes altered the selected IDs. The interpreter therefore received identical evidence for these paired readers. On the public SciFact rehearsal the candidate changed membership for zero of 300 claims at depth four and one at depth eight. That one change preserved its complete-set outcome. [Membership comparison script](../../scripts/clause_membership.py) · [Full transfer result](result.json) · [Ordered returns](method-key.json)
 
+Against fixed BM25, the candidate changed which passages were delivered on q04, q05 and q10 at both depths. Only q05 lost a complete set at primary depth. At depth eight q04 also lost one. Reproduce the membership comparison from the repository root with the command below. Omitting the reference option reproduces the original comparison with RRF.
+
+```sh
+python scripts/clause_membership.py research/clause-transfer/method-key.json --reference bm25
+```
+
 | Case | Primary pool / 3 | Fixed / 3 | Candidate / 3 | Depth-eight pool / 3 | Fixed / 3 | Candidate / 3 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Bennu sample return | 3 | 3 | 2 | 3 | 3 | 2 |

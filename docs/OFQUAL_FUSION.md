@@ -57,9 +57,30 @@ python -m unittest discover -s tests -p test_ofqual_fusion.py -v
 
 The first command also runs the original pilot recount and compares its output byte for byte with the pinned published readout. The new receipt includes the exact references in selection order, target hits, complete-set result and ranking work for each method and question. [Development receipt](../reports/ofqual-fusion-development.json) · [Selectors](../scripts/retrieval_fusion.py) · [Replay and scoring](../scripts/rehearse_ofqual_fusion.py)
 
+## What changed one rank deeper
+
+A retrospective replay varied the candidate lists while keeping four actual inspections for each of the six questions. The table counts complete evidence sets among the five questions with designated targets.
+
+| Candidates per list | Sets available in the pool | Fixed BM25 | RRF | Exclusive slots |
+| ---: | ---: | ---: | ---: | ---: |
+| 4 | 3/5 | 2/5 | 2/5 | 3/5 |
+| 5 | 3/5 | 2/5 | 2/5 | 1/5 |
+| 8 | 4/5 | 2/5 | 2/5 | 1/5 |
+| 10 | 4/5 | 2/5 | 2/5 | 1/5 |
+
+Two questions account for the drop at depth five. On q4, the offered-route passage (`e.txt#L1`) was second in the fixed list and fifth in the clause list. Once both lists contained it, the selector gave the fixed-only slot to `d.txt#L1` and omitted the route. On q1, the two newly reserved passages displaced the shared evidence of the initial award (`f.txt#L1`). Both complete sets were still attainable. The university question had no designated passages. Its four inspections remain in each total and its completeness is recorded as null.
+
+Run the following command to inspect both input lists and every four-passage return. It verifies the published depth-four receipt before calculating the deeper results. Reusing the whole-question ranking costs 16 BM25 calls per fusion method per depth across all questions. Fixed BM25 uses six. The output records retrieval only.
+
+```sh
+python scripts/ofqual_depth_sensitivity.py
+```
+
 ## What an independent evaluation would need to establish
 
-1. **Seal the candidate before case selection.** Nominate the exclusive-passage rule as the single primary candidate and fixed BM25 as the primary comparator. Retain the other controls and reciprocal-rank fusion as prespecified comparisons. Freeze code, list depth, tie rules, actual-spend matching, compute accounting, outcome definitions and decision thresholds. A prospective run needs a new freeze that binds the fusion code to the worksheet. The existing v3 profile covers the historical reader sets.
+The proposal below came from the exposed depth-four result. After the sensitivity check, the subsequent study used the exclusive-slot rule as a control. Both fusion candidates retain their experimental status. [Blinded transfer result and separate reviewer judgments](../research/clause-transfer/README.md)
+
+1. **Seal the candidate before case selection.** The original nomination paired the exclusive-passage rule with fixed BM25 as the primary comparator. Retain the other controls and reciprocal-rank fusion as prespecified comparisons. Freeze code, list depth, tie rules, actual-spend matching, compute accounting, outcome definitions and decision thresholds. A prospective run needs a new freeze that binds the fusion code to the worksheet. The existing v3 profile covers the historical reader sets.
 2. **Use new cases under independent custody.** A curator outside the development team selects multiple unseen cases, including questions whose evidence comes from the same source, different sources, and questions the collection cannot resolve. Include questions where exclusive results can be distractors. Privately commit the source bytes, exact targets, acceptable equivalents and explicit empty sets before retrieval. Keep the packet away from developers until the freeze, and keep the rubric, target file and method key away from selectors and interpreter.
 3. **Match actual spend on each question.** Record native charges. If a reader cannot use four distinct inspections, rerun every reader at the lowest attained spend until charges match. Retain zero-spend and failed rows with their disposition. Give the interpreter only the matched returns with fresh randomized aliases and neutral passage order. Record full-query and clause ranking calls, pool sizes and runtime separately on the same hardware with a specified cache policy.
 4. **Test retrieval and judgment separately.** The primary endpoint is a paired change in complete exact evidence sets on nonempty-target questions. Report wins, losses and ties by question and by case, secondary exact hits, and uncertainty allowing for questions within the same case. Prespecify case count, a meaningful minimum gain, and the uncertainty bound required for success. A single motivating question cannot establish transfer. Have independent blinded human reviewers use the v3 dimensions and cite equivalent evidence. Deposit answers and individual reviews externally, close the register before unblinding, and publish each reviewer's supported answers, unsupported claims, warranted and unwarranted abstentions and disagreements. Empty-target questions stay in the spend and answer-quality analyses.
